@@ -1,0 +1,78 @@
+---
+title: 8) RR Legal Framework 
+---
+
+## Assigned Readings
+
+- Title: **The Legal Framework for Reproducible Scientific Research (Licensing and Copyright)**
+- Author(s): Victoria Stodden
+- Year: 2009
+- Journal: Computing in Science & Engineering
+- <doi:10.1038/467753a>
+
+
+
+## Reflections
+
+::: {.callout-note title="bCourses Submission"}
+Submit your answers---to the following questions---to the corresponding 
+assignment in bCourses.
+
+Accepted formats: PDF, HTML, MS Word (`.docx`), or Google Doc
+:::
+
+
+## Reflection 1: Automatic Copyright
+
+- Look back at your past school projects that haven been publicly shared or open repositories. 
+- Did you realize that by *doing nothing*, you were using default copyright law to block your classmates or peers from legally copying and verifying your math? 
+- What is stopping you from dropping a basic, open `LICENSE` file into your workspace today?
+
+
+## Reflection 2: Shifting Your Creative Focus
+
+- Think about your own assignment and reporting habits.
+- When working on a project, do you treat the final written summary paragraph or PDF report as the "main product" of your hard work? 
+- What would change in your daily workflow if you viewed your written report as mere *advertising*, and shifted 90% of your energy to perfecting a clean, automated code setup instead?
+
+
+## Reflection 3: To Force Openness or Maximize Reuse?
+
+- Imagine you wrote a brilliant data-cleaning script that could help many analysts and users in your field.
+- Would you use a "Share Alike" (copyleft) license to legally force others to be open, or would you use a permissive attribution license (like modified BSD) to maximize reuse, even if a corporate user keeps their upgrades secret?
+
+
+## Reflection 4: Who Owns Your Data Cleaning Labor?
+
+- Reflect on the most exhausting, messy dataset you have ever had to manually sort, clean, or format for an analysis.
+- Knowing that anyone can legally copy your final raw numbers without your permission, but they *cannot* steal your data-cleaning pipeline code without giving you credit, how does this shape your motivation? 
+- Does it make you want to share your script logic openly to claim your authorship footprint?
+
+
+## Reflection 5: Copy-Paste Dilemma
+
+- Think about a time you were stuck on a coding assignment or class project, found a working solution in a public repository written by a stranger, and copy-pasted a few lines to fix your script.
+- Did you check to see if that repository carried a modified BSD, MIT, or open license before taking their code?
+- If computational research fields operate on blind trust instead of explicit licensing, are we building our academic workflows on a legally radioactive foundation?
+
+
+
+## Rubric
+
+::: {.callout-important}
+Generic responses that do not mention a specific 
+past assignment name or unique piece of code from your own experience will 
+receive a score of zero.
+:::
+
+- **Full Credit (3 Points)**: Response is highly specific, names unique personal 
+or localized constraints, and explicitly connects the personal experience 
+back to the prompt in each question. Clearly written by a human.
+
+- **Partial Credit (1-2 Points)**: Response is correct but uses vague or generic 
+examples (e.g., "I lost a file once" instead of naming the script). Sounds like 
+a generic summary an AI could have written.
+
+- **No Credit (0 Points)**: Response relies entirely on abstract definitions, 
+fails to provide personal context, or uses copy-pasted text from a webpage
+or AI tool.

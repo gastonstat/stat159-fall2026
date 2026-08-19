@@ -1,0 +1,118 @@
+---
+title: 5) Irreproducibility Tales 1 
+---
+
+## Assigned Reading
+
+- Title: **The Reinhart-Rogoff Error - or how not to Excel at economics**
+- Author(s): Jonathan Borwein and David H. Bailey
+- Year: 2013
+- Journal: The Conversation
+- <https://theconversation.com/the-reinhart-rogoff-error-or-how-not-to-excel-at-economics-13646>
+
+
+### Supporting Materials
+
+- Title: **Does high public debt consistently stifle economic growth? A critique of Reinhart and Rogoff**
+- Authors: T. Herndon, M. Ash, R. Pollin
+- Year: 2014
+- Publication: Political Economy Research Institute
+- <https://peri.umass.edu/wp-content/uploads/joomla/images/WP322.pdf>
+
+\
+
+- Title: **Growth in a Time of Debt**
+- Authors: Carmen Reinhart and Kenneth Rogoff
+- Year: 2010
+- Publication: National Bureau of Economic Research (Working Paper)
+- <https://www.nber.org/papers/w15639>
+
+
+## Questions
+
+::: {.callout-note title="bCourses Submission"}
+Submit your answers---to the following reflections---to the corresponding 
+assignment in bCourses.
+
+Accepted formats: PDF, HTML, MS Word (`.docx`), or Google Doc
+:::
+
+
+### Reflection 1: Tracking Silent Failures
+
+The Harvard economists skipped 5 entire countries in their key calculation 
+because they accidentally misaligned a visual row selection box in Excel.
+
+- Reflect on your own history with spreadsheets or scripts.
+- Have you ever committed a silent, unrecorded clerical error that altered an assignment or project output?
+- Did you catch it through a systematic checking protocol, or was it pure luck?
+- What hidden mouse-slip is lurking inside your current active folders right now?
+
+
+### Reflection 2: Evaluating Your Provenance
+
+The authors argue that the culture of computing has not kept pace with its 
+pre-eminence in research, noting that few computational researchers record 
+their exact workflows, hardware, or software configurations.
+
+- Evaluate your personal project workflows honestly.
+- Do you systematically log packages, tool versions, and step-by-step executions?
+- Or do you treat data documentation as a boring afterthought that you plan to "fix later"?
+- Why does this gap between *doing* science and *documenting* science persist in your daily routine?
+
+
+### Reflection 3: Unpacking Status Bias
+
+Reinhart and Rogoff were world-respected Harvard economists. Because of their 
+immense prestige, global big-hitters blindly trusted their numbers to pass massive laws.
+
+It took a 28-year-old graduate student checking the actual, raw formula boxes to 
+expose that the emperor had no clothes.
+
+- Think about your own data consumption habits.
+- Have you ever accepted a chart as "fact" simply because it came from a famous journal, a top university, or a respected researcher?
+- How will you deliberately adjust your skepticism when reading "high-status" science moving forward?
+
+
+### Reflection 4: The Emergency Audit
+
+For an economist, the five most terrifying words in the English language are: 
+*I can't replicate your results.*
+
+* Imagine an aggressive outside reviewer or competitor emails you at this exact second.
+* They demand the raw datasets, exact software versions, and code scripts you used for your last major project or coursework assignment.
+* How long would it take you to locate and deliver those exact files? 
+* Would you feel absolute confidence, or total, paralyzing panic?
+
+
+### Reflection 5: Structural Safeguards
+
+Borwein and Bailey demand that journal editors and scientists implement stricter 
+standards to stop genuine errors from proliferating.
+
+- Suppose you are the Lead Auditor of your own academic output. 
+- Draft a personal, non-negotiable **two-rule checklist** that you will enforce 
+on your next data project to ensure a spreadsheet or code mismatch is structurally impossible.
+- How will you guarantee your future self sticks to these rules when a deadline 
+is 3 hours away and stress is at its peak?
+
+
+## Rubric
+
+::: {.callout-important}
+Generic, abstract answers that do not explicitly name your specific past assignments
+(course name, semester, assignment) or unique piece of code from your own experience will 
+receive a score of zero.
+:::
+
+- **Full Credit (3 Points)**: Response is highly specific, names unique personal 
+or localized constraints, and explicitly connects the personal experience 
+back to the technical definition in The Turing Way. Clearly written by a human.
+
+- **Partial Credit (1-2 Points)**: Response is correct but uses vague or generic 
+examples (e.g., "I lost a file once" instead of naming the script, the associated 
+assignment, as well as the course name and semester). Sounds like 
+a generic summary an AI could have written.
+
+- **No Credit (0 Points)**: Response relies entirely on abstract definitions, 
+fails to provide personal context, or uses copy-pasted text from the webpage.

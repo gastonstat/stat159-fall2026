@@ -1,0 +1,87 @@
+---
+title: 7) Share Your Code 
+---
+
+## Assigned Readings
+
+- Title: **Publish your computer code, it is good enough**
+- Author(s): Nick Barnes
+- Year: 2011
+- Journal: Nature 467, 753
+- <doi:10.1038/467753a>
+
+\
+
+- Title: **Top ten reasons to not share your code (and why you should anyway)**
+- Author(s): Randall LeVeque
+- Year: 2011
+- Journal: Software Sustainability Institute
+- <https://faculty.washington.edu/rjl/pubs/topten/topten.pdf>
+
+
+
+## Reflections
+
+::: {.callout-note title="bCourses Submission"}
+Submit your answers---to the following questions---to the corresponding 
+assignment in bCourses.
+
+Accepted formats: PDF, HTML, MS Word (`.docx`), or Google Doc
+:::
+
+
+
+## Reflection 1: Sharing Code
+
+- Open the very last coding script or assignment you wrote for a class. 
+- If you were forced to post that exact file publicly on GitHub right now, "as is," would you feel absolute panic or deep embarrassment regarding your programming skills?
+- What would be the primary reason for your hesitation to share your code?
+
+
+## Reflection 2: Deconstructing the Double Standard
+
+- Think about a script or software pipeline you built just a year ago.
+- If you tried to execute it right now on a brand-new computer, do you trust that it would run perfectly without throwing an error message?
+- If the software environment inevitably breaks, why does simply allowing an outside reviewer to **read** your raw, un-runnable text logic still hold scientific value?
+
+
+## Reflection 3: Testing Your "Push-Button" Reality
+
+- Think about a data project or lab report you finalized over six months ago.
+- If your instructor asked you to change the color of the graph or add a new data column to that exact project today, could you do it with a single script execution? 
+- Or would you descend into a chaotic scramble of re-clicking, re-dragging, and re-guessing what your past self did?
+
+
+## Reflection 4: Submission Reality
+
+- Reflect on your own submission habits right before hitting "Submit" on a project or lab report.
+- Do you rush through the final hour just hoping the code runs without throwing a red error flag, or do you step back to read your own script line-by-line as if you were an outside auditor?
+
+
+## Reflection 5: Drawing Boundaries
+
+- Put yourself in the shoes of a busy researcher managing multiple projects.
+- If a stranger downloads your public GitHub repository and emails you a list of things they don't understand, where do you draw the personal boundary?
+- How do you separate your duty to provide scientific transparency (the code works for the paper) from your right to protect your personal time from being hijacked by outside users demanding free tech support?
+
+
+
+## Rubric
+
+::: {.callout-important}
+Generic responses that do not mention a specific 
+past assignment name or unique piece of code from your own experience will 
+receive a score of zero.
+:::
+
+- **Full Credit (3 Points)**: Response is highly specific, names unique personal 
+or localized constraints, and explicitly connects the personal experience 
+back to the prompt in each question. Clearly written by a human.
+
+- **Partial Credit (1-2 Points)**: Response is correct but uses vague or generic 
+examples (e.g., "I lost a file once" instead of naming the script). Sounds like 
+a generic summary an AI could have written.
+
+- **No Credit (0 Points)**: Response relies entirely on abstract definitions, 
+fails to provide personal context, or uses copy-pasted text from a webpage
+or AI tool.

@@ -1,0 +1,145 @@
+---
+title: 2) Reproducibility Definitions 
+---
+
+## Assigned Reading
+
+- Title: **Guide for Reproducible Research**
+- Author(s): The Turing Way
+- Year: 2024
+- Journal: PLOS Computational Biology 9(10): e1003285
+- <https://book.the-turing-way.org/reproducible-research>
+
+
+## Reflections
+
+::: {.callout-note title="bCourses Submission"}
+Submit your answers---to the following questions---to the corresponding 
+assignment in bCourses.
+
+Accepted formats: PDF, HTML, MS Word (`.docx`), or Google Doc
+:::
+
+
+### 1. Reflecting on Reproducible
+
+The Turing Way defines a "reproducible" result as using the same data and the 
+same analysis steps. Think back to a programming or data assignment you submitted 
+in a previous semester. 
+
+If your laptop was lost today and you had to reconstruct 
+that project on a classmate's machine using only your memory and the files 
+currently backed up in your email/cloud, what are the exact "ghosts" 
+(a hidden file path, an unrecorded package version, an un-downloaded dataset) 
+that would cause the reproduction to completely fail?
+
+
+### 2. Reflecting on Robust
+
+A result is "robust" if using different analysis steps on the same data yields 
+a qualitatively identical answer (e.g., swapping from an R package to a Python 
+script). 
+
+If you were forced to completely rewrite your favorite data script 
+into a programming language you barely know, which specific part of your code's 
+logic do you suspect would fall apart or yield a different mathematical rounding 
+result, and why?
+
+
+### 3. "P-Hacking" Temptation
+
+Stodden isolates "Statistical Reproducibility" as documenting the 
+deliberate choice of thresholds and parameters. 
+
+Describe a time during an 
+assignment or project where a script yielded an unexciting, messy result, 
+and you felt the intense psychological temptation to tweak a filter, drop 
+a few inconvenient outliers, or change your hypothesis just to get a "cleaner" 
+chart for a better grade. How would a mandatory preregistration log have changed 
+your behavior in that moment?
+
+
+### 4. The Locked-Door Paradox
+
+The Turing Way emphasizes that reproducibility does not necessarily mean 
+"open to the public," recognizing that private medical or security data must 
+remain closed. 
+
+If you were building a highly sensitive database that legally 
+cannot be published on GitHub, how would you design a workflow that still 
+allows an independent, authorized auditor to verify your results without 
+leaking private citizen identities?
+
+
+### 5. The "Sloppy Success" Evaluation
+
+Imagine a peer creates a messy, un-versioned script that accidentally discovers 
+a brilliant, groundbreaking pattern in a public dataset, but their workflow is 
+completely un-reproducible. 
+
+You build a flawless, fully automated, 
+version-controlled pipeline that proves a hypothesis is completely wrong, 
+but anyone can rerun it perfectly. In your own words, defend why your 
+"reproducible failure" might actually be more valuable to the progress of 
+science than their "sloppy success."
+
+
+::: {.callout-note}
+For Questions 1, 4, and 5, generic responses that do not mention a specific 
+past assignment name or unique piece of code from your own experience will 
+receive a score of zero.
+:::
+
+
+## Rubric
+
+- **Full Credit (3 Points)**: Response is highly specific, names unique personal 
+or localized constraints, and explicitly connects the personal experience 
+back to the technical definition in The Turing Way. Clearly written by a human.
+
+- **Partial Credit (1-2 Points)**: Response is correct but uses vague or generic 
+examples (e.g., "I lost a file once" instead of naming the script). Sounds like 
+a generic summary an AI could have written.
+
+- **No Credit (0 Points)**: Response relies entirely on abstract definitions, 
+fails to provide personal context, or uses copy-pasted text from the webpage.
+
+
+
+
+<!--
+Removed Questions
+
+### The "Works on My Campus" Trap (Reflecting on Replicable)
+
+Imagine you discover a fascinating behavioral trend by surveying 100 students 
+on your current campus using a custom script from a different lab
+(Same Analysis + Different Data = Replicable). 
+
+Name three hyper-local cultural variables unique to your specific university 
+student body that would likely cause this study to completely fail if a student 
+at a university in another country tried to replicate it using your exact 
+questionnaire.
+
+
+### The Boundary of Generalisation (Reflecting on Generalisable)
+
+Generalization is the ultimate crown of research, requiring different data and 
+different analysis methods. Look at a claim you made in a final paper for a 
+previous class. 
+
+Knowing what you know now about The Turing Way matrix, did you 
+commit the sin of over-generalization? Explain how you accidentally framed a 
+result that was merely "reproducible" (it worked once on your machine) as a 
+universal truth.
+
+
+### Deconstructing the Linguistic Flip-Flop
+
+The text notes that the Association for Computing Machinery (ACM) and Claerbout 
+completely swapped the definitions of "reproducible" and "replicable". 
+
+If you are reading a paper from an unfamiliar scientific discipline, what 
+specific questions must you ask about their data and code artifacts instead to 
+figure out what they actually accomplished?
+-->

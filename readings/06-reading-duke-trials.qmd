@@ -1,0 +1,107 @@
+---
+title: 6) Irreproducibility Tales 2 
+---
+
+## Assigned Reading
+
+- Title: **Forensic Bioinformatics: Investigating Reproducibility of Results**
+- Author(s): Teresa Melcher
+- Year: 2011
+- Journal: Science Editor
+- <https://www.csescienceeditor.org/article/forensic-bioinformatics-investigating-reproducibility-of-results/>
+
+
+### Supporting Materials
+
+- Title: **Duke Clinical Trials - 60 Minutes**
+- Authors: 60 Minutes
+- Year: 2012
+- Type: YouTube video
+- <https://www.youtube.com/watch?v=W5sZTNPMQRM&ab_channel=HensonFuerst>
+
+\
+
+- Title: **The Importance of Reproducible Research in High-Throughput Biology**
+- Authors: Keith Baggerly
+- Year: 2024
+- Type: IGCT Workshops. 5.
+- <https://openworks.mdanderson.org/igct_workshops/5/>
+
+
+## Reflections
+
+::: {.callout-note title="bCourses Submission"}
+Submit your answers---to the following reflections---to the corresponding 
+assignment in bCourses.
+
+Accepted formats: PDF, HTML, MS Word (`.docx`), or Google Doc
+:::
+
+
+### Reflection 1: Tracking Silent Code Offsets
+
+The Duke team's software expected one input with a header row and another without. Supplying headers with both silently shifted the entire gene list down by exactly one line, meaning the genes reported as critical markers were completely irrelevant to the cancer.
+
+- Think about how you connect different scripts or datasets together.
+- Have you ever fed an un-formatted output file into a downstream function and just *assumed* the rows matched perfectly?
+- How do you structurally verify that your pipeline inputs line up, rather than just trusting that the code ran without throwing an error message?
+
+
+### Reflection 2: Auditing Sensitive vs. Resistant Swaps
+
+Baggerly discovered simple data layout swaps where "sensitive" and "resistant" cell labels were completely reversed—meaning the code predicted a patient would thrive on a drug that their tumor was actually resistant to.
+
+- Evaluate how you double-check your data mapping logic.
+- When you write code to recode or binarize strings (e.g., `0` vs `1`, `True` vs `False`), how do you systematically prove your labels didn't get flipped upside down?
+- What script-based test would catch a reversed logic label in your workspace today before it reaches a final chart?
+
+
+### Reflection 3: Confronting the "Black Box" Defense
+
+In 2010, Duke cleared the suspended trials to restart after an internal review. However, the university actively refused to publicly release the data or the report justifying why the trials were safe.
+
+Because the review was hidden, Duke failed to catch that data samples were heavily scrambled and mislabeled while the probe was underway.
+
+- Think about your own project collaborations.
+- Have you ever fixed a broken analysis script in secret, pushed a patch without documenting what broke, and told your team "it's working now"?
+- Why is hiding a pipeline's correction process a direct threat to long-term computational trust?
+
+
+### Reflection 4: Reputation over Source Inspection
+
+For four years, independent biostatisticians proved the Duke data was corrupted, but the trials kept running. What finally broke the case open wasn't checking the math—it was a journalist exposing that the lead scientist faked his CV credentials.
+
+- Reflect on your own scientific information literacy.
+- Why do academic journals, institutional reviewers, and the public routinely value professional credentials and prestige over a fully open, auditable repository trail?
+- How can you design your future research outputs so that they are judged on the objective execution of your code, not your reputation?
+
+
+### Reflection 5: Overcoming Overhead Anxiety
+
+Keith Baggerly demands five mandatory things for all future computational papers: *Data, Provenance, Code, Descriptions of nonscriptable steps, and Planned designs*. He freely admits: "This would add extra overhead... but I don't see any other way."
+
+- Look at your own tight project constraints.
+- Which of Baggerly's five requirements sounds like the most painful or exhausting "extra overhead" for your current workflow?
+- How can you use automation tools (like Git or automation engines) to reduce that friction so you don't skip it when a deadline hits?
+
+ 
+
+## Rubric
+
+::: {.callout-important}
+Generic responses that do not mention a specific 
+past assignment name or unique piece of code from your own experience will 
+receive a score of zero.
+:::
+
+- **Full Credit (3 Points)**: Response is highly specific, names unique personal 
+or localized constraints, and explicitly connects the personal experience 
+back to the prompt in each question. Clearly written by a human.
+
+- **Partial Credit (1-2 Points)**: Response is correct but uses vague or generic 
+examples (e.g., "I lost a file once" instead of naming the script). Sounds like 
+a generic summary an AI could have written.
+
+- **No Credit (0 Points)**: Response relies entirely on abstract definitions, 
+fails to provide personal context, or uses copy-pasted text from a webpage
+or AI tool.

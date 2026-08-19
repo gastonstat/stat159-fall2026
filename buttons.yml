@@ -1,0 +1,9 @@
+- button: bCourses
+  link: https://bcourses.berkeley.edu/courses/1557334
+  color: "#e7298a"
+- button: Ed
+  link: https://edstem.org/us/courses/101274/discussion/
+  color: "#7570b3"
+- button: DataHub
+  link: http://stat159.datahub.berkeley.edu/
+  color: "#666666"

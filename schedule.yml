@@ -1,0 +1,455 @@
+- week: 1
+  days:
+    - date: "Aug 26"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Welcome to Stat 159"
+          href: "lectures/01-welcome/01-welcome-slides.html"
+    - date: "Aug 28"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Naming Files"
+          href: "lectures/02-files/02-files-slides.html"
+- week: 2
+  days:
+    - date: "Aug 31"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "File Paths & Unix Terminal"
+          href: "lectures/03-unix1/03-unix1-slides.html"
+    - date: "Sep 01"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "Shell Commands"
+          href: "labs/lab01/lab01-shell-slides.html"
+    - date: "Sep 02"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Project Organization"
+          href: "lectures/04-unix2/04-unix2-slides.html"
+        - type: "Reading"
+          id: ""
+          name: "Ten Simple Rules for RCR (due 9/09)"
+          href: "readings/01-reading-10-rules-rcr.html"
+    - date: "Sep 04"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Intro to Git (part I)"
+          href: "lectures/05-git1/05-git-intro-slides.html"
+        - type: "Homework"
+          id: ""
+          name: "HW1 TBA (due 9/18)"
+          href: ""
+- week: 3
+  days:
+    - date: "Sep 07"
+      items:
+        - type: "No-Class"
+          id: ""
+          name: "Academic Holiday (no class)"
+    - date: "Sep 08"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "Getting Started with Git"
+          href: ""
+    - date: "Sep 09"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Intro to Git (part II)"
+          href: "lectures/06-git2/06-git-workflow-slides.html"
+        - type: "Reading"
+          id: ""
+          name: "Guide for Reproducible Research (due 9/16)"
+          href: "readings/02-reading-reproducibility-definitions.html"
+    - date: "Sep 11"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Discussion Reading 1"
+          href: "lectures/07-discuss1/07-discussion-slides.html"
+- week: 4
+  days:
+    - date: "Sep 14"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Git Branching"
+          href: "lectures/08-git3/08-git-branches-slides.qmd"
+    - date: "Sep 15"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "Getting started with Git branches"
+          href: ""
+    - date: "Sep 16"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Case Study: Global Temperature"
+          href: "lectures/09-global-temp/09-global-temp-slides.html"
+        - type: "Reading"
+          id: ""
+          name: "7 Easy Steps to Open Science (due 9/23)"
+          href: "readings/03-reading-open-science.html"
+    - date: "Sep 18"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Discussion Reading 2"
+          href: "lectures/10-discuss2/10-discussion-slides.html"
+        - type: "Homework"
+          id: ""
+          name: "Project 1 TBA (due 10/2)"
+          href: ""
+- week: 5
+  days:
+    - date: "Sep 21"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Git Remotes"
+          href: "lectures/11-git4/11-git-remotes-slides.html"
+    - date: "Sep 22"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "Github and remote repos"
+          href: ""
+    - date: "Sep 23"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Undoing changes in Git"
+          href: "lectures/12-git5/12-git-undos-slides.html"
+        - type: "Reading"
+          id: ""
+          name: "Data Science at the Singularity (due 9/30)"
+          href: "readsings/04-reading-ds-singularity.html"
+    - date: "Sep 25"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Discussion Reading 3"
+          href: "lectures/13-discuss3/13-discussion-slides.html"
+- week: 6
+  days:
+    - date: "Sep 28"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Intro to Make (part 1)"
+          href: "lectures/14-make1/14-make-intro-slides.html"
+    - date: "Sep 29"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "Getting started with Make"
+          href: ""
+    - date: "Sep 30"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Intro to Make (part 2)"
+          href: "lectures/15-make2/15-make-intro2-slides.html"
+        - type: "Reading"
+          id: ""
+          name: "The Reinhart-Rogoff Fiasco (due 10/07)"
+          href: "readings/05-reading-reinhart-rogoff.html"
+    - date: "Oct 02"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Discussion Reading 4"
+          href: "lectures/16-discuss4/16-discussion-slides.html"
+        - type: "Homework"
+          id: ""
+          name: "HW2 TBA (due 10/16)"
+          href: ""
+- week: 7
+  days:
+    - date: "Oct 05"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Variables in Make"
+          href: "lectures/17-make3/17-make-variables-slides.html"
+    - date: "Oct 06"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "More automation with Make"
+          href: ""
+    - date: "Oct 07"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "More Make (part 2)"
+          href: ""
+        - type: "Reading"
+          id: ""
+          name: "The Duke Trials Retraction (due 10/14)"
+          href: "readings/06-reading-duke-trials.html"
+    - date: "Oct 09"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Discussion Reading 5"
+          href: "lectures/19-discuss5/19-discussion-slides.html"
+- week: 8
+  days:
+    - date: "Oct 12"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Git Collaborative workflows"
+          href: "lectures/20-git6/10-git-collab-slides.html"
+    - date: "Oct 13"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "Working in groups in Github"
+          href: ""
+    - date: "Oct 14"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Handling and Sharing Data"
+          href: "lectures/21-data/21-data-slides.html"
+    - date: "Oct 16"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Discussion Reading 6"
+          href: "lectures/22-discuss6/22-discussion-slides.html"
+        - type: "Homework"
+          id: ""
+          name: "Project 2 TBA (due 10/30)"
+          href: ""
+- week: 9
+  days:
+    - date: "Oct 19"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Writing Clear Code"
+          href: "lectures/23-code/23-clear-code-slides.html"
+    - date: "Oct 20"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "Hands on sharing and managing data"
+          href: ""
+    - date: "Oct 21"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Packaging Code (I)"
+          href: ""
+        - type: "Reading"
+          id: ""
+          name: "Share Your Code (due 10/28)"
+          href: "readings/07-reading-share-code.html"
+    - date: "Oct 23"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Packaging Code (II)"
+          href: ""
+- week: 10
+  days:
+    - date: "Oct 26"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Packaging Code (III)"
+          href: ""
+    - date: "Oct 27"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "Documenting your code"
+          href: ""
+    - date: "Oct 28"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Environment Mgmt"
+          href: ""
+        - type: "Reading"
+          id: ""
+          name: "RR Legal Framework (due 11/04)"
+          href: "readings/08-legal-framework.html"
+    - date: "Oct 30"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Discussion Reading 7"
+          href: "lectures/28-discuss7/28-discussion-slides.html"
+        - type: "Homework"
+          id: ""
+          name: "HW-3 TBA (due 11/13)"
+          href: ""
+- week: 11
+  days:
+    - date: "Nov 02"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Environment Management (part 1)"
+          href: ""
+    - date: "Nov 03"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "Managing environments"
+          href: ""
+    - date: "Nov 04"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Licenses"
+          href: "lectures/30-licenses/30-licenses-slides.html"
+        - type: "Reading"
+          id: ""
+          name: "Rules for Better Figures (due 11/11)"
+          href: "readings/09-reading-better-figures.html"
+    - date: "Nov 06"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Discussion Reading 8"
+          href: "lectures/31-discuss9/31-discussion-slides.html"
+- week: 12
+  days:
+    - date: "Nov 09"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Images, Figures and Graphics"
+          href: "lectures/32-images/32-images-slides.html"
+    - date: "Nov 10"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "Handling images and figures"
+          href: ""
+    - date: "Nov 11"
+      items:
+        - type: "No-Class"
+          id: ""
+          name: "Academic holiday (no class)"
+          href: ""
+        - type: "Reading"
+          id: ""
+          name: "Research Compendium (due 11/18)"
+          href: "readings/09-reading-better-figures.html"
+    - date: "Nov 13"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Discussion Reading 9"
+          href: "lectures/32-figures/32-figures-slides.html"
+        - type: "Homework"
+          id: ""
+          name: "Project 3 TBA (due 12/07)"
+          href: ""
+- week: 13
+  days:
+    - date: "Nov 16"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Research Compendium"
+          href: ""
+    - date: "Nov 17"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "TBA"
+          href: ""
+    - date: "Nov 18"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Discussion Reading 10"
+          href: ""
+    - date: "Nov 20"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Publishing & Communication I"
+          href: ""
+- week: 14
+  days:
+    - date: "Nov 23"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Publishing & Communication II"
+          href: ""
+    - date: "Nov 24"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "Final project status"
+          href: ""
+    - date: "Nov 25"
+      items:
+        - type: "No-Class"
+          id: ""
+          name: "Thanksgiving break"
+          href: ""
+    - date: "Nov 27"
+      items:
+        - type: "No-Class"
+          id: ""
+          name: "Thanksgiving break"
+          href: ""
+- week: 15
+  days:
+    - date: "Nov 30"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "TBA"
+          href: ""
+    - date: "Dec 01"
+      items:
+        - type: "Lab"
+          id: ""
+          name: "Wrap-Up Final Project"
+          href: ""
+    - date: "Dec 02"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "TBA"
+          href: ""
+    - date: "Dec 04"
+      items:
+        - type: "Lecture"
+          id: ""
+          name: "Closing Talk"
+          href: ""
+- week: 16
+  days:
+    - date: "Dec 07"
+      items:
+        - type: "Overview"
+          id: ""
+          name: "RRR Week"
+- week: 17
+  days:
+    - date: "Dec 14"
+      items:
+        - type: "Final"
+          id: ""
+          name: "Project 3"

@@ -1,0 +1,31 @@
+---
+title: "STAT 159/259: Collaborative and Reproducible Statistical Data Science"
+subtitle: "UC Berkeley, STAT 159/259, Fall 2026"
+listing:
+  - id: schedule
+    template: schedule.ejs
+    contents: schedule.yml
+  - id: buttons
+    template: buttons.ejs
+    contents: buttons.yml
+---
+
+::: {#buttons}
+:::
+
+
+
+::: {.callout-note title="Announcements 📣"}
+First day of class Wed, Aug-26th (10-11AM)
+
+See reminders in bCourses
+:::
+
+
+## Schedule 📅
+
+Tentative calendar subject to change.
+
+::: {#schedule}
+:::
+

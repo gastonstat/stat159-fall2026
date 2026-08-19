@@ -1,0 +1,460 @@
+---
+title: "Environment Management in R"
+subtitle: "Environment Management for Reproducibility"
+format: stat159slides-revealjs
+chalkboard: true
+---
+
+## About
+
+In this slides we discuss why global package installation breaks reproducibility.
+
+- [The Dependency Problem:]{.bold-hilit} Different projects require different versions of the same library.
+
+- [Global Pollution:]{.bold-hilit} Installing packages globally eventually creates conflicting version requirements.
+
+- [The Solution:]{.bold-hilit} Isolated directories containing specific language runtimes and library versions.
+
+
+# Intro
+
+## Common Problems
+
+- A research project requires different versions of your base programming languages 
+(or different versions from the ones you are currently using).
+
+- An application you developed as part of a previous research project that 
+worked fine on your system six months ago now no longer works.
+
+- Code that was written for a joint research project works on your machine 
+but not on your collaborators' machines.
+
+- An application that you are developing on your local machine doesn't provide 
+the same results when run on your remote cluster.
+
+
+## Some Difficulties
+
+Installing software system-wide has a number of drawbacks:
+
+- It can be difficult to figure out what software is required for any particular research project.
+
+- It is often impossible to install different versions of the same software package at the same time.
+
+- Updating software required for one project can often “break” the software installed for another project.
+
+
+## Some Vocabulary
+
+- [Module:]{.bold-hilit} A collection of functions and variables, as in a script.
+    + Note: The term _Module_ is not commonly used in the R community.
+
+- [Package:]{.bold-hilit} A collection of modules, as in a directory with scripts.
+
+- [Library:]{.bold-hilit} A collection of packages, typically stored in one directory.
+
+- [_Warning:_]{.mdlit} Package and Library are often used interchangeably---even 
+though they are different things.
+
+
+## Some Vocabulary
+
+Environment
+
+- The word "environment" is heavily overloaded in computer science, and programming parlance.
+
+- For the scope of this lecture, by environment we usually mean a "private sandbox to 
+manage packages in a given project"
+
+- An environment is NOT: 
+    + a separate piece of software running on your computer,
+    + a virtual machine
+
+- Note; There is not a unique/universal definition of the term environment.
+
+
+## Environment Management Systems
+
+- Environment management systems help resolve dependency issues by allowing you to 
+use different versions of a package for different projects.
+
+- Make your projects self-contained and reproducible by capturing all package 
+dependencies in a single requirements file.
+
+
+
+# How R Handles Packages by Default
+
+## Where Do Packages Live?
+
+- In R, a "Library" is simply a directory (folder) on the computer where package files are stored. 
+- R searches these directories to find the packages you ask for.
+- By default, R uses a [system library]{.hilit} and a [user library]{.mdlit}. 
+- You can see where these are on your machine by running this command in the R console:
+
+. . .
+
+```r
+.libPaths()
+```
+
+
+## The Default Behavior 
+
+- [System Library:]{.bold-hilit} Contains core packages that come pre-installed with R (e.g., `base`, `stats`, `utils`).
+
+- [User Library:]{.bold-hilit} A single, global folder where all packages installed via `install.packages()` are placed.
+
+- [The Shared Problem:]{.bold-hilit} Every R project on that computer shares this exact same User Library.
+
+
+## What Happens when you run:
+
+:::: {.columns}
+::: {.column}
+`install.packages("ggplot2")`
+
+- R connects to a remote cloud repository (like CRAN).
+- It downloads a compressed file containing the `"ggplot2"` code.
+- It unzips and builds those files.
+- It drops the resulting `"ggplot2"` folder into the global User Library folder found in `.libPaths()`.
+:::
+
+::: {.column .fragment}
+`library(ggplot2)`
+
+- R stops looking at the cloud.
+- It looks inside the folders listed in `.libPaths()`.
+- It searches for a folder named _ggplot2_.
+- It loads that package's functions into the computer's active RAM memory so they can use them.
+:::
+::::
+
+
+## The Core Issue: Why This Breaks Reproducibility
+
+Because there is only one global User Library, your computer can only hold one version 
+of a package at a time. 
+
+. . .
+
+This creates two classic failure modes:
+
+:::: {.columns}
+::: {.column}
+Scenario A: 
+
+- You write a script in 2024 using dplyr version 1.0.
+- In 2026, you run `install.packages("dplyr")` for a new project, which updates it to version 1.2.
+- Your 2024 script now crashes because functions changed or were deprecated in the new version.
+:::
+
+::: {.column .fragment}
+Scenario B:
+
+- You share a script with a colleague.
+- The script crashes on their machine because their global User Library has an older or newer version of a package than yours does.
+- The script itself contains no record of which version it actually needs to run.
+:::
+::::
+
+
+## Shifting to Project-Local Libraries with `"renv"`
+
+- `"renv"` fundamentally changes `.libPaths()`.
+- Instead of pointing to a shared global folder, `"renv"` forces R to look at a private, isolated library folder inside that specific project directory.
+
+. . .
+
+```
+[Standard R Workflow]
+Project A ---\
+              +---> Global User Library (One version of a package for everyone)
+Project B ---/
+
+[renv Workflow]
+Project A --------> Private Library A (Isolated package versions)
+Project B --------> Private Library B (Isolated package versions)
+```
+
+
+# Package `"renv"`
+
+## Enter renv
+
+`renv` stands for **Reproducible Environments**. 
+
+Instead of using one global folder for everything, `renv` creates a 
+**private library** inside your specific project.
+
+
+## The Three Pillars of renv
+
+`renv` relies on three core components to make your project reproducible:
+
+1. [The Project Library:]{.bold-hilit} A private directory containing your project's packages.
+
+2. [The Lockfile (`renv.lock`):]{.bold-hilit} A text file recording exact version numbers.
+
+3. [The Infrastructure:]{.bold-hilit} Invisible scripts that configure R when the project opens.
+
+
+## How renv Modifies your Project
+
+When you run `renv::init()`, it adds a few files to your project folder:
+
+* `renv/library/`: The folder where your project's packages are installed.
+* `renv.lock`: The master ledger of your package versions.
+* `.Rprofile`: A hidden script that R runs automatically every time the project opens.
+
+
+## The Magic of `.Rprofile`
+
+How does R know to stop looking at the global library?
+
+1. You open your `.Rproj` file.
+2. R looks for a file named `.Rprofile` and runs it immediately.
+3. `renv` uses this file to temporarily rewrite your `.libPaths()`.
+4. For the rest of your session, `install.packages()` and `library()` only look inside your private `renv/library/` folder.
+
+
+# The Core Workflow
+
+## Three Commands
+
+You only need to learn three core commands for daily use:
+
+1. `renv::init()` — Turn on environment tracking for a new project.
+2. `renv::snapshot()` — Save the current package versions to the lockfile.
+3. `renv::restore()` — Recreate the exact environment on a different computer.
+
+
+## Step 1: `renv::init()`
+
+What happens under the hood?
+
+- `renv` scans your project scripts for `library()` or `require()` statements.
+- It unlinks your project from the global user library.
+- It creates your local `renv/library/`.
+- It automatically takes your first "snapshot" to build the lockfile.
+
+
+## Step 2: `renv::snapshot()`
+
+Think of this as **saving your game progress**. 
+
+- You install a new package using `install.packages()`.
+- The files go into your private `renv/library/`.
+- Running `renv::snapshot()` updates the `renv.lock` file with the exact version, 
+package name, and download source (e.g., CRAN or GitHub).
+
+
+## Inside a `renv.lock` File
+
+The [lockfile]{.hilit} is just a human-readable text file (JSON format). 
+
+. . .
+
+It looks like this:
+
+```json
+{
+  "R": { "Version": "4.3.2" },
+  "Packages": {
+    "ggplot2": {
+      "Package": "ggplot2",
+      "Version": "3.4.4",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    }
+  }
+}
+```
+
+*Perfect for tracking with Git!*
+
+
+## Step 3: `renv::restore()`
+
+How a collaborator (or future you) reproduces your work:
+
+1. They download your project folder (which contains `renv.lock` and `.Rprofile`).
+2. They open the project. R sees `.Rprofile` and activates `renv`.
+3. They run `renv::restore()`.
+4. R reads the `renv.lock` file and automatically downloads and installs the exact versions listed.
+
+
+# Demo
+
+
+# Behind the Scenes
+
+## The Global Cache
+
+**Concern:** *"If every project has its own library, won't I waste gigabytes of hard drive space reinstalling ggplot2 for every project?"*
+
+. . .
+
+**The Answer:** No! `renv` uses a hidden **Global Cache**.
+
+- `renv` installs packages into a single central cache folder on your computer.
+- It then creates a **symbolic link** (a shortcut) from your project's `renv/library/` to that cache.
+- **Result:** Total isolation, but zero wasted disk space.
+
+
+# Key Considerations: renv + Git
+
+## What to Commit vs. What to Ignore
+
+`"renv"` actually makes this easy by automatically generating a custom `.gitignore` file inside the 
+`renv/` directory when you run `renv::init()`. 
+
+
+## Always Commit (Track these text files in Git)
+
+These files constitute the "recipe" for your environment. 
+
+- `renv.lock`: The master ledger containing explicit package versions and sources.
+- `.Rprofile`: The configuration script that forces R to activate `"renv"` when the project boots up.
+- `renv/activate.R`: The internal engine script that `.Rprofile` calls to initialize the local environment paths.
+- `renv/settings.json`: Project-specific settings for `"renv"` behavior.
+
+
+## Never Commit (Ignore these in Git)
+
+These folders contain the actual compiled software binary files ("the ingredients").
+
+- `renv/library/`: This folder contains thousands of heavy, binary machine files.
+- Why ignore it? It will bloat your Git repo to gigabytes. 
+- Furthermore, binaries compiled on a Mac will completely fail if cloned onto a Windows machine.
+- `renv/staging/`: Temporary directories used during package installation.
+- `renv/cache/`: Project-specific caching artifacts.
+
+
+## The Danger of Overwriting `.Rprofile`
+
+- Many Git users or platform templates provide a global `.Rprofile` to auto-load specific settings.
+
+- `"renv"` relies entirely on a project-local `.Rprofile` to hijack `.libPaths()`.
+
+- If you blindly overwrite the `.Rprofile` generated by `"renv"` with your own custom setup, 
+`"renv"` will fail to activate.
+
+- Append your personal configurations to the bottom of the renv-generated `.Rprofile` instead of replacing it.
+
+
+## Visualizing the Problem: Global Pollution
+
+Without `renv`, your projects share one fragile ecosystem. A single package upgrade can cause a chain reaction.
+
+```{mermaid}
+graph TD
+    subgraph Computer [Your Computer]
+        G[Global User Library] -->|v1.0| D[dplyr]
+        
+        subgraph ProjA [Project A: Written in 2024]
+            A[analysis.R] -->|Depends on v1.0| G
+        end
+        
+        subgraph ProjB [Project B: New in 2026]
+            B[model.R] -->|Upgrades library to v1.2| G
+        end
+    end
+    
+    style A fill:#d4edda,stroke:#28a745
+    style B fill:#f8d7da,stroke:#dc3545
+    style G fill:#fff3cd,stroke:#ffc107
+```
+
+
+## Sample Project
+
+```
+my_project/
+├── 📄 my_script.R        <-- Your analytical code
+├── 📄 my_project.Rproj   <-- RStudio Project file
+├── 📄 .Rprofile          <-- The invisible switch (Tells R to use renv)
+├── 📄 renv.lock          <-- The recipe ledger (JSON package list)
+└── 📁 renv/
+├── 📄 activate.R     <-- The engine script
+└── 📁 library/       <-- The local package storage (Git Ignored)
+```
+
+
+## The 3 Steps: A Visual Lifecycle
+
+This loop represents the entire lifecycle of a reproducible project, from birth to sharing on GitHub.
+
+```{mermaid}
+graph LR
+    Init(1. renv::init) --> Work[Write Code &<br>Install Packages]
+    Work --> Snap(2. renv::snapshot)
+    Snap --> Git[Commit & Push<br>renv.lock to Git]
+    Git --> Rest(3. renv::restore)
+    Rest -->|On Collaborator Machine| Work
+    
+    style Init fill:#e2e3e5,stroke:#383d41
+    style Snap fill:#fff3cd,stroke:#ffc107
+    style Rest fill:#d4edda,stroke:#28a745
+```
+
+---
+
+## Visualizing Step 1: `renv::init()`
+
+What happens when you turn `renv` on? It clones your existing context, boots up the local infrastructure, and saves your baseline state.
+
+```{mermaid}
+sequenceDiagram
+    actor User
+    participant R as R Session
+    participant FS as Project Files
+    
+    User->>R: renv::init()
+    R->>FS: Scans scripts for library() statements
+    R->>FS: Generates .Rprofile & renv/ folder
+    R->>FS: Creates first renv.lock file
+    R-->>User: "Project initialized successfully!"
+```
+
+---
+
+## Visualizing Step 2: `renv::snapshot()`
+
+Your local package folder holds the heavy software binary files. Your lockfile holds the text description. `snapshot()` keeps them aligned.
+
+```{mermaid}
+graph TD
+    subgraph Hard Drive [Your Hard Drive]
+        Lib[📁 renv/library/<br>Heavy Binary Files<br>Cannot be sent to GitHub]
+        Lock[📄 renv.lock<br>Lightweight Text File<br>Perfect for GitHub]
+    end
+
+    User[User installs packages] -->|Modifies| Lib
+    User -->|Runs renv::snapshot| Sync[renv reads local library]
+    Sync -->|Writes exact versions into| Lock
+    Lock -->|Pushed by User| GitHub(☁️ GitHub Repository)
+    
+    style Lib fill:#f8d7da,stroke:#dc3545
+    style Lock fill:#d4edda,stroke:#28a745
+    style GitHub fill:#e1becf,stroke:#6f42c1
+```
+
+---
+
+## Visualizing Step 3: `renv::restore()`
+
+When a collaborator pulls your code down, they don't have your packages. They read your lockfile to rebuild them locally from scratch.
+
+```{mermaid}
+graph LR
+    Collab[Collaborator Clones Repo] --> Lock[📄 renv.lock]
+    Lock --> Run[Runs renv::restore]
+    Run --> CRAN[☁️ Fetch from CRAN / GitHub]
+    CRAN --> Build[Builds custom 📁 renv/library/]
+    Build --> Ready[🚀 Script runs with 0 errors]
+    
+    style Lock fill:#d4edda,stroke:#28a745
+    style Ready fill:#d4edda,stroke:#28a745
+```
+

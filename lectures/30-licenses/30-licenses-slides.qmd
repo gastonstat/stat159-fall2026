@@ -1,0 +1,206 @@
+---
+title: "Licensing"
+subtitle: "TBD"
+format: stat159slides-revealjs
+chalkboard: true
+---
+
+
+# Copyright
+
+## Copyright: The Principle of Automatic Protection
+
+- Under international law, copyright applies automatically the moment an original work is "fixed in a tangible medium."
+
+- The second someone types code into a text file and saves it (or pushes it to GitHub), they own the copyright to that exact expression of code.
+
+-  A creator does not need to include the © symbol, write "All Rights Reserved," or register with a government office to be protected.
+
+
+## What Does "All Rights Reserved" Actually Mean?
+
+By default, automatic copyright grants the creator a strict monopoly. 
+
+"All Rights Reserved" means a stranger cannot legally do any of the following without explicit, written permission from the owner:
+
+- Reproduce: They cannot download, copy, or duplicate the file onto their local machine.
+
+- Distribute: They cannot host the file on their own server or share it with others.
+
+- Modify: They cannot change a single line of the code to fix a bug or tweak an algorithm.
+
+- Derive: They cannot build a new software package that imports or relies on that copyrighted code.
+
+
+## The Paradox of Public Repositories
+
+This creates a massive legal trap on platforms like GitHub.
+
+- Public to View vs. Public to Use: Making a repository "Public" on GitHub means people have a license to view and fork the code on GitHub's infrastructure (per GitHub's Terms of Service).
+
+- It does not grant viewers the right to download it to their local laptop, run it on their university cluster, or use it in their research paper.
+
+- Without a license file, a public repository is looking glass science. Strangers can look at it, but if they touch it, they are technically committing copyright infringement.
+
+- The Reproducibility Failure: If a peer cannot legally run your code, your computational science is not reproducible.
+
+
+## Code vs. Data under Copyright Law
+
+This is a critical nuance for computational reproducibility, as science requires both code and data. Copyright treats them completely differently:
+
+- Code is protected: Copyright treats software code exactly like literary work (like a novel or a poem). The specific way the logic is written is protected.
+
+- Facts and Data are NOT protected: Copyright does not protect facts, ideas, mathematical formulas, or raw data. For example, a table listing the boiling points of elements cannot be copyrighted because those are objective facts.
+
+- Creativity in Data: Only the creative arrangement or original selection of a dataset can be copyrighted (e.g., a carefully curated and cleaned database structure).
+
+
+# Software Licenses
+
+## Software Licensing Decoded
+
+- Permissive Licenses (The "Do Whatever" Category)
+
+- Copyleft / Viral Licenses (The "Keep It Free" Category)
+
+- Every repository needs a root-level LICENSE file.
+
+
+## Permissive Licenses 
+
+The "Do Whatever" Category
+
+- MIT License: Short, simple, allows commercial use, requires keeping the copyright notice.
+
+- Apache 2.0: Similar to MIT but includes explicit patent rights protection from contributors.
+
+- Best For: Maximizing adoption, industry collaboration, and academic software packages.
+
+
+## Copyleft / Viral Licenses 
+
+The "Keep It Free" Category
+
+- GNU GPL v3: Anyone who modifies and redistributes the code must also open-source their changes under GPL.
+
+- The Academic Friction: Can deter commercial partners or integration into proprietary institutional tools.
+
+
+## Limitation of Software Licenses
+
+Software licenses (like MIT) do not fit text, figures, trained weights, or tabular data.
+
+Instead of software licenses you need to use Creative Commons (CC) Framework
+
+
+## Functional vs. Static Expression
+
+- Software Licenses (MIT, Apache, GPL): These assume the work will be compiled, executed, linked, or imported into other programs. They regulate things like running the code, modifying the source logic, or embedding the code into a larger application.
+
+- Media Licenses (Creative Commons): Creative Commons (CC) licenses assume the work will be read, viewed, listened to, or displayed. They regulate things like printing a text, showing an image in a presentation, or remixing an audio track into a video.
+
+- The Conflict: If you apply an MIT license to a research paper or an image, it is legally muddy. Concepts like "compiling" or "linking" do not map onto a JPEG or a PDF essay.
+
+
+## The Threat of "Non-Commercial" (NC) Clauses in Science
+
+Students often instinctively gravitate toward Creative Commons Non-Commercial (CC BY-NC) for their research papers, figures, and slide decks because they want to protect their work from being sold by corporations.
+
+NC clauses are dangerous for open science. Why?
+
+- "Commercial use" is poorly defined in court. 
+- Academic Trap: If a researcher at a private university (like Harvard or Stanford) or a commercial medical center downloads a dataset under a CC BY-NC license to reproduce a study, they might be violating the license because their institution charges tuition or holds patents.
+- Funding Compliance: Many public grants (like NIH or Horizon Europe) strictly mandate that research outputs be published under CC BY (Attribution Only) or CC0 (Public Domain) to maximize public good. An NC clause will often violate funding terms.
+
+
+## Best Practices Checklist for a Project Repository
+
+Split your repository assets using the correct legal tool for each job:
+
+- 💻 The Code (Python scripts, R files, Jupyter Notebook cells): Use MIT, Apache 2.0, or GPL v3.
+
+- 📊 The Data (CSV files, SQL databases, JSON logs): Use CC0 (Public Domain Dedication) to avoid legal bottlenecks when combining datasets.
+
+- 📝 The Narrative (Research papers, README text, documentation pages): Use CC BY 4.0.
+
+- 🎨 The Visuals (Plots, diagrams, summary charts, introductory videos): Use CC BY 4.0.
+
+
+## Option 1) The Multi-License README file
+
+Using a `LICENSE` file, and a `README.md` file
+
+- Keep one primary `LICENSE` file in the root directory
+    + File Name: `LICENSE` (No extension)
+    + Contents: Full text of the primary software license (e.g., the MIT License).
+- At the very bottom of the `README.md`, students add a "License & Citation" section that explicitly draws boundaries around the assets.
+
+
+## Option 1) The Multi-License README file
+
+At the very bottom of the `README.md` include some text like the following:
+
+::: {.small}
+```{.markdown filename="README.md" code-line-numbers="false"}
+## Licensing
+
+The assets in this repository are split under different licenses 
+to ensure maximum reproducibility:
+
+- **Code:** All source code (`.py`, `.sh`, `.ipynb`) is licensed under 
+the [MIT License](LICENSE).
+
+- **Data:** All datasets in the `/data` directory are dedicated to the 
+public domain under [CC0 1.0 Universal](https://creativecommons.org).
+
+- **Narrative & Visuals:** All documentation, text, and figures 
+(`/plots`, `/docs`) are licensed under a 
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org).
+```
+:::
+
+
+## Option 2) The REUSE Standard
+
+The REUSE standard explicitly tags every single asset using a dedicated 
+directory and small text headers.
+
+Instead of putting licenses in the root directory, you create a folder named 
+`LICENSES/` and place the text of every license they use inside it, 
+named exactly after their SPDX identifier:
+
+- `LICENSES/MIT.txt`
+- `LICENSES/CC0-1.0.txt`
+- `LICENSES/CC-BY-4.0.txt`
+
+
+## Option 2) The REUSE Standard
+
+Add a tiny, commented header to the top of your files to state who 
+owns it and how it is licensed.
+
+```{.markdown filename="script.py" code-line-numbers="false"}
+# SPDX-FileCopyrightText: 2026 Your Name <your.email@university.edu>
+# SPDX-License-Identifier: MIT
+```
+
+\
+
+```{.markdown filename="paper.qmd" code-line-numbers="false"}
+<!--
+SPDX-FileCopyrightText: 2026 Your Name <your.email@university.edu>
+SPDX-License-Identifier: CC-BY-4.0
+-->
+```
+
+
+# Citation
+
+## About Citation
+
+In addition to a top-level README file, as well as license files (for code and non-code) it's a good idea to have a CITATION file.
+
+- Citation File Format (CITATION.cff)
+- This YAML file lets platforms like GitHub automatically generate APA/BibTeX citations for repositories.
+- Also, you can mint a Digital Object Identifier (DOI) by linking a GitHub release to Zenodo.

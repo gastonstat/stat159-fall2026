@@ -1,0 +1,318 @@
+---
+title: "Reading and Discussion"
+format: stat159slides-revealjs
+chalkboard: true
+---
+
+# Reproducible Research Standard (RSS) Framework
+
+## Reading
+
+::: {.nonincremental}
+- Title: **The Legal Framework for Reproducible Scientific Research**
+- Author: Victoria Stodden
+- Journal: Computing in Science & Engineering
+- Year: 2009
+- <https://www.stodden.net/papers/Legal-STODDEN2009.pdf>
+:::
+
+
+## About
+
+Victoria Stodden proposes the Reproducible Research Standard (RRS). 
+
+It aligns intellectual property law with open scientific norms.
+
+
+# Reading's Key Points
+
+## The Legal Conflict
+
+- Default copyright applies automatically to digital work.
+- Copyright laws grant exclusive monopolies to creators.
+- This legal barrier blocks computational reproducibility.
+- Scientific progress requires continuous modification and reuse.
+- Standard copyright structures run counter to scientific ethos.
+
+
+## The Research Compendium
+
+- Academic papers are merely advertising for scholarship.
+- True scholarship includes the complete development environment.
+- A full research compendium requires five components:
+    + Manuscript source files.
+    + Data and collection documentation.
+    + Experimental source code scripts.
+    + Final figures and processing logs.
+    + Auxiliary web presentation materials.
+
+
+## Copyright and Data
+
+- Raw objective facts cannot be copyrighted.
+- Applying standard copyright to facts is meaningless.
+- Data curation requires immense time and labor.
+- Original dataset selection and arrangement can hold copyright.
+
+
+## The Share Alike Problem
+
+- Copyleft licenses mandate identical downstream licensing.
+- Share Alike clauses severely restrict open scientific reuse.
+- They block commercial industry from using academic research.
+- They complicate proper author attribution in derivative works.
+- Science needs credit without restrictive licensing bounds.
+
+
+## The Reproducible Research Standard (RRS) Solution
+
+- The RRS acts as an umbrella licensing algorithm.
+- It separates a compendium into distinct asset categories.
+- It applies specific open frameworks to each asset:
+    + Modified BSD for code scripts.
+    + Creative Commons BY for media and narrative text.
+    + Science Commons Database Protocol for public domain data.
+- It mandates viral attribution for all components.
+- It protects scientists from uncredited intellectual theft.
+
+
+# Share Alike Issues
+
+## Why Share Alike Blocks Industry
+
+- The Forced Open-Source Trap: Companies must open-source their entire product 
+if they use your code.
+
+- Financial Risk: Corporate legal teams strictly ban engineers from using 
+Share Alike assets.
+
+- Zero Adoption: Your research gets ignored by industry developers due to 
+legal liability.
+
+- Kills Tech Transfer: Universities cannot license the technology to 
+commercial startups.
+
+
+## Why Share Alike Hurts Science
+
+- License Incompatibility: You cannot mix two datasets if they have different 
+Share Alike terms.
+
+- Attribution Stacking: Combining multiple works makes it impossible to track 
+clean credit.
+
+- The Instrument Barrier: Academic code often must run inside proprietary software 
+like MATLAB.
+
+- Scientific Norms: Science prioritizes the spread of truth over forcing specific 
+licenses.
+
+
+## Stodden's Alternative: "Viral Attribution" 
+
+- Instead of forcing others to share their entire project, Stodden advocates 
+for mandatory credit. 
+
+- If a company uses your academic code, they can keep their product secret, 
+but they must legally cite your paper and give you credit. 
+
+- This satisfies the academic reward system (citations) without killing economic 
+innovation.
+
+
+# Attribution Clause
+
+## Attribution Clause
+
+According to Stodden's framework, a strong attribution clause is not only 
+enough---it is actually the ideal mechanism for scientific compliance.
+
+Here is why Stodden argues that attribution alone is the correct legal tool 
+for open science.
+
+
+## It Aligns with Existing Scientific Norms
+
+The Currency of Science: In academia, the primary reward system is credit, 
+impact, and citation. 
+
+Scientists do not usually lose sleep over whether someone made money off 
+their idea; they care if they were plagiarized or left uncredited.
+
+Legal Enforcement of Citations: Traditional academic citation is just a 
+social norm. By using an attribution-only license (like CC BY or modified BSD), 
+you turn a polite scientific etiquette into a legal requirement. 
+
+If someone uses your compendium without citing you, they are committing 
+copyright infringement.
+
+
+## "Viral Attribution" Without the "Share Alike" Damage
+
+- Stodden introduces the concept of viral attribution.
+- This means the license requirement to give credit propagates forward 
+to any downstream work that builds on your research.
+- Unlike Share Alike, it only forces the downstream user to credit your 
+specific component. 
+- It does not force them to change the license of their own unique, 
+proprietary add-ons or comingled work. 
+- Unlike Share Alike, it only forces the downstream user to credit your 
+specific component. It does not force them to change the license of their 
+own unique, proprietary add-ons or comingled work.
+
+
+# Discussion Time
+
+## Scenario A
+
+Your lab neighbor downloads a clean, un-licensed Python script from a 
+public GitHub repo, fixes a minor bug, and uses it to generate the main 
+figure for a high-impact paper.
+
+::: {.poll}
+Did your classmate commit copyright infringement? If the paper is published, 
+is the science legally reproducible?
+:::
+
+```{r}
+#| echo: false
+countdown::countdown(2, bottom = 0)
+```
+
+<!--
+Answer: Yes, it is technical infringement. Remind the class that under the 
+Berne Convention, "Public to see" on GitHub does not mean 
+"Public to copy and modify" locally.
+<--
+
+
+## Scenario B
+
+You wrote a beautiful data-scraping algorithm in your university dorm room 
+using your personal laptop, but you did it while receiving a university 
+stipend or working as a graduate teaching assistant.
+
+::: {.poll}
+Who actually holds the automatic default copyright to that code? 
+You, or the university Board of Trustees?
+
+If you want to open-source it under an MIT license, do you legally have 
+the right to sign that document?
+:::
+
+```{r}
+#| echo: false
+countdown::countdown(2, bottom = 0)
+```
+
+<!--
+Highlight the reality of Institutional Employment Agreements. 
+Most universities claim ownership over intellectual property created 
+by employees (including RAs/TAs) using university resources, which makes 
+open-source licensing an institutional negotiation, not just a personal choice.
+-->
+
+
+## Scenario C
+
+A student wants to release their climate change simulation dataset but 
+insists on adding a "Non-Commercial" restriction because they don't want 
+ExxonMobil or a private oil firm making money off their hard academic work.
+
+::: {.poll}
+Who else gets accidentally blocked by an "NC" clause?
+:::
+
+```{r}
+#| echo: false
+countdown::countdown(2, bottom = 0)
+```
+
+<!--
+Point out that private universities (Stanford, Harvard), non-profit medical 
+centers, or publicly funded labs with commercial partners are legally blocked 
+from reproducing this student's science due to that well-intentioned clause.
+-->
+
+
+# Class Activities
+
+## Activity 1
+
+Consider a real-world scientific repository containing 4 distinct files:
+
+1) `model_simulation.py` (The logic script)
+2) `patient_clinical_trials.csv` (Raw data matrix)
+3) `manuscript_draft.qmd` (The text narrative)
+4) `results_plot.png` (The visual graph)
+
+. . . 
+
+\
+
+The Challenge: Fix a legally broken, computationally corrupted research repository.
+
+<!--
+Pass out cards (or use a digital poll like Mentimeter) with three tools: 
+
+- [MIT/BSD], 
+- [CC-BY 4.0],
+- [CC0/Public Domain].
+
+The Race: Teams must correctly match exactly one tool to each file according 
+to Stodden's RRS framework as fast as possible.
+-->
+
+
+## Activity 2
+
+Consider another project with the following components:
+
+a) Repo has no `LICENSE` file
+b) Raw data has a CC BY-NC-ND license
+c) The main script relies on a secret, proprietary tool
+
+. . .
+
+With the given cards, find the one that solves each issue.
+
+<!--
+Solutions: 
+
+a) Use (MIT or BSD) to legally copy the code to their laptop.
+b) Change license to CC0.
+c) Swap tool for an open-source equivalent.
+-->
+
+
+# Quiz-Poll Time
+
+## Google Form
+
+\
+
+**INSERT QR code!!!**
+
+\
+
+**INSERT <url> link to google form!!!**
+
+
+## Poll
+
+<!-- The Proprietary Ultimatum -->
+
+If a scientific pipeline relies on an encrypted corporate file, commercial software, 
+or sensitive dataset that legally cannot be shared, what should happen?
+
+A) [Total Rejection:]{.bold-hilit} The paper should be banned from scientific journals; 
+unshareable code is fundamentally unshareable science.
+
+B) [Conditional Acceptance:]{.bold-hilit} Allow publication as long as the authors 
+explicitly write out a text description of what the hidden code does.
+
+C) [Partial Openness:]{.bold-hilit} Mandate that they open-source *only* the specific 
+custom lines they wrote themselves, even if the base system remains a black box.
+
+D) [Full Pass:]{.bold-hilit} Trust the authors; proprietary dependencies are a normal 
+reality of working with industry partners.

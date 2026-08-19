@@ -1,0 +1,587 @@
+---
+title: "Reading and Discussion"
+subtitle: "Actionable items to modern scientific transparency"
+format: stat159slides-revealjs
+chalkboard: true
+---
+
+# Open Science and Reproducibility
+
+## Reading
+
+::: {.nonincremental}
+- Title: **Seven Easy Steps to Open Science (An annotated reading list)**
+- Authors: Sophia Cruwell et al.
+- Journal: Zeitschrift fur Psychologie, 227(4), 237-248
+- Year: 2019
+- <https://doi.org/10.1027/2151-2604/a000387>
+:::
+
+
+# Introduction
+
+## Why Are We Here?
+
+- Current scientific incentive structures are heavily **misaligned** with transparency.
+
+- Standard research practices frequently reward *novel, positive* results over rigorous, 
+verifiable workflows.
+
+- **The Solution:** Open science is a concrete set of behaviors that protect scientific 
+credibility.
+
+
+# Overview
+
+## Step 1: Open Science Core Concepts
+
+::: {.callout-note}
+### The Core Concept
+
+Open science is the process of making both the **content** and the **process** of 
+producing scientific evidence fully transparent and accessible.
+:::
+
+- **Reproducibility Standard:** Original data + original code = identical original results.
+- **Replicability Standard:** New data + identical experimental procedures = same findings.
+- **Targeting Human Bias:** Acts as a procedural defense wall against confirmation bias.
+- **Shifting Metrics:** Replaces shallow journal impact factors with actual pipeline audits.
+
+::: {.notes}
+🌐 Step 1: Open Science (Understanding the Concept)
+
+* The Baseline Definition: It is the explicit process of making both the content and the entire process of producing scientific evidence transparent and accessible to others [INDEX].
+* The Reproducibility Standard: You must guarantee that an independent researcher can take your exact data and code, run the same analysis, and obtain identical results [INDEX].
+* The Replicability Standard: Your documentation must be clear enough that repeating your exact procedures with new participants yields the same findings [INDEX].
+* Targeting Human Bias: It serves as a necessary procedural defense wall against human cognitive biases, such as confirmation bias and post hoc self-deception [INDEX].
+* Shifting Career Metrics: Adopting these behaviors helps shift institutional hiring, funding, and promotion models away from shallow journal impact factors toward transparent metrics [INDEX].
+:::
+
+
+## Step 2: Open Access (OA)
+
+
+::: {.columns}
+::: {.column width="50%"}
+### 🟡 The Gold Route
+
+Works are made immediately and permanently free to the public by the publisher at the 
+point of publication.
+:::
+
+::: {.column width="50%"}
+### 🟢 The Green Route
+
+Authors independently self-archive their peer-reviewed manuscripts or preprints in 
+stable public repositories.
+:::
+:::
+
+- **The Citation Boost:** OA articles observe an immediate tracking increase in 
+citations between 36% and 600%.
+- **Automated Audits:** Open plain text enables advanced data mining and field-wide 
+meta-research.
+
+::: {.notes}
+🔓 Step 2: Open Access (Disseminating Research)
+
+* The Main Objective: Removing all systemic and economic barriers to accessing, distributing, and re-using published scientific findings online [INDEX].
+* The Gold Route: Publishing your work in an exclusively open-access or hybrid journal where it is made instantly free to the public by the publisher [INDEX].
+* The Green Route: Self-archiving your work for free by uploading your peer-reviewed manuscripts or preprints to public, stable repositories (e.g., PsyArXiv) [INDEX].
+* The Citation Advantage: Open-access articles receive a significant boost in professional utility, tracking between a 36% and 600% increase in citations [INDEX].
+* Enabling Meta-Research: Exposing plain text openly allows data scientists to use automated text- and data-mining tools to audit field-wide claims [INDEX].
+:::
+
+
+## Step 3: Open Data, Materials, & Code
+
+```{.yaml code-line-numbers="true" code-line-numbers-highlight="3-6"}
+# The F.A.I.R. Ingestion Pipeline
+data-management:
+  Findable: Permanent DOI assignment (e.g., via OSF)
+  Accessible: Unrestricted cloud repository locations
+  Interoperable: Non-proprietary formats (use .csv, not .xlsx)
+  Reusable: Comprehensive documentation and read-me file tracking
+```
+
+- **Data Minimum:** Moving away from "trusting" summaries to exposing raw datasets.
+- **Materials Coverage:** Sharing every survey stimulus, software setup, and protocol to reconstruct the timeline.
+- **Documentation Imperative:** Leaving a clean trail so your future self can understand column labels.
+- **Anonymization:** Explicitly mapping exceptions when sensitive files cannot be shared.
+
+
+::: {.notes}
+📊 Step 3: Open Data, Materials, and Code (Transparency Fundamentals)
+
+- The Minimal Baseline: Moving away from "trusting" a scientist's written summary to instead making the raw data files behind the analysis completely public [INDEX].
+- Sharing Materials: Providing every document, experimental task, presentation tool, and digital stimulus required to reconstruct the exact study timeline [INDEX].
+- The FAIR Data Protocol: Ensuring that your shared assets are structured to be Findable, Accessible, Interoperable, and Reusable over long periods [INDEX].
+- The Documentation Imperative: Writing detailed read-me files so that outside users (and your own future self) can understand your columns and file paths [INDEX].
+- Anonymization & Exceptions: Safeguarding participant privacy through careful data scrubbing, or explicitly reporting clear ethical boundaries when data cannot be shared [INDEX].
+:::
+
+
+## Step 4: Reproducible Analyses
+
+- **Lab Technique Rule:** Computing best practices are as integral to robust research as 
+fundamental laboratory methods.
+- **The Raw Sanctuary:** Save your raw data completely separately from manipulated or 
+cleaned iterations.
+- **Structural Folders:** Maintain isolated directories per project, separating raw data, 
+processed figures, and text scripts.
+- **Record Everything:** Code every step of your analytical data adjustments in open-source 
+scripts (R or Python).
+- **Stable Archiving:** Deploy your finished code blocks to reputable, DOI-issuing hubs 
+like Figshare, Dryad, or Zenodo.
+
+
+::: {.notes}
+💻 Step 4: Reproducible Analyses (Scientific Computing Skillsets)
+
+* Computing as a Core Skill: Treating computing best practices as just as integral to high-quality science as fundamental laboratory techniques [INDEX].
+* The Raw Data Sanctuary: Saving your raw, untouched data files completely separate from any cleaned, manipulated, or transformed versions [INDEX].
+* Structural Project Folders: Dedicating a single isolated directory to each research project, with clear sub-directories for raw data, processed data, and text [INDEX].
+* Recording Processing Steps: Tracking every single step of data cleaning and analysis by coding your pipeline in open-source languages (like R or Python) [INDEX].
+* Stable DOI Archiving: Uploading your code scripts and research products to reputable, permanent, DOI-issuing repositories like Figshare, Dryad, or Zenodo [INDEX].
+:::
+
+
+## Step 5: Preregistration & Registered Reports
+
+::: {.callout-warning}
+### The Core Target Failure
+
+Preregistration draws an unalterable boundary between planned **confirmatory** tests and unplanned **exploratory** data mining. It systematically blocks HARKing.
+:::
+
+- **Pre-Data Lock:** Committing to hypotheses and statistical plans *before* gathering or viewing data files.
+- **Registered Reports:** Submitting your study design to a journal for peer-review **prior to data collection**.
+- **In-Principle Acceptance:** The journal guarantees publication based on design rigor, completely regardless of the final outcome.
+
+::: {.notes}
+⏱️ Step 5: Preregistration and Registered Reports (Constraining Flexibility)
+
+* The Pre-Data Mandate: Committing to your hypotheses, study designs, and statistical analysis plans before you gather data or view the files [INDEX].
+* Demarcating Exploration: Forcing a transparent, unalterable boundary between planned confirmatory testing and unplanned, post hoc exploratory data mining [INDEX].
+* The Target Failure: Restricting a researcher's degrees of freedom to eliminate HARKing (Hypothesizing After the Results are Known) and cherry-picking [INDEX].
+* The Registered Report Pivot: Submitting your study design to a journal for pre-data peer-review to secure an "in-principle acceptance" before execution [INDEX].
+* The Stage 2 Audit: Guaranteeing publication based purely on the rigor of the design and adherence to the plan, completely regardless of whether the final results are positive [INDEX].
+:::
+
+
+## Step 6: Replication Research
+
+- **Benchmark of Truth:** An effect *must* be repeatable to count as a genuine scientific 
+discovery.
+- **Direct Replications:** Intentionally duplicating all critical design blocks to verify 
+the physical result.
+- **Conceptual Replications:** Purposefully altering operational variables to test 
+the generalizability of a theory.
+- **The "Alternative Test" Shift:** Re-labeling conceptual replications as 
+*alternative tests* to stop muddy conflation.
+- **Systemic Stabilization:** Adjusts career environments that unhealthily 
+reward novelty over long-term stability.
+
+
+::: {.notes}
+🔬 Step 6: Replication Research (Verifying Scientific Discoveries)
+
+* The Benchmark of Truth: Adopting the foundational scientific rule that an effect must be completely repeatable to count as a genuine scientific discovery [INDEX].
+* Direct Replications: Intentionally duplicating every necessary element of an original study to see if the physical result can be reproduced [INDEX].
+* Conceptual Replications: Purposefully changing operational components (like the measure or the sample) to evaluate the generalizability of the theory [INDEX].
+* The "Alternative Test" Label: Re-labeling messy conceptual replications as "alternative tests" to stop them from being conflated with close, direct replications [INDEX].
+* Systemic Stabilization: Embracing replication to fix structural market misalignments where fields reward novelty over long-term theory stability [INDEX].
+:::
+
+
+## Step 7: Teaching Open Science
+
+- **The Educational Gap:** A vast majority of students currently graduate from 
+statistics courses unaware of the replication crisis.
+- **The 1-Hour Footprint:** Deploying compact, structured introductory modules 
+radically alters how students view media claims.
+- **The Behavioral Result:** Students learn to trust unverified research less, 
+but view computational fields as closer to hard sciences.
+- **Syllabus Integration:** Drastically cut instructor burden by leveraging 
+pre-built infrastructure frameworks like FORRT or the Open Science MOOC.
+
+::: {.notes}
+🎓 Step 7: Teaching Open Science (Sustaining the Movement)
+
+* The Educational Gap: Addressing the reality that a vast majority of students currently graduate from statistics courses having never heard of the replication crisis [INDEX].
+* A 1-Hour Practical Footprint: Deploying structured 1-hour introductory modules to completely pivot how incoming researchers view media claims and data transparency [INDEX].
+* The Dual Psychological Impact: Training students to trust unverified research less while simultaneously causing them to view their field as closer to the hard natural sciences [INDEX].
+* Training Future Consumers: Realizing that open science pedagogy is vital even for students who leave research, creating critical public consumers of data [INDEX].
+* Leveraging Existing Infrastructure: Utilizing free, collaborative open platforms like FORRT and the Open Science MOOC to drop pre-built resources straight into existing syllabi [INDEX].
+:::
+
+
+# Activity
+
+## Set-Up
+
+- Form groups of 3-4 students.
+- Pretend your group is given $1,000 in "Academic Grant Money"
+- I will show you a study context.
+
+
+## Study Preregistration
+
+You are going to conduct a study among developers tracking---during a week---their daily
+[coffee consumption]{.mdlit} and [coding speed]{.hilit}.
+
+_A few data rows shown below._
+
+```{r}
+set.seed(159)
+n <- 100
+
+days <- c("Mon", "Tue", "Wed", "Thu", "Fri")
+
+dat = data.frame(
+  developer = rep(LETTERS[1:20], each = n/20),
+  day = rep(days, 20),
+  coffee = runif(n, 0, 10),
+  speed = runif(n, 30, 70)
+)
+
+head(dat, n = 10)
+```
+
+## Study Preregistration
+
+Write down your Null and Alternative hypotheses.
+In other words, write down what kind of relationship you would expect to see in 
+your study.
+
+```{r}
+#| echo: false
+countdown::countdown(2, bottom = 0)
+```
+
+## Exploratory Analysis (part I)
+
+## Exploratory Analysis (part I)
+
+```{r}
+library(ggplot2)
+
+ggplot(dat, aes(coffee, speed)) +
+  geom_point() +
+  theme_bw() +
+  labs(title = "Consumption Mon-Fri",
+       subtitle = "Correlation 0.05", 
+       x = "Coffee consumption",
+       y = "Coding Speed")
+```
+
+::: {.notes}
+Scatter plot showing that coffee consumption actually had zero effect on coding speed.
+:::
+
+
+## Exploratory Analysis (part II)
+
+## Exploratory Analysis (part II)
+
+```{r}
+set.seed(159)
+m <- 20
+x <- runif(m, 0, 10)
+y <- 10 * sqrt(x + rnorm(m, mean = 5, sd = 3))
+tue = data.frame(coffee = x, speed = y)
+
+ggplot(tue, aes(x = coffee, y = speed)) +
+  geom_point() +
+  theme_bw() +
+  labs(title = "Consumption on Tuesday",
+       subtitle = "Correlation 0.65", 
+       x = "Coffee consumption",
+       y = "Coding Speed")
+```
+
+## Exploratory Analysis (part II)
+
+\
+
+Developers who drank espresso specifically on Tuesdays coded 40% faster.
+
+
+## Auction
+
+- The prestigious [_Journal of Caffeinated Studies_]{.bold-hilit} is accepting submissions.
+- But they __only__ publish statistically significant findings.
+- You must "bid" your grant money to publish.
+
+. . .
+
+\
+
+:::: {.columns}
+::: {.column}
+Stick to your original hypotheses
+:::
+
+::: {.column}
+Decide to HARK on the "Tuesday Espresso" anomaly
+:::
+::::
+
+
+::: {.notes}
+HARK: Hypothesizing After the Results are Known
+:::
+
+```{r}
+#| echo: false
+countdown::countdown(2, bottom = 0)
+```
+
+
+## BTW
+
+The "Tuesday Espresso" spike is actually just a noise artifact. 
+
+If you spent your money to publish it, you just committed a massive, 
+irreproducible false-positive sin 🤭
+
+::: { .notes}
+Students experience the intense system pressure to choose flashy data-mining over 
+pre-planned truth, instantly contextualizing why Step 5 Preregistration is so vital.
+:::
+
+
+# Poll & Quiz
+
+## Poll
+
+Rate your level of agreement with this statement: 
+
+A junior researcher has a moral obligation to release their raw data under a CC0 
+(Public Domain) license, even if an outside lab can use it to scoop their next publication.
+
+::: {.nonincremental}
+1) Strongly Disagree (Code or nothing)
+2) Disagree
+3) Neutral
+4) Agree
+5) Strongly Agree (Spreadsheets are essential)
+:::
+
+
+## Poll
+
+Where does the majority of true, groundbreaking scientific progress actually happen?
+
+::: {.nonincremental}
+A) Purely Confirmatory: Following a rigid, preregistered blueprint flawlessly to eliminate 
+human bias.
+
+B) Purely Exploratory: Wandering through the data landscape, discovering unexpected 
+patterns by accident.
+
+C) Mostly Confirmatory, but keeping a hidden "sandbox" for post hoc visual data exploration.
+
+D) They are completely equal, and separating them into strict categories hurts the 
+scientific mind.
+:::
+
+::: {.notes}
+The question in this slide involves unpacking the philosophical tension between 
+strict confirmatory scripts and raw exploratory intuition
+:::
+
+
+## Poll
+
+Imagine you are in charge of a federal funding agency that has to allocate a limited 
+tax-payer budget.
+
+You have $10,000,000 in federal grant money to stabilize an irreproducible field.
+How do you split your funding?
+
+::: {.nonincremental}
+A) [100% to Direct Replications:]{.bold-hilit} We must verify if the original computer 
+code and methods are rock-solid first.
+
+B) [100% to Alternative Tests (Conceptual):]{.bold-hilit} We must verify if the underlying 
+scientific theory actually applies to different real-world scenarios.
+
+C) [50/50 Split:]{.bold-hilit} Balance code verification with conceptual generalizability.
+
+D) [0% to Replication:]{.bold-hilit} Spend it all on funding completely brand-new, 
+novel discoveries instead.
+:::
+
+
+## Poll
+
+If you were forced to align your upcoming research career with one of these two profiles 
+right now, which one describes you?
+
+:::: {.columns}
+::: {.column}
+[Career Pragmatist]{.bold-hilit}
+
+My priority is survival, secure funding, and graduation. 
+I will adopt open-science tools only if they don't slow down my publishing 
+timeline or put my project at risk of being scooped
+:::
+
+::: {.column}
+[Open-Science Idealist]{.bold-hilit}
+
+My priority is absolute scientific truth and provenance. I would rather delay a 
+publication, or release my raw data under a CC0 license if it means my pipeline is 
+perfectly transparent
+:::
+::::
+
+\
+
+If you had to choose one of the positions, which one would you choose?
+
+
+# Chafa Stuff
+
+## Shifting from Trust to Transparency
+
+INSERT IMAGE OF TRUST FALL
+
+
+## The Ultimate Scientific Standard
+
+* Slide Title: Open Science: Redefining How We Know What Is True
+* Visual Anchor: A split screen showing a newspaper headline of a flashy 
+"scientific discovery" on one side, and a complex flowchart of code/data on the other.
+* Core Concepts:
+* The Baseline: Replication is the ultimate standard of scientific truth (Seven_easy... p. 3).
+   * The Problem: In complex, data-heavy modern science, full replication is often incredibly expensive, time-consuming, or physically impossible (Seven_easy... p. 3).
+   * The Solution: Open Science bridges the gap by making the internal process visible (Seven_easy... pp. 1, 3).
+
+::: {.notes}
+Today we are talking about a massive shift happening right now in research. 
+Historically, science operated on trust—we read a paragraph in a journal and 
+assumed the authors did the math right. Today, we are moving to a model of 
+verifiability (Seven_easy... p. 4). If you can't show me the data and the steps, 
+it didn't happen (Seven_easy... pp. 3, 5)."
+:::
+
+
+## The Credibility Revolution & Its Threats
+
+* Visual Anchor: A simplified reproduction of Figure 1 (Threats to reproducible 
+science) from the paper (Seven_easy... p. 3).
+* Core Concepts:
+* Publication Bias: Journals reward clean, positive headlines; null/negative results get locked away in the "file drawer" (Seven_easy... p. 3).
+   * P-Hacking & HARKing: Subconsciously or consciously manipulating statistical models or changing hypotheses after looking at the data to fit a narrative (Seven_easy... p. 3).
+   * The Crisis Metric: Estimates suggest a staggering amount of published literature in fields like psychology and biology struggles to replicate (Seven_easy... p. 1).
+
+::: {.notes}
+Why are we doing this? Because human brains are naturally wired for 
+self-deception (Seven_easy... pp. 3, 6). Under the pressure of a deadline 
+or a grade, it is terrifyingly easy to tweak a filter or drop a few outliers 
+to get a 'significant' result (Seven_easy... p. 3). We aren't fighting bad 
+intentions; we are fighting flawed workflows (Seven_easy... p. 3).
+:::
+
+
+## Open Science is a Set of Behaviors
+
+* Step 1: Open Access (Green vs. Gold) (Seven_easy... pp. 3-4)
+* Step 2: Open Data, Materials, & Code (Seven_easy... pp. 1, 4)
+* Step 3: Reproducible Computing Workflows (Seven_easy... pp. 1, 5)
+* Step 4: Preregistration & Registered Reports (Seven_easy... pp. 1, 6-7)
+* Step 5: Replication Tracking (Seven_easy... pp. 1, 7)
+
+* Open Science is not an "all-or-nothing" bureaucratic pass/fail checklist 
+* It is a fluid spectrum of behaviors that you build into your daily research 
+stack (Seven_easy... pp. 1-3).
+
+::: {.notes}
+The paper breaks this monster concept down into modular, actionable steps 
+(Seven_easy... pp. 1-2). You don't have to change your entire lifestyle overnight. 
+You just need to change your habits. It starts with how you organize your desktop 
+folders and how you name your files (Seven_easy... p. 5)."
+:::
+
+
+## The Selfish Return on Investment (ROI)
+
+* Visual Anchor: A graphic balancing an "Academic Reputation Shield" against a 
+"Time Tracker" showing hours saved.
+
+* Computational Insurance: Flawless file management keeps raw data safe from 
+corruptions that cause high-profile retractions (Seven_easy... p. 5).
+* The Citation Magnet: Openly sharing code and data means your work is 
+trusted and cited significantly more by peers (Seven_easy... pp. 4-5).
+* Future-Self Empathy: Writing "executable descriptions" (clean scripts) means 
+you can rerun your own work six months from now without crying (Seven_easy... p. 5).
+
+::: {.notes}
+Forget altruism for a second. Let's talk about why this is great for your own 
+sanity (Seven_easy... p. 5). When you automate your pipeline, you create an 
+unalterable paper trail (Seven_easy... pp. 5-6). If a peer finds an anomaly 
+in your work, an automated script proves it was an innocent typo, saving your 
+career (Seven_easy... p. 5). If you used a manual Excel copy-paste method, 
+you look like a fraud (Seven_easy... p. 5).
+:::
+
+
+## The Challenge & Handoff
+
+* Transitioning from Consumers to Auditors
+* Visual Anchor: A bold text callout reading: "Data is Cheap. Time is Expensive." 
+(Seven_easy... pp. 5-6)
+* The goal of this lecture block is to learn how to actively audit research, 
+not just passively read it (Seven_easy... pp. 1, 8).
+* Setting up the rules of the upcoming classroom debate and scenario challenges.
+
+::: {.notes}
+As we move into our discussion, I want you to stop acting like passive consumers 
+of data (Seven_easy... p. 8). You are now the gatekeepers. We are going to 
+stress-test these seven steps against real-world scenarios to see where workflows 
+shatter, and how we can engineer a more transparent future (Seven_easy... pp. 1-2). 
+Let's jump in.
+:::
+
+
+# Reflection Points
+
+## Reflections
+
+- Step 1 (Open Science Overview): Is open science a rigid set of bureaucratic 
+rules you must pass, or is it a fluid collection of daily behaviors you choose 
+to practice (Seven_easy... p. 2)?
+
+\
+
+- Step 2 (Open Access): If a university library pays millions for journal access 
+while low-income global scholars are locked out, who actually owns the knowledge 
+produced by public funds (Seven_easy... p. 4)?
+
+\
+
+- Step 3 (Open Data & Code): If you claim your data is available 'upon reasonable 
+request' but you ignore peer emails five years later, did you actually share your 
+data (Seven_easy... p. 4)?
+
+
+## Reflections
+
+- Step 4 (Reproducible Analyses): If a peer uses your exact dataset but has to 
+manually guess how you clicked your way through an SPSS or Excel menu, is your 
+science truly transparent (Seven_easy... pp. 5-6)?
+
+\
+
+- Step 5 (Preregistration): Why do human brains naturally look at accidental 
+patterns in random noise and confidently declare: 'I knew that would happen all 
+along' (Seven_easy... p. 6)?
+
+\
+
+- Step 6 (Replication Research): Why does the modern academic system celebrate 
+an unverified, flashy headline over a quiet, rock-solid verification study 
+(Seven_easy... pp. 3, 7)?
+

@@ -192,19 +192,22 @@ Let's now talk about Naming Files
 - `amazingmachinelearningscript.ipynb`
 
 
-## Do 👍
+## Do! 👍
 
-- `2026-08-28_sales-report.qmd`
+- ~~`myreport.qmd`~~
+    + `2026-08-28_sales-report.qmd`
 
-- `john-filename-looks-better.txt`
+- ~~`John's filename uses spaces and punctuation.txt`~~
+    + `john-filename-looks-better.txt`
 
-- `fig01_histogram-height.png`
+- ~~`figure I.png`~~, ~~`fig 2.png`~~
+    + `fig01_histogram-height.png`, `fig02_histogram-weight.png`
 
-- `fig02_histogram-weight.png`
+- ~~`plot 3.png`~~
+    + `fig03_scatterplot-height-weight.png`
 
-- `fig03_scatterplot-height-weight.png`
-
-- `regularization-models-script.ipynb`
+- ~~`amazingmachinelearningscript.ipynb`~~
+    + `regularization-models-script.ipynb`
 
 
 ## Three Principles for file names
@@ -222,7 +225,7 @@ Let's now talk about Naming Files
 3) Plays well with default ordering
 
 
-## Nice file names 😀
+## Example: Nice file names 😀
 
 ```{.markdown code-line-numbers="false"}
 2026-05-06_collisions_Berkeley.csv
@@ -235,8 +238,14 @@ Let's now talk about Naming Files
 2026-05-06_stop-data_San-Jose.csv
 ```
 
+\
 
-# Machine readable
+1) Machine readable
+2) Human readable
+3) Plays well with default ordering
+
+
+# 1) Machine readable
 
 ## Machine readable
 
@@ -314,7 +323,7 @@ list.files(pattern = "stop-data")
 . . .
 
 ```r
-list.files(pattern = "\\w+(_\\w+)\\.csv$")
+list.files(pattern = "\\w+(-\\w+)\\.csv$")
 ```
 
 
@@ -327,10 +336,10 @@ list.files(pattern = "\\w+(_\\w+)\\.csv$")
     + spaces in file names
     + punctuation
     + accented characters
-    + different files named `foo` and `Foo`
+    + case sensitivity (e.g., different files named `foo` and `Foo`)
 
 
-# Human readable
+# 2) Human readable
 
 ## Human readable
 
@@ -368,7 +377,7 @@ Easy to figure out what the heck something is, based on its name
 :::
 
 
-# Plays well with default ordering
+# 3) Plays well with default ordering
 
 ## Order matters
 

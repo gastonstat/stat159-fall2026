@@ -377,14 +377,28 @@
 </ul>
 </section>
 <section id="do" class="slide level2">
-<h2>Do 👍</h2>
+<h2>Do! 👍</h2>
 <ul>
-<li class="fragment"><p><code>2026-08-28_sales-report.qmd</code></p></li>
-<li class="fragment"><p><code>john-filename-looks-better.txt</code></p></li>
-<li class="fragment"><p><code>fig01_histogram-height.png</code></p></li>
-<li class="fragment"><p><code>fig02_histogram-weight.png</code></p></li>
-<li class="fragment"><p><code>fig03_scatterplot-height-weight.png</code></p></li>
-<li class="fragment"><p><code>regularization-models-script.ipynb</code></p></li>
+<li class="fragment"><del><code>myreport.qmd</code></del>
+<ul>
+<li class="fragment"><code>2026-08-28_sales-report.qmd</code></li>
+</ul></li>
+<li class="fragment"><del><code>John's filename uses spaces and punctuation.txt</code></del>
+<ul>
+<li class="fragment"><code>john-filename-looks-better.txt</code></li>
+</ul></li>
+<li class="fragment"><del><code>figure I.png</code></del>, <del><code>fig 2.png</code></del>
+<ul>
+<li class="fragment"><code>fig01_histogram-height.png</code>, <code>fig02_histogram-weight.png</code></li>
+</ul></li>
+<li class="fragment"><del><code>plot 3.png</code></del>
+<ul>
+<li class="fragment"><code>fig03_scatterplot-height-weight.png</code></li>
+</ul></li>
+<li class="fragment"><del><code>amazingmachinelearningscript.ipynb</code></del>
+<ul>
+<li class="fragment"><code>regularization-models-script.ipynb</code></li>
+</ul></li>
 </ul>
 </section>
 <section id="three-principles-for-file-names" class="slide level2">
@@ -405,8 +419,8 @@
 <li class="fragment">Plays well with default ordering</li>
 </ol>
 </section>
-<section id="nice-file-names" class="slide level2">
-<h2>Nice file names 😀</h2>
+<section id="example-nice-file-names" class="slide level2">
+<h2>Example: Nice file names 😀</h2>
 <div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a>2026-05-06_collisions_Berkeley.csv</span>
 <span id="cb5-2"><a aria-hidden="true" tabindex="-1"></a>2026-05-06_collisions_Oakland.csv</span>
 <span id="cb5-3"><a aria-hidden="true" tabindex="-1"></a>2026-05-06_collisions_San-Francisco.csv</span>
@@ -415,10 +429,17 @@
 <span id="cb5-6"><a aria-hidden="true" tabindex="-1"></a>2026-05-06_stop-data_Oakland.csv</span>
 <span id="cb5-7"><a aria-hidden="true" tabindex="-1"></a>2026-05-06_stop-data_San-Francisco.csv</span>
 <span id="cb5-8"><a aria-hidden="true" tabindex="-1"></a>2026-05-06_stop-data_San-Jose.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br>
+</p>
+<ol type="1">
+<li class="fragment">Machine readable</li>
+<li class="fragment">Human readable</li>
+<li class="fragment">Plays well with default ordering</li>
+</ol>
 </section></section>
 <section>
 <section id="machine-readable" class="title-slide slide level1 center">
-<h1>Machine readable</h1>
+<h1>1) Machine readable</h1>
 
 </section>
 <section id="machine-readable-1" class="slide level2">
@@ -479,7 +500,7 @@
 <div class="sourceCode" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">list.files</span>(<span class="at">pattern =</span> <span class="st">"stop-data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">list.files</span>(<span class="at">pattern =</span> <span class="st">"</span><span class="sc">\\</span><span class="st">w+(_</span><span class="sc">\\</span><span class="st">w+)</span><span class="sc">\\</span><span class="st">.csv$"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">list.files</span>(<span class="at">pattern =</span> <span class="st">"</span><span class="sc">\\</span><span class="st">w+(-</span><span class="sc">\\</span><span class="st">w+)</span><span class="sc">\\</span><span class="st">.csv$"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="machine-readable-2" class="slide level2">
@@ -493,13 +514,13 @@
 <li class="fragment">spaces in file names</li>
 <li class="fragment">punctuation</li>
 <li class="fragment">accented characters</li>
-<li class="fragment">different files named <code>foo</code> and <code>Foo</code></li>
+<li class="fragment">case sensitivity (e.g., different files named <code>foo</code> and <code>Foo</code>)</li>
 </ul></li>
 </ul>
 </section></section>
 <section>
 <section id="human-readable" class="title-slide slide level1 center">
-<h1>Human readable</h1>
+<h1>2) Human readable</h1>
 
 </section>
 <section id="human-readable-1" class="slide level2">
@@ -533,7 +554,7 @@
 </section></section>
 <section>
 <section id="plays-well-with-default-ordering" class="title-slide slide level1 center">
-<h1>Plays well with default ordering</h1>
+<h1>3) Plays well with default ordering</h1>
 
 </section>
 <section id="order-matters" class="slide level2">

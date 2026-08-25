@@ -6260,8 +6260,8 @@
     "objectID": "lectures/02-files/02-files-slides.html#do",
     "href": "lectures/02-files/02-files-slides.html#do",
     "title": "Naming Files",
-    "section": "Do 👍",
-    "text": "Do 👍\n\n2026-08-28_sales-report.qmd\njohn-filename-looks-better.txt\nfig01_histogram-height.png\nfig02_histogram-weight.png\nfig03_scatterplot-height-weight.png\nregularization-models-script.ipynb"
+    "section": "Do! 👍",
+    "text": "Do! 👍\n\nmyreport.qmd\n\n2026-08-28_sales-report.qmd\n\nJohn's filename uses spaces and punctuation.txt\n\njohn-filename-looks-better.txt\n\nfigure I.png, fig 2.png\n\nfig01_histogram-height.png, fig02_histogram-weight.png\n\nplot 3.png\n\nfig03_scatterplot-height-weight.png\n\namazingmachinelearningscript.ipynb\n\nregularization-models-script.ipynb"
   },
   {
     "objectID": "lectures/02-files/02-files-slides.html#three-principles-for-file-names",
@@ -6296,14 +6296,14 @@
     "href": "lectures/02-files/02-files-slides.html#deliberate-use-of-delimeters",
     "title": "Naming Files",
     "section": "Deliberate use of delimeters",
-    "text": "Deliberate use of delimeters\nDeliberate use of _ and - allows us to recover metadata from the filenames.\n2026-05-06_collisions_Berkeley.csv\n2026-05-06_collisions_Oakland.csv\n2026-05-06_collisions_San-Francisco.csv\n2026-05-06_collisions_San-Jose.csv\n2026-05-06_stop-data_Berkeley.csv\n2026-05-06_stop-data_Oakland.csv\n2026-05-06_stop-data_San-Francisco.csv\n2026-05-06_stop-data_San-Jose.csv\n\n\n\nlist.files(pattern = \"2026-05\")\n\n\nlist.files(pattern = \"stop-data\")\n\n\nlist.files(pattern = \"\\\\w+(_\\\\w+)\\\\.csv$\")"
+    "text": "Deliberate use of delimeters\nDeliberate use of _ and - allows us to recover metadata from the filenames.\n2026-05-06_collisions_Berkeley.csv\n2026-05-06_collisions_Oakland.csv\n2026-05-06_collisions_San-Francisco.csv\n2026-05-06_collisions_San-Jose.csv\n2026-05-06_stop-data_Berkeley.csv\n2026-05-06_stop-data_Oakland.csv\n2026-05-06_stop-data_San-Francisco.csv\n2026-05-06_stop-data_San-Jose.csv\n\n\n\nlist.files(pattern = \"2026-05\")\n\n\nlist.files(pattern = \"stop-data\")\n\n\nlist.files(pattern = \"\\\\w+(-\\\\w+)\\\\.csv$\")"
   },
   {
     "objectID": "lectures/02-files/02-files-slides.html#machine-readable-2",
     "href": "lectures/02-files/02-files-slides.html#machine-readable-2",
     "title": "Naming Files",
     "section": "Machine readable",
-    "text": "Machine readable\n\neasy to search for files later\neasy to narrow file lists based on names\neasy to extract info from file names, e.g. by splitting\navoid:\n\nspaces in file names\npunctuation\naccented characters\ndifferent files named foo and Foo"
+    "text": "Machine readable\n\neasy to search for files later\neasy to narrow file lists based on names\neasy to extract info from file names, e.g. by splitting\navoid:\n\nspaces in file names\npunctuation\naccented characters\ncase sensitivity (e.g., different files named foo and Foo)"
   },
   {
     "objectID": "lectures/02-files/02-files-slides.html#human-readable-1",
@@ -6955,5 +6955,26 @@
     "title": "Intro to Git (part 2)",
     "section": "The “Golden Rule” of .gitignore",
     "text": "The “Golden Rule” of .gitignore\n\n\nWarning: Git can only ignore untracked files!\n\n\nIf you commit a file first, and then add it to your .gitignore later, Git will continue to track it.\n\n\nTo fix this and force Git to honor the new rule, you have to manually remove the file from your active staging cache using the command:  git rm --cached &lt;filename&gt;"
+  },
+  {
+    "objectID": "lectures/02-files/02-files-slides.html#dont-1",
+    "href": "lectures/02-files/02-files-slides.html#dont-1",
+    "title": "Naming Files",
+    "section": "Don’t! 👎",
+    "text": "Don’t! 👎\n\nmyreport.qmd\n\n2026-08-28_sales-report.qmd\n\nJohn's filename uses spaces and punctuation.txt\n\njohn-filename-looks-better.txt\n\nfigure I.png\n\nfig01_histogram-height.png\n\nfig 2.png\n\nfig02_histogram-weight.png\n\nplot 3.png\namazingmachinelearningscript.ipynb"
+  },
+  {
+    "objectID": "lectures/02-files/02-files-slides.html#do-1",
+    "href": "lectures/02-files/02-files-slides.html#do-1",
+    "title": "Naming Files",
+    "section": "Do 👍",
+    "text": "Do 👍\n\n2026-08-28_sales-report.qmd\njohn-filename-looks-better.txt\nfig01_histogram-height.png\nfig02_histogram-weight.png\nfig03_scatterplot-height-weight.png\nregularization-models-script.ipynb"
+  },
+  {
+    "objectID": "lectures/02-files/02-files-slides.html#example-nice-file-names",
+    "href": "lectures/02-files/02-files-slides.html#example-nice-file-names",
+    "title": "Naming Files",
+    "section": "Example: Nice file names 😀",
+    "text": "Example: Nice file names 😀\n2026-05-06_collisions_Berkeley.csv\n2026-05-06_collisions_Oakland.csv\n2026-05-06_collisions_San-Francisco.csv\n2026-05-06_collisions_San-Jose.csv\n2026-05-06_stop-data_Berkeley.csv\n2026-05-06_stop-data_Oakland.csv\n2026-05-06_stop-data_San-Francisco.csv\n2026-05-06_stop-data_San-Jose.csv\n\n\n\nMachine readable\nHuman readable\nPlays well with default ordering"
   }
 ]

@@ -5225,7 +5225,7 @@
     "href": "lectures/01-welcome/01-welcome-slides.html#with-the-people-around-you",
     "title": "Welcome to STAT 159-259",
     "section": "With the people around you …",
-    "text": "With the people around you …\nTake a few minutes to share:\n\nYour Name\nNum. of years at Cal\nMajor / Degree\nHometown\nWhich of the following would you prefer to have when graduating from college?\n\nGPA of 3.7 or higher\nHave no student loan(s)\nMeet soulmate\n\n\n\n\n\n−+\n05:00"
+    "text": "With the people around you …\nTake a few minutes to share:\n\nYour Name\nNum. of years at Cal\nMajor / Degree\nHometown\nWhich of the following would you prefer to have when graduating from college?\n\nGPA of 3.7 or higher\nHave no student loan(s)\nMeet soulmate\n\n\n\n\n\n−+\n03:30"
   },
   {
     "objectID": "lectures/01-welcome/01-welcome-slides.html#saving-multiple-versions-of-a-file",
@@ -6205,7 +6205,7 @@
     "href": "lectures/02-files/02-files-slides.html#so-far",
     "title": "Naming Files",
     "section": "So Far",
-    "text": "So Far\nMany of you are used to work on projects with a very simple file structure, e.g.\n\n\n\nPython\nproject/\n  document.ipynb\n  document.html\n\nR\nproject/\n  document.qmd\n  document.html\n\n\n\n\n\nIf there is some data file:\n\n\nproject/\n  data.json\n  document.ipynb\n  document.html\n\nproject/\n  data.json\n  document.qmd\n  document.html"
+    "text": "So Far\nMany of you are used to work on projects with a very simple file structure, e.g.\n\n\n\nPython\nproject/\n  document.ipynb\n  document.html\n\nR\nproject/\n  document.qmd\n  document.html\n\n\n\n\n\nWhat if there is some data file …\n\n\nproject/\n  data.json\n  document.ipynb\n  document.html\n\nproject/\n  data.json\n  document.qmd\n  document.html"
   },
   {
     "objectID": "lectures/02-files/02-files-slides.html#section",
@@ -6976,5 +6976,64 @@
     "title": "Naming Files",
     "section": "Example: Nice file names 😀",
     "text": "Example: Nice file names 😀\n2026-05-06_collisions_Berkeley.csv\n2026-05-06_collisions_Oakland.csv\n2026-05-06_collisions_San-Francisco.csv\n2026-05-06_collisions_San-Jose.csv\n2026-05-06_stop-data_Berkeley.csv\n2026-05-06_stop-data_Oakland.csv\n2026-05-06_stop-data_San-Francisco.csv\n2026-05-06_stop-data_San-Jose.csv\n\n\n\nMachine readable\nHuman readable\nPlays well with default ordering"
+  },
+  {
+    "objectID": "syllabus.html#ai-tools-policy",
+    "href": "syllabus.html#ai-tools-policy",
+    "title": "Syllabus",
+    "section": "AI Tools policy",
+    "text": "AI Tools policy\nWe strongly encourage you to focus on independent learning and original problem-solving. At the same time, we recognize that generative AI tools are an increasingly standard part of modern workflows. We are not banning AI tools in this course, as doing so is neither realistic nor desirable.\nThis course is designed to help you build fundamental skills, judgment, and deep understanding—outcomes AI cannot achieve for you. Our main goal is to foster transparency and genuine engagement with the material, aligning with the core philosophy of STAT 159/259.\nCore Expectations \n\nDo the thinking yourself. Use AI to support your learning, not replace it. If a tool handles the core reasoning, drafting, or problem-solving while you merely copy and submit the output, you are missing out on learning the material.\nDisclose your usage. If you use AI tools on an assignment—whether for brainstorming, debugging code, editing text, checking work, or drafting—you must state so explicitly. A short note on your assignment is sufficient: include the tool and version used (e.g., Claude 3.5 Sonnet, ChatGPT-4o), what you used it for, the primary prompts used, and where it was applied.\n\n\nWhy this matters: Transparency aligns directly with the collaborative and reproducible data science practices central to this course. Openly documenting how work was produced ensures your workflow can be evaluated and built upon by others.\n\n\nUnderstand everything you submit. You are fully accountable for all submitted work. If you include AI-generated code, text, or figures, you must be able to explain, defend, and walk through them as if you created them entirely yourself. If you cannot explain a line of code or a specific claim, do not submit it.\nViolations of the course AI policy:\n\nUndisclosed AI Use: Submitting AI-assisted or AI-generated work without clear disclosure.\nLack of Comprehension: Submitting AI-generated work that you cannot explain, defend, or demonstrate understanding of when asked.\n\n\nThe ultimate objective of this course isn’t just to produce correct answers; it is to build critical thinking, master modern tools, and communicate complex ideas clearly. Using AI responsibly and transparently is part of developing those professional skills.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "lectures/02-files/02-files-slides.html#motivation",
+    "href": "lectures/02-files/02-files-slides.html#motivation",
+    "title": "Naming Files",
+    "section": "Motivation",
+    "text": "Motivation\n\nYou had an important meeting\nYou saved a file related to it\nYou know it was an agenda\nWhich is the file you are looking for?\n\nmeeting.doc\nagenda.doc\nimportant.doc"
+  },
+  {
+    "objectID": "lectures/02-files/02-files-slides.html#youve-probably-named-files-like-these",
+    "href": "lectures/02-files/02-files-slides.html#youve-probably-named-files-like-these",
+    "title": "Naming Files",
+    "section": "You’ve probably named files like these:",
+    "text": "You’ve probably named files like these:\n\nmyreport.qmd\nJohn's filename uses spaces and punctuation.txt\nfigure I.png\nfig 2.png\nplot 3.png\namazingmachinelearningscript.ipynb\n\n\nDon’t! 👎"
+  },
+  {
+    "objectID": "lectures/02-files/02-files-slides.html#three-principles-for-file-names1",
+    "href": "lectures/02-files/02-files-slides.html#three-principles-for-file-names1",
+    "title": "Naming Files",
+    "section": "Three Principles for file names1",
+    "text": "Three Principles for file names1\n\n\n\nMachine Readable\n\n\n\n\nHuman Readable\n\n\n\n\nPlays well with default ordering\n\nProposed by Jenny Bryan"
+  },
+  {
+    "objectID": "lectures/02-files/02-files-slides.html#chronological-order-1",
+    "href": "lectures/02-files/02-files-slides.html#chronological-order-1",
+    "title": "Naming Files",
+    "section": "Chronological order",
+    "text": "Chronological order\n\n2026-05-01_collisions_Berkeley.csv\n2026-05-02_collisions_Berkeley.csv\n2026-05-03_collisions_Berkeley.csv\n2026-05-04_collisions_Berkeley.csv\n2026-05-05_collisions_Berkeley.csv\n...\n2026-05-30_collisions_Berkeley.csv\n2026-05-31_collisions_Berkeley.csv"
+  },
+  {
+    "objectID": "lectures/02-files/02-files-slides.html#which-one-would-you-choose",
+    "href": "lectures/02-files/02-files-slides.html#which-one-would-you-choose",
+    "title": "Naming Files",
+    "section": "Which one would you choose?",
+    "text": "Which one would you choose?\n05012026_collisions_Berkeley.csv\n\n\n01-05-2026_collisions_Berkeley.csv\n\n\n05-01-2026_collisions_Berkeley.csv\n\n\nMay-01-26_collisions_Berkeley.csv\n\n\n2026-05-01_collisions_Berkeley.csv\n\n\n\n−+\n01:00"
+  },
+  {
+    "objectID": "lectures/02-files/02-files-slides.html#can-you-guess-the-order",
+    "href": "lectures/02-files/02-files-slides.html#can-you-guess-the-order",
+    "title": "Naming Files",
+    "section": "Can you guess the order?",
+    "text": "Can you guess the order?\nassociation-coefficients.R\nclean-data.qmd\ndata-parsers.R\ndownload-data.qmd\nrun-simulation.qmd\nsummary-functions.R\nunivariate-eda.qmd\n\n\n\n−+\n01:30"
+  },
+  {
+    "objectID": "lectures/02-files/02-files-slides.html#reminder",
+    "href": "lectures/02-files/02-files-slides.html#reminder",
+    "title": "Naming Files",
+    "section": "Reminder",
+    "text": "Reminder\n\n\nIf you don’t have a GitHub account, please sign up for one."
   }
 ]

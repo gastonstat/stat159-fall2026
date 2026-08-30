@@ -4,6 +4,13 @@ format: stat159slides-revealjs
 chalkboard: true
 ---
 
+## Reminder
+
+\
+
+If you don't have a GitHub account, please sign up for one.
+
+
 # Project Files
 
 ## So Far
@@ -37,7 +44,9 @@ project/
 
 \
 
-If there is some data file:
+What if there is some data file ...
+
+. . .
 
 :::: {.columns}
 ::: {.column}
@@ -177,7 +186,17 @@ Let's now talk about Naming Files
 
 # Naming Files
 
-## Don't! 👎
+## Motivation
+
+- You had an important meeting
+- You saved a file related to it
+- You know it was an agenda
+- Which is the file you are looking for?
+    + `meeting.doc`
+    + `agenda.doc`
+    + `important.doc`
+
+## You've probably named files like these: 
 
 - `myreport.qmd`
 
@@ -190,6 +209,10 @@ Let's now talk about Naming Files
 - `plot 3.png`
 
 - `amazingmachinelearningscript.ipynb`
+
+. . .
+
+Don't! 👎
 
 
 ## Do! 👍
@@ -210,19 +233,21 @@ Let's now talk about Naming Files
     + `regularization-models-script.ipynb`
 
 
-## Three Principles for file names
+## Three Principles for file names[^1]
 
 \
 
-1) Machine readable
+1) Machine Readable
 
 \
 
-2) Human readable
+2) Human Readable
 
 \
 
 3) Plays well with default ordering
+
+[^1]: Proposed by Jenny Bryan
 
 
 ## Example: Nice file names 😀
@@ -379,6 +404,59 @@ Easy to figure out what the heck something is, based on its name
 
 # 3) Plays well with default ordering
 
+## Which one would you choose?
+
+```{.markdown code-line-numbers="false"}
+05012026_collisions_Berkeley.csv
+```
+
+\
+
+```{.markdown code-line-numbers="false"}
+01-05-2026_collisions_Berkeley.csv
+```
+
+\
+
+```{.markdown code-line-numbers="false"}
+05-01-2026_collisions_Berkeley.csv
+```
+
+\
+
+```{.markdown code-line-numbers="false"}
+May-01-26_collisions_Berkeley.csv
+```
+
+\
+
+```{.markdown code-line-numbers="false"}
+2026-05-01_collisions_Berkeley.csv
+```
+
+```{r}
+#| echo: false
+countdown::countdown(1, bottom = 0)
+```
+
+
+## Can you guess the order?
+
+```{.markdown code-line-numbers="false"}
+association-coefficients.R
+clean-data.qmd
+data-parsers.R
+download-data.qmd
+run-simulation.qmd
+summary-functions.R
+univariate-eda.qmd
+```
+
+```{r}
+#| echo: false
+countdown::countdown(1.5, bottom = 0)
+```
+
 ## Order matters
 
 - Put something numeric first
@@ -387,6 +465,10 @@ Easy to figure out what the heck something is, based on its name
 
 - Left pad other numbers with zeros
 
+    + `1`, `2`, ..., `9` (good if less than 10)
+    + `01`, `02`, ..., `09`, `10`, `11` (ok if < 100)
+    + `001`, `002`, ..., `99`, `100`, `101` (ok if < 1000)
+    + etc
 
 ## Chronological order
 
@@ -403,20 +485,9 @@ Easy to figure out what the heck something is, based on its name
 2026-05-31_collisions_Berkeley.csv
 ```
 
-
-## Logical order
-
 . . .
 
-```{.markdown code-line-numbers="false"}
-01_download-data.qmd
-02_clean-data.qmd
-03_univariate-eda.qmd
-04_run-simulation.qmd
-helper01_data-parsers.R
-helper02_summary-functions.R
-helper03_association-coefficients.R
-```
+Are you more likely to remember a filename of a timeframe?
 
 
 ## Use the ISO 8601 standard for dates
@@ -442,13 +513,39 @@ YYYY-MM-DD
 ```
 
 
+## Logical order
+
+. . .
+
+```{.markdown code-line-numbers="false"}
+01_download-data.qmd
+02_clean-data.qmd
+03_univariate-eda.qmd
+04_run-simulation.qmd
+helper01_data-parsers.R
+helper02_summary-functions.R
+helper03_association-coefficients.R
+```
+
+
 ## Three Principles for file names
 
-- Machine readable
+:::: {.columns}
+::: {.column}
+1) Machine readable
+2) Human readable
+3) Plays well with default ordering
+:::
 
-- Human readable
+::: {.column .fragment}
+Make it: 
 
-- Plays well with default ordering
+- Descriptive
+- Unique
+- Findable
+- Sortable
+:::
+::::
 
 . . .
 

@@ -135,7 +135,7 @@ Take a few minutes to share:
     c) Meet soulmate
 
 ```{r}
-countdown::countdown(5, top = 0)
+countdown::countdown(3.5, top = 0)
 ```
 
 

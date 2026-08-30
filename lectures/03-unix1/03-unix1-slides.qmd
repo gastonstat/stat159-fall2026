@@ -491,7 +491,7 @@ records <- read_csv("___________")
 
 \
 
-What is the relative path to `records.html`?
+What is the relative path to `data.csv`?
 :::
 :::::
 
@@ -523,7 +523,7 @@ records <- read_csv("___________")
 
 \
 
-What is the relative path to `records.html`?
+What is the relative path to `data.csv`?
 
 \
 
@@ -628,7 +628,7 @@ as a CLI.
 ![](images/terminal-shell-kernel.svg){width="90%" fig-align="center"}
 :::
 ::: {.column .fragment width="50%"}
-The __Terminal__ is the program provides a text-based 
+The __Terminal__ provides a text-based 
 environment that accepts your keyboard input and displays 
 the text output on your screen.
 

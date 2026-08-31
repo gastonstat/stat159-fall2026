@@ -21,53 +21,61 @@ Accepted formats: PDF, HTML, MS Word (`.docx`), or Google Doc
 :::
 
 
-### 1. The "Black Box" Audit
-
-Select a coding project or data analysis assignment you completed in te past 
-(e.g. over six months ago). Attempt to open and run it today without changing any code.
-
-- Document every obstacle you encounter. Did it fail because an external 
-package updated, or because you forgot which parameters you used? 
-- Cite a specific instance where a lack of tracking or unarchived dependencies 
-forced you to guess how your own code worked.
-
-
-### 2. The Manual Intervention Confessional
+### 1. Manual Tweaks
 
 Think of a time you were rushing to meet a project deadline and chose a 
 quick manual fix over writing a script.
 
 - Describe a scenario where you used "copy-paste" to format data, or 
 manually tweaked a file to make it compatible with a tool. 
+
 - How did bypassing an automated workflow make it harder to catch bugs later? 
+
 - If you had to scale that project to 1,000 files, explain exactly where your 
 manual method would completely break down.
 
 
-### 3. The Unstable Results Dilemma
+### 2. Same script, different outputs
 
 Identify a past project where running the exact same script twice yielded 
 slightly different outputs, or where a small change broke everything.
 
 - Detail a case where you failed to set a random seed, leaving you unable to 
 duplicate your exact figures. 
+
 - Did you lose a functional version of your script because you were not using 
 a version control system like Git? 
+
 - Confess how much time you wasted trying to manually backtrack your code to 
 a working state.
 
 
-### 4. The Isolated Interpretations Audit
+### 3. Disconnected Elements
 
 Review a final report or paper you wrote for a previous class. Look at a specific 
 chart or data claim you made.
 
 - Where exactly is the raw underlying data for that specific chart stored 
 right now? 
+
 - Cite a case where your written conclusions lived in a text document, 
 completely disconnected from the server paths or scripts that generated the data. 
+
 - How long would it take a peer to trace your text back to its exact baseline 
 numbers?
+
+
+<!--
+
+### 4. The "Black Box" Audit
+
+Select a coding project or data analysis assignment you completed in the past 
+(e.g. over six months ago). Attempt to open and run it today without changing any code.
+
+- Document every obstacle you encounter. Did it fail because an external 
+package updated, or because you forgot which parameters you used? 
+- Cite a specific instance where a lack of tracking or unarchived dependencies 
+forced you to guess how your own code worked.
 
 
 ### 5. The Transparency Reality Check
@@ -82,6 +90,7 @@ increasing detail?
 - Explain what concrete steps you must take to turn that past "blind alley" 
 assignment into an open-access, verifiable project.
 
+-->
 
 
 ## Rubric
@@ -103,6 +112,4 @@ a generic summary an AI could have written.
 - **No Credit (0 Points)**: Response relies entirely on abstract definitions, 
 fails to provide personal context, or uses copy-pasted text from a webpage
 or AI tool.
-
-
 

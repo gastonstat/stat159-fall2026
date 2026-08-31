@@ -1082,14 +1082,14 @@
     "href": "lectures/04-unix2/04-unix2-slides.html#documentation-readme-files",
     "title": "Project Organization",
     "section": "Documentation (README files)",
-    "text": "Documentation (README files)\n\nEach of your projects should always be accompanied by a README file.\nThe README should contain all the information an outsider would need to understand what the project is all about:\n\nwhat are the inputs\nwhat are the outputs,\nwhere to find files within the project directory, etc.\n\nThe README is simply a text file, there’s nothing special to it—you can just create it in your Notepad or other text editor.\n\nI like to write it in markdown syntax: README.md\n\nWriting down everything about a project in a README.md can be tedious, but it pays off."
+    "text": "Documentation (README files)\n\nEach of your projects should always be accompanied by a README file.\nThe README should contain all the information an outsider would need to understand what the project is all about:\n\nwhat are the inputs\nwhat are the outputs,\nwhere to find files within the project directory, etc.\n\nThe README is simply a text file, there’s nothing special to it.\n\nI like to write it in markdown syntax: README.md\n\nWriting down everything about a project in a README.md can be tedious, but it pays off."
   },
   {
     "objectID": "lectures/04-unix2/04-unix2-slides.html#readme-files",
     "href": "lectures/04-unix2/04-unix2-slides.html#readme-files",
     "title": "Project Organization",
     "section": "README file(s)",
-    "text": "README file(s)\n\nRecord who the author/s is/are,\nthe date the project was started,\na description of what the project is for.\ndescribe important details\n(a README file is sort of a growing/living document)\nThen, any time a new file is added, etc\n\n\nGet in the habit of starting a project by creating a README file.\nAlso, you can include README files inside the project’s directories: e.g. a README for the data/ folder, or for the docs/ filder."
+    "text": "README file(s)\n\nRecord who the author/s is/are,\nthe date the project was started,\na description of what the project is for,\ndescribe important details\n(a README file is sort of a growing/living document)\n\n\nGet in the habit of starting a project by creating a README file.\nAlso, you can include README files inside the project’s directories: e.g. a README for the data/ folder, or for the docs/ filder."
   },
   {
     "objectID": "lectures/04-unix2/04-unix2-slides.html#some-comments",
@@ -1873,14 +1873,14 @@
     "href": "lectures/03-unix1/03-unix1-slides.html#scenario-c",
     "title": "UNIX Part 1",
     "section": "Scenario C",
-    "text": "Scenario C\n\n\nFile structure\nproject/\n  docs/\n    report.qmd\n  data/\n    data.csv\n\nAssume we are editing report.qmd to import data.csv\n\n\nlibrary(readr)\nrecords &lt;- read_csv(\"___________\")\n\n\nWhat is the relative path to records.html?"
+    "text": "Scenario C\n\n\nFile structure\nproject/\n  docs/\n    report.qmd\n  data/\n    data.csv\n\nAssume we are editing report.qmd to import data.csv\n\n\nlibrary(readr)\nrecords &lt;- read_csv(\"___________\")\n\n\nWhat is the relative path to data.csv?"
   },
   {
     "objectID": "lectures/03-unix1/03-unix1-slides.html#scenario-c-1",
     "href": "lectures/03-unix1/03-unix1-slides.html#scenario-c-1",
     "title": "UNIX Part 1",
     "section": "Scenario C",
-    "text": "Scenario C\n\n\nFile structure\nproject/\n  docs/\n    report.qmd\n  data/\n    data.csv\n\nAssume we are editing report.qmd to import data.csv\n\n\nlibrary(readr)\nrecords &lt;- read_csv(\"___________\")\n\n\nWhat is the relative path to records.html?\n\n\nlibrary(readr)\nrecords &lt;- read_csv(\"../data/data.csv\")"
+    "text": "Scenario C\n\n\nFile structure\nproject/\n  docs/\n    report.qmd\n  data/\n    data.csv\n\nAssume we are editing report.qmd to import data.csv\n\n\nlibrary(readr)\nrecords &lt;- read_csv(\"___________\")\n\n\nWhat is the relative path to data.csv?\n\n\nlibrary(readr)\nrecords &lt;- read_csv(\"../data/data.csv\")"
   },
   {
     "objectID": "lectures/03-unix1/03-unix1-slides.html#section-15",
@@ -1936,7 +1936,7 @@
     "href": "lectures/03-unix1/03-unix1-slides.html#about-the-terminal",
     "title": "UNIX Part 1",
     "section": "About the Terminal",
-    "text": "About the Terminal\n\n\n\n\n\n\n\n\nThe Terminal is the program provides a text-based environment that accepts your keyboard input and displays the text output on your screen.\n\nopen windows and tabs\nmanage shells\nresize windows\nchange colors in windows\nhandle copy-paste operations"
+    "text": "About the Terminal\n\n\n\n\n\n\n\n\nThe Terminal provides a text-based environment that accepts your keyboard input and displays the text output on your screen.\n\nopen windows and tabs\nmanage shells\nresize windows\nchange colors in windows\nhandle copy-paste operations"
   },
   {
     "objectID": "lectures/03-unix1/03-unix1-slides.html#about-the-shell",
@@ -3551,7 +3551,7 @@
     "href": "readings/01-reading-10-rules-rcr.html#reflections",
     "title": "1) 10 Rules for RCR",
     "section": "Reflections",
-    "text": "Reflections\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following questions—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc\n\n\n\n1. The “Black Box” Audit\nSelect a coding project or data analysis assignment you completed in te past (e.g. over six months ago). Attempt to open and run it today without changing any code.\n\nDocument every obstacle you encounter. Did it fail because an external package updated, or because you forgot which parameters you used?\nCite a specific instance where a lack of tracking or unarchived dependencies forced you to guess how your own code worked.\n\n\n\n2. The Manual Intervention Confessional\nThink of a time you were rushing to meet a project deadline and chose a quick manual fix over writing a script.\n\nDescribe a scenario where you used “copy-paste” to format data, or manually tweaked a file to make it compatible with a tool.\nHow did bypassing an automated workflow make it harder to catch bugs later?\nIf you had to scale that project to 1,000 files, explain exactly where your manual method would completely break down.\n\n\n\n3. The Unstable Results Dilemma\nIdentify a past project where running the exact same script twice yielded slightly different outputs, or where a small change broke everything.\n\nDetail a case where you failed to set a random seed, leaving you unable to duplicate your exact figures.\nDid you lose a functional version of your script because you were not using a version control system like Git?\nConfess how much time you wasted trying to manually backtrack your code to a working state.\n\n\n\n4. The Isolated Interpretations Audit\nReview a final report or paper you wrote for a previous class. Look at a specific chart or data claim you made.\n\nWhere exactly is the raw underlying data for that specific chart stored right now?\nCite a case where your written conclusions lived in a text document, completely disconnected from the server paths or scripts that generated the data.\nHow long would it take a peer to trace your text back to its exact baseline numbers?\n\n\n\n5. The Transparency Reality Check\nImagine a peer reviewer demands to see all intermediate data and raw code for your best past assignment to check for hidden outliers.\n\nCite which rules you violated that make public sharing impossible or embarrassing right now.\nDid you generate highly summarized plots without saving the layers of increasing detail?\nExplain what concrete steps you must take to turn that past “blind alley” assignment into an open-access, verifiable project.",
+    "text": "Reflections\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following questions—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc\n\n\n\n1. Manual Tweaks\nThink of a time you were rushing to meet a project deadline and chose a quick manual fix over writing a script.\n\nDescribe a scenario where you used “copy-paste” to format data, or manually tweaked a file to make it compatible with a tool.\nHow did bypassing an automated workflow make it harder to catch bugs later?\nIf you had to scale that project to 1,000 files, explain exactly where your manual method would completely break down.\n\n\n\n2. Same script, different outputs\nIdentify a past project where running the exact same script twice yielded slightly different outputs, or where a small change broke everything.\n\nDetail a case where you failed to set a random seed, leaving you unable to duplicate your exact figures.\nDid you lose a functional version of your script because you were not using a version control system like Git?\nConfess how much time you wasted trying to manually backtrack your code to a working state.\n\n\n\n3. Disconnected Elements\nReview a final report or paper you wrote for a previous class. Look at a specific chart or data claim you made.\n\nWhere exactly is the raw underlying data for that specific chart stored right now?\nCite a case where your written conclusions lived in a text document, completely disconnected from the server paths or scripts that generated the data.\nHow long would it take a peer to trace your text back to its exact baseline numbers?",
     "crumbs": [
       "Readings",
       "1) 10 Rules for RCR"
@@ -7035,5 +7035,33 @@
     "title": "Naming Files",
     "section": "Reminder",
     "text": "Reminder\n\n\nIf you don’t have a GitHub account, please sign up for one."
+  },
+  {
+    "objectID": "lectures/04-unix2/04-unix2-slides.html#golden-rules-contd-1",
+    "href": "lectures/04-unix2/04-unix2-slides.html#golden-rules-contd-1",
+    "title": "Project Organization",
+    "section": "Golden rules (cont’d)",
+    "text": "Golden rules (cont’d)\n\nA project directory should be a portable island.\nIt can be zipped up, moved to a different folder, sent to a colleague, or cloned onto a remote server …\n… and every script still runs without modifying a single line of code."
+  },
+  {
+    "objectID": "lectures/04-unix2/04-unix2-slides.html#a-standard-project-template",
+    "href": "lectures/04-unix2/04-unix2-slides.html#a-standard-project-template",
+    "title": "Project Organization",
+    "section": "A Standard Project Template",
+    "text": "A Standard Project Template\n\n\nExample\n\nmy-reproducible-project/\n├── README.md             &lt;- High-level summary & instructions\n├── LICENSE               &lt;- Data/code usage rights\n│\n├── data/\n│   ├── raw/              &lt;- IMMUTABLE raw data (read-only)\n│   └── processed/        &lt;- Cleaned, transformed datasets\n│\n├── code/\n│   ├── 01_data-prep.R    &lt;- Step 1: Clean raw data\n│   ├── 02_analysis.R     &lt;- Step 2: Fit statistical models\n│   └── 03_figures.R      &lt;- Step 3: Render visual output\n│\n├── output/\n│   ├── tables/           &lt;- Exported CSV/LaTeX summary tables\n│   └── figures/          &lt;- High-res PNG/PDF plots\n│\n└── docs/                 &lt;- Paper drafts, reports, slide decks"
+  },
+  {
+    "objectID": "lectures/04-unix2/04-unix2-slides.html#example",
+    "href": "lectures/04-unix2/04-unix2-slides.html#example",
+    "title": "Project Organization",
+    "section": "Example",
+    "text": "Example\n\n\nExample\n\ntraffic_project/\n├── .RData\n├── 01_clean_data_OLD.R\n├── Data_traffic_2026_edited_v2.xlsx\n├── Fig1.png\n├── Script.R\n├── Script2.R\n├── Traffic Data Clean.csv\n├── density_plot.png\n├── my_script_final.R\n├── temp_model.R\n├── draft_august.docx\n├── draft_final_comments.docx\n└── traffic_2026.csv\n\n\n\nSpot as many sins as you can fig01_density_by_hour\n\n\n\n−+\n02:00"
+  },
+  {
+    "objectID": "lectures/04-unix2/04-unix2-slides.html#example-1",
+    "href": "lectures/04-unix2/04-unix2-slides.html#example-1",
+    "title": "Project Organization",
+    "section": "Example",
+    "text": "Example\n\n\nExample\n\ntraffic_project/\n├── README.md                 &lt;- Step-by-step instructions\n├── data/\n│   ├── raw/                  &lt;- Read-only original data\n│   │   └── traffic_2026.csv\n│   └── processed/            &lt;- Script-generated clean data\n│       └── 01_clean_traffic.rds\n├── code/\n│   ├── 01_clean_data.R\n│   ├── 02_fit_models.R\n│   └── 03_generate_figures.R\n├── output/\n│   └── figures/\n│       └── fig01_density_by_hour.png\n└── docs/\n    └── report.qmd"
   }
 ]

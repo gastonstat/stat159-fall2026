@@ -213,47 +213,42 @@
 </div>
 
 </section>
-<section id="yesterdays-lab" class="slide level2">
-<h2>Yesterday’s Lab</h2>
+<section id="section" class="slide level2">
+<h2></h2>
+<h3 id="yesterdays-lab">Yesterday’s Lab</h3>
 <ul>
-<li class="fragment">Met your GSI</li>
-<li class="fragment">Installed software
-<ul>
-<li class="fragment">Git (windows users)</li>
-</ul></li>
-<li class="fragment">Located and launched the Terminal</li>
-<li class="fragment">Commands to navigate file system
-<ul>
-<li class="fragment"><code>pwd</code>, <code>ls</code>, <code>cd</code>, <code>mkdir</code>, <code>rmdir</code></li>
-</ul></li>
-<li class="fragment">Commands to inspect files
-<ul>
-<li class="fragment"><code>head</code>, <code>tail</code>, <code>less</code>, <code>cat</code>, <code>wc</code></li>
-</ul></li>
-<li class="fragment">Commands to manipulate files
-<ul>
-<li class="fragment"><code>touch</code>, <code>open</code>, <code>cp</code>, <code>mv</code>, <code>rm</code></li>
-</ul></li>
+<li class="fragment">Met your GSI: Sequoia &amp; Larissa</li>
+<li class="fragment">DataHub: Terminal</li>
+<li class="fragment">Commands to navigate file system: <code>pwd</code>, <code>ls</code>, <code>cd</code>, <code>mkdir</code>, <code>rmdir</code></li>
+<li class="fragment">Commands to inspect files: <code>head</code>, <code>tail</code>, <code>less</code>, <code>cat</code>, <code>wc</code></li>
+<li class="fragment">Commands to manipulate files: <code>touch</code>, <code>open</code>, <code>cp</code>, <code>mv</code>, <code>rm</code></li>
 </ul>
-</section>
-<section id="folder-for-stat-159" class="slide level2">
-<h2>Folder for STAT 159</h2>
+<div class="fragment">
+<h3 id="st-reading">1st Reading</h3>
 <ul>
-<li class="fragment"><p>You should have in your computer a dedicated directory (i.e.&nbsp;folder) <code>stat159/</code></p></li>
-<li class="fragment"><p>You should use this directory for all the work done in this class.</p></li>
-<li class="fragment"><p>BTW: Your <code>Downloads/</code> folder is not a replacement for a <code>stat159/</code> folder.</p></li>
+<li class="fragment">Ten Simple Rules for Reproducible Computational Research</li>
 </ul>
+</div>
+<!--
+## Folder for STAT 159
+
+- You should have in your computer a dedicated directory (i.e. folder) `stat159/`
+
+- You should use this directory for all the work done in this class.
+
+- BTW: Your `Downloads/` folder is not a replacement for a `stat159/` folder.
+-->
 </section>
 <section>
 <section id="project-organization" class="title-slide slide level1 center">
 <h1>Project Organization</h1>
 
 </section>
-<section id="section" class="slide level2" data-auto-animate="true">
+<section id="section-1" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 
 <img data-src="images/project-file-structure-0.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="section-1" class="slide level2" data-auto-animate="true">
+<section id="section-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -262,7 +257,7 @@
 <p><img data-src="images/project-file-structure-1.svg"></p>
 </div></div>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
 <p>Data science projects involve dealing with multiple files:</p>
 <ul>
@@ -328,13 +323,15 @@
 <h2>Golden rules</h2>
 <ol type="1">
 <li class="fragment"><p>Raw data should never be changed. Save it into a <code>data/</code> folder and treat it as immutable.</p></li>
-<li class="fragment"><p>The processed, clean version of your data will go into a dedicated <code>processed_data/</code> or <code>clean_data/</code> folder.</p></li>
+<li class="fragment"><p>The processed, clean version of your data will go into a dedicated file or directory, e.g., <code>clean_data.json</code> or <code>processed_data/</code>.</p></li>
 <li class="fragment"><p>Anything that can be generated from code goes into its own folder.</p>
 <ul>
-<li class="fragment"><code>output/</code> folder</li>
-<li class="fragment">or separate folders for <code>output/</code> files and <code>figures/</code></li>
+<li class="fragment"><code>output/</code>, <code>results/</code>, <code>images/</code></li>
 </ul></li>
-<li class="fragment"><p>If there are text documents, put them in their own folder (e.g., <code>docs/</code>)</p></li>
+<li class="fragment"><p>If there are text documents, put them in their own folder:</p>
+<ul>
+<li class="fragment"><code>docs/</code></li>
+</ul></li>
 </ol>
 </section>
 <section id="golden-rules-contd" class="slide level2">
@@ -350,7 +347,7 @@
 <li class="fragment">e.g., <code>script1-data-prepration.R</code>, <code>script2-exploratory-analysis.R</code>, <code>script3-regression-model.R</code>, etc.</li>
 </ul></li>
 <li class="fragment"><p>Sometimes the pipeline is not linear but branched, so numbering may not always make sense.</p></li>
-<li class="fragment"><p>Modularize your code: instead of having a giant script to run your entire analysis from data cleaning to final figures, break up your workflow into several short, single-purpose scripts with well-defined inputs and outputs.</p></li>
+<li class="fragment"><p>Modularize your code: split a giant script into short, single-purpose scripts with well-defined inputs and outputs.</p></li>
 </ol>
 </section>
 <section id="golden-rules-contd-1" class="slide level2">
@@ -396,6 +393,11 @@
 <p>Get in the habit of starting a project by creating a <code>README</code> file.</p>
 <p>Also, you can include README files inside the project’s directories: e.g.&nbsp;a README for the <code>data/</code> folder, or for the <code>docs/</code> filder.</p>
 </div>
+</section></section>
+<section>
+<section id="demo" class="title-slide slide level1 center">
+<h1>Demo</h1>
+
 </section>
 <section id="some-comments" class="slide level2">
 <h2>Some Comments</h2>
@@ -412,7 +414,7 @@
 <div class="code-with-filename-file">
 <pre><strong>Example</strong></pre>
 </div>
-<div class="sourceCode" id="cb1" data-filename="Example"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a>my-reproducible-project/</span>
+<div class="sourceCode" id="cb1" data-filename="Example"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a>project/</span>
 <span id="cb1-2"><a aria-hidden="true" tabindex="-1"></a>├── README.md             &lt;- High-level summary &amp; instructions</span>
 <span id="cb1-3"><a aria-hidden="true" tabindex="-1"></a>├── LICENSE               &lt;- Data/code usage rights</span>
 <span id="cb1-4"><a aria-hidden="true" tabindex="-1"></a>│</span>
@@ -432,8 +434,8 @@
 <span id="cb1-18"><a aria-hidden="true" tabindex="-1"></a>└── docs/                 &lt;- Paper drafts, reports, slide decks</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="example" class="slide level2 smaller">
-<h2>Example</h2>
+<section id="example-how-not-to-organize" class="slide level2 smaller">
+<h2>Example: How not to organize</h2>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Example</strong></pre>
@@ -458,14 +460,14 @@
 <p>Spot as many sins as you can fig01_density_by_hour</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_323dafa1" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_47379f77" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
 </section>
-<section id="example-1" class="slide level2 smaller">
+<section id="example" class="slide level2 smaller">
 <h2>Example</h2>
 <div class="code-with-filename">
 <div class="code-with-filename-file">

@@ -196,7 +196,7 @@ git push
 
 - `git init` initializes a git (local) repository
 - Creates a directory `.git/`
-- `.git/` is a hidden fodler containing git's database
+- `.git/` is a hidden folder containing git's database
 - This is where git does its _magic_
 - Don't touch this folder! (let git do its job)
 - Once a repo is initialized, git will track changes to its content
@@ -217,7 +217,7 @@ git push
 
 ![](images/git-commit-hash.svg){fig-align="center"}
 
-## Elements of Commit
+## Elements of a Commit
 
 A commit consists of:
 

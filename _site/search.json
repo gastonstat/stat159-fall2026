@@ -6835,21 +6835,21 @@
     "href": "lectures/06-git2/06-git-workflow-slides.html#examples",
     "title": "Intro to Git (part 2)",
     "section": "Examples",
-    "text": "Examples\n\nBad example:\nfix typo\n\nWhat typo?\nHow was it fixed?\n\n\n\nBetter:\nadd missing &gt; in index html\n\n\n\n\nIf a change fixes a specific bug or relates to a task ticket, developers include the ID at the end of the subject or body (e.g., fix: close database connection leaks (closes #402)"
+    "text": "Examples\n\nBad example:\n\"fix typo\"\n\nWhat typo?\nHow was it fixed?\n\n\n\nBetter:\n\"add missing &gt; in index html\"\n\n\n\n\nIf a change fixes a specific bug or relates to a task ticket, developers include the ID at the end of the subject or body (e.g., fix: close database connection leaks (closes #402)"
   },
   {
     "objectID": "lectures/06-git2/06-git-workflow-slides.html#examples-1",
     "href": "lectures/06-git2/06-git-workflow-slides.html#examples-1",
     "title": "Intro to Git (part 2)",
     "section": "Examples",
-    "text": "Examples\n\nBad example:\nUpdated cleaning data function\n\nHow was it updated?\nWhat was the update?\n\n\n\nBetter:\nRemove missing values in cleaning data function"
+    "text": "Examples\n\nBad example:\n\"Updated cleaning data function\"\n\nHow was it updated?\nWhat was the update?\n\n\n\nBetter:\n\"Remove missing values in cleaning data function\""
   },
   {
     "objectID": "lectures/06-git2/06-git-workflow-slides.html#examples-2",
     "href": "lectures/06-git2/06-git-workflow-slides.html#examples-2",
     "title": "Intro to Git (part 2)",
     "section": "Examples",
-    "text": "Examples\n\nBad example:\nChanged correlation function. We should discuss this in next meeting\n\nAvoid to-do comments\n\n\n\nBetter:\nChanged correlation function to exclude logical values"
+    "text": "Examples\n\nBad example:\n\"Changed correlation function. We should discuss this in next meeting\"\n\nAvoid to-do comments\n\n\n\nBetter:\n\"Changed correlation function to exclude logical values\""
   },
   {
     "objectID": "lectures/06-git2/06-git-workflow-slides.html#conventional-commits",
@@ -6863,42 +6863,42 @@
     "href": "lectures/06-git2/06-git-workflow-slides.html#avoid-vague-or-cryptic-phrases",
     "title": "Intro to Git (part 2)",
     "section": "Avoid Vague or Cryptic Phrases",
-    "text": "Avoid Vague or Cryptic Phrases\n\nNever write single-word or lazy messages like:\n\nfixed\nupdate\nstuff\nbug fix\nworking\nmanifesto\n\n\n\n👎 They offer zero historical value."
+    "text": "Avoid Vague or Cryptic Phrases\n\nNever write single-word or lazy messages like:\n\n\"fixed\"\n\"update\"\n\"stuff\"\n\"bug fix\"\n\"working\"\n\"manifesto\"\n\n\n\n👎 They offer zero historical value."
   },
   {
     "objectID": "lectures/06-git2/06-git-workflow-slides.html#avoid-explaining-the-how-instead-of-the-why",
     "href": "lectures/06-git2/06-git-workflow-slides.html#avoid-explaining-the-how-instead-of-the-why",
     "title": "Intro to Git (part 2)",
     "section": "Avoid Explaining the “How” Instead of the “Why”",
-    "text": "Avoid Explaining the “How” Instead of the “Why”\n\nAvoid messages like:\nChanged line 45 from x to y\n\n\n\nGit already tracks the exact lines changed.\nUse the message to explain why changing that line was necessary for the software logic."
+    "text": "Avoid Explaining the “How” Instead of the “Why”\n\nAvoid messages like:\n\"Changed line 45 from x to y\"\n\n\n\nGit already tracks the exact lines changed.\nUse the message to explain why changing that line was necessary for the software logic."
   },
   {
     "objectID": "lectures/06-git2/06-git-workflow-slides.html#avoid-aggressive-or-emotional-language",
     "href": "lectures/06-git2/06-git-workflow-slides.html#avoid-aggressive-or-emotional-language",
     "title": "Intro to Git (part 2)",
     "section": "Avoid Aggressive or Emotional Language",
-    "text": "Avoid Aggressive or Emotional Language\n\nAvoid venting frustration in the public history log:\nfixing stupid bug from teammate\n\n\n\n\nfinally working after 5 hours of torture\n\n\n\nMaintain professional communication.\nWhat if a hiring manager reviews your public GitHub repository?"
+    "text": "Avoid Aggressive or Emotional Language\n\nAvoid venting frustration in the public history log:\n\"fixing stupid bug from teammate\"\n\n\n\n\n\"finally working after 5 hours of torture\"\n\n\n\nMaintain professional communication.\nWhat if a hiring manager reviews your public GitHub repository?"
   },
   {
     "objectID": "lectures/06-git2/06-git-workflow-slides.html#avoid-combining-multiple-unrelated-changes",
     "href": "lectures/06-git2/06-git-workflow-slides.html#avoid-combining-multiple-unrelated-changes",
     "title": "Intro to Git (part 2)",
     "section": "Avoid Combining Multiple Unrelated Changes",
-    "text": "Avoid Combining Multiple Unrelated Changes\n\nAvoid bundling a feature addition, a bug fix, and a documentation update into a single massive commit\nfix login and update readme and fix style layout\n\nCan be incredible difficult to untangle.\nSplit them into small, atomic commits instead."
+    "text": "Avoid Combining Multiple Unrelated Changes\n\nAvoid bundling a feature addition, a bug fix, and a documentation update into a single massive commit\n\"fix login and update readme and fix style layout\"\n\nCan be incredible difficult to untangle.\nSplit them into small, atomic commits instead."
   },
   {
     "objectID": "lectures/06-git2/06-git-workflow-slides.html#what-to-avoid",
     "href": "lectures/06-git2/06-git-workflow-slides.html#what-to-avoid",
     "title": "Intro to Git (part 2)",
     "section": "What to Avoid",
-    "text": "What to Avoid\n\n\nExample: Bad commit messages\n\n\ncommit i9k8j7h (HEAD -&gt; main) \"clean up code\"\n\ncommit e1d2c3b \"update index.js\"\n\ncommit d4c3b2a \"working???\"\n\ncommit g5f4e3d \"fixed the stupid bug i hate this project\"\n\ncommit c3b2a1a \"add login feature, fix database leak, change CSS styles\"\n\ncommit a1b2c3d \"stuff\"\n\n\ncommit i9k8j7h (HEAD -&gt; main) “clean up code” (Reality: This broke production. Nobody knows what was cleaned or what broke.)\ncommit e1d2c3b “update index.js” ↳ (Reality: Redundant. Git already knows index.js was updated; it doesn’t say WHY.)\ncommit d4c3b2a “working???” ↳ (Reality: The developer didn’t actually test if it was working before committing.)\ncommit g5f4e3d “fixed the stupid bug i hate this project” ↳ (Reality: Venting emotional frustration instead of explaining the technical fix.)\ncommit c3b2a1a “add login feature, fix database leak, change CSS styles” ↳ (Reality: A giant “Mega-Commit.” Three completely unrelated changes crammed into one.)\ncommit a1b2c3d “stuff” ↳ (The first commit after initialization. Tells the team absolutely nothing.)"
+    "text": "What to Avoid\n\n\nExample: Bad commit messages\n\n\ncommit i9k8j7h (HEAD -&gt; main) \"clean up code\""
   },
   {
     "objectID": "lectures/06-git2/06-git-workflow-slides.html#much-better",
     "href": "lectures/06-git2/06-git-workflow-slides.html#much-better",
     "title": "Intro to Git (part 2)",
     "section": "Much better",
-    "text": "Much better\n\n\nExample: nice commit messages\n\ncommit 9e2f41c (HEAD -&gt; main, origin/main) \n\"docs: update API authentication steps in README\"\n\ncommit 8d1e30b \"fix(auth): resolve token expiration memory leak (#402)\"\n\ncommit 7c0d29a \"style: fix navigation bar alignment on mobile screens\"\n\ncommit 6b9c18f \"refactor(data): optimize database query processing loops\"\n\ncommit 5a8b07e \"test: add integration tests for user login validation\"\n\ncommit 3e6d85c \"feat(auth): implement user registration API endpoint\"\n\ncommit 2d5c74b \"chore: initialize project dependencies and folder structure\"\n\n\ncommit 9e2f41c (HEAD -&gt; main, origin/main) “docs: update API authentication steps in README” ↳ (Context: Clean documentation update. A developer can immediately see what text changed.)\ncommit 8d1e30b “fix(auth): resolve token expiration memory leak (#402)” ↳ (Context: Clearly states the scope (auth) and the specific problem fixed. Links to an issue ticket.)\ncommit 7c0d29a “style: fix navigation bar alignment on mobile screens” ↳ (Context: Purely cosmetic change. Teams know this commit contains zero business logic changes.)\ncommit 6b9c18f “refactor(data): optimize database query processing loops” ↳ (Context: Code was rewritten to run faster, but no new features were added and no bugs were introduced.)\ncommit 5a8b07e “test: add integration tests for user login validation” ↳ (Context: Explicitly isolates test files. If a testing framework breaks, you know where to look.)\ncommit 3e6d85c “feat(auth): implement user registration API endpoint” ↳ (Context: The foundation for the auth system. Clean, atomic, and easy to review.)\ncommit 2d5c74b “chore: initialize project dependencies and folder structure” ↳ (Context: Background maintenance task like updating packages or setting up a configuration.)"
+    "text": "Much better\n\n\n\nExample: nice commit messages\n\ncommit 9e2f41c (HEAD -&gt; main, origin/main) \n\"docs: update API authentication steps in README\""
   },
   {
     "objectID": "lectures/06-git2/06-git-workflow-slides.html#adding-a-.gitignore-file",
@@ -7124,5 +7124,82 @@
       "HW",
       "HW1) Reproducibility Checkup"
     ]
+  },
+  {
+    "objectID": "lectures/06-git2/06-git-workflow-slides.html#what-to-avoid-1",
+    "href": "lectures/06-git2/06-git-workflow-slides.html#what-to-avoid-1",
+    "title": "Intro to Git (part 2)",
+    "section": "What to Avoid",
+    "text": "What to Avoid\n\n\nExample: Bad commit messages\n\n\ncommit i9k8j7h (HEAD -&gt; main) \"clean up code\"\n\ncommit e1d2c3b \"update index.js\""
+  },
+  {
+    "objectID": "lectures/06-git2/06-git-workflow-slides.html#what-to-avoid-2",
+    "href": "lectures/06-git2/06-git-workflow-slides.html#what-to-avoid-2",
+    "title": "Intro to Git (part 2)",
+    "section": "What to Avoid",
+    "text": "What to Avoid\n\n\nExample: Bad commit messages\n\n\ncommit i9k8j7h (HEAD -&gt; main) \"clean up code\"\n\ncommit e1d2c3b \"update index.js\"\n\ncommit d4c3b2a \"working???\""
+  },
+  {
+    "objectID": "lectures/06-git2/06-git-workflow-slides.html#what-to-avoid-3",
+    "href": "lectures/06-git2/06-git-workflow-slides.html#what-to-avoid-3",
+    "title": "Intro to Git (part 2)",
+    "section": "What to Avoid",
+    "text": "What to Avoid\n\n\nExample: Bad commit messages\n\n\ncommit i9k8j7h (HEAD -&gt; main) \"clean up code\"\n\ncommit e1d2c3b \"update index.js\"\n\ncommit d4c3b2a \"working???\"\n\ncommit g5f4e3d \"fixed the stupid bug i hate this project\""
+  },
+  {
+    "objectID": "lectures/06-git2/06-git-workflow-slides.html#what-to-avoid-4",
+    "href": "lectures/06-git2/06-git-workflow-slides.html#what-to-avoid-4",
+    "title": "Intro to Git (part 2)",
+    "section": "What to Avoid",
+    "text": "What to Avoid\n\n\nExample: Bad commit messages\n\n\ncommit i9k8j7h (HEAD -&gt; main) \"clean up code\"\n\ncommit e1d2c3b \"update index.js\"\n\ncommit d4c3b2a \"working???\"\n\ncommit g5f4e3d \"fixed the stupid bug i hate this project\"\n\ncommit c3b2a1a \"add login feature, fix database leak, change CSS styles\""
+  },
+  {
+    "objectID": "lectures/06-git2/06-git-workflow-slides.html#what-to-avoid-5",
+    "href": "lectures/06-git2/06-git-workflow-slides.html#what-to-avoid-5",
+    "title": "Intro to Git (part 2)",
+    "section": "What to Avoid",
+    "text": "What to Avoid\n\n\nExample: Bad commit messages\n\n\ncommit i9k8j7h (HEAD -&gt; main) \"clean up code\"\n\ncommit e1d2c3b \"update index.js\"\n\ncommit d4c3b2a \"working???\"\n\ncommit g5f4e3d \"fixed the stupid bug i hate this project\"\n\ncommit c3b2a1a \"add login feature, fix database leak, change CSS styles\"\n\ncommit a1b2c3d \"stuff\"\n\n\ncommit i9k8j7h (HEAD -&gt; main) “clean up code” (Reality: This broke production. Nobody knows what was cleaned or what broke.)\ncommit e1d2c3b “update index.js” ↳ (Reality: Redundant. Git already knows index.js was updated; it doesn’t say WHY.)\ncommit d4c3b2a “working???” ↳ (Reality: The developer didn’t actually test if it was working before committing.)\ncommit g5f4e3d “fixed the stupid bug i hate this project” ↳ (Reality: Venting emotional frustration instead of explaining the technical fix.)\ncommit c3b2a1a “add login feature, fix database leak, change CSS styles” ↳ (Reality: A giant “Mega-Commit.” Three completely unrelated changes crammed into one.)\ncommit a1b2c3d “stuff” ↳ (The first commit after initialization. Tells the team absolutely nothing.)"
+  },
+  {
+    "objectID": "lectures/06-git2/06-git-workflow-slides.html#much-better-1",
+    "href": "lectures/06-git2/06-git-workflow-slides.html#much-better-1",
+    "title": "Intro to Git (part 2)",
+    "section": "Much better",
+    "text": "Much better\n\n\nExample: nice commit messages\n\ncommit 9e2f41c (HEAD -&gt; main, origin/main) \n\"docs: update API authentication steps in README\"\n\ncommit 8d1e30b \"fix(auth): resolve token expiration memory leak (#402)\""
+  },
+  {
+    "objectID": "lectures/06-git2/06-git-workflow-slides.html#much-better-2",
+    "href": "lectures/06-git2/06-git-workflow-slides.html#much-better-2",
+    "title": "Intro to Git (part 2)",
+    "section": "Much better",
+    "text": "Much better\n\n\nExample: nice commit messages\n\ncommit 9e2f41c (HEAD -&gt; main, origin/main) \n\"docs: update API authentication steps in README\"\n\ncommit 8d1e30b \"fix(auth): resolve token expiration memory leak (#402)\"\n\ncommit 7c0d29a \"style: fix navigation bar alignment on mobile screens\""
+  },
+  {
+    "objectID": "lectures/06-git2/06-git-workflow-slides.html#much-better-3",
+    "href": "lectures/06-git2/06-git-workflow-slides.html#much-better-3",
+    "title": "Intro to Git (part 2)",
+    "section": "Much better",
+    "text": "Much better\n\n\nExample: nice commit messages\n\ncommit 9e2f41c (HEAD -&gt; main, origin/main) \n\"docs: update API authentication steps in README\"\n\ncommit 8d1e30b \"fix(auth): resolve token expiration memory leak (#402)\"\n\ncommit 7c0d29a \"style: fix navigation bar alignment on mobile screens\"\n\ncommit 6b9c18f \"refactor(data): optimize database query processing loops\""
+  },
+  {
+    "objectID": "lectures/06-git2/06-git-workflow-slides.html#much-better-4",
+    "href": "lectures/06-git2/06-git-workflow-slides.html#much-better-4",
+    "title": "Intro to Git (part 2)",
+    "section": "Much better",
+    "text": "Much better\n\n\nExample: nice commit messages\n\ncommit 9e2f41c (HEAD -&gt; main, origin/main) \n\"docs: update API authentication steps in README\"\n\ncommit 8d1e30b \"fix(auth): resolve token expiration memory leak (#402)\"\n\ncommit 7c0d29a \"style: fix navigation bar alignment on mobile screens\"\n\ncommit 6b9c18f \"refactor(data): optimize database query processing loops\"\n\ncommit 5a8b07e \"test: add integration tests for user login validation\""
+  },
+  {
+    "objectID": "lectures/06-git2/06-git-workflow-slides.html#much-better-5",
+    "href": "lectures/06-git2/06-git-workflow-slides.html#much-better-5",
+    "title": "Intro to Git (part 2)",
+    "section": "Much better",
+    "text": "Much better\n\n\nExample: nice commit messages\n\ncommit 9e2f41c (HEAD -&gt; main, origin/main) \n\"docs: update API authentication steps in README\"\n\ncommit 8d1e30b \"fix(auth): resolve token expiration memory leak (#402)\"\n\ncommit 7c0d29a \"style: fix navigation bar alignment on mobile screens\"\n\ncommit 6b9c18f \"refactor(data): optimize database query processing loops\"\n\ncommit 5a8b07e \"test: add integration tests for user login validation\"\n\ncommit 3e6d85c \"feat(auth): implement user registration API endpoint\""
+  },
+  {
+    "objectID": "lectures/06-git2/06-git-workflow-slides.html#much-better-6",
+    "href": "lectures/06-git2/06-git-workflow-slides.html#much-better-6",
+    "title": "Intro to Git (part 2)",
+    "section": "Much better",
+    "text": "Much better\n\n\nExample: nice commit messages\n\ncommit 9e2f41c (HEAD -&gt; main, origin/main) \n\"docs: update API authentication steps in README\"\n\ncommit 8d1e30b \"fix(auth): resolve token expiration memory leak (#402)\"\n\ncommit 7c0d29a \"style: fix navigation bar alignment on mobile screens\"\n\ncommit 6b9c18f \"refactor(data): optimize database query processing loops\"\n\ncommit 5a8b07e \"test: add integration tests for user login validation\"\n\ncommit 3e6d85c \"feat(auth): implement user registration API endpoint\"\n\ncommit 2d5c74b \"chore: initialize project dependencies and folder structure\"\n\n\ncommit 9e2f41c (HEAD -&gt; main, origin/main) “docs: update API authentication steps in README” ↳ (Context: Clean documentation update. A developer can immediately see what text changed.)\ncommit 8d1e30b “fix(auth): resolve token expiration memory leak (#402)” ↳ (Context: Clearly states the scope (auth) and the specific problem fixed. Links to an issue ticket.)\ncommit 7c0d29a “style: fix navigation bar alignment on mobile screens” ↳ (Context: Purely cosmetic change. Teams know this commit contains zero business logic changes.)\ncommit 6b9c18f “refactor(data): optimize database query processing loops” ↳ (Context: Code was rewritten to run faster, but no new features were added and no bugs were introduced.)\ncommit 5a8b07e “test: add integration tests for user login validation” ↳ (Context: Explicitly isolates test files. If a testing framework breaks, you know where to look.)\ncommit 3e6d85c “feat(auth): implement user registration API endpoint” ↳ (Context: The foundation for the auth system. Clean, atomic, and easy to review.)\ncommit 2d5c74b “chore: initialize project dependencies and folder structure” ↳ (Context: Background maintenance task like updating packages or setting up a configuration.)"
   }
 ]

@@ -158,7 +158,7 @@ from scratch.
 Bad example:
 
 ```{.markdown code-line-numbers="false"}
-fix typo
+"fix typo"
 ```
 
 + What typo?
@@ -169,7 +169,7 @@ fix typo
 Better:
 
 ```{.markdown code-line-numbers="false"}
-add missing > in index html
+"add missing > in index html"
 ```
 
 . . .
@@ -188,7 +188,7 @@ include the ID at the end of the subject or body
 Bad example:
 
 ```{.markdown code-line-numbers="false"}
-Updated cleaning data function
+"Updated cleaning data function"
 ```
 
 + How was it updated?
@@ -199,7 +199,7 @@ Updated cleaning data function
 Better:
 
 ```{.markdown code-line-numbers="false"}
-Remove missing values in cleaning data function
+"Remove missing values in cleaning data function"
 ```
 
 
@@ -210,7 +210,7 @@ Remove missing values in cleaning data function
 Bad example:
 
 ```{.markdown code-line-numbers="false"}
-Changed correlation function. We should discuss this in next meeting
+"Changed correlation function. We should discuss this in next meeting"
 ```
 
 + Avoid to-do comments
@@ -220,7 +220,7 @@ Changed correlation function. We should discuss this in next meeting
 Better:
 
 ```{.markdown code-line-numbers="false"}
-Changed correlation function to exclude logical values
+"Changed correlation function to exclude logical values"
 ```
 
 
@@ -247,12 +247,12 @@ This makes the Git log easily machine-readable for automated changelogs.
 
 Never write single-word or lazy messages like:
 
-- `fixed`
-- `update`
-- `stuff`
-- `bug fix`
-- `working`
-- `manifesto`
+- `"fixed"`
+- `"update"`
+- `"stuff"`
+- `"bug fix"`
+- `"working"`
+- `"manifesto"`
 
 . . .
 
@@ -266,7 +266,7 @@ Never write single-word or lazy messages like:
 Avoid messages like:
 
 ```{.markdown code-line-numbers="false"}
-Changed line 45 from x to y
+"Changed line 45 from x to y"
 ```
 
 \
@@ -283,7 +283,7 @@ software logic.
 Avoid venting frustration in the public history log: 
 
 ```{.markdown code-line-numbers="false"}
-fixing stupid bug from teammate
+"fixing stupid bug from teammate"
 ```
 
 \
@@ -291,7 +291,7 @@ fixing stupid bug from teammate
 . . .
 
 ```{.markdown code-line-numbers="false"}
-finally working after 5 hours of torture
+"finally working after 5 hours of torture"
 ```
 
 \
@@ -308,14 +308,71 @@ Avoid bundling a feature addition, a bug fix, and a documentation update into
 a single massive commit 
 
 ```{.markdown code-line-numbers="false"}
-fix login and update readme and fix style layout
+"fix login and update readme and fix style layout"
 ```
 
 - Can be incredible difficult to untangle.
 - Split them into small, atomic commits instead.
 
 
-## What to Avoid
+## What to Avoid {auto-animate="true"}
+
+```{.markdown filename="Example: Bad commit messages" code-line-numbers="false"}
+
+commit i9k8j7h (HEAD -> main) "clean up code"
+```
+
+## What to Avoid {auto-animate="true"}
+
+```{.markdown filename="Example: Bad commit messages" code-line-numbers="false"}
+
+commit i9k8j7h (HEAD -> main) "clean up code"
+
+commit e1d2c3b "update index.js"
+```
+
+## What to Avoid {auto-animate="true"}
+
+```{.markdown filename="Example: Bad commit messages" code-line-numbers="false"}
+
+commit i9k8j7h (HEAD -> main) "clean up code"
+
+commit e1d2c3b "update index.js"
+
+commit d4c3b2a "working???"
+```
+
+
+## What to Avoid {auto-animate="true"}
+
+```{.markdown filename="Example: Bad commit messages" code-line-numbers="false"}
+
+commit i9k8j7h (HEAD -> main) "clean up code"
+
+commit e1d2c3b "update index.js"
+
+commit d4c3b2a "working???"
+
+commit g5f4e3d "fixed the stupid bug i hate this project"
+```
+
+## What to Avoid {auto-animate="true"}
+
+```{.markdown filename="Example: Bad commit messages" code-line-numbers="false"}
+
+commit i9k8j7h (HEAD -> main) "clean up code"
+
+commit e1d2c3b "update index.js"
+
+commit d4c3b2a "working???"
+
+commit g5f4e3d "fixed the stupid bug i hate this project"
+
+commit c3b2a1a "add login feature, fix database leak, change CSS styles"
+```
+
+
+## What to Avoid {auto-animate="true"}
 
 ```{.markdown filename="Example: Bad commit messages" code-line-numbers="false"}
 
@@ -353,7 +410,87 @@ commit a1b2c3d "stuff"
 :::
 
 
-## Much better
+## Much better {auto-animate="true"}
+
+. . .
+
+```{.markdown filename="Example: nice commit messages" code-line-numbers="false"}
+commit 9e2f41c (HEAD -> main, origin/main) 
+"docs: update API authentication steps in README"
+```
+
+
+## Much better {auto-animate="true"}
+
+```{.markdown filename="Example: nice commit messages" code-line-numbers="false"}
+commit 9e2f41c (HEAD -> main, origin/main) 
+"docs: update API authentication steps in README"
+
+commit 8d1e30b "fix(auth): resolve token expiration memory leak (#402)"
+```
+
+
+## Much better {auto-animate="true"}
+
+```{.markdown filename="Example: nice commit messages" code-line-numbers="false"}
+commit 9e2f41c (HEAD -> main, origin/main) 
+"docs: update API authentication steps in README"
+
+commit 8d1e30b "fix(auth): resolve token expiration memory leak (#402)"
+
+commit 7c0d29a "style: fix navigation bar alignment on mobile screens"
+```
+
+
+## Much better {auto-animate="true"}
+
+```{.markdown filename="Example: nice commit messages" code-line-numbers="false"}
+commit 9e2f41c (HEAD -> main, origin/main) 
+"docs: update API authentication steps in README"
+
+commit 8d1e30b "fix(auth): resolve token expiration memory leak (#402)"
+
+commit 7c0d29a "style: fix navigation bar alignment on mobile screens"
+
+commit 6b9c18f "refactor(data): optimize database query processing loops"
+```
+
+
+## Much better {auto-animate="true"}
+
+```{.markdown filename="Example: nice commit messages" code-line-numbers="false"}
+commit 9e2f41c (HEAD -> main, origin/main) 
+"docs: update API authentication steps in README"
+
+commit 8d1e30b "fix(auth): resolve token expiration memory leak (#402)"
+
+commit 7c0d29a "style: fix navigation bar alignment on mobile screens"
+
+commit 6b9c18f "refactor(data): optimize database query processing loops"
+
+commit 5a8b07e "test: add integration tests for user login validation"
+```
+
+
+## Much better {auto-animate="true"}
+
+```{.markdown filename="Example: nice commit messages" code-line-numbers="false"}
+commit 9e2f41c (HEAD -> main, origin/main) 
+"docs: update API authentication steps in README"
+
+commit 8d1e30b "fix(auth): resolve token expiration memory leak (#402)"
+
+commit 7c0d29a "style: fix navigation bar alignment on mobile screens"
+
+commit 6b9c18f "refactor(data): optimize database query processing loops"
+
+commit 5a8b07e "test: add integration tests for user login validation"
+
+commit 3e6d85c "feat(auth): implement user registration API endpoint"
+```
+
+
+## Much better {auto-animate="true"}
 
 ```{.markdown filename="Example: nice commit messages" code-line-numbers="false"}
 commit 9e2f41c (HEAD -> main, origin/main) 

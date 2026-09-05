@@ -25,7 +25,7 @@
         - type: "Lab"
           id: ""
           name: "Shell Commands"
-          href: "labs/lab01/lab01-shell-slides.html"
+          href: "labs/lab01.pdf"
     - date: "Sep 02"
       items:
         - type: "Lecture"

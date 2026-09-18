@@ -44,8 +44,8 @@
           href: "lectures/05-git1/05-git-intro-slides.html"
         - type: "Homework"
           id: ""
-          name: "HW1 TBA (due 9/18)"
-          href: ""
+          name: "HW1 Reproducibility Checkup (due 9/18)"
+          href: "hws/hw01/hw01.html"
 - week: 3
   days:
     - date: "Sep 07"
@@ -107,8 +107,8 @@
           href: "lectures/10-discuss2/10-discussion-slides.html"
         - type: "Homework"
           id: ""
-          name: "Project 1 TBA (due 10/2)"
-          href: ""
+          name: "Proj1 Replicating temperature Graphics (due 10/2)"
+          href: "hws/proj01/proj01.html"
 - week: 5
   days:
     - date: "Sep 21"

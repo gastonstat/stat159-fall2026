@@ -6,25 +6,13 @@ chalkboard: true
 
 ## Yesterday's Lab
 
-:::: {.columns}
-::: {.column}
-- Windows users: installed Git
-- Git configuration: `git config`
-    + user name
-    + email 
-    + color highlight
-- Created a local repo: `git init`
-:::
+Basic Git commands:
 
-::: {.column}
-- Basic commands:
-    + `git status`
-    + `git add`
-    + `git commit -m "..."`
-    + `git log`
-    + `git diff`
-:::
-::::
+- `git status`
+- `git add`
+- `git commit -m "..."`
+- `git log`
+- `git diff`
 
 
 ## Today's outline

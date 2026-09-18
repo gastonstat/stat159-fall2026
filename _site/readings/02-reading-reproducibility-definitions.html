@@ -208,12 +208,29 @@ gtag('config', 'G-CES9J82GLL', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Other</span></a>
+ <span class="menu-text">HW</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../hws/hw01/hw01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HW1) Reproducibility Checkup</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Other</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../license.html" class="sidebar-item-text sidebar-link">
@@ -237,9 +254,7 @@ gtag('config', 'G-CES9J82GLL', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#reflecting-on-reproducible" id="toc-reflecting-on-reproducible" class="nav-link" data-scroll-target="#reflecting-on-reproducible">1. Reflecting on Reproducible</a></li>
   <li><a href="#reflecting-on-robust" id="toc-reflecting-on-robust" class="nav-link" data-scroll-target="#reflecting-on-robust">2. Reflecting on Robust</a></li>
-  <li><a href="#p-hacking-temptation" id="toc-p-hacking-temptation" class="nav-link" data-scroll-target="#p-hacking-temptation">3. “P-Hacking” Temptation</a></li>
-  <li><a href="#the-locked-door-paradox" id="toc-the-locked-door-paradox" class="nav-link" data-scroll-target="#the-locked-door-paradox">4. The Locked-Door Paradox</a></li>
-  <li><a href="#the-sloppy-success-evaluation" id="toc-the-sloppy-success-evaluation" class="nav-link" data-scroll-target="#the-sloppy-success-evaluation">5. The “Sloppy Success” Evaluation</a></li>
+  <li><a href="#reproducible-failure" id="toc-reproducible-failure" class="nav-link" data-scroll-target="#reproducible-failure">3. Reproducible Failure</a></li>
   </ul></li>
   <li><a href="#rubric" id="toc-rubric" class="nav-link" data-scroll-target="#rubric">Rubric</a></li>
   </ul>
@@ -270,11 +285,16 @@ gtag('config', 'G-CES9J82GLL', { 'anonymize_ip': true});
 <section id="assigned-reading" class="level2">
 <h2 class="anchored" data-anchor-id="assigned-reading">Assigned Reading</h2>
 <ul>
-<li>Title: <strong>Guide for Reproducible Research</strong></li>
+<li>Title: <strong>Guide for Reproducible Research: Overview</strong>
+<ul>
+<li>Definitions</li>
+<li>Added ADvantages</li>
+<li>Barriers</li>
+<li>Resources</li>
+</ul></li>
 <li>Author(s): The Turing Way</li>
 <li>Year: 2024</li>
-<li>Journal: PLOS Computational Biology 9(10): e1003285</li>
-<li><a href="https://book.the-turing-way.org/reproducible-research" class="uri">https://book.the-turing-way.org/reproducible-research</a></li>
+<li><a href="https://book.the-turing-way.org/reproducible-research/overview/" class="uri">https://book.the-turing-way.org/reproducible-research/overview/</a></li>
 </ul>
 </section>
 <section id="reflections" class="level2">
@@ -300,36 +320,13 @@ bCourses Submission
 </section>
 <section id="reflecting-on-robust" class="level3">
 <h3 class="anchored" data-anchor-id="reflecting-on-robust">2. Reflecting on Robust</h3>
-<p>A result is “robust” if using different analysis steps on the same data yields a qualitatively identical answer (e.g., swapping from an R package to a Python script).</p>
+<p>The Turing Way defines a result as “robust” if using different analysis steps on the same data yields a qualitatively identical answer (e.g., swapping from an R package to a Python script).</p>
 <p>If you were forced to completely rewrite your favorite data script into a programming language you barely know, which specific part of your code’s logic do you suspect would fall apart or yield a different mathematical rounding result, and why?</p>
 </section>
-<section id="p-hacking-temptation" class="level3">
-<h3 class="anchored" data-anchor-id="p-hacking-temptation">3. “P-Hacking” Temptation</h3>
-<p>Stodden isolates “Statistical Reproducibility” as documenting the deliberate choice of thresholds and parameters.</p>
-<p>Describe a time during an assignment or project where a script yielded an unexciting, messy result, and you felt the intense psychological temptation to tweak a filter, drop a few inconvenient outliers, or change your hypothesis just to get a “cleaner” chart for a better grade. How would a mandatory preregistration log have changed your behavior in that moment?</p>
-</section>
-<section id="the-locked-door-paradox" class="level3">
-<h3 class="anchored" data-anchor-id="the-locked-door-paradox">4. The Locked-Door Paradox</h3>
-<p>The Turing Way emphasizes that reproducibility does not necessarily mean “open to the public,” recognizing that private medical or security data must remain closed.</p>
-<p>If you were building a highly sensitive database that legally cannot be published on GitHub, how would you design a workflow that still allows an independent, authorized auditor to verify your results without leaking private citizen identities?</p>
-</section>
-<section id="the-sloppy-success-evaluation" class="level3">
-<h3 class="anchored" data-anchor-id="the-sloppy-success-evaluation">5. The “Sloppy Success” Evaluation</h3>
+<section id="reproducible-failure" class="level3">
+<h3 class="anchored" data-anchor-id="reproducible-failure">3. Reproducible Failure</h3>
 <p>Imagine a peer creates a messy, un-versioned script that accidentally discovers a brilliant, groundbreaking pattern in a public dataset, but their workflow is completely un-reproducible.</p>
 <p>You build a flawless, fully automated, version-controlled pipeline that proves a hypothesis is completely wrong, but anyone can rerun it perfectly. In your own words, defend why your “reproducible failure” might actually be more valuable to the progress of science than their “sloppy success.”</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For Questions 1, 4, and 5, generic responses that do not mention a specific past assignment name or unique piece of code from your own experience will receive a score of zero.</p>
-</div>
-</div>
 </section>
 </section>
 <section id="rubric" class="level2">
@@ -341,6 +338,31 @@ Note
 </ul>
 <!--
 Removed Questions
+
+### "P-Hacking" Temptation
+
+Stodden isolates "Statistical Reproducibility" as documenting the 
+deliberate choice of thresholds and parameters. 
+
+Describe a time during an 
+assignment or project where a script yielded an unexciting, messy result, 
+and you felt the intense psychological temptation to tweak a filter, drop 
+a few inconvenient outliers, or change your hypothesis just to get a "cleaner" 
+chart for a better grade. How would a mandatory preregistration log have changed 
+your behavior in that moment?
+
+
+### The Locked-Door Paradox
+
+The Turing Way emphasizes that reproducibility does not necessarily mean 
+"open to the public," recognizing that private medical or security data must 
+remain closed. 
+
+If you were building a highly sensitive database that legally 
+cannot be published on GitHub, how would you design a workflow that still 
+allows an independent, authorized auditor to verify your results without 
+leaking private citizen identities?
+
 
 ### The "Works on My Campus" Trap (Reflecting on Replicable)
 

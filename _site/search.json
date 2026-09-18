@@ -67,14 +67,14 @@
     "href": "lectures/10-discuss2/10-discussion-slides.html#scenario-1",
     "title": "Guide for Reproducible Research",
     "section": "Scenario 1",
-    "text": "Scenario 1\nA student group writes a flawless Python script.\nThey run a dataset through 50 different machine learning models with slightly tweaked thresholds.\nModel #47 yields a statistically significant, brilliant correlation (p &lt; 0.01).\nThey publish Model #47 along with their exact script, claiming an absolute breakthrough.\nThey never mention models 1 through 46.\n\nSince they provided the exact code and data to reproduce Model #47 perfectly, is this computationally reproducible?\n\n\nYes, it is computationally reproducible. However, it completely violates Statistical Reproducibility. This is a classic case of “p-hacking” or data dredging. They hid the multiple testing problem, meaning the result is likely an accidental statistical fluke rather than a real scientific discovery.\nThe Fix: Pre-registering the study design and reporting the performance of all 50 tested models, not just the cherry-picked survivor."
+    "text": "Scenario 1\nA student group writes a flawless Python script.\nThey fit 50 different machine learning models with slightly tweaked thresholds.\nModel #47 yields a statistically significant, brilliant correlation (p &lt; 0.01).\nThey publish Model #47 along with their exact script, claiming an absolute breakthrough.\nThey never mention models 1 through 46.\n\n\nSince they provided the exact code and data to reproduce Model #47 perfectly, is this computationally reproducible?\n\n\nYes, it is computationally reproducible. However, it completely violates Statistical Reproducibility. This is a classic case of “p-hacking” or data dredging. They hid the multiple testing problem, meaning the result is likely an accidental statistical fluke rather than a real scientific discovery.\nThe Fix: Pre-registering the study design and reporting the performance of all 50 tested models, not just the cherry-picked survivor.\n\n\n\n\n−+\n01:00"
   },
   {
     "objectID": "lectures/10-discuss2/10-discussion-slides.html#scenario-2",
     "href": "lectures/10-discuss2/10-discussion-slides.html#scenario-2",
     "title": "Guide for Reproducible Research",
     "section": "Scenario 2",
-    "text": "Scenario 2\nA research team writes a beautiful script to analyze air quality fluctuations across a city.\nThe code runs without error and perfectly generates a set of maps.\nHowever, when a peer tries to collect their own air data using identical scripts in a neighboring town, the code crashes because the original team forgot to mention that their physical air sensors require a highly specific temperature calibration step before recording numbers.\n\nSince they provided the exact code and data to reproduce their maps, is this computationally reproducible?\n\n\nYes, it is computationally reproducible. However, it violates Empirical Reproducibility. While the math and code are perfectly shared, the analog connection to the physical world—how the data was physically harvested—is an unrecorded black box.\nThe Fix: Publishing an exhaustive metadata ledger detailing the exact sensor models, hardware calibration protocols, and physical collection constraints."
+    "text": "Scenario 2\nA research team writes a beautiful script to analyze air quality fluctuations across a city.\nThe code runs without error and perfectly generates a set of maps.\nHowever, when a peer tries to collect their own air data using identical scripts in a neighboring town, the code crashes because the original team forgot to mention that their physical air sensors require a highly specific temperature calibration step before recording numbers.\n\n\nSince they provided the exact code and data to reproduce their maps, is this computationally reproducible?\n\n\nYes, it is computationally reproducible. However, it violates Empirical Reproducibility. While the math and code are perfectly shared, the analog connection to the physical world—how the data was physically harvested—is an unrecorded black box.\nThe Fix: Publishing an exhaustive metadata ledger detailing the exact sensor models, hardware calibration protocols, and physical collection constraints."
   },
   {
     "objectID": "lectures/10-discuss2/10-discussion-slides.html#scenario-3",
@@ -3627,7 +3627,7 @@
     "href": "index.html#schedule",
     "title": "STAT 159/259: Collaborative and Reproducible Statistical Data Science",
     "section": "Schedule 📅",
-    "text": "Schedule 📅\nTentative calendar subject to change.\n\nWeek 1\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 26\n             \n             \n               Lecture  Welcome to Stat 159\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 28\n             \n             \n               Lecture  Naming Files\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 2\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 31\n             \n             \n               Lecture  File Paths & Unix Terminal\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 01\n             \n             \n               Lab  Shell Commands\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 02\n             \n             \n               Lecture  Project Organization\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Ten Simple Rules for RCR (due 9/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 04\n             \n             \n               Lecture  Intro to Git (part I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW1 TBA (due 9/18)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 3\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 07\n             \n             \n               No-Class  Academic Holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 08\n             \n             \n               Lab  Getting Started with Git\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 09\n             \n             \n               Lecture  Intro to Git (part II)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Guide for Reproducible Research (due 9/16)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 11\n             \n             \n               Lecture  Discussion Reading 1\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 4\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 14\n             \n             \n               Lecture  Git Branching\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 15\n             \n             \n               Lab  Getting started with Git branches\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 16\n             \n             \n               Lecture  Case Study: Global Temperature\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  7 Easy Steps to Open Science (due 9/23)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 18\n             \n             \n               Lecture  Discussion Reading 2\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 1 TBA (due 10/2)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 5\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 21\n             \n             \n               Lecture  Git Remotes\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 22\n             \n             \n               Lab  Github and remote repos\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 23\n             \n             \n               Lecture  Undoing changes in Git\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Data Science at the Singularity (due 9/30)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 25\n             \n             \n               Lecture  Discussion Reading 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 6\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 28\n             \n             \n               Lecture  Intro to Make (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 29\n             \n             \n               Lab  Getting started with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 30\n             \n             \n               Lecture  Intro to Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Reinhart-Rogoff Fiasco (due 10/07)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 02\n             \n             \n               Lecture  Discussion Reading 4\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW2 TBA (due 10/16)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 7\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 05\n             \n             \n               Lecture  Variables in Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 06\n             \n             \n               Lab  More automation with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 07\n             \n             \n               Lecture  More Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Duke Trials Retraction (due 10/14)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 09\n             \n             \n               Lecture  Discussion Reading 5\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 8\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 12\n             \n             \n               Lecture  Git Collaborative workflows\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 13\n             \n             \n               Lab  Working in groups in Github\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 14\n             \n             \n               Lecture  Handling and Sharing Data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 16\n             \n             \n               Lecture  Discussion Reading 6\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 2 TBA (due 10/30)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 9\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 19\n             \n             \n               Lecture  Writing Clear Code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 20\n             \n             \n               Lab  Hands on sharing and managing data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 21\n             \n             \n               Lecture  Packaging Code (I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Share Your Code (due 10/28)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 23\n             \n             \n               Lecture  Packaging Code (II)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 10\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 26\n             \n             \n               Lecture  Packaging Code (III)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 27\n             \n             \n               Lab  Documenting your code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 28\n             \n             \n               Lecture  Environment Mgmt\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  RR Legal Framework (due 11/04)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 30\n             \n             \n               Lecture  Discussion Reading 7\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW-3 TBA (due 11/13)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 11\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 02\n             \n             \n               Lecture  Environment Management (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 03\n             \n             \n               Lab  Managing environments\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 04\n             \n             \n               Lecture  Licenses\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Rules for Better Figures (due 11/11)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 06\n             \n             \n               Lecture  Discussion Reading 8\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 12\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 09\n             \n             \n               Lecture  Images, Figures and Graphics\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 10\n             \n             \n               Lab  Handling images and figures\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 11\n             \n             \n               No-Class  Academic holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Research Compendium (due 11/18)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 13\n             \n             \n               Lecture  Discussion Reading 9\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 3 TBA (due 12/07)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 13\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 16\n             \n             \n               Lecture  Research Compendium\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 17\n             \n             \n               Lab  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 18\n             \n             \n               Lecture  Discussion Reading 10\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 20\n             \n             \n               Lecture  Publishing & Communication I\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 14\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 23\n             \n             \n               Lecture  Publishing & Communication II\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 24\n             \n             \n               Lab  Final project status\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 25\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 27\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 15\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 30\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 01\n             \n             \n               Lab  Wrap-Up Final Project\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 02\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 04\n             \n             \n               Lecture  Closing Talk\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 16\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 07\n             \n             \n               Overview  RRR Week\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 17\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 14\n             \n             \n               Final  Project 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \nNo matching items",
+    "text": "Schedule 📅\nTentative calendar subject to change.\n\nWeek 1\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 26\n             \n             \n               Lecture  Welcome to Stat 159\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 28\n             \n             \n               Lecture  Naming Files\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 2\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 31\n             \n             \n               Lecture  File Paths & Unix Terminal\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 01\n             \n             \n               Lab  Shell Commands\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 02\n             \n             \n               Lecture  Project Organization\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Ten Simple Rules for RCR (due 9/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 04\n             \n             \n               Lecture  Intro to Git (part I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW1 Reproducibility Checkup (due 9/18)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 3\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 07\n             \n             \n               No-Class  Academic Holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 08\n             \n             \n               Lab  Getting Started with Git\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 09\n             \n             \n               Lecture  Intro to Git (part II)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Guide for Reproducible Research (due 9/16)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 11\n             \n             \n               Lecture  Discussion Reading 1\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 4\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 14\n             \n             \n               Lecture  Git Branching\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 15\n             \n             \n               Lab  Getting started with Git branches\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 16\n             \n             \n               Lecture  Case Study: Global Temperature\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  7 Easy Steps to Open Science (due 9/23)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 18\n             \n             \n               Lecture  Discussion Reading 2\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj1 Replicating temperature Graphics (due 10/2)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 5\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 21\n             \n             \n               Lecture  Git Remotes\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 22\n             \n             \n               Lab  Github and remote repos\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 23\n             \n             \n               Lecture  Undoing changes in Git\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Data Science at the Singularity (due 9/30)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 25\n             \n             \n               Lecture  Discussion Reading 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 6\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 28\n             \n             \n               Lecture  Intro to Make (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 29\n             \n             \n               Lab  Getting started with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 30\n             \n             \n               Lecture  Intro to Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Reinhart-Rogoff Fiasco (due 10/07)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 02\n             \n             \n               Lecture  Discussion Reading 4\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW2 TBA (due 10/16)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 7\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 05\n             \n             \n               Lecture  Variables in Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 06\n             \n             \n               Lab  More automation with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 07\n             \n             \n               Lecture  More Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Duke Trials Retraction (due 10/14)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 09\n             \n             \n               Lecture  Discussion Reading 5\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 8\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 12\n             \n             \n               Lecture  Git Collaborative workflows\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 13\n             \n             \n               Lab  Working in groups in Github\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 14\n             \n             \n               Lecture  Handling and Sharing Data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 16\n             \n             \n               Lecture  Discussion Reading 6\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 2 TBA (due 10/30)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 9\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 19\n             \n             \n               Lecture  Writing Clear Code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 20\n             \n             \n               Lab  Hands on sharing and managing data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 21\n             \n             \n               Lecture  Packaging Code (I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Share Your Code (due 10/28)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 23\n             \n             \n               Lecture  Packaging Code (II)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 10\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 26\n             \n             \n               Lecture  Packaging Code (III)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 27\n             \n             \n               Lab  Documenting your code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 28\n             \n             \n               Lecture  Environment Mgmt\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  RR Legal Framework (due 11/04)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 30\n             \n             \n               Lecture  Discussion Reading 7\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW-3 TBA (due 11/13)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 11\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 02\n             \n             \n               Lecture  Environment Management (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 03\n             \n             \n               Lab  Managing environments\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 04\n             \n             \n               Lecture  Licenses\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Rules for Better Figures (due 11/11)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 06\n             \n             \n               Lecture  Discussion Reading 8\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 12\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 09\n             \n             \n               Lecture  Images, Figures and Graphics\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 10\n             \n             \n               Lab  Handling images and figures\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 11\n             \n             \n               No-Class  Academic holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Research Compendium (due 11/18)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 13\n             \n             \n               Lecture  Discussion Reading 9\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 3 TBA (due 12/07)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 13\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 16\n             \n             \n               Lecture  Research Compendium\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 17\n             \n             \n               Lab  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 18\n             \n             \n               Lecture  Discussion Reading 10\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 20\n             \n             \n               Lecture  Publishing & Communication I\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 14\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 23\n             \n             \n               Lecture  Publishing & Communication II\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 24\n             \n             \n               Lab  Final project status\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 25\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 27\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 15\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 30\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 01\n             \n             \n               Lab  Wrap-Up Final Project\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 02\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 04\n             \n             \n               Lecture  Closing Talk\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 16\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 07\n             \n             \n               Overview  RRR Week\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 17\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 14\n             \n             \n               Final  Project 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \nNo matching items",
     "crumbs": [
       "Home / Schedule"
     ]
@@ -3999,7 +3999,7 @@
     "href": "readings/03-reading-open-science.html#reflections",
     "title": "3) 7 Steps to Open Science",
     "section": "Reflections",
-    "text": "Reflections\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following questions—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc\n\n\n\n1. Reflecting on Open Access\nThe paper contrasts Gold Open Access (articles made free by the publisher) with Green Open Access (authors self-archiving their own work).\nThink back to a research assignment you completed over the past semester.\n\nDescribe a specific time you encountered an academic paywall online.\nHow did you bypass it? Based on the text, explain how checking a free, stable subject repository like ArXiv could have changed your research flow.\n\n\n\n2. Reflecting on Open Data\nThe paper mentions that while traditional rules state data must be shared “upon request,” the vast majority of researchers fail to share data publicly.\nLook at a data-driven spreadsheet or lab project you completed for a previous class.\n\nIf a classmate messaged you right now demanding your raw files to check for errors, what specific formatting chaos, missing labels, or raw file clutter in your folders would make you hesitant to hand it over?\nWhat is one step you could take to make it FAIR (findable, accessible, interoperable, and reusable)?\n\n\n\n3. Reflecting on Reproducible Analyses\nWilson et al. outline scientific computing best practices, highlighting the core mantra: “Data are cheap, time is expensive”.\nOpen your personal computer’s file explorer right now.\n\nDo you use clean, isolated sub-directories for text documents, raw data, and scripts, or are your files scattered loosely across your “Desktop” or “Downloads” folder?\nCite a specific instance where you lost a file version, and explain how the paper’s folder strategy would have protected you.\n\n\n\n4. Reflecting on Preregistration\nWagenmakers et al. argue that preregistration forces a strict boundary line between confirmatory and exploratory research to protect against human hindsight bias.\n\nDescribe a personal, non-academic experience (e.g., predicting a sports match score, a video game patch outcome, or a plot twist in a show) where you genuinely convinced yourself “I knew it all along” after seeing the outcome.\nHow does your personal experience support the authors’ demand that scientists lock in their hypotheses before looking at data?\n\n\n\n5. Reflecting on Teaching Open Science\nChopik et al. state that even if students do not become professional scientists, open science training is critical to creating smarter “consumers of research” who view media reports critically.\nScroll through your social media feed or a news outlet right now until you find a headline making a scientific, psychological, or health-related claim. Based on your reading of this paper, what specific “transparency indicators” (like open code links, data badges, or a preregistration note) are completely missing from the article that should cause you to doubt its rigor?",
+    "text": "Reflections\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following questions—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc\n\n\n\n1. Reflecting on Open Access\nThe paper contrasts Gold Open Access (articles made free by the publisher) with Green Open Access (authors self-archiving their own work).\nThink back to a research assignment you completed over the past semester.\n\nDescribe a specific time you encountered an academic paywall online.\nHow did you bypass it? Based on the text, explain how checking a free, stable subject repository like ArXiv could have changed your research flow.\n\n\n\n2. Reflecting on Open Data\nThe paper mentions that while traditional rules state data must be shared “upon request,” the vast majority of researchers fail to share data publicly.\nLook at a data-driven spreadsheet or lab project you completed for a previous class.\n\nIf a classmate messaged you right now demanding your raw files to check for errors, what specific formatting chaos, missing labels, or raw file clutter in your folders would make you hesitant to hand it over?\nWhat is one step you could take to make it FAIR (findable, accessible, interoperable, and reusable)?\n\n\n\n3. Reflecting on Teaching Open Science\nChopik et al. state that even if students do not become professional scientists, open science training is critical to creating smarter “consumers of research” who view media reports critically.\nScroll through your social media feed or a news outlet right now until you find a headline making a scientific, psychological, or health-related claim. Based on your reading of this paper, what specific “transparency indicators” (like open code links, data badges, or a preregistration note) are completely missing from the article that should cause you to doubt its rigor?",
     "crumbs": [
       "Readings",
       "3) 7 Steps to Open Science"
@@ -4065,7 +4065,7 @@
     "href": "readings/02-reading-reproducibility-definitions.html",
     "title": "2) Reproducibility Definitions",
     "section": "",
-    "text": "Title: Guide for Reproducible Research\nAuthor(s): The Turing Way\nYear: 2024\nJournal: PLOS Computational Biology 9(10): e1003285\nhttps://book.the-turing-way.org/reproducible-research",
+    "text": "Title: Guide for Reproducible Research: Overview\n\nDefinitions\nAdded ADvantages\nBarriers\nResources\n\nAuthor(s): The Turing Way\nYear: 2024\nhttps://book.the-turing-way.org/reproducible-research/overview/",
     "crumbs": [
       "Readings",
       "2) Reproducibility Definitions"
@@ -4076,7 +4076,7 @@
     "href": "readings/02-reading-reproducibility-definitions.html#assigned-reading",
     "title": "2) Reproducibility Definitions",
     "section": "",
-    "text": "Title: Guide for Reproducible Research\nAuthor(s): The Turing Way\nYear: 2024\nJournal: PLOS Computational Biology 9(10): e1003285\nhttps://book.the-turing-way.org/reproducible-research",
+    "text": "Title: Guide for Reproducible Research: Overview\n\nDefinitions\nAdded ADvantages\nBarriers\nResources\n\nAuthor(s): The Turing Way\nYear: 2024\nhttps://book.the-turing-way.org/reproducible-research/overview/",
     "crumbs": [
       "Readings",
       "2) Reproducibility Definitions"
@@ -4087,7 +4087,7 @@
     "href": "readings/02-reading-reproducibility-definitions.html#reflections",
     "title": "2) Reproducibility Definitions",
     "section": "Reflections",
-    "text": "Reflections\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following questions—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc\n\n\n\n1. Reflecting on Reproducible\nThe Turing Way defines a “reproducible” result as using the same data and the same analysis steps. Think back to a programming or data assignment you submitted in a previous semester.\nIf your laptop was lost today and you had to reconstruct that project on a classmate’s machine using only your memory and the files currently backed up in your email/cloud, what are the exact “ghosts” (a hidden file path, an unrecorded package version, an un-downloaded dataset) that would cause the reproduction to completely fail?\n\n\n2. Reflecting on Robust\nA result is “robust” if using different analysis steps on the same data yields a qualitatively identical answer (e.g., swapping from an R package to a Python script).\nIf you were forced to completely rewrite your favorite data script into a programming language you barely know, which specific part of your code’s logic do you suspect would fall apart or yield a different mathematical rounding result, and why?\n\n\n3. “P-Hacking” Temptation\nStodden isolates “Statistical Reproducibility” as documenting the deliberate choice of thresholds and parameters.\nDescribe a time during an assignment or project where a script yielded an unexciting, messy result, and you felt the intense psychological temptation to tweak a filter, drop a few inconvenient outliers, or change your hypothesis just to get a “cleaner” chart for a better grade. How would a mandatory preregistration log have changed your behavior in that moment?\n\n\n4. The Locked-Door Paradox\nThe Turing Way emphasizes that reproducibility does not necessarily mean “open to the public,” recognizing that private medical or security data must remain closed.\nIf you were building a highly sensitive database that legally cannot be published on GitHub, how would you design a workflow that still allows an independent, authorized auditor to verify your results without leaking private citizen identities?\n\n\n5. The “Sloppy Success” Evaluation\nImagine a peer creates a messy, un-versioned script that accidentally discovers a brilliant, groundbreaking pattern in a public dataset, but their workflow is completely un-reproducible.\nYou build a flawless, fully automated, version-controlled pipeline that proves a hypothesis is completely wrong, but anyone can rerun it perfectly. In your own words, defend why your “reproducible failure” might actually be more valuable to the progress of science than their “sloppy success.”\n\n\n\n\n\n\nNote\n\n\n\nFor Questions 1, 4, and 5, generic responses that do not mention a specific past assignment name or unique piece of code from your own experience will receive a score of zero.",
+    "text": "Reflections\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following questions—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc\n\n\n\n1. Reflecting on Reproducible\nThe Turing Way defines a “reproducible” result as using the same data and the same analysis steps. Think back to a programming or data assignment you submitted in a previous semester.\nIf your laptop was lost today and you had to reconstruct that project on a classmate’s machine using only your memory and the files currently backed up in your email/cloud, what are the exact “ghosts” (a hidden file path, an unrecorded package version, an un-downloaded dataset) that would cause the reproduction to completely fail?\n\n\n2. Reflecting on Robust\nThe Turing Way defines a result as “robust” if using different analysis steps on the same data yields a qualitatively identical answer (e.g., swapping from an R package to a Python script).\nIf you were forced to completely rewrite your favorite data script into a programming language you barely know, which specific part of your code’s logic do you suspect would fall apart or yield a different mathematical rounding result, and why?\n\n\n3. Reproducible Failure\nImagine a peer creates a messy, un-versioned script that accidentally discovers a brilliant, groundbreaking pattern in a public dataset, but their workflow is completely un-reproducible.\nYou build a flawless, fully automated, version-controlled pipeline that proves a hypothesis is completely wrong, but anyone can rerun it perfectly. In your own words, defend why your “reproducible failure” might actually be more valuable to the progress of science than their “sloppy success.”",
     "crumbs": [
       "Readings",
       "2) Reproducibility Definitions"
@@ -4446,156 +4446,156 @@
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#about-nyts-article",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#about-nyts-article",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "About NYT’s article",
     "text": "About NYT’s article\n\n\n\nIt’s Official: 2018 Was the Fourth-Warmest Year on Record\nby John Schwartz and Nadja Popovich\nPublished on Feb 6, 2019\nhttps://www.nytimes.com/interactive/2019/02/06/climate/fourth-hottest-year.html"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#authors-1-2",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#authors-1-2",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "Authors 1 2",
     "text": "Authors 1 2\n\n\n\n\n\n\nhttps://www.nytimes.com/by/john-schwartzhttps://www.nytimes.com/by/nadja-popovich"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#articles-claims",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#articles-claims",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "Article’s claims",
     "text": "Article’s claims\n\n“NASA scientists announced Wednesday that the Earth’s average surface temperature in 2018 was the fourth highest in nearly 140 years of record-keeping and a continuation of an unmistakable warming trend.”\n“The data means that the five warmest years in recorded history have been the last five, and that 18 of the 19 warmest years have occurred since 2001.”\n“The publication of the NASA temperature data came in tandem with a similar announcement from the National Oceanic and Atmospheric Administration.”"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#articles-claims-1",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#articles-claims-1",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "Article’s claims",
     "text": "Article’s claims"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#articles-claims-2",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#articles-claims-2",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "Article’s claims",
     "text": "Article’s claims"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#articles-claims-3",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#articles-claims-3",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "Article’s claims",
     "text": "Article’s claims"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#question",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#question",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "Question",
     "text": "Question"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#main-considerations",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#main-considerations",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "Main Considerations",
-    "text": "Main Considerations\n\nCan we find the raw data?\nCan we write code to graph a timeline?\nCan we customize the visual appearance of the graphic?"
+    "text": "Main Considerations\n\nCan we find the raw data?\nHow much cleaning/wrangling does the raw data need?\nCan we write code to graph a timeline?\nCan we customize the visual appearance of the graphic?"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#nasas-data",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#nasas-data",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "NASA’s Data",
     "text": "NASA’s Data\nGISTEMP website\nhttps://data.giss.nasa.gov/gistemp/\n\n\n\n\n\n\n\n\nBased on my experience, this step usually takes some time (e.g. searching through dozens of websites and links, inspecting databases, data sets, and files)"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#gistemp-data",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#gistemp-data",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "GISTEMP Data",
-    "text": "GISTEMP Data\n\nThe GISS Surface Temperature Analysis (GISTEMP v4) is an estimate of global surface temperature change.\nGISTEMP is one of the longest established surface temperature analyses with first estimates made in Hansen et al. (1981)"
+    "text": "GISTEMP Data\n\nThe GISS Surface Temperature Analysis (GISTEMP v4) is an estimate of global surface temperature change.\nGISTEMP is one of the longest established surface temperature analyses with first estimates made in Hansen et al. (1981)\nUses data from:\n\nLand: Meteorological stations (NOAA GHCN v4)\nOcean: Ocean areas (ERSST v5)"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-5",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#section-5",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "",
-    "text": "For nearly 45 years, a team of scientists at NASA’s GISS has been tracking these rising temperatures and producing records and analyses of the global temperature of Earth. Each month, scientists release a dataset.\n\nOn land, thermometers affixed to tens of thousands of weather stations give us precise air temperature readings.\nShips and buoys floating in the ocean capture temperatures at the sea surface.\nCalculating an average global temperature requires collecting all those datasets.\nhttps://science.nasa.gov/earth/measuring_global_temperature/"
+    "text": "The earth’s climate system is notoriously complex\nThis system undergoes multiyear variations, e.g.,\n\nEl Niño southern oscillation\nThe Quasi-biennial oscillation of the tropical stratosphere\n\nEarth does not have a one-single temperature"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-7",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#section-7",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "",
-    "text": "Monthly surface temperature anomaly data\n“Surface temperature anomalies” is a combination of:\n\nLand-Surface Air (LSA) temperature anomalies\nSea-Surface Water (SSW) temperature anomalies\n\nAlso known as Land-Ocean Temperature Index (L-OTI)\nAnomalies are deviations from the 1951-1980 means\nKeep in mind that a temperature anomaly is a departure or deviation from a long-term average, baseline “normal” temperature.\nInstead of measuring the absolute, raw temperature (e.g., “The temperature in Death Valley today is 45°C”), climate scientists measure how much warmer or colder a specific time and place is compared to its historic reference baseline."
+    "text": "https://svs.gsfc.nasa.gov/5208/"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#temperature-anomalies",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#temperature-anomalies",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "Temperature Anomalies",
-    "text": "Temperature Anomalies\n\\[\n\\text{Temp Anomaly} = \\text{Observed Temp} - \\text{Baseline Average Temp}\n\\]\n\nWhat the Numbers Mean:\n\nPositive Anomaly (+): The observed temperature was warmer than the historic baseline average.\nNegative Anomaly (-): The observed temperature was cooler than the historic baseline average.\nZero Anomaly (0): The temperature was exactly equal to the long-term historical average."
+    "text": "Temperature Anomalies\n\\[\n\\text{Temp Anomaly} = \\text{Observed Temp} - \\text{Baseline Average Temp}\n\\]\n\nA temperature anomaly is a departure or deviation from a long-term average, baseline “normal” temperature.\nInstead of measuring the absolute, raw temperature (e.g., “The temperature in Death Valley today is 45°C”), climate scientists measure how much warmer or colder a specific time and place is compared to its historic reference baseline."
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#why-using-anomalies",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#why-using-anomalies",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "Why Using Anomalies?",
     "text": "Why Using Anomalies?\n\nWhy not just average absolute temperatures?\nAbsolute temperatures are heavily distorted by local geography.\ne.g. If you have two weather stations—one at the bottom of a mountain and one at the peak—their absolute temperatures will vary wildly due to elevation.\nWhile absolute temperatures shift from mile to mile, temperature anomalies are highly correlated across vast distances.\ne.g. If a winter is unusually warm in Chicago, it is almost certainly unusually warm in Detroit, Milwaukee, and across the entire Midwest.\nBecause the anomaly signal is uniform across large regions, they accurately reflect temperature trends even in data-sparse areas."
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#txt-file-3",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#txt-file-3",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "txt file 1",
     "text": "txt file 1\n\n\n\n\n\nhttps://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.txt"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#csv-file-4",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#csv-file-4",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "csv file 1",
     "text": "csv file 1\n\n\n\n\n\nhttps://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#nyt--vs--nasa",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#nyt--vs--nasa",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "NYT -vs- NASA",
     "text": "NYT -vs- NASA\n\n\n\n\nNYT\n\n\nNASA"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#questions",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#questions",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "Questions",
     "text": "Questions\n\n\nDid the NYT actively manipulate the data to create climate panic?\n\n\nWhy did NYT change the baseline? Any thoughts?\n\n\n\n−+\n03:00"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-11",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#section-11",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "",
-    "text": "Let’s consider 4 different file structures\n\n\n\n\n\n\nScenario A (no raw data)\n\nproject/\n  doc.qmd"
+    "text": "Monthly surface temperature anomaly data\n“Surface temperature anomalies” is a combination of:\n\nLand-Surface Air (LSA) temperature anomalies\nSea-Surface Water (SSW) temperature anomalies\n\nAlso known as Land-Ocean Temperature Index (L-OTI)\nAnomalies are deviations from the 1951-1980 means\nKeep in mind that a temperature anomaly is a departure or deviation from a long-term average, baseline “normal” temperature.\nInstead of measuring the absolute, raw temperature (e.g., “The temperature in Death Valley today is 45°C”), climate scientists measure how much warmer or colder a specific time and place is compared to its historic reference baseline."
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-12",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#section-12",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "",
-    "text": "Let’s consider 4 different file structures\n\n\n\n\n\n\nScenario A (no raw data)\n\nproject/\n  doc.qmd\n\n\n\n\n\n\n\nScenario B\n\nproject/\n  doc.qmd\n  GLB.Ts+dSST.csv"
+    "text": "Monthly surface temperature anomaly data\n“Surface temperature anomalies” is a combination of:\n\nLand-Surface Air (LSA) temperature anomalies\nSea-Surface Water (SSW) temperature anomalies\n\nAlso known as Land-Ocean Temperature Index (L-OTI)\nAnomalies are deviations from the 1951-1980 means\nKeep in mind that a temperature anomaly is a departure or deviation from a long-term average, baseline “normal” temperature.\nInstead of measuring the absolute, raw temperature (e.g., “The temperature in Death Valley today is 45°C”), climate scientists measure how much warmer or colder a specific time and place is compared to its historic reference baseline."
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-13",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#section-13",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "",
-    "text": "Let’s consider 4 different file structures\n\n\n\n\n\n\nScenario A (no raw data)\n\nproject/\n  doc.qmd\n\n\n\n\n\n\n\nScenario B\n\nproject/\n  doc.qmd\n  GLB.Ts+dSST.csv\n\n\n\n\nScenario C\n\nproject/\n  doc.qmd\n  data/\n    GLB.Ts+dSST.csv"
+    "text": "Reproduce NASA’s image: Global Mean Estimates based on Land and Ocean Data\nReproduce NYT’s graphic: Rising Global Temperature"
   },
   {
     "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-14",
     "href": "lectures/09-global-temp/09-global-temp-slides.html#section-14",
-    "title": "Case Study: Global Temperature",
+    "title": "Case Study: Global Temperature Anomalies",
     "section": "",
-    "text": "Let’s consider 4 different file structures\n\n\n\n\n\n\nScenario A (no raw data)\n\nproject/\n  doc.qmd\n\n\n\n\n\n\n\nScenario B\n\nproject/\n  doc.qmd\n  GLB.Ts+dSST.csv\n\n\n\n\nScenario C\n\nproject/\n  doc.qmd\n  data/\n    GLB.Ts+dSST.csv\n\n\n\n\n\nScenario D\n\nproject/\n  report/\n    doc.qmd\n  data/\n    GLB.Ts+dSST.csv"
+    "text": "Reproduce NASA’s image: Global Mean Estimates based on Land and Ocean Data\nReproduce NYT’s graphic: Rising Global Temperature"
   },
   {
     "objectID": "lectures/27-environments1/live-demo-renv.html#setup-do-this-before-class",
@@ -5400,7 +5400,7 @@
     "href": "lectures/07-discuss1/07-discussion-slides.html#review",
     "title": "10 Simple Rules for RR",
     "section": "Review",
-    "text": "Review\n\nFor Every Result, Keep Track of How It Was Produced\n\n\n\n\nAvoid Manual Data Manipulation Steps\n\n\n\n\nArchive the Exact Versions of All External Programs Used\n\n\n\n\nVersion Control All Custom Scripts"
+    "text": "Review"
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#review-1",
@@ -5449,14 +5449,14 @@
     "href": "lectures/07-discuss1/07-discussion-slides.html#rule-5-exposing-the-pipelines-inner-mechanics",
     "title": "10 Simple Rules for RR",
     "section": "Rule 5: Exposing the Pipeline’s Inner Mechanics",
-    "text": "Rule 5: Exposing the Pipeline’s Inner Mechanics\n\n\n🔬 The Analytical Value\nQuickly browsing through step-by-step intermediate output files can reveal silent logical discrepancies, catching bugs that are completely masked in final summary charts.\n\n🛠️ The Pipeline Value\nIf your full project execution is long or resource-heavy, archiving standardized intermediate states allows you to re-run localized parts of the process without starting over from scratch.\n\n\nThe Audit Baseline: Storing intermediate files allows external peers to critically examine your complete pipeline logic without needing all your local executables operational."
+    "text": "Rule 5: Exposing the Pipeline’s Inner Mechanics\n\n\n\n\nThe Analytical Value\nQuickly browsing through step-by-step intermediate output files can reveal silent logical discrepancies, catching bugs that are completely masked in final summary charts.\n\nThe Pipeline Value\nIf your full project execution is long or resource-heavy, archiving standardized intermediate states allows you to re-run localized parts of the process without starting over from scratch.\n\n\nThe Audit Baseline: Storing intermediate files allows external peers to critically examine your complete pipeline logic without needing all your local executables operational."
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#rules-6-7-perfect-replications-data-foundations",
     "href": "lectures/07-discuss1/07-discussion-slides.html#rules-6-7-perfect-replications-data-foundations",
     "title": "10 Simple Rules for RR",
     "section": "Rules 6 & 7: Perfect Replications & Data Foundations",
-    "text": "Rules 6 & 7: Perfect Replications & Data Foundations\n\n\n\n\n\n\nRule 6: The Random Seed Mandate\n\n\nMany analyses involve stochastic element randomness. To achieve an exact procedural reproduction rather than just an approximation, you must explicitly record and pass your initial random seed.\n\n\n\n\nIsolate Visual Tweaks: Figures are modified constantly before publication. Store the raw, un-binned data separately behind your charts.\nThe Scripted Plot: If plotting in an environment like R or Python, preserve the exact code chunk used to render the graphic. You can then execute quick aesthetic axis or color shifts via code without re-running long statistical computations."
+    "text": "Rules 6 & 7: Perfect Replications & Data Foundations\n\n\n\n\n\n\nRule 6: The Random Seed Mandate\n\n\nMany analyses involve stochastic element randomness. To achieve an exact procedural reproduction rather than just an approximation, you must explicitly record and pass your initial random seed.\n\n\n\n\nIsolate Visual Tweaks: Store the data behind your charts.\nThe Scripted Plot: Preserve the exact code used to render a graphic."
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#rule-8-generating-hierarchical-output",
@@ -5477,49 +5477,49 @@
     "href": "lectures/07-discuss1/07-discussion-slides.html#rule-10-providing-public-access-to-your-workflow",
     "title": "10 Simple Rules for RR",
     "section": "Rule 10: Providing Public Access to Your Workflow",
-    "text": "Rule 10: Providing Public Access to Your Workflow\n\n“Making reproducibility of your work by peers a realistic possibility sends a strong signal of quality, trustworthiness, and transparency.”\n— Sandve et al. (2013)\n\n\nThe Minimum Material: Submit your core data frames and raw source code scripts as mandatory supplementary online files upon publication.\nThe Review Advantage: Exposing your full workspace infrastructure increases reviewer trust, accelerates editorial turnaround times, and boosts your project’s future citation metrics.\nThe Open Stance: Always remain prepared to openly answer peer requests for deep architectural or parameter pipeline metrics."
+    "text": "Rule 10: Providing Public Access to Your Workflow\n\nThe Minimum Material: Submit your core data frames and raw source code scripts as mandatory supplementary online files upon publication.\nThe Review Advantage: Exposing your full workspace infrastructure increases reviewer trust, accelerates editorial turnaround times, and boosts your project’s future citation metrics.\nThe Open Stance: Always remain prepared to openly answer peer requests for deep architectural or parameter pipeline metrics."
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#scenario-1",
     "href": "lectures/07-discuss1/07-discussion-slides.html#scenario-1",
     "title": "10 Simple Rules for RR",
     "section": "Scenario 1",
-    "text": "Scenario 1\nYou’ve been working on a lab report for the past few days. Today is the deadline and you open your computer at 2:00 AM to finish the lab report. You see four files in your folder: analysis.R, analysis_final.R, analysis_definitive.R, and analysis_actual_final_v4.R.\n\n\n\nWhich file contains your actual, correct work?\nWhat file naming approach is better:\n\n\nIncremental numbering?\n\n\nDate-stamping?\n\n\n\n\n\n\n\n−+\n03:00\n\n\n\n\nRemind students that if they can’t tell which file is the real one, a computer definitely can’t.\nA better approach would be to use a version control tool like Git."
+    "text": "Scenario 1\nYour teammate creates a breathtaking, beautifully styled bar chart for a group presentation. However, when the professor asks to see the 10,000 raw data points that generated the third bar, your teammate sweats and says, “Uh, it’s on my old laptop.”\n\n\n\nCan a highly styled chart have any actual academic value?\nHow should losing access to raw files be treated?\nShould the student be accused of data fabrication?\n\n\n\n\n\n−+\n04:00\n\n\n\n\nA pretty chart without raw data trails isn’t science; it’s just creative writing/coding. There is not a lot of academic value in a breathtaking, highly styled chart if the baseline data supporting it cannot be produced on demand.\n“The burden of proof.” In some professional environments, an inability to instantly back up a specific visual claim with its underlying numbers looks less like a mistake and more like data fabrication."
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#scenario-2",
     "href": "lectures/07-discuss1/07-discussion-slides.html#scenario-2",
     "title": "10 Simple Rules for RR",
     "section": "Scenario 2",
-    "text": "Scenario 2\nYour teammate creates a breathtaking, beautifully styled bar chart for a group presentation. However, when the professor asks to see the 10,000 raw data points that generated the third bar, your teammate sweats and says, “Uh, it’s on my old laptop.”\n\n\n\nCan a highly styled chart have any actual academic value?\nShould losing access to raw files be treated as an acceptable, relatable accident or as a fundamental failure of professional data management?\nShould the student be accused of data fabrication?\n\n\n\n\n\n−+\n05:00\n\n\n\n\nA pretty chart without raw data trails isn’t science; it’s just creative writing/coding. There is not a lot of academic value in a breathtaking, highly styled chart if the baseline data supporting it cannot be produced on demand.\nThe burden of proof. In some professional environments, an inability to instantly back up a specific visual claim with its underlying numbers looks less like a mistake and more like data fabrication."
+    "text": "Scenario 2\nA student keeps a beautiful, 100-page handwritten leather notebook. She tracks every single mouse click, every copy-paste action, and every manual data-cleaning step she performs in Excel with flawless precision.\n\n\n\nIs the student’s work reproducible?\nIs there any value in (or place for) hand-written notes?\n\n\n\n\n\n−+\n04:00\n\n\n\n\nA beautifully kept manual record still fails the core requirement of being an “executable description” that a computer can run and scale.\nManual copy-paste actions and Excel mouse clicks introduce silent, untraceable human errors that version control cannot catch. We should prefer automated scripts that require zero human intervention to repeat.\nThere is immense value in handwritten notes and manual approaches, but only as a sandbox for human thought, not as the final pipeline for data execution.\nThe “Why” vs. the “How”: Code is excellent at tracking how a calculation is done, but it is terrible at explaining why you chose to do it. A handwritten notebook is a cognitive sandbox. It is where a researcher maps out messy conceptual logic, sketches potential workflows, and processes failures before writing a single line of script."
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#scenario-3",
     "href": "lectures/07-discuss1/07-discussion-slides.html#scenario-3",
     "title": "10 Simple Rules for RR",
     "section": "Scenario 3",
-    "text": "Scenario 3\nA student keeps a beautiful, 100-page handwritten leather notebook. She tracks every single mouse click, every copy-paste action, and every manual data-cleaning step she performs in Excel with flawless precision.\n\n\n\nIs the student’s work reproducible?\nWhat alternative approaches can the student use?\nIs there any value in (or place for) hand-written notes?\n\n\n\n\n\n−+\n05:00\n\n\n\n\nA beautifully kept manual record still fails the core requirement of being an “executable description” that a computer can run and scale.\nManual copy-paste actions and Excel mouse clicks introduce silent, untraceable human errors that version control cannot catch. We should prefer automated scripts that require zero human intervention to repeat.\nThere is immense value in handwritten notes and manual approaches, but only as a sandbox for human thought, not as the final pipeline for data execution.\nThe “Why” vs. the “How”: Code is excellent at tracking how a calculation is done, but it is terrible at explaining why you chose to do it. A handwritten notebook is a cognitive sandbox. It is where a researcher maps out messy conceptual logic, sketches potential workflows, and processes failures before writing a single line of script.\nAlso, a handwritten notebook is a cognitive sandbox. It is where a researcher maps out messy conceptual logic, sketches potential workflows, and processes failures before writing a single line of script."
+    "text": "Scenario 3\nYou spend three weeks testing a hypothesis on a dataset. Your code is perfect, your pipeline is automated, but the results prove your hypothesis is completely, totally wrong. Your script yields a massive “dead end.”\n\n\n\nDid your hypothesis fail, or did you?\nDid you just waste 3 weeks of work?\nWould you still share your work in a public repo?\n\n\n\n\n\n−+\n04:00\n\n\n\n\n\nDid your hypothesis fail, or did you? It’s important to separate the quality of your code from the behavior of nature.\nAlso, an automated “failed” experiment is actually a massive engineering success.\nDid you just waste 3 weeks of work? The danger of deleting your dead ends: What happens to the scientific community when researchers hide their failures, forcing the next person to waste weeks re-testing the exact same wrong idea.\nWould you still share your work in a public repo? Submit and store it with the exact same reproducibility standards as a success, because documenting “blind alleys” saves future researchers from wasting time on the same mistake."
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#scenario-4",
     "href": "lectures/07-discuss1/07-discussion-slides.html#scenario-4",
     "title": "10 Simple Rules for RR",
     "section": "Scenario 4",
-    "text": "Scenario 4\nYou spend three weeks testing a hypothesis on a dataset. Your code is perfect, your pipeline is automated, but the results prove your hypothesis is completely, totally wrong. Your script yields a massive “dead end.”\n\n\n\nDid your hypothesis fail, or did you?\nDid you just waste 3 weeks of work?\nWould you still share your work in a public repo?\n\n\n\n\n\n−+\n05:00\n\n\n\n\n\nDid your hypothesis fail, or did you? It’s important to separate the quality of your code from the behavior of nature.\nAlso, an automated “failed” experiment is actually a massive engineering success.\nDid you just waste 3 weeks of work? The danger of deleting your dead ends: What happens to the scientific community when researchers hide their failures, forcing the next person to waste weeks re-testing the exact same wrong idea.\nWould you still share your work in a public repo? Submit and store it with the exact same reproducibility standards as a success, because documenting “blind alleys” saves future researchers from wasting time on the same mistake."
+    "text": "Scenario 4\nYour script runs a 4-hour simulation on a large dataset, processing everything live in temporary memory to output a final summary paragraph. When your professor spots an anomaly and asks to see the data right after the initial filtering step, you realize nothing was saved along the way.\n\n\n\nWhat are some advantages of a single “all-or-nothing” live run?\nWhat are some disadvantages of saving intermediate steps?\n\n\n\n\n\n−+\n04:00\n\n\n\n\nDisadvantages of a pipeline that only saves the final answer: impossible to troubleshoot, audit, or verify when a bug or anomaly inevitably appears in the middle.\nDiscuss the massive waste of time and computational energy that happens when you treat data analysis as a single “all-or-nothing” live run instead of caching milestones.\nDebate the engineering trade-off between consuming hard drive space to store temporary milestone files versus consuming hours of processing time to re-run scripts.\nBetter to transform a 4-hour pipeline into a modular, flexible workflow that can be paused, inspected, and restarted at any point."
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#scenario-5",
     "href": "lectures/07-discuss1/07-discussion-slides.html#scenario-5",
     "title": "10 Simple Rules for RR",
     "section": "Scenario 5",
-    "text": "Scenario 5\nYour script runs a 4-hour simulation on a large dataset, processing everything live in temporary memory to output a final summary paragraph. When your professor spots an anomaly and asks to see the data right after the initial filtering step, you realize nothing was saved along the way.\n\n\n\nWhat are some advantages of a single “all-or-nothing” live run?\nWhat are some disadvantages of saving intermediate steps?\n\n\n\n\n\n−+\n05:00\n\n\n\n\nDisadvantages of a pipeline that only saves the final answer: impossible to troubleshoot, audit, or verify when a bug or anomaly inevitably appears in the middle.\nDiscuss the massive waste of time and computational energy that happens when you treat data analysis as a single “all-or-nothing” live run instead of caching milestones.\nDebate the engineering trade-off between consuming hard drive space to store temporary milestone files versus consuming hours of processing time to re-run scripts.\nBetter to transform a 4-hour pipeline into a modular, flexible workflow that can be paused, inspected, and restarted at any point."
+    "text": "Scenario 5\nYour script runs a 4-hour simulation on a large dataset, processing everything live in temporary memory to output a final summary paragraph. When your professor spots an anomaly and asks to see the data right after the initial filtering step, you realize nothing was saved along the way.\n\n\n\nWhat are some advantages of a single “all-or-nothing” live run?\nWhat are some disadvantages of saving intermediate steps?\n\n\n\n\n\n−+\n04:00\n\n\n\n\nDisadvantages of a pipeline that only saves the final answer: impossible to troubleshoot, audit, or verify when a bug or anomaly inevitably appears in the middle.\nDiscuss the massive waste of time and computational energy that happens when you treat data analysis as a single “all-or-nothing” live run instead of caching milestones.\nDebate the engineering trade-off between consuming hard drive space to store temporary milestone files versus consuming hours of processing time to re-run scripts.\nBetter to transform a 4-hour pipeline into a modular, flexible workflow that can be paused, inspected, and restarted at any point."
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#google-form",
     "href": "lectures/07-discuss1/07-discussion-slides.html#google-form",
     "title": "10 Simple Rules for RR",
     "section": "Google Form",
-    "text": "Google Form\n\n\nINSERT QR code!!!\n\n\nINSERT  link to google form!!!"
+    "text": "Google Form\n\n\n\n\n\ntinyurl.com/2j88yk2n"
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#poll",
@@ -5533,21 +5533,21 @@
     "href": "lectures/07-discuss1/07-discussion-slides.html#poll-1",
     "title": "10 Simple Rules for RR",
     "section": "Poll",
-    "text": "Poll\n\nYou notice a minor discrepancy in an analysis plot you generated three weeks ago.\nYou need to backtrack to the exact code state that produced that specific figure.\nWhat is the reality of your current local file system?\n\n\nPerfect Provenance: Every single script modification is systematically frozen in a timestamped Git commit hash; I can jump back in seconds.\nThe “Folder Vault” Cluster I have copies named script_v1.R, script_v2_fixed.R, and script_final_REAL.R. It will take hours of manual guessing.\nThe Overwrite Abyss: I continuously modify a single file without saving historical backups. That past code state is permanently gone.\nThe Cloud Illusion: I assume my automatic background Google Drive/Dropbox sync will save me, even though it doesn’t track execution states."
+    "text": "Poll\n\nYou notice a minor discrepancy in plot you generated 3 weeks ago. You need to backtrack to the exact code state that produced that specific figure.\nWhat is the reality of your current local file system?\n\n\nPerfect Provenance: Every single script modification is systematically frozen in a timestamped Git commit hash; I can jump back in seconds.\nThe “Folder Vault” Cluster I have copies named script_v1.R, script_v2_fixed.R, and script_final_REAL.R. It will take hours of manual guessing.\nThe Overwrite Abyss: I continuously modify a single file without saving historical backups. That past code state is permanently gone.\nThe Cloud Illusion: I assume my background Google Drive/Dropbox sync will save me, even though it doesn’t track execution states."
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#poll-2",
     "href": "lectures/07-discuss1/07-discussion-slides.html#poll-2",
     "title": "10 Simple Rules for RR",
     "section": "Poll",
-    "text": "Poll\n\nYou run a classmate’s stochastic simulation script on your machine using identical data inputs.\nBecause they forgot to pass a static random seed, your output values are approximately close (e.g., 84.2% accuracy) but not exactly equal to their published value (84.5%).\nWhat is your scientific verdict?\n\n\nAcceptable Replication: Close enough is good enough for computational science; minor stochastic fluctuations don’t undermine the core theory.\nUnverifiable Black Box: An approximate match is a failure; without an exact mathematical match via a random seed, I cannot verify if the pipeline is truly bug-free.\nIndifferent Stance: I assume the difference is caused by our different operating system kernels or processor architectures anyway, so a seed won’t fix it."
+    "text": "Poll\nYou run a classmate’s random simulation script on your machine using identical data inputs. But they forgot to set a static random seed. Your output values are approximately close (e.g., 84.2% accuracy) but not exactly equal to their published value (84.5%). What is your scientific verdict?\n\nAcceptable Replication: Close enough is good enough for computational science; minor stochastic fluctuations don’t undermine the core theory.\nUnverifiable Black Box: An approximate match is a failure; without an exact mathematical match via a random seed, I cannot verify if the pipeline is truly bug-free.\nIndifferent Stance: I assume the difference is caused by our different operating system kernels or processor architectures anyway, so a seed won’t fix it."
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#poll-3",
     "href": "lectures/07-discuss1/07-discussion-slides.html#poll-3",
     "title": "10 Simple Rules for RR",
     "section": "Poll",
-    "text": "Poll\n\nThink about how you write lab reports, group notes, or draft research paragraphs.\nWhere do your conceptual interpretations live relative to the raw output data files that support them?\n\n\nFully Welded Documents: I use integrated dynamic document tools (like Quarto or Jupyter Notebooks) so my text and live data logic are locked together natively.\nThe Absolute Path Blind Bind: I manually type hardcoded server folder paths (e.g., /Users/name/Desktop/run_3) inside a separate Microsoft Word document.\nThe Total Disconnect: My data lives in a folder on a local server, and my interpretations live entirely in casual emails, Slack chats, or scrap paper notes."
+    "text": "Poll\nThink about how you write lab reports, group notes, or draft research paragraphs. Where do your conceptual interpretations live relative to the raw output data files that support them?\n\nFully Welded Documents: I use integrated dynamic document tools (like Quarto or Jupyter Notebooks) so my text and live data logic are locked together natively.\nThe Absolute Path Blind Bind: I manually type hardcoded server folder paths (e.g., /Users/name/Desktop/run_3) inside a separate Microsoft Word document.\nThe Total Disconnect: My data lives in a folder on a local server, and my interpretations live entirely in casual emails, Slack chats, or scrap paper notes."
   },
   {
     "objectID": "lectures/07-discuss1/07-discussion-slides.html#poll-4",
@@ -6786,7 +6786,7 @@
     "href": "lectures/06-git2/06-git-workflow-slides.html#yesterdays-lab",
     "title": "Intro to Git (part 2)",
     "section": "Yesterday’s Lab",
-    "text": "Yesterday’s Lab\n\n\n\nWindows users: installed Git\nGit configuration: git config\n\nuser name\nemail\ncolor highlight\n\nCreated a local repo: git init\n\n\n\nBasic commands:\n\ngit status\ngit add\ngit commit -m \"...\"\ngit log\ngit diff"
+    "text": "Yesterday’s Lab\nBasic Git commands:\n\ngit status\ngit add\ngit commit -m \"...\"\ngit log\ngit diff"
   },
   {
     "objectID": "lectures/06-git2/06-git-workflow-slides.html#todays-outline",
@@ -7201,5 +7201,322 @@
     "title": "Intro to Git (part 2)",
     "section": "Much better",
     "text": "Much better\n\n\nExample: nice commit messages\n\ncommit 9e2f41c (HEAD -&gt; main, origin/main) \n\"docs: update API authentication steps in README\"\n\ncommit 8d1e30b \"fix(auth): resolve token expiration memory leak (#402)\"\n\ncommit 7c0d29a \"style: fix navigation bar alignment on mobile screens\"\n\ncommit 6b9c18f \"refactor(data): optimize database query processing loops\"\n\ncommit 5a8b07e \"test: add integration tests for user login validation\"\n\ncommit 3e6d85c \"feat(auth): implement user registration API endpoint\"\n\ncommit 2d5c74b \"chore: initialize project dependencies and folder structure\"\n\n\ncommit 9e2f41c (HEAD -&gt; main, origin/main) “docs: update API authentication steps in README” ↳ (Context: Clean documentation update. A developer can immediately see what text changed.)\ncommit 8d1e30b “fix(auth): resolve token expiration memory leak (#402)” ↳ (Context: Clearly states the scope (auth) and the specific problem fixed. Links to an issue ticket.)\ncommit 7c0d29a “style: fix navigation bar alignment on mobile screens” ↳ (Context: Purely cosmetic change. Teams know this commit contains zero business logic changes.)\ncommit 6b9c18f “refactor(data): optimize database query processing loops” ↳ (Context: Code was rewritten to run faster, but no new features were added and no bugs were introduced.)\ncommit 5a8b07e “test: add integration tests for user login validation” ↳ (Context: Explicitly isolates test files. If a testing framework breaks, you know where to look.)\ncommit 3e6d85c “feat(auth): implement user registration API endpoint” ↳ (Context: The foundation for the auth system. Clean, atomic, and easy to review.)\ncommit 2d5c74b “chore: initialize project dependencies and folder structure” ↳ (Context: Background maintenance task like updating packages or setting up a configuration.)"
+  },
+  {
+    "objectID": "lectures/07-discuss1/07-discussion-slides.html#screens-off-minds-on",
+    "href": "lectures/07-discuss1/07-discussion-slides.html#screens-off-minds-on",
+    "title": "10 Simple Rules for RR",
+    "section": "Screens Off, Minds On",
+    "text": "Screens Off, Minds On\n\n\n\nDevices Away: Laptops & tablets closed, phones away.\nNo One Alone: Pair or team up (no solo seats).\nEngage Fully: Be ready to speak, debate, and share ideas."
+  },
+  {
+    "objectID": "lectures/07-discuss1/07-discussion-slides.html#section",
+    "href": "lectures/07-discuss1/07-discussion-slides.html#section",
+    "title": "10 Simple Rules for RR",
+    "section": "",
+    "text": "Rules 1 & 2: Eliminating Human Drift\n\nThe Documentation Trap: Manual logs easily drift out of sync.\nThe Executable Solution: Write your entire workflow as a directly executable file—such as a shell script or a Makefile.\nBan Manual Clicks: Avoid manual copy-pasting, mouse clicks or graphical format tweaks between documents.\n\n\nRules 3 & 4: Freezing Your Software State\n\nThe Version Lock: Minor changes between software updates can alter data outputs or prevent code from running entirely."
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-6",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#section-6",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "",
+    "text": "The earth’s climate system is notoriously complex\nThis system undergoes multiyear variations, e.g.,\n\nEl Niño southern oscillation\nThe Quasi-biennial oscillation of the tropical stratosphere\n\nEarth does not have a one-single temperature"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#how-do-we-measure-weather",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#how-do-we-measure-weather",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "How do we measure weather?",
+    "text": "How do we measure weather?\n\n\n\n\n\nWind speed\nHumidity\nAir pressure\nRainfall\nAir Temperature\n\n\n\n\nWhy focus on Air Temperature?\n\nBecause temperature drives everything else\nScientists are most concern with air temperature at the planet surface (where we live)"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#challenges",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#challenges",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "Challenges",
+    "text": "Challenges\n\nEarth does not have a one-single temperature\nTemperature varies throughout the day\nTemperature varies depending on where you are\nTemperatures vary between urban areas and country side\nThe earth’s climate system is notoriously complex\nThis system undergoes multiyear variations, e.g.,\n\nEl Niño southern oscillation\nThe Quasi-biennial oscillation of the tropical stratosphere"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#how-is-temperature-data-collected",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#how-is-temperature-data-collected",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "How is temperature data collected?",
+    "text": "How is temperature data collected?\n\n\n\n\nLand Surface Temperature\nOn land, thermometers affixed to tens of thousands of weather stations give us precise air temperature readings.\n\nMeteorological stations\nWeather stations\n\n\n\n\nSea Surface Temperature\nShips and buoys floating in the ocean capture temperatures at the sea surface.\n\nShip Observations\nMoored buoys\nFree-drifting floats"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-8",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#section-8",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "",
+    "text": "For nearly 45 years, a team of scientists at NASA’s GISS has been tracking these rising temperatures and producing records and analyses of the global temperature of Earth. Each month, scientists release a dataset.\n\nOn land, thermometers affixed to tens of thousands of weather stations give us precise air temperature readings.\nShips and buoys floating in the ocean capture temperatures at the sea surface.\nCalculating an average global temperature requires collecting all those datasets.\nhttps://science.nasa.gov/earth/measuring_global_temperature/"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-15",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#section-15",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "",
+    "text": "Let’s consider 4 different file structures\n\n\n\n\n\n\nScenario A (no raw data)\n\nproject/\n  doc.qmd\n\n\n\n\n\n\n\nScenario B\n\nproject/\n  doc.qmd\n  GLB.Ts+dSST.csv"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#nasas-data-gistemp-website",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#nasas-data-gistemp-website",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "NASA’s Data: GISTEMP website",
+    "text": "NASA’s Data: GISTEMP website\n\n\nGISS Surface Temperature Analysis (GISTEMP v4)\nhttps://data.giss.nasa.gov/gistemp/\n\n\n\n\n\n\n\n\nBased on my experience, this step usually takes some time (e.g. searching through dozens of websites and links, inspecting databases, data sets, and files)"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#sea-surface-temperature-ersst",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#sea-surface-temperature-ersst",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "Sea Surface Temperature (ERSST)",
+    "text": "Sea Surface Temperature (ERSST)\nCore Data Sources\n\nShip Observations\nBuoy Observations\nFree-drifting Argo floats\nGlobal Telecommunication System"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-10",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#section-10",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "",
+    "text": "For nearly 45 years, a team of scientists at NASA’s GISS has been tracking these rising temperatures and producing records and analyses of the global temperature of Earth. Each month, scientists release a dataset.\n\nOn land, thermometers affixed to tens of thousands of weather stations give us precise air temperature readings.\nShips and buoys floating in the ocean capture temperatures at the sea surface.\nCalculating an average global temperature requires collecting all those datasets.\nhttps://science.nasa.gov/earth/measuring_global_temperature/"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-16",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#section-16",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "",
+    "text": "Reproduce NASA’s image: Global Mean Estimates based on Land and Ocean Data\nReproduce NYT’s graphic: Rising Global Temperature"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-17",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#section-17",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "",
+    "text": "Let’s consider 4 different file structures\n\n\n\n\n\n\nScenario A (no raw data)\n\nproject/\n  doc.qmd\n\n\n\n\n\n\n\nScenario B\n\nproject/\n  doc.qmd\n  GLB.Ts+dSST.csv"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-9",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#section-9",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "",
+    "text": "The earth’s climate system is notoriously complex\nThis system undergoes multiyear variations, e.g.,\n\nEl Niño southern oscillation\nThe Quasi-biennial oscillation of the tropical stratosphere\n\nEarth does not have a one-single temperature"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-18",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#section-18",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "",
+    "text": "Let’s consider 4 different file structures\n\n\n\n\n\n\nScenario A (no raw data)\n\nproject/\n  doc.qmd\n\n\n\n\n\n\n\nScenario B\n\nproject/\n  doc.qmd\n  GLB.Ts+dSST.csv\n\n\n\n\nScenario C\n\nproject/\n  doc.qmd\n  data/\n    GLB.Ts+dSST.csv"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-2",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#section-2",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "",
+    "text": "##{background-image=“images/global-drifter-buoys.svg” background-size=“contain”}"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#nasas-gistemp-data",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#nasas-gistemp-data",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "NASA’s GISTEMP data",
+    "text": "NASA’s GISTEMP data\n\n\nGISS Surface Temperature Analysis (GISTEMP v4)\nhttps://data.giss.nasa.gov/gistemp/\n\n\n\n\n\n\n\n\nBased on my experience, this step usually takes some time (e.g. searching through dozens of websites and links, inspecting databases, data sets, and files)"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#core-data-sources",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#core-data-sources",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "Core Data Sources",
+    "text": "Core Data Sources\n\n\n\n\nLand Surface Temperature\n\nMeteorological stations\nWeather stations\n\n\nSea Surface Temperature\n\nShip Observations\nMoored buoys\nFree-drifting floats"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#section-19",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#section-19",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "",
+    "text": "Let’s consider 4 different file structures\n\n\n\n\n\n\nScenario A (no raw data)\n\nproject/\n  doc.qmd\n\n\n\n\n\n\n\nScenario B\n\nproject/\n  doc.qmd\n  GLB.Ts+dSST.csv\n\n\n\n\nScenario C\n\nproject/\n  doc.qmd\n  data/\n    GLB.Ts+dSST.csv\n\n\n\n\n\nScenario D\n\nproject/\n  report/\n    doc.qmd\n  data/\n    GLB.Ts+dSST.csv"
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#screens-off-minds-on",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#screens-off-minds-on",
+    "title": "Guide for Reproducible Research",
+    "section": "Screens Off, Minds On",
+    "text": "Screens Off, Minds On\n\n\n\nDevices Away: Laptops & tablets closed, phones away.\nNo One Alone: Pair or team up (no solo seats).\nEngage Fully: Be ready to speak, debate, and share ideas."
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#scenario-a",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#scenario-a",
+    "title": "Guide for Reproducible Research",
+    "section": "Scenario A",
+    "text": "Scenario A\nTwo candidates are competing for a single tenure-track position:\n\n\nCandidate A publishes 5 papers a year. Their code is undocumented, scattered across local desktop folders, and missing computational environments, but their results are novel and published in high-impact venues.\n\n\n\nCandidate B publishes 2 papers a year. Every project features fully documented Quarto/Jupyter workflows, continuous integration tests, archived Docker containers on Zenodo, and granular version control.\n\n\n\n\nThe hiring committee selects Candidate A, citing their superior “publication volume and research productivity.”"
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#scenario-a-contd",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#scenario-a-contd",
+    "title": "Guide for Reproducible Research",
+    "section": "Scenario A (cont’d)",
+    "text": "Scenario A (cont’d)\n\n\n\nWhat changes in hiring/granting committees would level the playing field for Candidate B?\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#scenario-b",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#scenario-b",
+    "title": "Guide for Reproducible Research",
+    "section": "Scenario B",
+    "text": "Scenario B\nA team of data science undergraduates is building a data pipeline for their capstone project. They have 4 weeks remaining. They can either:\n\n\nOption 1: Spend the final 4 weeks expanding their modeling techniques, exploring two new algorithms, and refining their presentation figures.\n\n\n\nOption 2: Spend the final 4 weeks refactoring code into modular packages, writing unit tests, capturing software dependencies, and setting up automated pipelines.\n\n\n\nWhat option would you choose (and why)?\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#scenario-c",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#scenario-c",
+    "title": "Guide for Reproducible Research",
+    "section": "Scenario C",
+    "text": "Scenario C\nA research group in climate modeling trains a deep learning architecture for 6 days across a cluster of 32 GPUs, costing $15,000 in cloud compute credits.\nA peer reviewer asks the team to re-run the entire pipeline with three alternative random seed initializations to prove statistical stability.\nThe group’s grant budget is exhausted, and their compute allocation has expired.\n\n\nDraft a reproducibility rescue plan detailing 3 specific strategies they can provide to peer reviewers to prove their pipeline is trustworthy.\n\n\n\nIntermediate State Archiving: Saving and publishing model checkpoints, raw log outputs, and loss curves on repositories like Zenodo/OSF.\nDry-Run / Toy Pipelines: Providing a fast, low-compute “mock” version of the pipeline using a small synthetic dataset so others can verify the code logic end-to-end in seconds.\nDeterministic Sub-sampling: Demonstrating stability on a lightweight, representative subset of the data before scaling up to full GPU clusters.\nEnvironment & Seed Logging: Strictly archiving the exact container image (Docker), fixed random seeds, and hardware specs so that even if others can’t run it now, the execution state is perfectly preserved for the future.\n\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#the-turing-way-2x2-matrix",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#the-turing-way-2x2-matrix",
+    "title": "Guide for Reproducible Research",
+    "section": "The Turing Way 2x2 Matrix",
+    "text": "The Turing Way 2x2 Matrix\n\n\n                 [ SAME DATA ]          [ DIFFERENT DATA ]\n            ┌───────────────────────┬───────────────────────┐\n  [ SAME    │     REPRODUCIBLE      │                       │\n   ANALYSIS]│ (Same steps & data)   │                       │\n            ├───────────────────────┼───────────────────────┤\n  [ DIFF.   │                       │                       │\n   ANALYSIS]│                       │                       │\n            └───────────────────────┴───────────────────────┘"
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#reproducible-neq-open-data",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#reproducible-neq-open-data",
+    "title": "Guide for Reproducible Research",
+    "section": "Reproducible \\(\\neq\\) Open Data",
+    "text": "Reproducible \\(\\neq\\) Open Data\n\nOpen Science promotes making data, code, and papers freely available to everyone.\nComputational Reproducibility focuses on code execution logic, pipeline integrity, and environment preservation.\nA project with restricted or sensitive data (e.g., medical, commercial) can still be fully reproducible through:\n\nSynthetic test datasets.\nContainerized environments (Docker).\nSecure, audited execution pipelines.\n\n\n\n\nAddress a common student misconception: “My dataset has human subjects / proprietary business data, so I can’t make my project reproducible.”\nClarify that Open and Reproducible overlap, but are distinct concepts.\nExplain how to make restricted data projects reproducible:\n\nProvide synthetic or scrambled mock data that mirrors the schema so external users can verify the code runs.\nWrite deterministic unit tests and containerize the environment.\nEnsure that an authorized auditor inside a secure enclave could re-run the exact script and get identical results."
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#reproducibility-as-personal-insurance",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#reproducibility-as-personal-insurance",
+    "title": "Guide for Reproducible Research",
+    "section": "Reproducibility as “Personal Insurance”",
+    "text": "Reproducibility as “Personal Insurance”\nWorking reproducibly benefits you (and your team) first:\n\nFuture-proofing: Your primary collaborator six months from now is your future self.\nSeamless onboarding: New lab members can run existing pipelines without months of reconstruction.\nError resilience: Automated pipelines make updating figures or fixing small bugs fast and low-risk.\n\n\n\nFrame reproducibility not as an altruistic duty for science, but as self-preservation.\nAsk the class: “Have you ever opened a project you worked on 6 months ago and spent 2 hours trying to remember which script to run first?”\nEmphasize “Your future self doesn’t reply to emails.” If you don’t document relative paths, dependencies, and execution order today, your future self will suffer.\nMention that automated pipelines (like Make or targets in R) allow you to re-render an entire 50-page manuscript or dashboard with one command after updating raw data."
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#the-added-advantage-credit-citation",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#the-added-advantage-credit-citation",
+    "title": "Guide for Reproducible Research",
+    "section": "The “Added Advantage”: Credit & Citation",
+    "text": "The “Added Advantage”: Credit & Citation\nPublishing reproducible workflows directly boosts academic impact:\n\nHigher Citations: Papers with public code and data receive demonstrably higher citation rates.\nGreater Trust: Independent researchers can audit, verify, and build directly on your work.\nSecondary Outputs: Reusable R packages, Python libraries, and pipelines earn recognition as first-class scientific contributions.\n\n\n\nHighlight the selfish incentives for doing open/reproducible work: literature consistently shows a “citation advantage” for papers with publicly available code and data repositories.\nExplain that code repositories (GitHub/Zenodo with DOIs) allow other researchers to cite your tools even if they aren’t citing your specific empirical findings.\nTrust is currency in science: when readers can inspect your raw scripts and computational pipeline, they treat your findings with far higher confidence."
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#barrier-the-career-tax-incentive-gap",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#barrier-the-career-tax-incentive-gap",
+    "title": "Guide for Reproducible Research",
+    "section": "Barrier: The “Career Tax” & Incentive Gap",
+    "text": "Barrier: The “Career Tax” & Incentive Gap\n\nPublication Bias: Academic hiring, tenure, and grants overwhelmingly reward novel findings over robust software engineering or replication studies.\nThe Time Sink: Documenting code, setting up continuous integration, and containerizing environments takes significant time.\nIncentive Gap: Without institutional rewards, researchers view reproducible practices as an unrewarded “career tax.”\n\n\n\nConnect this to real-world career incentives (hiring, tenure, grant funding).\nPoint out the tension: Building a clean, modular, fully tested pipeline takes 2-3x longer than writing a quick “one-off” messy script.\nIf hiring committees only count the number of novel publications on a resume, the researcher who takes shortcuts will publish faster than the researcher who builds reproducible infrastructure.\nAsk the class: “How do we fix this incentive structure in data science and computational fields?”"
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#barrier-resource-infrastructure-deficits",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#barrier-resource-infrastructure-deficits",
+    "title": "Guide for Reproducible Research",
+    "section": "Barrier: Resource & Infrastructure Deficits",
+    "text": "Barrier: Resource & Infrastructure Deficits\nReproducibility requires resources that are often underfunded or unevenly distributed:\n\nSkills Gap: Training in software engineering (Git, virtual environments, pipelines) is rarely built into scientific curricula.\nCompute Costs: Heavy computational pipelines (e.g., multi-GPU training) can be financially prohibitive to re-run or audit.\nMaintenance: Software dependencies drift over time, requiring continuous maintenance to stay executable.\n\n\n\nSummarize the physical and structural resource barriers:\n\nKnowledge gap: Most domain scientists were never formally taught Git, Docker, or environment isolation—they are self-taught out of necessity.\nFinancial/Compute gap: Re-running a deep learning model or climate simulation might cost thousands of dollars in cloud computing credits.\nDependency drift: R packages and Python libraries update constantly. A script written in 2020 may fail in 2026 if packages aren’t pinned (renv/uv/conda).\n\nConclude by setting up the transition to the next part of your course: teaching the practical tools (Git, Quarto, environments) that help overcome these exact barriers."
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#section-1",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#section-1",
+    "title": "Guide for Reproducible Research",
+    "section": "",
+    "text": "“A study can be reproducible and still be wrong.”\nRoger Peng, 2014\n\n\n\n\n\n“Just because a result is reproducible does not make it right, and just because it is not reproducible does not make it wrong.”\nNature"
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#google-form",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#google-form",
+    "title": "Guide for Reproducible Research",
+    "section": "Google Form",
+    "text": "Google Form\n\n\n\n\n\ntinyurl.com/3b2fmasf"
+  },
+  {
+    "objectID": "hws/proj01/proj01.html",
+    "href": "hws/proj01/proj01.html",
+    "title": "Project 1) Replicating Temperature Anomalies Graphics",
+    "section": "",
+    "text": "For this assignment we will ask you to conduct a replication attempt of various graphics that display global temperature anomalies. This topic is related to Sep-16th lecture Case Study: Global Temperature",
+    "crumbs": [
+      "HW",
+      "Project 1) Replicating Temperature Anomalies Graphics"
+    ]
+  },
+  {
+    "objectID": "hws/proj01/proj01.html#motivation",
+    "href": "hws/proj01/proj01.html#motivation",
+    "title": "Project 1) Replicating Temperature Anomalies Graphics",
+    "section": "Motivation",
+    "text": "Motivation\nThis project is motivated by the following article published in The New York Times (NYT)\n\nTitle: It’s Official: 2018 Was the Fourth-Warmest Year on Record\nAuthors: John Schwartz and Nadja Popovich\nDate: Feb 6, 2019\nURL: https://www.nytimes.com/interactive/2019/02/06/climate/fourth-hottest-year.html\n\nThis article contains the following line chart:\n\n\n\nFigure: Rising Global Temperature (New York Times)\n\n\n\n\n\n\n\n\nMotivation\n\n\n\nCan this graphic be replicated?",
+    "crumbs": [
+      "HW",
+      "Project 1) Replicating Temperature Anomalies Graphics"
+    ]
+  },
+  {
+    "objectID": "hws/proj01/proj01.html#deliverables",
+    "href": "hws/proj01/proj01.html#deliverables",
+    "title": "Project 1) Replicating Temperature Anomalies Graphics",
+    "section": "Deliverables",
+    "text": "Deliverables\nFor this assignment, you will have a single GitHub repository (individual submission). Your repository should contain the following:\n\nOne script file with code to download raw data files to data/ folder.\n\n\n\n\n\n\nNote\n\n\n\nWe are asking you to download and push data for practice and learning purposes, even though in real life most data files don’t tend to be pushed to remote repositories.\n\n\nOne notebook (i.e. ipynb or qmd notebook) per graphic that includes code to create the plot.\n\nThese notebooks should be saved in a scripts/ folder.\nPlease remember to use markdown headings for each section/subsection so the entire notebook document is readable.\nAll figures should be both rendered in the notebook, and saved in PNG and PDF formats in a separate folder called outputs/.\nSuggestion: If you use qmd files, you can choose format: gfm in the yaml header to nicely render your document in GitHub.\n\nOne report document, saved in a report/ folder, that provides an executive summary of the project, and the four replicated figures—including a brief description for each of them.\nAn optional ai_documentation.txt file where you will put any prompts and output from AI companions that you use to complete the project.\nAt least one README.md file (at the top-level). Optionally, you can use other README files inside subdirectories if you consider them appropriate. Make sure the content of this file is clear and detailed.\nUse at least one branch in addition to the main branch.\n\n\nProject Structure\nIn this assignment we are going to evaluate your overall workflow using git and GitHub. Be sure that you repository includes clear commit messages as you make progress on the project, and not include any other file or folder than those needed for the project.\nLikewise, we will assess how you put in practice all the concepts covered so far: naming files, use of file paths, project organization, comments, documentation, etc.\nTo ensure that extraneous files are ignored by git, add a .gitignore file where you can either specify single files, or all files with a particular file extension.\nAdditionally, the code in each notebook must be well organized. Use different cells for different operations and functions and markdown cells to explain the analysis. You can also use different branches or make a fork of the main repository (and then a pull request) in order to work collaboratively on the same notebook.\nHere’s a diagram that depicts the overall file structure of your project:\nyour-project/\n   README.md\n   data/\n   scripts/\n   outputs/\n   report/\n   ai_documentation.txt\n   .gitignore",
+    "crumbs": [
+      "HW",
+      "Project 1) Replicating Temperature Anomalies Graphics"
+    ]
+  },
+  {
+    "objectID": "hws/proj01/proj01.html#graphics-to-replicate",
+    "href": "hws/proj01/proj01.html#graphics-to-replicate",
+    "title": "Project 1) Replicating Temperature Anomalies Graphics",
+    "section": "Graphics to Replicate",
+    "text": "Graphics to Replicate\nThe main goal behind this project is to replicate the four graphics listed below. The source of the data is the GISS Surface Temperature Analysis (GISTEMP v4), curated by NASA’s Goddard Institute for Space Studies: https://data.giss.nasa.gov/gistemp/data_v4.html\nGraphic 1: Temperature Anomalies over Land and over Ocean  - Image: https://data.giss.nasa.gov/gistemp/graphs_v4/graph_data/Temperature_Anomalies_over_Land_and_over_Ocean/graph.html - Data (CSV): https://data.giss.nasa.gov/gistemp/graphs_v4/graph_data/Temperature_Anomalies_over_Land_and_over_Ocean/graph.csv\nGraphic 2: GISTEMP Seasonal Cycle since 1880  - Image: https://data.giss.nasa.gov/gistemp/graphs_v4/graph_data/GISTEMP_Seasonal_Cycle_since_1880/graph.html - Data (CSV): https://data.giss.nasa.gov/gistemp/graphs_v4/graph_data/GISTEMP_Seasonal_Cycle_since_1880/graph.csv\nGraphic 3: Global Annual Mean Surface Air Temperature Change  - Image: https://data.giss.nasa.gov/gistemp/graphs_v4/graph_data/Global_Mean_Estimates_based_on_Land_and_Ocean_Data/graph.html - Data (CSV): https://data.giss.nasa.gov/gistemp/graphs_v4/graph_data/Global_Mean_Estimates_based_on_Land_and_Ocean_Data/graph.csv\nGraphic 4: The chart line from The New York Times  - Image: https://www.nytimes.com/interactive/2019/02/06/climate/fourth-hottest-year.html \n\n\n\n\n\n\nComment\n\n\n\nNotice that the NYT’s graphic is a modified version of Graphic 3",
+    "crumbs": [
+      "HW",
+      "Project 1) Replicating Temperature Anomalies Graphics"
+    ]
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#calculating-temperature",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#calculating-temperature",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "Calculating Temperature",
+    "text": "Calculating Temperature\n\nHow do you calculate the surface temperature of the whole planet?\n\nAverage of temperature measurements of every square mile?\nKeep in mind that 70% of surface is ocean\nOf the 30% of land, much of it is uninhabited, innaccessible, or desert\n\nCurrent estimate of global average temp is about 15 degrees Celsius"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#measuring-temperatures",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#measuring-temperatures",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "Measuring Temperatures",
+    "text": "Measuring Temperatures\nFor nearly 45 years, a team of scientists at NASA’s GISS has been tracking these temperatures and producing records and analyses of the global temperature of Earth.\n\nEach month, scientists release a dataset.\n“Surface temperature anomalies” is a combination of:\n\nLand-Surface Air (LSA) temperature anomalies\nSea-Surface Water (SSW) temperature anomalies\n\nAlso known as Land-Ocean Temperature Index (L-OTI)\nCalculating an average global temperature requires collecting all those datasets.\nhttps://science.nasa.gov/earth/measuring_global_temperature/"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#nasas-temperature-anomalies",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#nasas-temperature-anomalies",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "NASA’s Temperature Anomalies",
+    "text": "NASA’s Temperature Anomalies\n\nMonthly surface temperature anomaly data\n“Surface temperature anomalies” is a combination of:\n\nLand-Surface Air (LSA) temperature anomalies\nSea-Surface Water (SSW) temperature anomalies\n\nAlso known as Land-Ocean Temperature Index (L-OTI)\nAnomalies are deviations from the 1951-1980 means"
+  },
+  {
+    "objectID": "lectures/09-global-temp/09-global-temp-slides.html#temperature-anomalies-1",
+    "href": "lectures/09-global-temp/09-global-temp-slides.html#temperature-anomalies-1",
+    "title": "Case Study: Global Temperature Anomalies",
+    "section": "Temperature Anomalies",
+    "text": "Temperature Anomalies\n\\[\n\\text{Temp Anomaly} = \\text{Observed Temp} - \\text{Baseline Average Temp}\n\\]\nWhat the Numbers Mean:\n\nPositive Anomaly (+): The observed temperature was warmer than the historic baseline average.\nNegative Anomaly (-): The observed temperature was cooler than the historic baseline average.\nZero Anomaly (0): The temperature was exactly equal to the long-term historical average."
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#the-turing-way-2x2-matrix-1",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#the-turing-way-2x2-matrix-1",
+    "title": "Guide for Reproducible Research",
+    "section": "The Turing Way 2x2 Matrix",
+    "text": "The Turing Way 2x2 Matrix\n\n\n                 [ SAME DATA ]          [ DIFFERENT DATA ]\n            ┌───────────────────────┬───────────────────────┐\n  [ SAME    │     REPRODUCIBLE      │                       │\n   ANALYSIS]│ (Same steps & data)   │                       │\n            ├───────────────────────┼───────────────────────┤\n  [ DIFF.   │        ROBUST         │                       │\n   ANALYSIS]│ (Language agnostic)   │                       │\n            └───────────────────────┴───────────────────────┘"
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#the-turing-way-2x2-matrix-2",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#the-turing-way-2x2-matrix-2",
+    "title": "Guide for Reproducible Research",
+    "section": "The Turing Way 2x2 Matrix",
+    "text": "The Turing Way 2x2 Matrix\n\n\n                 [ SAME DATA ]          [ DIFFERENT DATA ]\n            ┌───────────────────────┬───────────────────────┐\n  [ SAME    │     REPRODUCIBLE      │      REPLICABLE       │\n   ANALYSIS]│ (Same steps & data)   │ (Qualitately similar) │\n            ├───────────────────────┼───────────────────────┤\n  [ DIFF.   │        ROBUST         │                       │\n   ANALYSIS]│ (Language agnostic)   │                       │\n            └───────────────────────┴───────────────────────┘"
+  },
+  {
+    "objectID": "lectures/10-discuss2/10-discussion-slides.html#the-turing-way-2x2-matrix-3",
+    "href": "lectures/10-discuss2/10-discussion-slides.html#the-turing-way-2x2-matrix-3",
+    "title": "Guide for Reproducible Research",
+    "section": "The Turing Way 2x2 Matrix",
+    "text": "The Turing Way 2x2 Matrix\n\n\n                 [ SAME DATA ]          [ DIFFERENT DATA ]\n            ┌───────────────────────┬───────────────────────┐\n  [ SAME    │     REPRODUCIBLE      │      REPLICABLE       │\n   ANALYSIS]│ (Same steps & data)   │ (Qualitately similar) │\n            ├───────────────────────┼───────────────────────┤\n  [ DIFF.   │        ROBUST         │     GENERALISABLE     │\n   ANALYSIS]│ (Language agnostic)   │  (The Holy Grail)     │\n            └───────────────────────┴───────────────────────┘\n\n\n\n\n\n\n\nTakeaway\n\n\nComputational reproducibility specifically requires obtaining the same results using the same data and same code/analysis.\n\n\n\n\n\nPoint out that terms like “reproducible” and “replicable” are often used interchangeably in lay conversations, but The Turing Way establishes precise definitions along a 2x2 grid.\nWalk through each quadrant:\n\nReproducible: Same data + Same code. This is our baseline standard in computational data science.\nReplicable: Different data + Same pipeline. Tests if the finding holds up in a new sample or dataset.\nRobust: Same data + Different pipeline. Tests if the finding is an artifact of a specific software package, model choice, or script.\nGeneralisable: Different data + Different pipeline. The gold standard for scientific claims.\n\nRemind students: In this course, we focus heavily on the top-left quadrant (Reproducibility) as the foundation for all the others."
   }
 ]

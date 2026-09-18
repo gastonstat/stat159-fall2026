@@ -4,11 +4,14 @@ title: 2) Reproducibility Definitions
 
 ## Assigned Reading
 
-- Title: **Guide for Reproducible Research**
+- Title: **Guide for Reproducible Research: Overview**
+    + Definitions
+    + Added ADvantages
+    + Barriers
+    + Resources
 - Author(s): The Turing Way
 - Year: 2024
-- Journal: PLOS Computational Biology 9(10): e1003285
-- <https://book.the-turing-way.org/reproducible-research>
+- <https://book.the-turing-way.org/reproducible-research/overview/>
 
 
 ## Reflections
@@ -36,9 +39,9 @@ that would cause the reproduction to completely fail?
 
 ### 2. Reflecting on Robust
 
-A result is "robust" if using different analysis steps on the same data yields 
-a qualitatively identical answer (e.g., swapping from an R package to a Python 
-script). 
+The Turing Way defines a result as "robust" if using different analysis steps 
+on the same data yields a qualitatively identical answer (e.g., swapping from 
+an R package to a Python script). 
 
 If you were forced to completely rewrite your favorite data script 
 into a programming language you barely know, which specific part of your code's 
@@ -46,49 +49,16 @@ logic do you suspect would fall apart or yield a different mathematical rounding
 result, and why?
 
 
-### 3. "P-Hacking" Temptation
-
-Stodden isolates "Statistical Reproducibility" as documenting the 
-deliberate choice of thresholds and parameters. 
-
-Describe a time during an 
-assignment or project where a script yielded an unexciting, messy result, 
-and you felt the intense psychological temptation to tweak a filter, drop 
-a few inconvenient outliers, or change your hypothesis just to get a "cleaner" 
-chart for a better grade. How would a mandatory preregistration log have changed 
-your behavior in that moment?
-
-
-### 4. The Locked-Door Paradox
-
-The Turing Way emphasizes that reproducibility does not necessarily mean 
-"open to the public," recognizing that private medical or security data must 
-remain closed. 
-
-If you were building a highly sensitive database that legally 
-cannot be published on GitHub, how would you design a workflow that still 
-allows an independent, authorized auditor to verify your results without 
-leaking private citizen identities?
-
-
-### 5. The "Sloppy Success" Evaluation
+### 3. Reproducible Failure
 
 Imagine a peer creates a messy, un-versioned script that accidentally discovers 
 a brilliant, groundbreaking pattern in a public dataset, but their workflow is 
 completely un-reproducible. 
 
-You build a flawless, fully automated, 
-version-controlled pipeline that proves a hypothesis is completely wrong, 
-but anyone can rerun it perfectly. In your own words, defend why your 
-"reproducible failure" might actually be more valuable to the progress of 
-science than their "sloppy success."
-
-
-::: {.callout-note}
-For Questions 1, 4, and 5, generic responses that do not mention a specific 
-past assignment name or unique piece of code from your own experience will 
-receive a score of zero.
-:::
+You build a flawless, fully automated, version-controlled pipeline that proves 
+a hypothesis is completely wrong, but anyone can rerun it perfectly. 
+In your own words, defend why your "reproducible failure" might actually be more 
+valuable to the progress of science than their "sloppy success."
 
 
 ## Rubric
@@ -109,6 +79,31 @@ fails to provide personal context, or uses copy-pasted text from the webpage.
 
 <!--
 Removed Questions
+
+### "P-Hacking" Temptation
+
+Stodden isolates "Statistical Reproducibility" as documenting the 
+deliberate choice of thresholds and parameters. 
+
+Describe a time during an 
+assignment or project where a script yielded an unexciting, messy result, 
+and you felt the intense psychological temptation to tweak a filter, drop 
+a few inconvenient outliers, or change your hypothesis just to get a "cleaner" 
+chart for a better grade. How would a mandatory preregistration log have changed 
+your behavior in that moment?
+
+
+### The Locked-Door Paradox
+
+The Turing Way emphasizes that reproducibility does not necessarily mean 
+"open to the public," recognizing that private medical or security data must 
+remain closed. 
+
+If you were building a highly sensitive database that legally 
+cannot be published on GitHub, how would you design a workflow that still 
+allows an independent, authorized auditor to verify your results without 
+leaking private citizen identities?
+
 
 ### The "Works on My Campus" Trap (Reflecting on Replicable)
 

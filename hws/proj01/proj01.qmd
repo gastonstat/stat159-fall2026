@@ -5,8 +5,7 @@ title: Project 1) Replicating Temperature Anomalies Graphics
 
 For this assignment we will ask you to conduct a replication attempt of 
 various graphics that display global temperature anomalies. This topic 
-is related to the lecture [Case Study: Global Temperature](../../lectures/09-global-temp/09-global-temp-slides.html) from
-Sep-16.
+is related to Sep-16th lecture [Case Study: Global Temperature](../../lectures/09-global-temp/09-global-temp-slides.html)
 
 
 ## Motivation
@@ -53,7 +52,7 @@ curated by NASA's Goddard Institute for Space Studies:
 **Graphic 4: The chart line from The New York Times** <br>
 - Image: <https://www.nytimes.com/interactive/2019/02/06/climate/fourth-hottest-year.html> <br>
 
-::: {.callout-important}
+::: {.callout-warning title="Comment"}
 Notice that the NYT's graphic is a modified version of Graphic 3
 :::
 
@@ -64,6 +63,12 @@ For this assignment, you will have a single GitHub repository (**individual subm
 Your repository should contain the following:
 
 - One script file with code to download raw data files to `data/` folder.
+  
+  ::: {.callout-important title="Note"}
+  We are asking you to download and push data for practice and 
+  learning purposes, even though in real life most data files 
+  don't tend to be pushed to remote repositories.
+  :::
 
 - One notebook (i.e. `ipynb` or `qmd` notebook) **per graphic** that includes code 
 to create the plot. 
@@ -75,7 +80,7 @@ and saved in PNG and PDF formats in a separate folder called `outputs/`.
     + __Suggestion:__ If you use `qmd` files, you can choose `format: gfm` in the yaml 
     header to nicely render your document in GitHub.
 
-- One report document, saved in a `report/` file, that provides an executive summary
+- One report document, saved in a `report/` folder, that provides an executive summary
 of the project, and the four replicated figures---including a brief description for 
 each of them.
 
@@ -86,17 +91,19 @@ output from AI companions that you use to complete the project.
 `README` files inside subdirectories if you consider them appropriate. Make sure the
 content of this file is clear and detailed.
 
+- Use at least one branch in addition to the `main` branch.
+
 
 ### Project Structure
 
 In this assignment we are going to evaluate your overall workflow using git and GitHub. 
 Be sure that you repository includes clear commit messages as you make progress on 
-the project, and not include any other file or folder that those needed for the project.
+the project, and not include any other file or folder than those needed for the project.
 
 Likewise, we will assess how you put in practice all the concepts covered so far:
-naming files, file paths, project organization, comments, documentation, etc.
+naming files, use of file paths, project organization, comments, documentation, etc.
 
-To ensure that extraneous files are ignored by git, add a `.gitignore` where you 
+To ensure that extraneous files are ignored by git, add a `.gitignore` file where you 
 can either specify single files, or all files with a particular file extension. 
 
 Additionally, the code in each notebook must be well organized. Use different cells 
@@ -116,4 +123,5 @@ your-project/
    ai_documentation.txt
    .gitignore
 ```
+
 

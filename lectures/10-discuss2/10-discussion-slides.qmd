@@ -31,112 +31,372 @@ chalkboard: true
 ![](images/what-is-the-right-verb.svg){width=70% fig-align="center"}
 
 
-## {background-image="images/fill-in-the-blank.svg" background-size="contain"}
+## The Turing Way 2x2 Matrix
 
-
-
-## Victoria Stodden's definitions
-
-1. [Computational Reproducibility]{.bold-hilit}: Sharing exact code, 
-software environments, and data to replicate the exact digital output.
-
-2. [Empirical Reproducibility]{.bold-hilit}: Providing detailed logs of 
-physical data collection, tools, settings, and methodology.
-
-3. [Statistical Reproducibility]{.bold-hilit}: Accurately reporting all 
-parameters, multi-test variations, and filter selections to prevent 
-false-positive biases.
-
-
-## Activity
-
-::: {.callout-tip}
-Before showing any definitions, project the words Reproducible, Replicable, 
-Robust, and Generalisable on the screen. Have students type a one-word synonym 
-for each in a live word cloud tool (like Mentimeter).
-:::
-
-
-## 2x2 Matrix
-
-::: {.callout-tip}
-Task: Project a blank 2x2 grid on the board. The X-axis is labeled "Data" 
-(Same / Different) and the Y-axis is labeled "Analysis" (Same / Different). 
-
-Have student pairs place the 4 core concepts in their correct boxes based on 
-the text.
-:::
-
-- Same Data + Same Analysis = ?
-
-- Different Data + Same Analysis = ?
-
-- Same Data + Different Analysis = ?
-
-- Different Data + Different Analysis = ?
-
-
-
-## 2x2 Matrix
-
-- Same Data + Same Analysis = Reproducible.
-
-- Different Data + Same Analysis = Replicable.
-
-- Same Data + Different Analysis = Robust.
-
-- Different Data + Different Analysis = Generalisable.
-
-
-## 2x2 Matrix
+\
 
 ```
-               [ SAME DATA ]            [ DIFFERENT DATA ]
-          ┌───────────────────────┬───────────────────────┐
-[ SAME    │     REPRODUCIBLE      │      REPLICABLE       │
- ANALYSIS]│ (Same steps & data)   │ (Qualitately similar) │
-          ├───────────────────────┼───────────────────────┤
-[ DIFF.   │        ROBUST         │     GENERALISABLE     │
- ANALYSIS]│ (Language agnostic)   │  (The Holy Grail)     │
-          └───────────────────────┴───────────────────────┘
+                 [ SAME DATA ]          [ DIFFERENT DATA ]
+            ┌───────────────────────┬───────────────────────┐
+  [ SAME    │     REPRODUCIBLE      │                       │
+   ANALYSIS]│ (Same steps & data)   │                       │
+            ├───────────────────────┼───────────────────────┤
+  [ DIFF.   │                       │                       │
+   ANALYSIS]│                       │                       │
+            └───────────────────────┴───────────────────────┘
 ```
 
+## The Turing Way 2x2 Matrix
 
-## Question
+\
 
-If you run a dataset through an R package and get an answer, 
-then run the exact same data through a Python script and get a different answer, 
-what did you just prove about the research?
+```
+                 [ SAME DATA ]          [ DIFFERENT DATA ]
+            ┌───────────────────────┬───────────────────────┐
+  [ SAME    │     REPRODUCIBLE      │                       │
+   ANALYSIS]│ (Same steps & data)   │                       │
+            ├───────────────────────┼───────────────────────┤
+  [ DIFF.   │        ROBUST         │                       │
+   ANALYSIS]│ (Language agnostic)   │                       │
+            └───────────────────────┴───────────────────────┘
+```
+
+## The Turing Way 2x2 Matrix
+
+\
+
+```
+                 [ SAME DATA ]          [ DIFFERENT DATA ]
+            ┌───────────────────────┬───────────────────────┐
+  [ SAME    │     REPRODUCIBLE      │      REPLICABLE       │
+   ANALYSIS]│ (Same steps & data)   │ (Qualitately similar) │
+            ├───────────────────────┼───────────────────────┤
+  [ DIFF.   │        ROBUST         │                       │
+   ANALYSIS]│ (Language agnostic)   │                       │
+            └───────────────────────┴───────────────────────┘
+```
+
+## The Turing Way 2x2 Matrix
+
+\
+
+```
+                 [ SAME DATA ]          [ DIFFERENT DATA ]
+            ┌───────────────────────┬───────────────────────┐
+  [ SAME    │     REPRODUCIBLE      │      REPLICABLE       │
+   ANALYSIS]│ (Same steps & data)   │ (Qualitately similar) │
+            ├───────────────────────┼───────────────────────┤
+  [ DIFF.   │        ROBUST         │     GENERALISABLE     │
+   ANALYSIS]│ (Language agnostic)   │  (The Holy Grail)     │
+            └───────────────────────┴───────────────────────┘
+```
+
+. . .
+
+::: {.callout-note}
+### Takeaway
+Computational reproducibility specifically requires obtaining the 
+**same results** using the **same data** and **same code/analysis**.
+:::
 
 ::: {.notes}
-The result is not robust. It proves the finding was a fluke of the specific 
-software implementation, not a baseline truth.
+- Point out that terms like "reproducible" and "replicable" are often used interchangeably in lay conversations, but *The Turing Way* establishes precise definitions along a 2x2 grid.
+- Walk through each quadrant:
+  - **Reproducible**: Same data + Same code. This is our baseline standard in computational data science.
+  - **Replicable**: Different data + Same pipeline. Tests if the finding holds up in a new sample or dataset.
+  - **Robust**: Same data + Different pipeline. Tests if the finding is an artifact of a specific software package, model choice, or script.
+  - **Generalisable**: Different data + Different pipeline. The gold standard for scientific claims.
+- Remind students: In this course, we focus heavily on the top-left quadrant (Reproducibility) as the foundation for all the others.
 :::
 
 
-# Stodden's definitions
+## Reproducible $\neq$ Open Data
+
+- **Open Science** promotes making data, code, and papers freely available to everyone.
+- **Computational Reproducibility** focuses on code execution logic, pipeline integrity, 
+and environment preservation.
+- A project with restricted or sensitive data (e.g., medical, commercial) can still be 
+**fully reproducible** through:
+  - Synthetic test datasets.
+  - Containerized environments (Docker).
+  - Secure, audited execution pipelines.
+
+::: {.notes}
+- Address a common student misconception: "My dataset has human subjects / proprietary business data, so I can't make my project reproducible."
+- Clarify that *Open* and *Reproducible* overlap, but are distinct concepts.
+- Explain how to make restricted data projects reproducible:
+  1. Provide synthetic or scrambled mock data that mirrors the schema so external users can verify the code runs.
+  2. Write deterministic unit tests and containerize the environment.
+  3. Ensure that an authorized auditor inside a secure enclave could re-run the exact script and get identical results.
+:::
+
+
+## Reproducibility as "Personal Insurance"
+
+Working reproducibly benefits **you** (and your team) first:
+
+- [Future-proofing:]{.bold-hilit} Your primary collaborator six months from now is *your future self*.
+- [Seamless onboarding:]{.bold-hilit} New lab members can run existing pipelines 
+without months of reconstruction.
+- [Error resilience:]{.bold-hilit} Automated pipelines make updating figures 
+or fixing small bugs fast and low-risk.
+
+::: {.notes}
+- Frame reproducibility not as an altruistic duty for science, but as self-preservation.
+- Ask the class: "Have you ever opened a project you worked on 6 months ago and spent 2 hours trying to remember which script to run first?"
+- Emphasize "Your future self doesn't reply to emails." If you don't document relative paths, dependencies, and execution order today, your future self will suffer.
+- Mention that automated pipelines (like Make or `targets` in R) allow you to re-render an entire 50-page manuscript or dashboard with one command after updating raw data.
+:::
+
+
+## The "Added Advantage": Credit & Citation
+
+Publishing reproducible workflows directly boosts academic impact:
+
+- [Higher Citations:]{.bold-hilit} Papers with public code and data receive demonstrably higher citation rates.
+- [Greater Trust:]{.bold-hilit} Independent researchers can audit, verify, and build directly on your work.
+- [Secondary Outputs:]{.bold-hilit} Reusable R packages, Python libraries, and pipelines earn recognition as first-class scientific contributions.
+
+::: {.notes}
+- Highlight the selfish incentives for doing open/reproducible work: literature consistently shows a "citation advantage" for papers with publicly available code and data repositories.
+- Explain that code repositories (GitHub/Zenodo with DOIs) allow other researchers to cite your *tools* even if they aren't citing your specific empirical findings.
+- Trust is currency in science: when readers can inspect your raw scripts and computational pipeline, they treat your findings with far higher confidence.
+:::
+
+
+<!--
+## Barrier: "Plead the Fifth" & Self-Incrimination
+
+- Current academic culture heavily penalizes public errors and exposed bugs.
+- **The Psychological Trap:** Researchers fear sharing raw code because exposing typos or minor pipeline mistakes might invite harsh criticism or rejection.
+- **The Consequence:** Authors keep code private to avoid potential self-incrimination, prioritizing personal protection over scientific transparency.
+
+::: {.notes}
+- Explain the U.S. constitutional reference for international students: "Pleading the fifth" means refusing to testify to avoid self-incrimination.
+- In research culture, publishing your raw code feels like giving reviewers and competitors a roadmap to find your mistakes.
+- Discuss how current academic culture treats coding errors as moral failures rather than normal aspects of software development.
+- Key point to stress: We need to foster a culture where sharing messy code is praised, and self-correcting bugs is rewarded rather than penalized.
+:::
+
+
+## Barrier: Asymmetric Scrutiny
+
+- Researchers tend to debug code **only when results contradict their expectations or hypotheses**.
+- If a buggy script outputs a $p < 0.05$ result that supports the hypothesis, the code is often accepted without question.
+- **The Solution:** Rigorous code testing (`pytest`/`testthat`), code review, and pre-registered analysis pipelines applied equally to *all* results.
+
+::: {.notes}
+- Define **Asymmetric Scrutiny**: We apply extreme skepticism to results we don't like, but zero skepticism to results that fit our hypothesis.
+- Give an example: You run a script, it throws an error or gives p = 0.40. You immediately dig into the code, find an index offset error, fix it, and re-run. But if it gave p = 0.01 on the first try, you might never check the code for that index error!
+- Emphasize that automated testing (unit tests) and code review from peers help neutralize human confirmation bias.
+:::
+-->
+
+
+## Barrier: The "Career Tax" & Incentive Gap
+
+- [Publication Bias:]{.bold-hilit} Academic hiring, tenure, and grants overwhelmingly reward *novel findings* over robust software engineering or replication studies.
+- [The Time Sink:]{.bold-hilit} Documenting code, setting up continuous integration, and containerizing environments takes significant time.
+- [Incentive Gap:]{.bold-hilit} Without institutional rewards, researchers view reproducible practices as an unrewarded **"career tax."**
+
+::: {.notes}
+- Connect this to real-world career incentives (hiring, tenure, grant funding).
+- Point out the tension: Building a clean, modular, fully tested pipeline takes 2-3x longer than writing a quick "one-off" messy script.
+- If hiring committees only count the *number* of novel publications on a resume, the researcher who takes shortcuts will publish faster than the researcher who builds reproducible infrastructure.
+- Ask the class: "How do we fix this incentive structure in data science and computational fields?"
+:::
+
+
+## Barrier: Resource & Infrastructure Deficits
+
+Reproducibility requires resources that are often underfunded or unevenly distributed:
+
+- [Skills Gap:]{.bold-hilit} Training in software engineering (Git, virtual environments, 
+pipelines) is rarely built into scientific curricula.
+- [Compute Costs:]{.bold-hilit} Heavy computational pipelines (e.g., multi-GPU training) 
+can be financially prohibitive to re-run or audit.
+- [Maintenance:]{.bold-hilit} Software dependencies drift over time, requiring 
+continuous maintenance to stay executable.
+
+::: {.notes}
+- Summarize the physical and structural resource barriers:
+  1. **Knowledge gap**: Most domain scientists were never formally taught Git, Docker, or environment isolation—they are self-taught out of necessity.
+  2. **Financial/Compute gap**: Re-running a deep learning model or climate simulation might cost thousands of dollars in cloud computing credits.
+  3. **Dependency drift**: R packages and Python libraries update constantly. A script written in 2020 may fail in 2026 if packages aren't pinned (`renv`/`uv`/`conda`).
+- Conclude by setting up the transition to the next part of your course: teaching the practical tools (Git, Quarto, environments) that help overcome these exact barriers.
+:::
+
+
+# Discussion Time
+
+## Screens Off, Minds On
+
+\
+
+::: {.nonincremental}
+- [Devices Away:]{.bold-hilit} Laptops & tablets closed, phones away.
+
+- [No One Alone:]{.bold-hilit} Pair or team up (no solo seats).
+
+- [Engage Fully:]{.bold-hilit} Be ready to speak, debate, and share ideas.
+:::
+
+
+## Scenario A
+
+Two candidates are competing for a single tenure-track position:
+
+:::: {.columns}
+::: {.column width="45%"}
+[Candidate A publishes 5 papers a year]{.mdlit}. Their code is undocumented, scattered across 
+local desktop folders, and missing computational environments, but their results are 
+novel and published in high-impact venues.
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="45%" .fragment}
+[Candidate B publishes 2 papers a year]{.hilit}. Every project features fully documented 
+Quarto/Jupyter workflows, continuous integration tests, archived Docker containers 
+on Zenodo, and granular version control.
+:::
+::::
+
+. . .
+
+\
+
+The hiring committee selects Candidate A, citing their superior 
+_"publication volume and research productivity."_
+
+## Scenario A (cont'd)
+
+\
+
+::: {.poll}
+What changes in hiring/granting committees would level the playing field for [Candidate B]{.hilit}?
+:::
+
+```{r}
+#| echo: false
+countdown::countdown(3, bottom = 0)
+```
+
+
+## Scenario B
+
+A team of data science undergraduates is building a data pipeline for their 
+capstone project. They have 4 weeks remaining. They can either:
+
+:::: {.columns}
+::: {.column width="46%"}
+[Option 1:]{.mdlit} Spend the final 4 weeks expanding their modeling techniques, exploring two 
+new algorithms, and refining their presentation figures.
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="46%" .fragment}
+[Option 2:]{.hilit} Spend the final 4 weeks refactoring code into modular packages, 
+writing unit tests, capturing software dependencies, and setting up automated 
+pipelines.
+:::
+::::
+
+. . .
+
+::: {.poll}
+What option would you choose (and why)?
+:::
+
+```{r}
+#| echo: false
+countdown::countdown(3, bottom = 0)
+```
+
+
+## Scenario C
+
+A research group in climate modeling trains a deep learning architecture for 
+6 days across a cluster of 32 GPUs, costing $15,000 in cloud compute credits. 
+
+A peer reviewer asks the team to re-run the entire pipeline with three alternative 
+random seed initializations to prove statistical stability. 
+
+The group's grant budget is exhausted, and their compute allocation has expired.
+
+. . .
+
+::: {.poll}
+Draft a _reproducibility rescue plan_ detailing 3 specific strategies they can 
+provide to peer reviewers to prove their pipeline is trustworthy.
+:::
+
+::: {.notes}
+1) Intermediate State Archiving: Saving and publishing model checkpoints, 
+raw log outputs, and loss curves on repositories like Zenodo/OSF.
+
+2) Dry-Run / Toy Pipelines: Providing a fast, low-compute "mock" version of 
+the pipeline using a small synthetic dataset so others can verify the code 
+logic end-to-end in seconds.
+
+3) Deterministic Sub-sampling: Demonstrating stability on a lightweight, 
+representative subset of the data before scaling up to full GPU clusters.
+
+4) Environment & Seed Logging: Strictly archiving the exact container image 
+(Docker), fixed random seeds, and hardware specs so that even if others 
+can't run it now, the execution state is perfectly preserved for the future.
+:::
+
+
+```{r}
+#| echo: false
+countdown::countdown(3, bottom = 0)
+```
+
+
+# Quiz-Poll Time
+
+Open your laptops / phones
+
+## Google Form
+
+\
+
+![](images/poll-02-qr-code.svg){fig-align="center"}
+
+\
+
+[tinyurl.com/3b2fmasf](https://tinyurl.com/3b2fmasf)
+
+
+# Bonus Take Aways
 
 ##
 
-Victoria Stodden argues that treating "reproducibility" as a single broad 
-concept hides the distinct failure points of a project. To solve this, 
-she isolates three distinct layers of scientific integrity:
+> "A study can be reproducible and still be wrong."
+>
+> Roger Peng, 2014
 
-1) Computational Reproducibility: Sharing the precise code, software versions, 
-hardware specs, and execution scripts.
+. . .
 
-2) Empirical Reproducibility: Providing the raw physical observations and 
-a detailed ledger of the exact collection methodology.
+\
 
-3) Statistical Reproducibility: Documenting the deliberate choice of statistical 
-tests, threshold filters (p-values), and model parameters to prevent data-dredging.
+> "Just because a result is reproducible does not make it right, 
+> and just because it is not reproducible does not make it wrong."
+>
+> Nature
 
+
+
+
+
+
+<!--
 
 ## Scenario 1
 
 A student group writes a flawless Python script. 
 
-They run a dataset through 50 different machine learning models with slightly 
+They fit 50 different machine learning models with slightly 
 tweaked thresholds. 
 
 Model #47 yields a statistically significant, brilliant correlation (p < 0.01). 
@@ -145,6 +405,8 @@ They publish Model #47 along with their exact script, claiming an absolute
 breakthrough. 
 
 They never mention models 1 through 46.
+
+. . .
 
 ::: {.poll}
 Since they provided the exact code and data to reproduce Model #47 perfectly, 
@@ -161,6 +423,11 @@ The Fix: Pre-registering the study design and reporting the performance
 of all 50 tested models, not just the cherry-picked survivor.
 :::
 
+```{r}
+#| echo: false
+countdown::countdown(1, bottom = 0)
+```
+
 
 ## Scenario 2
 
@@ -173,6 +440,8 @@ However, when a peer tries to collect their own air data using identical
 scripts in a neighboring town, the code crashes because the original team 
 forgot to mention that their physical air sensors require a highly specific 
 temperature calibration step before recording numbers.
+
+. . .
 
 ::: {.poll}
 Since they provided the exact code and data to reproduce their maps, 
@@ -309,21 +578,6 @@ unrecorded mouse clicks that cannot be audited, did you actually conduct
 a verifiable scientific experiment, or did you just generate a lucky graphic?
 :::
 
+-->
 
-# Take Aways
-
-##
-
-> "A study can be reproducible and still be wrong."
->
-> Roger Peng, 2014
-
-. . .
-
-\
-
-> "Just because a result is reproducible does not make it right, 
-> and just because it is not reproducible does not make it wrong."
->
-> Nature
 

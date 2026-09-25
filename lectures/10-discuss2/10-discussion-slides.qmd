@@ -30,35 +30,19 @@ chalkboard: true
 
 ![](images/what-is-the-right-verb.svg){width=70% fig-align="center"}
 
-
 ## The Turing Way 2x2 Matrix
 
 \
 
 ```
                  [ SAME DATA ]          [ DIFFERENT DATA ]
-            ┌───────────────────────┬───────────────────────┐
-  [ SAME    │     REPRODUCIBLE      │                       │
-   ANALYSIS]│ (Same steps & data)   │                       │
-            ├───────────────────────┼───────────────────────┤
-  [ DIFF.   │                       │                       │
-   ANALYSIS]│                       │                       │
-            └───────────────────────┴───────────────────────┘
-```
-
-## The Turing Way 2x2 Matrix
-
-\
-
-```
-                 [ SAME DATA ]          [ DIFFERENT DATA ]
-            ┌───────────────────────┬───────────────────────┐
-  [ SAME    │     REPRODUCIBLE      │                       │
-   ANALYSIS]│ (Same steps & data)   │                       │
-            ├───────────────────────┼───────────────────────┤
-  [ DIFF.   │        ROBUST         │                       │
-   ANALYSIS]│ (Language agnostic)   │                       │
-            └───────────────────────┴───────────────────────┘
+            ┌───────────────────────┬─────────────────────────┐
+  [ SAME    │                       │                         │
+   ANALYSIS]│                       │                         │
+            ├───────────────────────┼─────────────────────────┤
+  [ DIFF.   │                       │                         │
+   ANALYSIS]│                       │                         │
+            └───────────────────────┴─────────────────────────┘
 ```
 
 ## The Turing Way 2x2 Matrix
@@ -67,13 +51,13 @@ chalkboard: true
 
 ```
                  [ SAME DATA ]          [ DIFFERENT DATA ]
-            ┌───────────────────────┬───────────────────────┐
-  [ SAME    │     REPRODUCIBLE      │      REPLICABLE       │
-   ANALYSIS]│ (Same steps & data)   │ (Qualitately similar) │
-            ├───────────────────────┼───────────────────────┤
-  [ DIFF.   │        ROBUST         │                       │
-   ANALYSIS]│ (Language agnostic)   │                       │
-            └───────────────────────┴───────────────────────┘
+            ┌───────────────────────┬─────────────────────────┐
+  [ SAME    │     REPRODUCIBLE      │                         │
+   ANALYSIS]│ (Same steps & data)   │                         │
+            ├───────────────────────┼─────────────────────────┤
+  [ DIFF.   │                       │                         │
+   ANALYSIS]│                       │                         │
+            └───────────────────────┴─────────────────────────┘
 ```
 
 ## The Turing Way 2x2 Matrix
@@ -82,13 +66,43 @@ chalkboard: true
 
 ```
                  [ SAME DATA ]          [ DIFFERENT DATA ]
-            ┌───────────────────────┬───────────────────────┐
-  [ SAME    │     REPRODUCIBLE      │      REPLICABLE       │
-   ANALYSIS]│ (Same steps & data)   │ (Qualitately similar) │
-            ├───────────────────────┼───────────────────────┤
-  [ DIFF.   │        ROBUST         │     GENERALISABLE     │
-   ANALYSIS]│ (Language agnostic)   │  (The Holy Grail)     │
-            └───────────────────────┴───────────────────────┘
+            ┌───────────────────────┬─────────────────────────┐
+  [ SAME    │     REPRODUCIBLE      │                         │
+   ANALYSIS]│ (Same steps & data)   │                         │
+            ├───────────────────────┼─────────────────────────┤
+  [ DIFF.   │        ROBUST         │                         │
+   ANALYSIS]│ (Language agnostic)   │                         │
+            └───────────────────────┴─────────────────────────┘
+```
+
+## The Turing Way 2x2 Matrix
+
+\
+
+```
+                 [ SAME DATA ]          [ DIFFERENT DATA ]
+            ┌───────────────────────┬─────────────────────────┐
+  [ SAME    │     REPRODUCIBLE      │      REPLICABLE         │
+   ANALYSIS]│ (Same steps & data)   │ (Qualitatively similar) │
+            ├───────────────────────┼─────────────────────────┤
+  [ DIFF.   │        ROBUST         │                         │
+   ANALYSIS]│ (Language agnostic)   │                         │
+            └───────────────────────┴─────────────────────────┘
+```
+
+## The Turing Way 2x2 Matrix
+
+\
+
+```
+                 [ SAME DATA ]          [ DIFFERENT DATA ]
+            ┌───────────────────────┬─────────────────────────┐
+  [ SAME    │     REPRODUCIBLE      │      REPLICABLE         │
+   ANALYSIS]│ (Same steps & data)   │ (Qualitatively similar) │
+            ├───────────────────────┼─────────────────────────┤
+  [ DIFF.   │        ROBUST         │     GENERALISABLE       │
+   ANALYSIS]│ (Language agnostic)   │  (The Holy Grail)       │
+            └───────────────────────┴─────────────────────────┘
 ```
 
 . . .
@@ -213,7 +227,7 @@ Reproducibility requires resources that are often underfunded or unevenly distri
 
 - [Skills Gap:]{.bold-hilit} Training in software engineering (Git, virtual environments, 
 pipelines) is rarely built into scientific curricula.
-- [Compute Costs:]{.bold-hilit} Heavy computational pipelines (e.g., multi-GPU training) 
+- [Computing Costs:]{.bold-hilit} Heavy computational pipelines (e.g., multi-GPU training) 
 can be financially prohibitive to re-run or audit.
 - [Maintenance:]{.bold-hilit} Software dependencies drift over time, requiring 
 continuous maintenance to stay executable.
@@ -247,7 +261,7 @@ continuous maintenance to stay executable.
 Two candidates are competing for a single tenure-track position:
 
 :::: {.columns}
-::: {.column width="45%"}
+::: {.column width="45%" .fragment}
 [Candidate A publishes 5 papers a year]{.mdlit}. Their code is undocumented, scattered across 
 local desktop folders, and missing computational environments, but their results are 
 novel and published in high-impact venues.
@@ -278,7 +292,7 @@ What changes in hiring/granting committees would level the playing field for [Ca
 
 ```{r}
 #| echo: false
-countdown::countdown(3, bottom = 0)
+countdown::countdown(3.5, bottom = 0)
 ```
 
 
@@ -288,7 +302,7 @@ A team of data science undergraduates is building a data pipeline for their
 capstone project. They have 4 weeks remaining. They can either:
 
 :::: {.columns}
-::: {.column width="46%"}
+::: {.column width="46%" .fragment}
 [Option 1:]{.mdlit} Spend the final 4 weeks expanding their modeling techniques, exploring two 
 new algorithms, and refining their presentation figures.
 :::
@@ -326,7 +340,7 @@ The group's grant budget is exhausted, and their compute allocation has expired.
 . . .
 
 ::: {.poll}
-Draft a _reproducibility rescue plan_ detailing 3 specific strategies they can 
+Describe at least 2 things that the research group can 
 provide to peer reviewers to prove their pipeline is trustworthy.
 :::
 

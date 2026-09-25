@@ -189,52 +189,65 @@
 <p><br>
 </p>
 <pre><code>                 [ SAME DATA ]          [ DIFFERENT DATA ]
-            ┌───────────────────────┬───────────────────────┐
-  [ SAME    │     REPRODUCIBLE      │                       │
-   ANALYSIS]│ (Same steps &amp; data)   │                       │
-            ├───────────────────────┼───────────────────────┤
-  [ DIFF.   │                       │                       │
-   ANALYSIS]│                       │                       │
-            └───────────────────────┴───────────────────────┘</code></pre>
+            ┌───────────────────────┬─────────────────────────┐
+  [ SAME    │                       │                         │
+   ANALYSIS]│                       │                         │
+            ├───────────────────────┼─────────────────────────┤
+  [ DIFF.   │                       │                         │
+   ANALYSIS]│                       │                         │
+            └───────────────────────┴─────────────────────────┘</code></pre>
 </section>
 <section id="the-turing-way-2x2-matrix-1" class="slide level2">
 <h2>The Turing Way 2x2 Matrix</h2>
 <p><br>
 </p>
 <pre><code>                 [ SAME DATA ]          [ DIFFERENT DATA ]
-            ┌───────────────────────┬───────────────────────┐
-  [ SAME    │     REPRODUCIBLE      │                       │
-   ANALYSIS]│ (Same steps &amp; data)   │                       │
-            ├───────────────────────┼───────────────────────┤
-  [ DIFF.   │        ROBUST         │                       │
-   ANALYSIS]│ (Language agnostic)   │                       │
-            └───────────────────────┴───────────────────────┘</code></pre>
+            ┌───────────────────────┬─────────────────────────┐
+  [ SAME    │     REPRODUCIBLE      │                         │
+   ANALYSIS]│ (Same steps &amp; data)   │                         │
+            ├───────────────────────┼─────────────────────────┤
+  [ DIFF.   │                       │                         │
+   ANALYSIS]│                       │                         │
+            └───────────────────────┴─────────────────────────┘</code></pre>
 </section>
 <section id="the-turing-way-2x2-matrix-2" class="slide level2">
 <h2>The Turing Way 2x2 Matrix</h2>
 <p><br>
 </p>
 <pre><code>                 [ SAME DATA ]          [ DIFFERENT DATA ]
-            ┌───────────────────────┬───────────────────────┐
-  [ SAME    │     REPRODUCIBLE      │      REPLICABLE       │
-   ANALYSIS]│ (Same steps &amp; data)   │ (Qualitately similar) │
-            ├───────────────────────┼───────────────────────┤
-  [ DIFF.   │        ROBUST         │                       │
-   ANALYSIS]│ (Language agnostic)   │                       │
-            └───────────────────────┴───────────────────────┘</code></pre>
+            ┌───────────────────────┬─────────────────────────┐
+  [ SAME    │     REPRODUCIBLE      │                         │
+   ANALYSIS]│ (Same steps &amp; data)   │                         │
+            ├───────────────────────┼─────────────────────────┤
+  [ DIFF.   │        ROBUST         │                         │
+   ANALYSIS]│ (Language agnostic)   │                         │
+            └───────────────────────┴─────────────────────────┘</code></pre>
 </section>
 <section id="the-turing-way-2x2-matrix-3" class="slide level2">
 <h2>The Turing Way 2x2 Matrix</h2>
 <p><br>
 </p>
 <pre><code>                 [ SAME DATA ]          [ DIFFERENT DATA ]
-            ┌───────────────────────┬───────────────────────┐
-  [ SAME    │     REPRODUCIBLE      │      REPLICABLE       │
-   ANALYSIS]│ (Same steps &amp; data)   │ (Qualitately similar) │
-            ├───────────────────────┼───────────────────────┤
-  [ DIFF.   │        ROBUST         │     GENERALISABLE     │
-   ANALYSIS]│ (Language agnostic)   │  (The Holy Grail)     │
-            └───────────────────────┴───────────────────────┘</code></pre>
+            ┌───────────────────────┬─────────────────────────┐
+  [ SAME    │     REPRODUCIBLE      │      REPLICABLE         │
+   ANALYSIS]│ (Same steps &amp; data)   │ (Qualitatively similar) │
+            ├───────────────────────┼─────────────────────────┤
+  [ DIFF.   │        ROBUST         │                         │
+   ANALYSIS]│ (Language agnostic)   │                         │
+            └───────────────────────┴─────────────────────────┘</code></pre>
+</section>
+<section id="the-turing-way-2x2-matrix-4" class="slide level2">
+<h2>The Turing Way 2x2 Matrix</h2>
+<p><br>
+</p>
+<pre><code>                 [ SAME DATA ]          [ DIFFERENT DATA ]
+            ┌───────────────────────┬─────────────────────────┐
+  [ SAME    │     REPRODUCIBLE      │      REPLICABLE         │
+   ANALYSIS]│ (Same steps &amp; data)   │ (Qualitatively similar) │
+            ├───────────────────────┼─────────────────────────┤
+  [ DIFF.   │        ROBUST         │     GENERALISABLE       │
+   ANALYSIS]│ (Language agnostic)   │  (The Holy Grail)       │
+            └───────────────────────┴─────────────────────────┘</code></pre>
 <div class="fragment">
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -420,7 +433,7 @@
 <p>Reproducibility requires resources that are often underfunded or unevenly distributed:</p>
 <ul>
 <li class="fragment"><span class="bold-hilit">Skills Gap:</span> Training in software engineering (Git, virtual environments, pipelines) is rarely built into scientific curricula.</li>
-<li class="fragment"><span class="bold-hilit">Compute Costs:</span> Heavy computational pipelines (e.g., multi-GPU training) can be financially prohibitive to re-run or audit.</li>
+<li class="fragment"><span class="bold-hilit">Computing Costs:</span> Heavy computational pipelines (e.g., multi-GPU training) can be financially prohibitive to re-run or audit.</li>
 <li class="fragment"><span class="bold-hilit">Maintenance:</span> Software dependencies drift over time, requiring continuous maintenance to stay executable.</li>
 </ul>
 <aside class="notes">
@@ -464,7 +477,7 @@
 <h2>Scenario A</h2>
 <p>Two candidates are competing for a single tenure-track position:</p>
 <div class="columns">
-<div class="column" style="width:45%;">
+<div class="column fragment" style="width:45%;">
 <p><span class="mdlit">Candidate A publishes 5 papers a year</span>. Their code is undocumented, scattered across local desktop folders, and missing computational environments, but their results are novel and published in high-impact venues.</p>
 </div><div class="column" style="width:5%;">
 
@@ -486,9 +499,9 @@
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_0044e9cb" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_045c1bbc" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 </div>
 </div>
@@ -497,7 +510,7 @@
 <h2>Scenario B</h2>
 <p>A team of data science undergraduates is building a data pipeline for their capstone project. They have 4 weeks remaining. They can either:</p>
 <div class="columns">
-<div class="column" style="width:46%;">
+<div class="column fragment" style="width:46%;">
 <p><span class="mdlit">Option 1:</span> Spend the final 4 weeks expanding their modeling techniques, exploring two new algorithms, and refining their presentation figures.</p>
 </div><div class="column" style="width:5%;">
 
@@ -510,7 +523,7 @@
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_a1341170" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_13dc3915" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -525,7 +538,7 @@
 <p>The group’s grant budget is exhausted, and their compute allocation has expired.</p>
 <div class="fragment">
 <div class="poll">
-<p>Draft a <em>reproducibility rescue plan</em> detailing 3 specific strategies they can provide to peer reviewers to prove their pipeline is trustworthy.</p>
+<p>Describe at least 2 things that the research group can provide to peer reviewers to prove their pipeline is trustworthy.</p>
 </div>
 <aside class="notes">
 <ol type="1">
@@ -547,7 +560,7 @@
       }</style></aside>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_5ac78283" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_767b70c0" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -625,7 +638,7 @@ of all 50 tested models, not just the cherry-picked survivor.
 ::: {.cell-output-display}
 
 ```{=html}
-<div class="countdown" id="timer_058ca0df" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_f874f410" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -713,7 +726,7 @@ the night before a final project deadline?
 ::: {.cell-output-display}
 
 ```{=html}
-<div class="countdown" id="timer_6165e2e6" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_86f34452" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -742,7 +755,7 @@ as a community benefit?
 ::: {.cell-output-display}
 
 ```{=html}
-<div class="countdown" id="timer_16247360" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_247cde6e" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>

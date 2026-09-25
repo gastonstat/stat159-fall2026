@@ -353,7 +353,7 @@ git restore --staged app.R
 Now you look at the changes in `app.R` and decide they're not worth keeping:
 
 ```{.bash code-line-numbers="false"}
-git restore app.js
+git restore app.R
 ```
 
 . . .

@@ -210,7 +210,7 @@
         - type: "Lecture"
           id: ""
           name: "Git Collaborative workflows"
-          href: "lectures/20-git6/10-git-collab-slides.html"
+          href: "lectures/20-git6/20-git-collab-slides.html"
     - date: "Oct 13"
       items:
         - type: "Lab"

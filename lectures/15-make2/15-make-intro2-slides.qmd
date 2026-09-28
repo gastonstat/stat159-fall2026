@@ -17,7 +17,7 @@ Let's consider a project that involves 3+1 major stages:
 
 3) [Plot:]{.bold-hilit} Graph scatter plot with fitted regression line
 
-4) Report that incorporates:
+4) Create a Report that incorporates:
     + model (from stage 2) and 
     + plot (from stage 3)
 
@@ -113,7 +113,7 @@ save(reg, file = "model.RData")
 ::: {.column .fragment}
 ::: {.small}
 ```{.markdown filename="03-plot_model.R" code-line-numbers="false"}
-dat = read.csv(file = "data/data.csv")
+dat = read.csv(file = "data.csv")
 load(file = "model.RData")
 
 reg_intercept = reg$coefficients[1]
@@ -364,6 +364,35 @@ ggsave(filename = "plot.png",
 
 :::: {.columns}
 ::: {.column width=30%}
+![](images/regression-filestructure-1.svg)
+:::
+
+::: {.column width=70%}
+Makefile rule
+
+\
+
+::: {.small .fragment}
+```{.markdown code-line-numbers="false" }
+.PHONY: all clean
+
+all: data/data.csv data/model.RData images/plot.png report/report.html
+```
+
+- ✅ PHONY targets `all` and `clean`
+- ✅ list of `all` targets
+- ✅ correct filepaths
+- `clean` target described in next slides
+:::
+
+:::
+::::
+
+
+## {auto-animate="true"}
+
+:::: {.columns}
+::: {.column width=30%}
 ![](images/regression-filestructure-2.svg)
 :::
 
@@ -425,7 +454,7 @@ data/model.RData: code/02-fit_model.R data/data.csv
 ```
 
 - ✅ correct target
-- ✅ correct dependency
+- ✅ correct dependencies
 - ❌ incorrect command
 
 \
@@ -459,28 +488,18 @@ Makefile rule
 ::: {.small .fragment}
 ```{.markdown code-line-numbers="false" }
 images/plot.png: code/03-plot_model.R data/data.csv data/model.RData
-  Rscript 03-plot_model.R
+  cd code && Rscript 03-plot_model.R
 ```
 
 - ✅ correct target
-- ✅ correct dependency
-- ❌ incorrect command
+- ✅ correct dependencies
+- ✅ correct command
 
 \
 :::
 
-::: {.small .fragment}
-```{.markdown code-line-numbers="false"}
-images/plot.png: code/03-plot_model.R data/data.csv data/model.RData
-  cd code && Rscript 03-plot_model.R
-```
-
-👍
-:::
-
 :::
 ::::
-
 
 
 ## {auto-animate="true"}
@@ -502,10 +521,46 @@ doc/report.html: doc/report.qmd data/model.RData images/plot.png
 ```
 
 - ✅ correct target
-- ✅ correct dependency
-- ✅ incorrect command
+- ✅ correct dependencies
+- ✅ correct command
 :::
 
 :::
 ::::
+
+
+## {auto-animate="true"}
+
+:::: {.columns}
+::: {.column width=30%}
+![](images/regression-filestructure-5.svg)
+:::
+
+::: {.column width=70%}
+Makefile rule
+
+\
+
+::: {.small .fragment}
+```{.markdown code-line-numbers="false" }
+clean:
+  cd data && rm -f data.csv model.RData
+  cd image && rm -f plot.png
+  cd report && rm -f report.html
+```
+
+- ✅ correct target
+- ✅ correct dependencies
+- ✅ correct command
+:::
+
+:::
+::::
+
+
+## Demo Repo
+
+You can find the files of this demo in the following GitHub repo:
+
+<https://github.com/UCB-stat159-f26/make-regression-demo2>
 

@@ -72,8 +72,6 @@ $$
 1000 \times (1 + 0.02) = 1020
 $$
 
-. . .
-
 \
 
 In two years you'll have:
@@ -81,8 +79,6 @@ In two years you'll have:
 $$
 1000 \times (1 + 0.02) \times (1 + 0.02) = 1000 \times (1 + 0.02)^2 = 1040.4
 $$
-
-. . .
 
 \
 
@@ -325,7 +321,7 @@ A _makefile_ is formed by [rules]{.bold-hilit} that have the following structure
 ```{.markdown filename="Makefile" code-line-numbers="false"}
 # rule
 target: dependencies
-    commands
+  commands
 ```
 
 \
@@ -346,7 +342,7 @@ Under its most basic form, a rule usually has this structure:
 ```{.markdown filename="Makefile" code-line-numbers="false"}
 # rule to generate target
 target: dependency
-    command
+  command
 ```
 
 \
@@ -378,7 +374,7 @@ doc.html: doc.qmd
 ```{.markdown filename="Makefile" code-line-numbers="false"}
 # recipe to generate output file doc.html
 doc.html: doc.qmd
-    quarto render doc.qmd
+  quarto render doc.qmd
 ```
 
 \
@@ -397,7 +393,7 @@ What if we wanted to generate an output document in PDF format?
 ```{.markdown filename="Makefile" code-line-numbers="false"}
 # recipe to generate output file doc.pdf
 doc.pdf: doc.qmd
-    quarto render doc.qmd --to pdf
+  quarto render doc.qmd --to pdf
 ```
 
 . . .
@@ -407,7 +403,7 @@ doc.pdf: doc.qmd
 ::: {.nonincremental}
 - `doc.pdf`: [target]{.hilit} or output file
 - `doc.qmd`: [dependency]{.mdlit} or input file
-- `quarto render doc.pdf`: [command]{.bold-hilit} to create [target]{.hilit}
+- `quarto render doc.qmd --to pdf`: [command]{.bold-hilit} to create [target]{.hilit}
 :::
 
 
@@ -422,7 +418,7 @@ Say we want to create 2 outputs: HTML and PDF docs
 ```{.markdown filename="Makefile" code-line-numbers="false"}
 # rule 1: doc.html
 doc.html: doc.qmd
-    quarto render doc.qmd
+  quarto render doc.qmd
 ```
 
 ## More than one rule {auto-animate="true"}
@@ -432,11 +428,11 @@ Say we want to create 2 outputs: HTML and PDF docs
 ```{.markdown filename="Makefile" code-line-numbers="false"}
 # rule 1: doc.html
 doc.html: doc.qmd
-    quarto render doc.qmd
+  quarto render doc.qmd
 
 # rule 2: doc.pdf
 doc.pdf: doc.qmd
-    quarto render doc.qmd --to pdf
+  quarto render doc.qmd --to pdf
 ```
 
 ## More than one rule 
@@ -446,11 +442,11 @@ Say we want to create 2 outputs: HTML and PDF docs
 ```{.markdown filename="Makefile" code-line-numbers="false"}
 # rule 1: doc.html
 doc.html: doc.qmd
-    quarto render doc.qmd
+  quarto render doc.qmd
 
 # rule 2: doc.pdf
 doc.pdf: doc.qmd
-    quarto render doc.qmd --to pdf
+  quarto render doc.qmd --to pdf
 ```
 
 Running make will generate both outputs
@@ -467,11 +463,11 @@ Say we want to create 2 outputs: HTML and PDF docs
 ```{.markdown filename="Makefile" code-line-numbers="false"}
 # rule 1: doc.html
 doc.html: doc.qmd
-    quarto render doc.qmd
+  quarto render doc.qmd
 
 # rule 2: doc.pdf
 doc.pdf: doc.qmd
-    quarto render doc.qmd --to pdf
+  quarto render doc.qmd --to pdf
 ```
 
 . . .
@@ -495,7 +491,7 @@ make doc.pdf
 
 ## Phony Targets
 
-- By default, Makefile targets are file targets
+- By default, Makefile targets are [file targets]{.bold-hilit}
 
 - This means that targets are used to build files from other files (i.e. the dependencies)
 
@@ -517,11 +513,11 @@ all: doc.html doc.pdf
 
 # rule 1: doc.html
 doc.html: doc.qmd
-    quarto render doc.qmd
+  quarto render doc.qmd
 
 # rule 2: doc.pdf
 doc.pdf: doc.qmd
-    quarto render doc.qmd --to pdf
+  quarto render doc.qmd --to pdf
 ```
 
 - The first target `all` is not the name of a file; 
@@ -572,11 +568,11 @@ all: doc.html doc.pdf
 
 # rule 1: doc.html
 doc.html: doc.qmd
-    quarto render doc.qmd
+  quarto render doc.qmd
 
 # rule 2: doc.pdf
 doc.pdf: doc.qmd
-    quarto render doc.qmd --to pdf
+  quarto render doc.qmd --to pdf
 ```
 
 
@@ -620,7 +616,7 @@ all: <targets>
 
 # remove output files
 clean:
-    rm -f <outputs>
+  rm -f <outputs>
 ```
 :::
 
@@ -639,14 +635,14 @@ all: doc.html doc.pdf
 
 # rule 1: doc.html
 doc.html: doc.qmd
-    quarto render doc.qmd
+  quarto render doc.qmd
 
 # rule 2: doc.pdf
 doc.pdf: doc.qmd
-    quarto render doc.qmd --to pdf
+  quarto render doc.qmd --to pdf
 
 clean:
-    rm -f doc.html doc.pdf
+  rm -f doc.html doc.pdf
 ```
 :::
 
@@ -694,9 +690,9 @@ The file structure now looks like this:
 
 ```{.markdown code-line-numbers="false"}
 future_value/
-    functions.R
-    doc.qmd
-    Makefile
+  functions.R
+  doc.qmd
+  Makefile
 ```
 
 \
@@ -707,6 +703,8 @@ Technically speaking:
 
 - `doc.html` now depends on both `doc.qmd` and `functions.R`
 - `doc.pdf` also depends on both `doc.qmd` and `functions.R`
+- If either `functions.R` or `doc.qmd` change, then the output files 
+should be updated
 
 
 ## More than one input {auto-animate="true"}
@@ -747,7 +745,7 @@ all: doc.html doc.pdf
 
 # rule 1: doc.html
 doc.html: doc.qmd functions.R
-    quarto render doc.qmd
+  quarto render doc.qmd
 ```
 :::
 
@@ -764,11 +762,11 @@ all: doc.html doc.pdf
 
 # rule 1: doc.html
 doc.html: doc.qmd functions.R
-    quarto render doc.qmd
+  quarto render doc.qmd
 
 # rule 2: doc.pdf
 doc.pdf: doc.qmd functions.R
-    quarto render doc.qmd --to pdf
+  quarto render doc.qmd --to pdf
 ```
 :::
 
@@ -784,13 +782,13 @@ all: doc.html doc.pdf
 
 # rule 1: doc.html
 doc.html: doc.qmd functions.R
-    quarto render doc.qmd
+  quarto render doc.qmd
 
 # rule 2: doc.pdf
 doc.pdf: doc.qmd functions.R
-    quarto render doc.qmd --to pdf
+  quarto render doc.qmd --to pdf
 
 clean:
-    rm -f doc.html doc.pdf
+  rm -f doc.html doc.pdf
 ```
 :::

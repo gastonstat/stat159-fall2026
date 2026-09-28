@@ -5,10 +5,6 @@ format: stat159slides-revealjs
 chalkboard: true
 ---
 
-## We'll begin past 10
-
-While we wait, 
-
 # Open Science and Reproducibility
 
 ## Reading
@@ -22,34 +18,20 @@ While we wait,
 :::
 
 
-# Introduction
-
-## Why Are We Here?
-
-- Current scientific incentive structures are heavily **misaligned** with transparency.
-
-- Standard research practices frequently reward *novel, positive* results over rigorous, 
-verifiable workflows.
-
-- **The Solution:** Open science is a concrete set of behaviors that protect scientific 
-credibility.
-
-
 # Overview
 
 ## Step 1: Open Science Core Concepts
 
-::: {.callout-note}
-### The Core Concept
+Open Science is an umbrella movement encompassing 
 
-Open science is the process of making both the **content** and the **process** of 
-producing scientific evidence fully transparent and accessible.
+::: {.nonincremental}
+- transparency, 
+- rigor, 
+- reproducibility, and 
+- accessibility,
 :::
 
-- **Reproducibility Standard:** Original data + original code = identical original results.
-- **Replicability Standard:** New data + identical experimental procedures = same findings.
-- **Targeting Human Bias:** Acts as a procedural defense wall against confirmation bias.
-- **Shifting Metrics:** Replaces shallow journal impact factors with actual pipeline audits.
+across the entire research lifecycle. 
 
 ::: {.notes}
 🌐 Step 1: Open Science (Understanding the Concept)
@@ -122,17 +104,13 @@ self-archive copy is made public
 
 ## Step 4: Reproducible Analyses
 
-- [Lab Technique Rule:]{.bold-hilit} Computing best practices are as integral to robust research as 
-fundamental laboratory methods.
-- [The Raw Sanctuary:]{.bold-hilit} Save your raw data completely separately from manipulated or 
-cleaned iterations.
-- [Structural Folders:]{.bold-hilit} Maintain isolated directories per project, separating raw data, 
-processed figures, and text scripts.
-- [Record Everything:]{.bold-hilit} Code every step of your analytical data adjustments in open-source 
-scripts (R or Python).
-- [Stable Archiving:]{.bold-hilit} Deploy your finished code blocks to reputable, DOI-issuing hubs 
-like Figshare, Dryad, or Zenodo.
+Structuring workflows so that independent researchers (or the original authors 
+at a later date) can rerun the analysis code on the raw data and produce identical 
+quantitative results.
 
+Emphasizes computational reproducibility through scripted, programmatic analysis 
+tools (such as R or Python), dynamic document generation (e.g., R Markdown, 
+Quarto, Jupyter Notebooks), version control, and clear software environment specifications.
 
 ::: {.notes}
 💻 Step 4: Reproducible Analyses (Scientific Computing Skillsets)
@@ -147,11 +125,8 @@ like Figshare, Dryad, or Zenodo.
 
 ## Step 5: Preregistration & Registered Reports
 
-::: {.callout-warning}
-### The Core Target Failure
-
-Preregistration draws an unalterable boundary between planned **confirmatory** tests and unplanned **exploratory** data mining. It systematically blocks HARKing.
-:::
+Distinguishing between exploratory (hypothesis-generating) and confirmatory 
+(hypothesis-testing) research to prevent post-hoc changes to study designs or analysis plans.
 
 - [Pre-Data Lock:]{.bold-hilit} Committing to hypotheses and statistical plans *before* gathering or viewing data files.
 - [Registered Reports:]{.bold-hilit} Submitting your study design to a journal for peer-review **prior to data collection**.
@@ -170,17 +145,10 @@ Preregistration draws an unalterable boundary between planned **confirmatory** t
 
 ## Step 6: Replication Research
 
-- **Benchmark of Truth:** An effect *must* be repeatable to count as a genuine scientific 
-discovery.
-- **Direct Replications:** Intentionally duplicating all critical design blocks to verify 
-the physical result.
-- **Conceptual Replications:** Purposefully altering operational variables to test 
-the generalizability of a theory.
-- **The "Alternative Test" Shift:** Re-labeling conceptual replications as 
-*alternative tests* to stop muddy conflation.
-- **Systemic Stabilization:** Adjusts career environments that unhealthily 
-reward novelty over long-term stability.
+Conducting and publishing direct or conceptual replications to test the 
+robustness and generalizability of existing empirical findings.
 
+Replications are essential for building a cumulative, self-correcting science.
 
 ::: {.notes}
 🔬 Step 6: Replication Research (Verifying Scientific Discoveries)
@@ -195,14 +163,12 @@ reward novelty over long-term stability.
 
 ## Step 7: Teaching Open Science
 
-- [The Educational Gap:]{.bold-hilit} A vast majority of students currently graduate from 
-statistics courses unaware of the replication crisis.
-- [The 1-Hour Footprint:]{.bold-hilit} Deploying compact, structured introductory modules 
-radically alters how students view media claims.
-- [The Behavioral Result:]{.bold-hilit} Students learn to trust unverified research less, 
-but view computational fields as closer to hard sciences.
-- [Syllabus Integration:]{.bold-hilit} Drastically cut instructor burden by leveraging 
-pre-built infrastructure frameworks like FORRT or the Open Science MOOC.
+Integrating open, transparent, and reproducible practices into undergraduate 
+and graduate curricula and research training.
+
+Embedding Open Science principles early—through hands-on replication projects, 
+transparent coding assignments, and discussions of research integrity—normalizes 
+these practices for the next generation of scientists and improves pedagogical outcomes.
 
 ::: {.notes}
 🎓 Step 7: Teaching Open Science (Sustaining the Movement)

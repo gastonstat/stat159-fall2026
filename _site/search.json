@@ -452,7 +452,7 @@
     "href": "lectures/15-make2/15-make-intro2-slides.html#motivation",
     "title": "Intro to GNU Make (part 2)",
     "section": "Motivation",
-    "text": "Motivation\nLet’s consider a project that involves 3+1 major stages:\n\nData: Generate x-y data\nModel: Fit simple linear regression model \\(\\hat{y} = b_0 + b_1 x\\)\nPlot: Graph scatter plot with fitted regression line\nReport that incorporates:\n\nmodel (from stage 2) and\nplot (from stage 3)"
+    "text": "Motivation\nLet’s consider a project that involves 3+1 major stages:\n\nData: Generate x-y data\nModel: Fit simple linear regression model \\(\\hat{y} = b_0 + b_1 x\\)\nPlot: Graph scatter plot with fitted regression line\nCreate a Report that incorporates:\n\nmodel (from stage 2) and\nplot (from stage 3)"
   },
   {
     "objectID": "lectures/15-make2/15-make-intro2-slides.html#generate-data",
@@ -487,7 +487,7 @@
     "href": "lectures/15-make2/15-make-intro2-slides.html#code-split-into-3-r-script-files",
     "title": "Intro to GNU Make (part 2)",
     "section": "Code split into 3 R script files",
-    "text": "Code split into 3 R script files\n\n\n\n\n\n01-generate_data.R\n\nset.seed(349587)\nn = 100\nx = runif(n, min = -3, max = 3)\ny = x + rnorm(n, mean = 0, sd = 1)\n\ndat = data.frame(x = x, y = y)\n\nwrite.csv(dat, file = \"data.csv\", \n  row.names = FALSE)\n\n\n\n\n\n\n\n02-fit_model.R\n\ndat = read.csv(file = \"data.csv\")\n\nreg = lm(y ~ x, data = dat)\n\nsave(reg, file = \"model.RData\")\n\n\n\n\n\n\n03-plot_model.R\n\ndat = read.csv(file = \"data/data.csv\")\nload(file = \"model.RData\")\n\nreg_intercept = reg$coefficients[1]\nreg_slope = reg$coefficients[2]\n\ngg = ggplot(data = dat, aes(x = x, y = y)) +\n  geom_point(shape = 20, alpha = 0.7) +\n  geom_abline(intercept = reg_intercept, \n              slope = reg_slope,\n              color = \"#4D8FEB\") +\n  theme_bw() +\n  labs(title = \"Simple regression model\")\n\nggsave(filename = \"plot.png\",\n       plot = gg, width = 5, height = 5)"
+    "text": "Code split into 3 R script files\n\n\n\n\n\n01-generate_data.R\n\nset.seed(349587)\nn = 100\nx = runif(n, min = -3, max = 3)\ny = x + rnorm(n, mean = 0, sd = 1)\n\ndat = data.frame(x = x, y = y)\n\nwrite.csv(dat, file = \"data.csv\", \n  row.names = FALSE)\n\n\n\n\n\n\n\n02-fit_model.R\n\ndat = read.csv(file = \"data.csv\")\n\nreg = lm(y ~ x, data = dat)\n\nsave(reg, file = \"model.RData\")\n\n\n\n\n\n\n03-plot_model.R\n\ndat = read.csv(file = \"data.csv\")\nload(file = \"model.RData\")\n\nreg_intercept = reg$coefficients[1]\nreg_slope = reg$coefficients[2]\n\ngg = ggplot(data = dat, aes(x = x, y = y)) +\n  geom_point(shape = 20, alpha = 0.7) +\n  geom_abline(intercept = reg_intercept, \n              slope = reg_slope,\n              color = \"#4D8FEB\") +\n  theme_bw() +\n  labs(title = \"Simple regression model\")\n\nggsave(filename = \"plot.png\",\n       plot = gg, width = 5, height = 5)"
   },
   {
     "objectID": "lectures/15-make2/15-make-intro2-slides.html#report-in-qmd-file",
@@ -571,28 +571,28 @@
     "href": "lectures/15-make2/15-make-intro2-slides.html#section-15",
     "title": "Intro to GNU Make (part 2)",
     "section": "",
-    "text": "Makefile rule\n\n\n\ndata/data.csv: code/01-generate_data.R\n  Rscript 01-generate_data.R\n\n✅ correct target\n✅ correct dependency\n❌ incorrect command\n\n\n\n\n\ndata/data.csv: code/01-generate_data.R\n  cd code && Rscript 01-generate_data.R\n👍\n\n\n# alternative command\ndata/data.csv: code/01-generate_data.R\n  cd code; Rscript 01-generate_data.R"
+    "text": "Makefile rule\n\n\n\n.PHONY: all clean\n\nall: data/data.csv data/model.RData images/plot.png report/report.html\n\n✅ PHONY targets all and clean\n✅ list of all targets\n✅ correct filepaths\nclean target described in next slides"
   },
   {
     "objectID": "lectures/15-make2/15-make-intro2-slides.html#section-16",
     "href": "lectures/15-make2/15-make-intro2-slides.html#section-16",
     "title": "Intro to GNU Make (part 2)",
     "section": "",
-    "text": "Makefile rule\n\n\n\ndata/model.RData: code/02-fit_model.R data/data.csv\n  Rscript 02-fit_model.R\n\n✅ correct target\n✅ correct dependency\n❌ incorrect command\n\n\n\n\n\ndata/model.RData: code/02-fit_model.R data/data.csv\n  cd code && Rscript 02-fit_model.R\n👍"
+    "text": "Makefile rule\n\n\n\ndata/data.csv: code/01-generate_data.R\n  Rscript 01-generate_data.R\n\n✅ correct target\n✅ correct dependency\n❌ incorrect command\n\n\n\n\n\ndata/data.csv: code/01-generate_data.R\n  cd code && Rscript 01-generate_data.R\n👍\n\n\n# alternative command\ndata/data.csv: code/01-generate_data.R\n  cd code; Rscript 01-generate_data.R"
   },
   {
     "objectID": "lectures/15-make2/15-make-intro2-slides.html#section-17",
     "href": "lectures/15-make2/15-make-intro2-slides.html#section-17",
     "title": "Intro to GNU Make (part 2)",
     "section": "",
-    "text": "Makefile rule\n\n\n\nimages/plot.png: code/03-plot_model.R data/data.csv data/model.RData\n  Rscript 03-plot_model.R\n\n✅ correct target\n✅ correct dependency\n❌ incorrect command\n\n\n\n\n\nimages/plot.png: code/03-plot_model.R data/data.csv data/model.RData\n  cd code && Rscript 03-plot_model.R\n👍"
+    "text": "Makefile rule\n\n\n\ndata/model.RData: code/02-fit_model.R data/data.csv\n  Rscript 02-fit_model.R\n\n✅ correct target\n✅ correct dependencies\n❌ incorrect command\n\n\n\n\n\ndata/model.RData: code/02-fit_model.R data/data.csv\n  cd code && Rscript 02-fit_model.R\n👍"
   },
   {
     "objectID": "lectures/15-make2/15-make-intro2-slides.html#section-18",
     "href": "lectures/15-make2/15-make-intro2-slides.html#section-18",
     "title": "Intro to GNU Make (part 2)",
     "section": "",
-    "text": "Makefile rule\n\n\n\ndoc/report.html: doc/report.qmd data/model.RData images/plot.png\n  cd doc && quarto render report.qmd\n\n✅ correct target\n✅ correct dependency\n✅ incorrect command"
+    "text": "Makefile rule\n\n\n\nimages/plot.png: code/03-plot_model.R data/data.csv data/model.RData\n  cd code && Rscript 03-plot_model.R\n\n✅ correct target\n✅ correct dependencies\n✅ correct command"
   },
   {
     "objectID": "lectures/25-packages/25-packages-slides.html#about",
@@ -1558,7 +1558,7 @@
     "href": "lectures/13-discuss3/13-discussion-slides.html#step-1-open-science-core-concepts",
     "title": "7 Steps to Open Science",
     "section": "Step 1: Open Science Core Concepts",
-    "text": "Step 1: Open Science Core Concepts\n\n\n\n\n\n\nThe Core Concept\n\n\nOpen science is the process of making both the content and the process of producing scientific evidence fully transparent and accessible.\n\n\n\n\nReproducibility Standard: Original data + original code = identical original results.\nReplicability Standard: New data + identical experimental procedures = same findings.\nTargeting Human Bias: Acts as a procedural defense wall against confirmation bias.\nShifting Metrics: Replaces shallow journal impact factors with actual pipeline audits.\n\n\n🌐 Step 1: Open Science (Understanding the Concept)\n\nThe Baseline Definition: It is the explicit process of making both the content and the entire process of producing scientific evidence transparent and accessible to others [INDEX].\nThe Reproducibility Standard: You must guarantee that an independent researcher can take your exact data and code, run the same analysis, and obtain identical results [INDEX].\nThe Replicability Standard: Your documentation must be clear enough that repeating your exact procedures with new participants yields the same findings [INDEX].\nTargeting Human Bias: It serves as a necessary procedural defense wall against human cognitive biases, such as confirmation bias and post hoc self-deception [INDEX].\nShifting Career Metrics: Adopting these behaviors helps shift institutional hiring, funding, and promotion models away from shallow journal impact factors toward transparent metrics [INDEX]."
+    "text": "Step 1: Open Science Core Concepts\nOpen Science is an umbrella movement encompassing\n\ntransparency,\nrigor,\nreproducibility, and\naccessibility,\n\nacross the entire research lifecycle.\n\n🌐 Step 1: Open Science (Understanding the Concept)\n\nThe Baseline Definition: It is the explicit process of making both the content and the entire process of producing scientific evidence transparent and accessible to others [INDEX].\nThe Reproducibility Standard: You must guarantee that an independent researcher can take your exact data and code, run the same analysis, and obtain identical results [INDEX].\nThe Replicability Standard: Your documentation must be clear enough that repeating your exact procedures with new participants yields the same findings [INDEX].\nTargeting Human Bias: It serves as a necessary procedural defense wall against human cognitive biases, such as confirmation bias and post hoc self-deception [INDEX].\nShifting Career Metrics: Adopting these behaviors helps shift institutional hiring, funding, and promotion models away from shallow journal impact factors toward transparent metrics [INDEX]."
   },
   {
     "objectID": "lectures/13-discuss3/13-discussion-slides.html#step-2-open-access-oa",
@@ -1586,28 +1586,28 @@
     "href": "lectures/13-discuss3/13-discussion-slides.html#step-4-reproducible-analyses",
     "title": "7 Steps to Open Science",
     "section": "Step 4: Reproducible Analyses",
-    "text": "Step 4: Reproducible Analyses\n\nLab Technique Rule: Computing best practices are as integral to robust research as fundamental laboratory methods.\nThe Raw Sanctuary: Save your raw data completely separately from manipulated or cleaned iterations.\nStructural Folders: Maintain isolated directories per project, separating raw data, processed figures, and text scripts.\nRecord Everything: Code every step of your analytical data adjustments in open-source scripts (R or Python).\nStable Archiving: Deploy your finished code blocks to reputable, DOI-issuing hubs like Figshare, Dryad, or Zenodo.\n\n\n💻 Step 4: Reproducible Analyses (Scientific Computing Skillsets)\n\nComputing as a Core Skill: Treating computing best practices as just as integral to high-quality science as fundamental laboratory techniques [INDEX].\nThe Raw Data Sanctuary: Saving your raw, untouched data files completely separate from any cleaned, manipulated, or transformed versions [INDEX].\nStructural Project Folders: Dedicating a single isolated directory to each research project, with clear sub-directories for raw data, processed data, and text [INDEX].\nRecording Processing Steps: Tracking every single step of data cleaning and analysis by coding your pipeline in open-source languages (like R or Python) [INDEX].\nStable DOI Archiving: Uploading your code scripts and research products to reputable, permanent, DOI-issuing repositories like Figshare, Dryad, or Zenodo [INDEX]."
+    "text": "Step 4: Reproducible Analyses\nStructuring workflows so that independent researchers (or the original authors at a later date) can rerun the analysis code on the raw data and produce identical quantitative results.\nEmphasizes computational reproducibility through scripted, programmatic analysis tools (such as R or Python), dynamic document generation (e.g., R Markdown, Quarto, Jupyter Notebooks), version control, and clear software environment specifications.\n\n💻 Step 4: Reproducible Analyses (Scientific Computing Skillsets)\n\nComputing as a Core Skill: Treating computing best practices as just as integral to high-quality science as fundamental laboratory techniques [INDEX].\nThe Raw Data Sanctuary: Saving your raw, untouched data files completely separate from any cleaned, manipulated, or transformed versions [INDEX].\nStructural Project Folders: Dedicating a single isolated directory to each research project, with clear sub-directories for raw data, processed data, and text [INDEX].\nRecording Processing Steps: Tracking every single step of data cleaning and analysis by coding your pipeline in open-source languages (like R or Python) [INDEX].\nStable DOI Archiving: Uploading your code scripts and research products to reputable, permanent, DOI-issuing repositories like Figshare, Dryad, or Zenodo [INDEX]."
   },
   {
     "objectID": "lectures/13-discuss3/13-discussion-slides.html#step-5-preregistration-registered-reports",
     "href": "lectures/13-discuss3/13-discussion-slides.html#step-5-preregistration-registered-reports",
     "title": "7 Steps to Open Science",
     "section": "Step 5: Preregistration & Registered Reports",
-    "text": "Step 5: Preregistration & Registered Reports\n\n\n\n\n\n\nThe Core Target Failure\n\n\nPreregistration draws an unalterable boundary between planned confirmatory tests and unplanned exploratory data mining. It systematically blocks HARKing.\n\n\n\n\nPre-Data Lock: Committing to hypotheses and statistical plans before gathering or viewing data files.\nRegistered Reports: Submitting your study design to a journal for peer-review prior to data collection.\nIn-Principle Acceptance: The journal guarantees publication based on design rigor, completely regardless of the final outcome.\n\n\n⏱️ Step 5: Preregistration and Registered Reports (Constraining Flexibility)\n\nThe Pre-Data Mandate: Committing to your hypotheses, study designs, and statistical analysis plans before you gather data or view the files [INDEX].\nDemarcating Exploration: Forcing a transparent, unalterable boundary between planned confirmatory testing and unplanned, post hoc exploratory data mining [INDEX].\nThe Target Failure: Restricting a researcher’s degrees of freedom to eliminate HARKing (Hypothesizing After the Results are Known) and cherry-picking [INDEX].\nThe Registered Report Pivot: Submitting your study design to a journal for pre-data peer-review to secure an “in-principle acceptance” before execution [INDEX].\nThe Stage 2 Audit: Guaranteeing publication based purely on the rigor of the design and adherence to the plan, completely regardless of whether the final results are positive [INDEX]."
+    "text": "Step 5: Preregistration & Registered Reports\nDistinguishing between exploratory (hypothesis-generating) and confirmatory (hypothesis-testing) research to prevent post-hoc changes to study designs or analysis plans.\n\nPre-Data Lock: Committing to hypotheses and statistical plans before gathering or viewing data files.\nRegistered Reports: Submitting your study design to a journal for peer-review prior to data collection.\nIn-Principle Acceptance: The journal guarantees publication based on design rigor, completely regardless of the final outcome.\n\n\n⏱️ Step 5: Preregistration and Registered Reports (Constraining Flexibility)\n\nThe Pre-Data Mandate: Committing to your hypotheses, study designs, and statistical analysis plans before you gather data or view the files [INDEX].\nDemarcating Exploration: Forcing a transparent, unalterable boundary between planned confirmatory testing and unplanned, post hoc exploratory data mining [INDEX].\nThe Target Failure: Restricting a researcher’s degrees of freedom to eliminate HARKing (Hypothesizing After the Results are Known) and cherry-picking [INDEX].\nThe Registered Report Pivot: Submitting your study design to a journal for pre-data peer-review to secure an “in-principle acceptance” before execution [INDEX].\nThe Stage 2 Audit: Guaranteeing publication based purely on the rigor of the design and adherence to the plan, completely regardless of whether the final results are positive [INDEX]."
   },
   {
     "objectID": "lectures/13-discuss3/13-discussion-slides.html#step-6-replication-research",
     "href": "lectures/13-discuss3/13-discussion-slides.html#step-6-replication-research",
     "title": "7 Steps to Open Science",
     "section": "Step 6: Replication Research",
-    "text": "Step 6: Replication Research\n\nBenchmark of Truth: An effect must be repeatable to count as a genuine scientific discovery.\nDirect Replications: Intentionally duplicating all critical design blocks to verify the physical result.\nConceptual Replications: Purposefully altering operational variables to test the generalizability of a theory.\nThe “Alternative Test” Shift: Re-labeling conceptual replications as alternative tests to stop muddy conflation.\nSystemic Stabilization: Adjusts career environments that unhealthily reward novelty over long-term stability.\n\n\n🔬 Step 6: Replication Research (Verifying Scientific Discoveries)\n\nThe Benchmark of Truth: Adopting the foundational scientific rule that an effect must be completely repeatable to count as a genuine scientific discovery [INDEX].\nDirect Replications: Intentionally duplicating every necessary element of an original study to see if the physical result can be reproduced [INDEX].\nConceptual Replications: Purposefully changing operational components (like the measure or the sample) to evaluate the generalizability of the theory [INDEX].\nThe “Alternative Test” Label: Re-labeling messy conceptual replications as “alternative tests” to stop them from being conflated with close, direct replications [INDEX].\nSystemic Stabilization: Embracing replication to fix structural market misalignments where fields reward novelty over long-term theory stability [INDEX]."
+    "text": "Step 6: Replication Research\nConducting and publishing direct or conceptual replications to test the robustness and generalizability of existing empirical findings.\nReplications are essential for building a cumulative, self-correcting science.\n\n🔬 Step 6: Replication Research (Verifying Scientific Discoveries)\n\nThe Benchmark of Truth: Adopting the foundational scientific rule that an effect must be completely repeatable to count as a genuine scientific discovery [INDEX].\nDirect Replications: Intentionally duplicating every necessary element of an original study to see if the physical result can be reproduced [INDEX].\nConceptual Replications: Purposefully changing operational components (like the measure or the sample) to evaluate the generalizability of the theory [INDEX].\nThe “Alternative Test” Label: Re-labeling messy conceptual replications as “alternative tests” to stop them from being conflated with close, direct replications [INDEX].\nSystemic Stabilization: Embracing replication to fix structural market misalignments where fields reward novelty over long-term theory stability [INDEX]."
   },
   {
     "objectID": "lectures/13-discuss3/13-discussion-slides.html#step-7-teaching-open-science",
     "href": "lectures/13-discuss3/13-discussion-slides.html#step-7-teaching-open-science",
     "title": "7 Steps to Open Science",
     "section": "Step 7: Teaching Open Science",
-    "text": "Step 7: Teaching Open Science\n\nThe Educational Gap: A vast majority of students currently graduate from statistics courses unaware of the replication crisis.\nThe 1-Hour Footprint: Deploying compact, structured introductory modules radically alters how students view media claims.\nThe Behavioral Result: Students learn to trust unverified research less, but view computational fields as closer to hard sciences.\nSyllabus Integration: Drastically cut instructor burden by leveraging pre-built infrastructure frameworks like FORRT or the Open Science MOOC.\n\n\n🎓 Step 7: Teaching Open Science (Sustaining the Movement)\n\nThe Educational Gap: Addressing the reality that a vast majority of students currently graduate from statistics courses having never heard of the replication crisis [INDEX].\nA 1-Hour Practical Footprint: Deploying structured 1-hour introductory modules to completely pivot how incoming researchers view media claims and data transparency [INDEX].\nThe Dual Psychological Impact: Training students to trust unverified research less while simultaneously causing them to view their field as closer to the hard natural sciences [INDEX].\nTraining Future Consumers: Realizing that open science pedagogy is vital even for students who leave research, creating critical public consumers of data [INDEX].\nLeveraging Existing Infrastructure: Utilizing free, collaborative open platforms like FORRT and the Open Science MOOC to drop pre-built resources straight into existing syllabi [INDEX]."
+    "text": "Step 7: Teaching Open Science\nIntegrating open, transparent, and reproducible practices into undergraduate and graduate curricula and research training.\nEmbedding Open Science principles early—through hands-on replication projects, transparent coding assignments, and discussions of research integrity—normalizes these practices for the next generation of scientists and improves pedagogical outcomes.\n\n🎓 Step 7: Teaching Open Science (Sustaining the Movement)\n\nThe Educational Gap: Addressing the reality that a vast majority of students currently graduate from statistics courses having never heard of the replication crisis [INDEX].\nA 1-Hour Practical Footprint: Deploying structured 1-hour introductory modules to completely pivot how incoming researchers view media claims and data transparency [INDEX].\nThe Dual Psychological Impact: Training students to trust unverified research less while simultaneously causing them to view their field as closer to the hard natural sciences [INDEX].\nTraining Future Consumers: Realizing that open science pedagogy is vital even for students who leave research, creating critical public consumers of data [INDEX].\nLeveraging Existing Infrastructure: Utilizing free, collaborative open platforms like FORRT and the Open Science MOOC to drop pre-built resources straight into existing syllabi [INDEX]."
   },
   {
     "objectID": "lectures/13-discuss3/13-discussion-slides.html#screens-off-minds-on",
@@ -3818,7 +3818,7 @@
     "href": "readings/05-reading-reinhart-rogoff.html#questions",
     "title": "5) Irreproducibility Tales 1",
     "section": "Questions",
-    "text": "Questions\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following reflections—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc\n\n\n\nReflection 1: Tracking Silent Failures\nThe Harvard economists skipped 5 entire countries in their key calculation because they accidentally misaligned a visual row selection box in Excel.\n\nReflect on your own history with spreadsheets or scripts.\nHave you ever committed a silent, unrecorded clerical error that altered an assignment or project output?\nDid you catch it through a systematic checking protocol, or was it pure luck?\nWhat hidden mouse-slip is lurking inside your current active folders right now?\n\n\n\nReflection 2: Evaluating Your Provenance\nThe authors argue that the culture of computing has not kept pace with its pre-eminence in research, noting that few computational researchers record their exact workflows, hardware, or software configurations.\n\nEvaluate your personal project workflows honestly.\nDo you systematically log packages, tool versions, and step-by-step executions?\nOr do you treat data documentation as a boring afterthought that you plan to “fix later”?\nWhy does this gap between doing science and documenting science persist in your daily routine?\n\n\n\nReflection 3: Unpacking Status Bias\nReinhart and Rogoff were world-respected Harvard economists. Because of their immense prestige, global big-hitters blindly trusted their numbers to pass massive laws.\nIt took a 28-year-old graduate student checking the actual, raw formula boxes to expose that the emperor had no clothes.\n\nThink about your own data consumption habits.\nHave you ever accepted a chart as “fact” simply because it came from a famous journal, a top university, or a respected researcher?\nHow will you deliberately adjust your skepticism when reading “high-status” science moving forward?\n\n\n\nReflection 4: The Emergency Audit\nFor an economist, the five most terrifying words in the English language are: I can’t replicate your results.\n\nImagine an aggressive outside reviewer or competitor emails you at this exact second.\nThey demand the raw datasets, exact software versions, and code scripts you used for your last major project or coursework assignment.\nHow long would it take you to locate and deliver those exact files?\nWould you feel absolute confidence, or total, paralyzing panic?\n\n\n\nReflection 5: Structural Safeguards\nBorwein and Bailey demand that journal editors and scientists implement stricter standards to stop genuine errors from proliferating.\n\nSuppose you are the Lead Auditor of your own academic output.\nDraft a personal, non-negotiable two-rule checklist that you will enforce on your next data project to ensure a spreadsheet or code mismatch is structurally impossible.\nHow will you guarantee your future self sticks to these rules when a deadline is 3 hours away and stress is at its peak?",
+    "text": "Questions\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following reflections—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc\n\n\n\nReflection 1: Tracking Silent Failures\nThe Harvard economists skipped 5 entire countries in their key calculation because they accidentally misaligned a visual row selection box in Excel.\n\nReflect on your own history with spreadsheets or scripts.\nHave you ever committed a silent, unrecorded clerical error that altered an assignment or project output?\nDid you catch it through a systematic checking protocol, or was it pure luck?\nWhat hidden mouse-slip is lurking inside your current active folders right now?\n\n\n\nReflection 2: Unpacking Status Bias\nReinhart and Rogoff were world-respected Harvard economists. Because of their immense prestige, global big-hitters blindly trusted their numbers to pass massive laws.\nIt took a 28-year-old graduate student checking the actual, raw formula boxes to expose that the emperor had no clothes.\n\nThink about your own data consumption habits.\nHave you ever accepted a chart as “fact” simply because it came from a famous journal, a top university, or a respected researcher?\nHow will you deliberately adjust your skepticism when reading “high-status” science moving forward?\n\n\n\nReflection 3: Structural Safeguards\nBorwein and Bailey demand that journal editors and scientists implement stricter standards to stop genuine errors from proliferating.\n\nSuppose you are the Lead Auditor of your own academic output.\nDraft a personal, non-negotiable two-rule checklist that you will enforce on your next data project to ensure a spreadsheet or code mismatch is structurally impossible.\nHow will you guarantee your future self sticks to these rules when a deadline is 3 hours away and stress is at its peak?",
     "crumbs": [
       "Readings",
       "5) Irreproducibility Tales 1"
@@ -4457,7 +4457,7 @@
     "href": "lectures/14-make1/14-make-intro-slides.html#motivation-contd-1",
     "title": "Intro to GNU Make (part 1)",
     "section": "Motivation (cont’d)",
-    "text": "Motivation (cont’d)\nIn one year you’ll have:\n\\[\n1000 \\times (1 + 0.02) = 1020\n\\]\n\n\n\nIn two years you’ll have:\n\\[\n1000 \\times (1 + 0.02) \\times (1 + 0.02) = 1000 \\times (1 + 0.02)^2 = 1040.4\n\\]\n\n\n\n\nIn three years you’ll have:\n\\[\n1000 \\times (1 + 0.02) \\times (1 + 0.02) \\times (1 + 0.02) = 1000 \\times (1 + 0.02)^3 = 1061.208\n\\]"
+    "text": "Motivation (cont’d)\nIn one year you’ll have:\n\\[\n1000 \\times (1 + 0.02) = 1020\n\\]\n\n\nIn two years you’ll have:\n\\[\n1000 \\times (1 + 0.02) \\times (1 + 0.02) = 1000 \\times (1 + 0.02)^2 = 1040.4\n\\]\n\n\nIn three years you’ll have:\n\\[\n1000 \\times (1 + 0.02) \\times (1 + 0.02) \\times (1 + 0.02) = 1000 \\times (1 + 0.02)^3 = 1061.208\n\\]"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#future-value",
@@ -4541,14 +4541,14 @@
     "href": "lectures/14-make1/14-make-intro-slides.html#whats-in-a-makefile",
     "title": "Intro to GNU Make (part 1)",
     "section": "What’s in a Makefile?",
-    "text": "What’s in a Makefile?\nA makefile is formed by rules that have the following structure:\n\n\n\nMakefile\n\n# rule\ntarget: dependencies\n    commands\n\n\n\n\nA rule tells Make how to execute a series of commands in order to build a target file from source files (i.e. the dependencies).\n⚠️ IMPORTANT: the recipe line(s) must be indented with a TAB and not with any spaces."
+    "text": "What’s in a Makefile?\nA makefile is formed by rules that have the following structure:\n\n\n\nMakefile\n\n# rule\ntarget: dependencies\n  commands\n\n\n\n\nA rule tells Make how to execute a series of commands in order to build a target file from source files (i.e. the dependencies).\n⚠️ IMPORTANT: the recipe line(s) must be indented with a TAB and not with any spaces."
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#basic-rule-syntax",
     "href": "lectures/14-make1/14-make-intro-slides.html#basic-rule-syntax",
     "title": "Intro to GNU Make (part 1)",
     "section": "Basic rule syntax",
-    "text": "Basic rule syntax\n\nUnder its most basic form, a rule usually has this structure:\n\n\nMakefile\n\n# rule to generate target\ntarget: dependency\n    command\n\n\n\n\ntarget is the output file\ndependency is the input file\ncommand is the program that creates the target\nthe command line is indented with a TAB"
+    "text": "Basic rule syntax\n\nUnder its most basic form, a rule usually has this structure:\n\n\nMakefile\n\n# rule to generate target\ntarget: dependency\n  command\n\n\n\n\ntarget is the output file\ndependency is the input file\ncommand is the program that creates the target\nthe command line is indented with a TAB"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#lets-go-back-to-our-future-value-example",
@@ -4569,42 +4569,42 @@
     "href": "lectures/14-make1/14-make-intro-slides.html#lets-go-back-to-our-future-value-example-2",
     "title": "Intro to GNU Make (part 1)",
     "section": "Let’s go back to our future value example",
-    "text": "Let’s go back to our future value example\n\n\nMakefile\n\n# recipe to generate output file doc.html\ndoc.html: doc.qmd\n    quarto render doc.qmd\n\n\n\n\ndoc.html: target or output file\ndoc.qmd: dependency or input file\nquarto render doc.qmd: command to create target"
+    "text": "Let’s go back to our future value example\n\n\nMakefile\n\n# recipe to generate output file doc.html\ndoc.html: doc.qmd\n  quarto render doc.qmd\n\n\n\n\ndoc.html: target or output file\ndoc.qmd: dependency or input file\nquarto render doc.qmd: command to create target"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#generate-pdf-output",
     "href": "lectures/14-make1/14-make-intro-slides.html#generate-pdf-output",
     "title": "Intro to GNU Make (part 1)",
     "section": "Generate PDF output",
-    "text": "Generate PDF output\nWhat if we wanted to generate an output document in PDF format?\n\n\n\nMakefile\n\n# recipe to generate output file doc.pdf\ndoc.pdf: doc.qmd\n    quarto render doc.qmd --to pdf\n\n\n\n\n\n\ndoc.pdf: target or output file\ndoc.qmd: dependency or input file\nquarto render doc.pdf: command to create target"
+    "text": "Generate PDF output\nWhat if we wanted to generate an output document in PDF format?\n\n\n\nMakefile\n\n# recipe to generate output file doc.pdf\ndoc.pdf: doc.qmd\n  quarto render doc.qmd --to pdf\n\n\n\n\n\n\ndoc.pdf: target or output file\ndoc.qmd: dependency or input file\nquarto render doc.qmd --to pdf: command to create target"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#more-than-one-rule",
     "href": "lectures/14-make1/14-make-intro-slides.html#more-than-one-rule",
     "title": "Intro to GNU Make (part 1)",
     "section": "More than one rule",
-    "text": "More than one rule\nSay we want to create 2 outputs: HTML and PDF docs\n\n\n\nMakefile\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n    quarto render doc.qmd"
+    "text": "More than one rule\nSay we want to create 2 outputs: HTML and PDF docs\n\n\n\nMakefile\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n  quarto render doc.qmd"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#more-than-one-rule-1",
     "href": "lectures/14-make1/14-make-intro-slides.html#more-than-one-rule-1",
     "title": "Intro to GNU Make (part 1)",
     "section": "More than one rule",
-    "text": "More than one rule\nSay we want to create 2 outputs: HTML and PDF docs\n\n\nMakefile\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n    quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd\n    quarto render doc.qmd --to pdf"
+    "text": "More than one rule\nSay we want to create 2 outputs: HTML and PDF docs\n\n\nMakefile\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n  quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd\n  quarto render doc.qmd --to pdf"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#more-than-one-rule-2",
     "href": "lectures/14-make1/14-make-intro-slides.html#more-than-one-rule-2",
     "title": "Intro to GNU Make (part 1)",
     "section": "More than one rule",
-    "text": "More than one rule\nSay we want to create 2 outputs: HTML and PDF docs\n\n\nMakefile\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n    quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd\n    quarto render doc.qmd --to pdf\n\nRunning make will generate both outputs\n# run make to generate both outputs\nmake"
+    "text": "More than one rule\nSay we want to create 2 outputs: HTML and PDF docs\n\n\nMakefile\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n  quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd\n  quarto render doc.qmd --to pdf\n\nRunning make will generate both outputs\n# run make to generate both outputs\nmake"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#more-than-one-rule-3",
     "href": "lectures/14-make1/14-make-intro-slides.html#more-than-one-rule-3",
     "title": "Intro to GNU Make (part 1)",
     "section": "More than one rule",
-    "text": "More than one rule\nSay we want to create 2 outputs: HTML and PDF docs\n\n\nMakefile\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n    quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd\n    quarto render doc.qmd --to pdf\n\n\nBut we can generate single outputs, e.g. \nmake doc.html\n\n\n\n\nmake doc.pdf"
+    "text": "More than one rule\nSay we want to create 2 outputs: HTML and PDF docs\n\n\nMakefile\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n  quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd\n  quarto render doc.qmd --to pdf\n\n\nBut we can generate single outputs, e.g. \nmake doc.html\n\n\n\n\nmake doc.pdf"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#phony-targets-1",
@@ -4618,7 +4618,7 @@
     "href": "lectures/14-make1/14-make-intro-slides.html#phony-target-all",
     "title": "Intro to GNU Make (part 1)",
     "section": "Phony target all",
-    "text": "Phony target all\n\n\n\nMakefile\n\n# all outputs\nall: doc.html doc.pdf\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n    quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd\n    quarto render doc.qmd --to pdf\n\n\nThe first target all is not the name of a file;\nIt is simply a convenient “label” to indicate a series of dependencies.\nThis type of target is known in Make terminology as a phony target.\nPhony meaning “not a real file”."
+    "text": "Phony target all\n\n\n\nMakefile\n\n# all outputs\nall: doc.html doc.pdf\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n  quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd\n  quarto render doc.qmd --to pdf\n\n\nThe first target all is not the name of a file;\nIt is simply a convenient “label” to indicate a series of dependencies.\nThis type of target is known in Make terminology as a phony target.\nPhony meaning “not a real file”."
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#phony-target-all-1",
@@ -4639,7 +4639,7 @@
     "href": "lectures/14-make1/14-make-intro-slides.html#phony-target-all-3",
     "title": "Intro to GNU Make (part 1)",
     "section": "Phony target all",
-    "text": "Phony target all\nThe convention is to explicitly declare a phony target by making it a prerequisite of the special target .PHONY as follows:\n\n\nMakefile\n\n# declaring phony target\n.PHONY: all\n\n# all outputs\nall: doc.html doc.pdf\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n    quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd\n    quarto render doc.qmd --to pdf"
+    "text": "Phony target all\nThe convention is to explicitly declare a phony target by making it a prerequisite of the special target .PHONY as follows:\n\n\nMakefile\n\n# declaring phony target\n.PHONY: all\n\n# all outputs\nall: doc.html doc.pdf\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n  quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd\n  quarto render doc.qmd --to pdf"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#declaring-phony-targets",
@@ -4653,14 +4653,14 @@
     "href": "lectures/14-make1/14-make-intro-slides.html#phony-target-clean",
     "title": "Intro to GNU Make (part 1)",
     "section": "Phony target clean",
-    "text": "Phony target clean\n\nAnother common phony target is the so-called clean target\nThis is used to indicate a recipe for “cleaning” a directory from secondary files typically generated after some compilation process.\nAlso, the clean target is also commonly used to remove output files.\n\n\n\n\n\nMakefile\n\n.PHONY: all clean\n\nall: &lt;targets&gt;\n\n# rule 1\n...\n\n# rule 2\n...\n\n# remove output files\nclean:\n    rm -f &lt;outputs&gt;"
+    "text": "Phony target clean\n\nAnother common phony target is the so-called clean target\nThis is used to indicate a recipe for “cleaning” a directory from secondary files typically generated after some compilation process.\nAlso, the clean target is also commonly used to remove output files.\n\n\n\n\n\nMakefile\n\n.PHONY: all clean\n\nall: &lt;targets&gt;\n\n# rule 1\n...\n\n# rule 2\n...\n\n# remove output files\nclean:\n  rm -f &lt;outputs&gt;"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#phony-target-clean-1",
     "href": "lectures/14-make1/14-make-intro-slides.html#phony-target-clean-1",
     "title": "Intro to GNU Make (part 1)",
     "section": "Phony target clean",
-    "text": "Phony target clean\n\nHere’s what our Makefile could look like with phony targets all and clean:\n\n\n\nMakefile\n\n.PHONY: all clean\n\nall: doc.html doc.pdf\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n    quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd\n    quarto render doc.qmd --to pdf\n\nclean:\n    rm -f doc.html doc.pdf\n\n\n\n\n\nNote that clean has no dependencies. Therefore, the target clean will be always out-of-date. So whenever you run make clean, it will run independent from the state of the file system."
+    "text": "Phony target clean\n\nHere’s what our Makefile could look like with phony targets all and clean:\n\n\n\nMakefile\n\n.PHONY: all clean\n\nall: doc.html doc.pdf\n\n# rule 1: doc.html\ndoc.html: doc.qmd\n  quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd\n  quarto render doc.qmd --to pdf\n\nclean:\n  rm -f doc.html doc.pdf\n\n\n\n\n\nNote that clean has no dependencies. Therefore, the target clean will be always out-of-date. So whenever you run make clean, it will run independent from the state of the file system."
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#more-than-one-input",
@@ -4674,7 +4674,7 @@
     "href": "lectures/14-make1/14-make-intro-slides.html#more-than-one-input-1",
     "title": "Intro to GNU Make (part 1)",
     "section": "More than one input",
-    "text": "More than one input\nThe file structure now looks like this:\n\nfuture_value/\n    functions.R\n    doc.qmd\n    Makefile\n\n\n\n\nTechnically speaking:\n\ndoc.html now depends on both doc.qmd and functions.R\ndoc.pdf also depends on both doc.qmd and functions.R"
+    "text": "More than one input\nThe file structure now looks like this:\n\nfuture_value/\n  functions.R\n  doc.qmd\n  Makefile\n\n\n\n\nTechnically speaking:\n\ndoc.html now depends on both doc.qmd and functions.R\ndoc.pdf also depends on both doc.qmd and functions.R\nIf either functions.R or doc.qmd change, then the output files should be updated"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#more-than-one-input-2",
@@ -4695,21 +4695,21 @@
     "href": "lectures/14-make1/14-make-intro-slides.html#more-than-one-input-4",
     "title": "Intro to GNU Make (part 1)",
     "section": "More than one input",
-    "text": "More than one input\nHere’s what our Makefile could look like:\n\n\n\nMakefile\n\n.PHONY: all clean\n\nall: doc.html doc.pdf\n\n# rule 1: doc.html\ndoc.html: doc.qmd functions.R\n    quarto render doc.qmd"
+    "text": "More than one input\nHere’s what our Makefile could look like:\n\n\n\nMakefile\n\n.PHONY: all clean\n\nall: doc.html doc.pdf\n\n# rule 1: doc.html\ndoc.html: doc.qmd functions.R\n  quarto render doc.qmd"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#more-than-one-input-5",
     "href": "lectures/14-make1/14-make-intro-slides.html#more-than-one-input-5",
     "title": "Intro to GNU Make (part 1)",
     "section": "More than one input",
-    "text": "More than one input\nHere’s what our Makefile could look like:\n\n\n\nMakefile\n\n.PHONY: all clean\n\nall: doc.html doc.pdf\n\n# rule 1: doc.html\ndoc.html: doc.qmd functions.R\n    quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd functions.R\n    quarto render doc.qmd --to pdf"
+    "text": "More than one input\nHere’s what our Makefile could look like:\n\n\n\nMakefile\n\n.PHONY: all clean\n\nall: doc.html doc.pdf\n\n# rule 1: doc.html\ndoc.html: doc.qmd functions.R\n  quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd functions.R\n  quarto render doc.qmd --to pdf"
   },
   {
     "objectID": "lectures/14-make1/14-make-intro-slides.html#more-than-one-input-6",
     "href": "lectures/14-make1/14-make-intro-slides.html#more-than-one-input-6",
     "title": "Intro to GNU Make (part 1)",
     "section": "More than one input",
-    "text": "More than one input\nHere’s what our Makefile could look like:\n\n\n\nMakefile\n\n.PHONY: all clean\n\nall: doc.html doc.pdf\n\n# rule 1: doc.html\ndoc.html: doc.qmd functions.R\n    quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd functions.R\n    quarto render doc.qmd --to pdf\n\nclean:\n    rm -f doc.html doc.pdf"
+    "text": "More than one input\nHere’s what our Makefile could look like:\n\n\n\nMakefile\n\n.PHONY: all clean\n\nall: doc.html doc.pdf\n\n# rule 1: doc.html\ndoc.html: doc.qmd functions.R\n  quarto render doc.qmd\n\n# rule 2: doc.pdf\ndoc.pdf: doc.qmd functions.R\n  quarto render doc.qmd --to pdf\n\nclean:\n  rm -f doc.html doc.pdf"
   },
   {
     "objectID": "lectures/08-git3/08-git-branches-slides.html#linear-history-so-far",
@@ -6796,5 +6796,48 @@
     "title": "Intro to Git (part 2)",
     "section": "The “Golden Rule” of .gitignore",
     "text": "The “Golden Rule” of .gitignore\n\n\nWarning: Git can only ignore untracked files!\n\n\nIf you commit a file first, and then add it to your .gitignore later, Git will continue to track it.\n\n\nTo fix this and force Git to honor the new rule, you have to manually remove the file from your active staging cache using the command:  git rm --cached &lt;filename&gt;"
+  },
+  {
+    "objectID": "lectures/15-make2/15-make-intro2-slides.html#section-19",
+    "href": "lectures/15-make2/15-make-intro2-slides.html#section-19",
+    "title": "Intro to GNU Make (part 2)",
+    "section": "",
+    "text": "Makefile rule\n\n\n\ndoc/report.html: doc/report.qmd data/model.RData images/plot.png\n  cd doc && quarto render report.qmd\n\n✅ correct target\n✅ correct dependencies\n✅ correct command"
+  },
+  {
+    "objectID": "lectures/15-make2/15-make-intro2-slides.html#section-20",
+    "href": "lectures/15-make2/15-make-intro2-slides.html#section-20",
+    "title": "Intro to GNU Make (part 2)",
+    "section": "",
+    "text": "Makefile rule\n\n\n\nclean:\n  cd data && rm -f data.csv model.RData\n  cd image && rm -f plot.png\n  cd report && rm -f report.html\n\n✅ correct target\n✅ correct dependencies\n✅ correct command"
+  },
+  {
+    "objectID": "lectures/15-make2/15-make-intro2-slides.html#demo-repo",
+    "href": "lectures/15-make2/15-make-intro2-slides.html#demo-repo",
+    "title": "Intro to GNU Make (part 2)",
+    "section": "Demo Repo",
+    "text": "Demo Repo\nYou can find the files of this demo in the following GitHub repo:\nhttps://github.com/UCB-stat159-f26/make-regression-demo2"
+  },
+  {
+    "objectID": "hws/proj01/proj01-peer-review.html",
+    "href": "hws/proj01/proj01-peer-review.html",
+    "title": "Project 1) Peer Review",
+    "section": "",
+    "text": "As part of your project-1 grade, you will be paired with another student and conduct a peer review of each other’s project-1 using GitHub. This review takes the form of offering feedback on another student’s work, including any comments related to reproducibility, effectiveness of documentation (code documentation, repo organization, commit messages, etc.), degree of similarity between the produced graphics and the original versions, or any comments related to coding practice (was there a more effective/cleaner way to write some piece of code?) or analysis (are there any other considerations you would like to see?).\nYou have been automatically added to another student’s assignment repo, and another student has been added to your repo. You should see your peer’s repo in the list of repos you have access to, as part of the UCB-stat159-f26 organization. For the rest of this peer review, open your peer’s repository on the GitHub website.\nBest practices when reviewing code: This blog post has some helpful guidance on giving constructive feedback on another person’s code.",
+    "crumbs": [
+      "HW",
+      "Project 1) Peer Review"
+    ]
+  },
+  {
+    "objectID": "hws/proj01/proj01-peer-review.html#github-issues",
+    "href": "hws/proj01/proj01-peer-review.html#github-issues",
+    "title": "Project 1) Peer Review",
+    "section": "GitHub Issues",
+    "text": "GitHub Issues\nA useful tool to give feedback and comments on a GitHub repository is to open an Issue on GitHub.\n\nTask 1: General Issues\nLet’s practice just opening a general issue and making a comment about the repository structure. First, scan your peer’s repository and ensure that all files that should be present are there (including README.md, data/ files, scripts/ files, outputs/ images, etc).\n\nClick the Issues tab\n\n\n\nClick the New Issue button\n\n\n\nGive a title to the issue, and in the body of the issue, comment on whether all of the files are present.\nCreate the issue.\n\n\n\nTask 2: Use of Commits\nNext, comment on your peer’s use of commits. To see their commit history, go back to the home page of their repo, you should see a small clock icon with a counterclockwise arrow. Click it and it will take you to a page with all of their commits and commit messages.\n\nOpen a new issue, commenting on your peer’s use of commits.\n\nIs there only one commit with all of the work, or are there several commits that track the history of changes as they were made, incrementally?\nClick on one of their commits to see exactly what was changed.\nDoes the commit message seem to concisely describe the changes made? Would you write a different commit message?\n\n\n\nTask 3: Line-Specific Issues\nNow, we will practice opening issues that reference specific lines of a file. This will be especially useful for reviewing code scripts in the future, but for now we will use this to give comments and impressions on specific parts of your peer’s work.\nFirst, read through your peer’s README.md file. Take note of any lines/sections of your peer’s critique that you found interesting or surprising, or that you have questions about.\n\nMake sure you have the README.md file open in GitHub. Click code.\nYou should now see a line-by-line version of the file like a code script. Navigate to the line(s) that you’d like to comment on. If there is just one line you’d like to reference, click on the line number. If there are multiple, hold shift down while you click multiple lines.\nThe highlighted lines should be yellow. Click the ellipsis (...) next to the highlighted lines, and click Reference in new issue.\nGive your comment a title and provide details as before, leaving the url text present.\nCreate the issue. You should see the text of your issue references the specific lines you highlighted.\nRepeat this process for the other parts of your peer’s critique that you found notable, or that you have questions about.",
+    "crumbs": [
+      "HW",
+      "Project 1) Peer Review"
+    ]
   }
 ]

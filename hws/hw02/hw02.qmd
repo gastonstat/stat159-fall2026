@@ -1,0 +1,87 @@
+---
+title: HW2) Reproducing Serena Williams's Plot
+---
+
+
+## About
+
+This assignment is the continuation of HW1. This time you will take the
+next step by implementing the "game plan" you described in the first assignment.
+
+
+
+## Serena Williams's Career Matches
+
+<https://www.tennisabstract.com/cgi-bin/wplayer-classic.cgi?p=SerenaWilliams&f=ACareerqq>
+
+::: {.callout-important}
+Notice the date of birth of Serena Williams: `26-Sep-1981`
+:::
+
+
+### Main Data File
+
+If you inspect the source code of the above webpage, you can find the following 
+javascript file that has all the necessary information about Serena Williams's
+matches:
+
+<https://www.tennisabstract.com/jsmatches/SerenaWilliamsCareer.js>
+
+**Example: First Match**
+:    Let's consider the first recorded match that took place in October 30th 1995.
+This match is displayed in the HTML table (i.e. webpage) as follows:
+
+```
+30‑Oct‑1995	| Canadian Open	| Carpet | Q1 |	|	149	| (7)Anne Miller [USA] d. (WC)Williams | 6-1 6-1
+```
+
+The data of this match is the **first element in the array of the javascript file** 
+`SerenaWilliamsCareer.js` which contains, among other fields, 
+the following values:
+
+- Date of match: `"19951030"`
+- Tournament: `"Canadian Open"`
+- Surface: `"Carpet"`
+- Whether Serena loses or wins: `"W", "L"` (lose) or `"W", "W"` (win)
+- Name of opponent: `"Anne Miller"`
+- Opponent's date of birth: `"19770119"`
+
+
+
+## Deliverables
+
+For this assignment, you will have a single GitHub repository (**individual submission**). 
+Your repository should contain the following:
+
+- One script file with code to download the raw data (javascript) file
+
+- One script file (`.py` or `.R`) to clean/process the raw data in order to 
+produce the clean data set.
+
+- One script file (`.py` or `.R`) in which you import the clean data and produce the plot,
+saved into an appropraite folder, e.g. `images/`, or `outputs/`, or `figures/`.
+
+- One markdown file (`doc.md` or `report.md`) in which you insert the image
+file, and a brief narrative description for this assignment.
+
+- An optional `ai_documentation.txt` file where you will put any prompts and 
+output from AI companions that you use to complete the project.
+
+- A `Makefile` that includes:
+    + `.PHONY` targets `all` and `clean`
+    + rule to generate clean data
+    + rule to generate the plot in PNG 
+    + rule to produce the report in HTML format
+    + rule to produce the report in PDF format
+    + `all` rule to get clean data, plot, and HTML/PDF reports
+    + `clean` rule to remove clean data, plot, and HTML/PDF reports
+
+- Add a Conda `environment.yml`
+
+- A `README.md` file (at the top-level) with detailed contents about 
+your HW assignment.
+
+
+
+
+

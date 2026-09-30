@@ -172,7 +172,7 @@
         - type: "Homework"
           id: ""
           name: "HW2 TBA (due 10/16)"
-          href: ""
+          href: "hws/hw02/hw02.html"
 - week: 7
   days:
     - date: "Oct 05"
@@ -181,6 +181,10 @@
           id: ""
           name: "Variables in Make"
           href: "lectures/17-make3/17-make-variables-slides.html"
+        - type: "Homework"
+          id: ""
+          name: "Proj1 Peer Review (due 10/09)"
+          href: "hws/proj01/proj01-peer-review.html"
     - date: "Oct 06"
       items:
         - type: "Lab"

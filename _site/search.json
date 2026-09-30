@@ -6839,5 +6839,49 @@
       "HW",
       "Project 1) Peer Review"
     ]
+  },
+  {
+    "objectID": "hws/hw02/hw02.html",
+    "href": "hws/hw02/hw02.html",
+    "title": "HW2) Reproducing Serena Williams’s Plot",
+    "section": "",
+    "text": "This assignment is the continuation of HW1. This time you will take the next step by implementing the “game plan” you described in the first assignment.",
+    "crumbs": [
+      "HW",
+      "HW2) Reproducing Serena Williams's Plot"
+    ]
+  },
+  {
+    "objectID": "hws/hw02/hw02.html#about",
+    "href": "hws/hw02/hw02.html#about",
+    "title": "HW2) Reproducing Serena Williams’s Plot",
+    "section": "",
+    "text": "This assignment is the continuation of HW1. This time you will take the next step by implementing the “game plan” you described in the first assignment.",
+    "crumbs": [
+      "HW",
+      "HW2) Reproducing Serena Williams's Plot"
+    ]
+  },
+  {
+    "objectID": "hws/hw02/hw02.html#serena-williamss-career-matches",
+    "href": "hws/hw02/hw02.html#serena-williamss-career-matches",
+    "title": "HW2) Reproducing Serena Williams’s Plot",
+    "section": "Serena Williams’s Career Matches",
+    "text": "Serena Williams’s Career Matches\nhttps://www.tennisabstract.com/cgi-bin/wplayer-classic.cgi?p=SerenaWilliams&f=ACareerqq\n\n\n\n\n\n\nImportant\n\n\n\nNotice the date of birth of Serena Williams: 26-Sep-1981\n\n\n\nMain Data File\nIf you inspect the source code of the above webpage, you can find the following javascript file that has all the necessary information about Serena Williams’s matches:\nhttps://www.tennisabstract.com/jsmatches/SerenaWilliamsCareer.js\n\nExample: First Match\n\nLet’s consider the first recorded match that took place in October 30th 1995. This match is displayed in the HTML table (i.e. webpage) as follows:\n\n\n30‑Oct‑1995 | Canadian Open | Carpet | Q1 | |   149 | (7)Anne Miller [USA] d. (WC)Williams | 6-1 6-1\nThe data of this match is the first element in the array of the javascript file SerenaWilliamsCareer.js which contains, among other fields, the following values:\n\nDate of match: \"19951030\"\nTournament: \"Canadian Open\"\nSurface: \"Carpet\"\nWhether Serena loses or wins: \"W\", \"L\" (lose) or \"W\", \"W\" (win)\nName of opponent: \"Anne Miller\"\nOpponent’s date of birth: \"19770119\"",
+    "crumbs": [
+      "HW",
+      "HW2) Reproducing Serena Williams's Plot"
+    ]
+  },
+  {
+    "objectID": "hws/hw02/hw02.html#deliverables",
+    "href": "hws/hw02/hw02.html#deliverables",
+    "title": "HW2) Reproducing Serena Williams’s Plot",
+    "section": "Deliverables",
+    "text": "Deliverables\nFor this assignment, you will have a single GitHub repository (individual submission). Your repository should contain the following:\n\nOne script file with code to download the raw data (javascript) file\nOne script file (.py or .R) to clean/process the raw data in order to produce the clean data set.\nOne script file (.py or .R) in which you import the clean data and produce the plot, saved into an appropraite folder, e.g. images/, or outputs/, or figures/.\nOne markdown file (doc.md or report.md) in which you insert the image file, and a brief narrative description for this assignment.\nAn optional ai_documentation.txt file where you will put any prompts and output from AI companions that you use to complete the project.\nA Makefile that includes:\n\n.PHONY targets all and clean\nrule to generate clean data\nrule to generate the plot in PNG\nrule to produce the report in HTML format\nrule to produce the report in PDF format\nall rule to get clean data, plot, and HTML/PDF reports\nclean rule to remove clean data, plot, and HTML/PDF reports\n\nAdd a Conda environment.yml\nA README.md file (at the top-level) with detailed contents about your HW assignment.",
+    "crumbs": [
+      "HW",
+      "HW2) Reproducing Serena Williams's Plot"
+    ]
   }
 ]

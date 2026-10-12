@@ -5,9 +5,55 @@ format: stat159slides-revealjs
 chalkboard: true
 ---
 
-# Introduction
+# Forking and Cloning
 
-## 
+## Vocabulary
+
+\
+
+. . .
+
+:::: {.columns}
+::: {.column width="45%"}
+[Fork]{.bold-hilit} 
+
+Copying a repository from someone else's GitHub account to your 
+own GitHub account in the cloud. (A fork is essentially GitHub-to-GitHub).
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column  width="45%" .fragment}
+[Clone]{.bold-hilit} (`git clone`)
+
+Downloading a repository from 
+the cloud (GitHub) to your local computer.
+:::
+::::
+
+
+## Two main workflows
+
+\
+
+:::: {.columns}
+::: {.column}
+[The Fork-and-Pull Model]{.mdlit}
+
+Best for: Open-source projects, contributing to software you don't own, 
+or class assignments where students shouldn't have write access to 
+a master template repository.
+:::
+
+::: {.column}
+[The Shared Repository Model]{.hilit}
+
+Best for: Close-knit project teams, software development teams, 
+or small group assignments where all members have collaborator 
+(write) access to the same repository.
+:::
+::::
 
 
 # GitHub Forking
@@ -38,43 +84,14 @@ and changes you want.
 - That's exactly what forking does with code repositories.
 
 
-## Fork vs Clone: What's the Difference
-
-. . .
-
-:::: {.columns}
-::: {.column}
-Fork
-
-A fork creates a copy of a repository on your GitHub account (remote).
-:::
-
-::: {.column .fragment}
-Clone
-
-A clone downloads a repository to your local computer.
-:::
-::::
-
-. . .
-
-\
-
-- You typically fork first on GitHub, then clone your fork to your local machine 
-to work on it. 
-
-- The fork maintains a connection to the original repository, which becomes 
-important later when you want to contribute back.
-
-
-## Simple Flow
+## The Fork-and-Pull Model
 
 Here's a simple flow: 
 
-1) Fork on GitHub
-2) Clone to your computer
-3) Make changes
-4) Push to your fork
+1) You typically fork first on GitHub
+2) Then clone your fork to your local machine
+3) You make changes in your local repo
+4) Push changes to your fork
 5) Optionally submit changes back to the original
 
 
@@ -174,8 +191,7 @@ project (forking is a normal, expected activity on GitHub).
 
 - The ultimate purpose of many forks is to contribute improvements back to 
 the original project. 
-- This happens through **_pull requests_**, which we'll cover in
-the next lesson.
+- This happens through **_pull requests_**, which we'll cover in lab.
 - However, not every fork leads to a pull request, and that's fine.
 :::
 
@@ -255,7 +271,7 @@ cd simple-calculator
 . . .
 
 ```{.bash code-line-numbers="false"}
-git checkout -b fix-division-by-zero
+git switch -c fix-division-by-zero
 ```
 
 ## Scenario: Contributing a Bug Fix
@@ -276,7 +292,7 @@ git push origin fix-division-by-zero
 
 - Now your fork on GitHub has a branch with your bug fix. 
 The original project still doesn't have your changes---that's where pull requests 
-come in, which we'll cover in the next lesson.
+come in, which we'll cover in lab.
 
 
 # Best Practices When Forking
@@ -303,7 +319,7 @@ come in, which we'll cover in the next lesson.
 - Forking is meant for repositories you plan to work with actively, 
 not for bookmarking or showing support.
 
-- Use GitHub's Star feature to bookmark repositories you find interesting.
+- Use GitHub's ⭐️ Star feature to bookmark repositories you find interesting.
 
 - Too many inactive forks clutter your profile and make it harder 
 to manage your actual work.
@@ -349,6 +365,54 @@ where you have full control.
 
 - Changes you make stay in your fork until you decide to contribute them 
 back through a pull request.
+
+
+# The Shared Repository Model
+
+## Shared Repository Workflow
+
+[1) Clone (Once):]{.bold-hilit} Every team member clones the same 
+central repository directly:
+
+```{.bash code-line-numbers="false"}
+git clone https://github.com/organization/shared-repo.git
+```
+
+\
+
+. . .
+
+[2) Branch (Every time you code):]{.bold-hilit} Always create a 
+new branch for your specific task. Never code directly on `main`:
+
+```{.bash code-line-numbers="false"}
+git switch -c fix-typos
+```
+
+\
+
+. . .
+
+[3) Push to Central Remote:]{.bold-hilit} Push your branch up 
+to the shared repository:
+
+```{.bash code-line-numbers="false"}
+git push origin fix-typos
+```
+
+
+## Shared Repository Workflow (cont'd)
+
+[4) Open a Pull Request (PR):]{.bold-hilit} Go to the shared GitHub 
+repository. Open a Pull Request from `fix-typos` into `main`.
+
+. . .
+
+\
+
+[5) Code Review & Merge:]{.bold-hilit} Teammates review the PR, 
+discuss changes, and click `Merge` once approved. Other team members 
+then pull the updated `main` branch locally (`git pull origin main`).
 
 
 # Pull Requests
@@ -465,7 +529,7 @@ A pull request page has several tabs and sections, each serving a different purp
 ::: {.small}
 ```{.bash code-line-numbers="false"}
 # Start from main branch
-git checkout main
+git switch main
 git pull origin main
 ```
 :::
@@ -476,11 +540,11 @@ git pull origin main
 ::: {.small}
 ```{.bash code-line-numbers="false"}
 # Start from main branch
-git checkout main
+git switch main
 git pull origin main
 
 # Create feature branch
-git checkout -b add-contact-page
+git switch -c add-contact-page
 ```
 :::
 
@@ -490,11 +554,11 @@ git checkout -b add-contact-page
 ::: {.small}
 ```{.bash code-line-numbers="false"}
 # Start from main branch
-git checkout main
+git switch main
 git pull origin main
 
 # Create feature branch
-git checkout -b add-contact-page
+git switch -c add-contact-page
 
 # Create the contact page file
 echo "<h1>Contact Us</h1>" > contact.html
@@ -507,11 +571,11 @@ echo "<h1>Contact Us</h1>" > contact.html
 ::: {.small}
 ```{.bash code-line-numbers="false"}
 # Start from main branch
-git checkout main
+git switch main
 git pull origin main
 
 # Create feature branch
-git checkout -b add-contact-page
+git switch -c add-contact-page
 
 # Create the contact page file
 echo "<h1>Contact Us</h1>" > contact.html
@@ -528,11 +592,11 @@ git commit -m "Add contact page with basic heading"
 ::: {.small}
 ```{.bash code-line-numbers="false"}
 # Start from main branch
-git checkout main
+git switch main
 git pull origin main
 
 # Create feature branch
-git checkout -b add-contact-page
+git switch -c add-contact-page
 
 # Create the contact page file
 echo "<h1>Contact Us</h1>" > contact.html

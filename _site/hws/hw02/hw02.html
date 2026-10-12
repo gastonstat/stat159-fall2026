@@ -304,6 +304,7 @@ gtag('config', 'G-CES9J82GLL', { 'anonymize_ip': true});
 </section>
 <section id="serena-williamss-career-matches" class="level2">
 <h2 class="anchored" data-anchor-id="serena-williamss-career-matches">Serena Williams’s Career Matches</h2>
+<p>As we saw in HW1, the webpage containing the career matches of Serena Williams is given below:</p>
 <p><a href="https://www.tennisabstract.com/cgi-bin/wplayer-classic.cgi?p=SerenaWilliams&amp;f=ACareerqq" class="uri">https://www.tennisabstract.com/cgi-bin/wplayer-classic.cgi?p=SerenaWilliams&amp;f=ACareerqq</a></p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -320,14 +321,16 @@ Important
 </div>
 <section id="main-data-file" class="level3">
 <h3 class="anchored" data-anchor-id="main-data-file">Main Data File</h3>
-<p>If you inspect the source code of the above webpage, you can find the following javascript file that has all the necessary information about Serena Williams’s matches:</p>
+<p>If you inspect the source code of the above webpage, you can find the following javascript file that has all the data (i.e.&nbsp;the necessary information) about Serena Williams’s matches:</p>
 <p><a href="https://www.tennisabstract.com/jsmatches/SerenaWilliamsCareer.js" class="uri">https://www.tennisabstract.com/jsmatches/SerenaWilliamsCareer.js</a></p>
 <dl>
 <dt><strong>Example: First Match</strong></dt>
 <dd>
-Let’s consider the first recorded match that took place in October 30th 1995. This match is displayed in the HTML table (i.e.&nbsp;webpage) as follows:
+Let’s consider the first recorded match that took place in October 30th 1995.
 </dd>
 </dl>
+<p><img src="sw-javascript.png" class="img-fluid"></p>
+<p>This match is displayed in the HTML table (i.e.&nbsp;webpage) as follows:</p>
 <pre><code>30‑Oct‑1995 | Canadian Open | Carpet | Q1 | |   149 | (7)Anne Miller [USA] d. (WC)Williams | 6-1 6-1</code></pre>
 <p>The data of this match is the <strong>first element in the array of the javascript file</strong> <code>SerenaWilliamsCareer.js</code> which contains, among other fields, the following values:</p>
 <ul>
@@ -346,17 +349,17 @@ Let’s consider the first recorded match that took place in October 30th 1995. 
 <ul>
 <li><p>One script file with code to download the raw data (javascript) file</p></li>
 <li><p>One script file (<code>.py</code> or <code>.R</code>) to clean/process the raw data in order to produce the clean data set.</p></li>
-<li><p>One script file (<code>.py</code> or <code>.R</code>) in which you import the clean data and produce the plot, saved into an appropraite folder, e.g.&nbsp;<code>images/</code>, or <code>outputs/</code>, or <code>figures/</code>.</p></li>
-<li><p>One markdown file (<code>doc.md</code> or <code>report.md</code>) in which you insert the image file, and a brief narrative description for this assignment.</p></li>
+<li><p>One script file (<code>.py</code> or <code>.R</code>) in which you import the clean data and produce the plot, saved into an appropriate folder, e.g.&nbsp;<code>images/</code>, or <code>outputs/</code>, or <code>figures/</code>.</p></li>
+<li><p>One notebook (<code>.ipynb</code> or <code>.qmd</code>) or markdown file (<code>doc.md</code> or <code>report.md</code>) in which you insert the image (plot) file, and a brief narrative description for this assignment.</p></li>
 <li><p>An optional <code>ai_documentation.txt</code> file where you will put any prompts and output from AI companions that you use to complete the project.</p></li>
 <li><p>A <code>Makefile</code> that includes:</p>
 <ul>
 <li><code>.PHONY</code> targets <code>all</code> and <code>clean</code></li>
 <li>rule to generate clean data</li>
-<li>rule to generate the plot in PNG</li>
+<li>rule to generate the plot in PNG format</li>
 <li>rule to produce the report in HTML format</li>
 <li>rule to produce the report in PDF format</li>
-<li><code>all</code> rule to get clean data, plot, and HTML/PDF reports</li>
+<li><code>all</code> rule to get the clean data, the plot, and the HTML/PDF reports</li>
 <li><code>clean</code> rule to remove clean data, plot, and HTML/PDF reports</li>
 </ul></li>
 <li><p>Add a Conda <code>environment.yml</code></p></li>

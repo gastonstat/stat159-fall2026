@@ -222,8 +222,20 @@ gtag('config', 'G-CES9J82GLL', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../hws/hw02/hw02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HW2) Reproducing Serena Williams’s Plot</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../hws/proj01/proj01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project 1) Replicating Temperature Anomalies Graphics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../hws/proj01/proj01-peer-review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project 1) Peer Review</span></a>
   </div>
 </li>
       </ul>
@@ -261,11 +273,9 @@ gtag('config', 'G-CES9J82GLL', { 'anonymize_ip': true});
   </ul></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections">Reflections</a>
   <ul class="collapse">
-  <li><a href="#reflection-1-tracking-silent-code-offsets" id="toc-reflection-1-tracking-silent-code-offsets" class="nav-link" data-scroll-target="#reflection-1-tracking-silent-code-offsets">Reflection 1: Tracking Silent Code Offsets</a></li>
-  <li><a href="#reflection-2-auditing-sensitive-vs.-resistant-swaps" id="toc-reflection-2-auditing-sensitive-vs.-resistant-swaps" class="nav-link" data-scroll-target="#reflection-2-auditing-sensitive-vs.-resistant-swaps">Reflection 2: Auditing Sensitive vs.&nbsp;Resistant Swaps</a></li>
-  <li><a href="#reflection-3-confronting-the-black-box-defense" id="toc-reflection-3-confronting-the-black-box-defense" class="nav-link" data-scroll-target="#reflection-3-confronting-the-black-box-defense">Reflection 3: Confronting the “Black Box” Defense</a></li>
-  <li><a href="#reflection-4-reputation-over-source-inspection" id="toc-reflection-4-reputation-over-source-inspection" class="nav-link" data-scroll-target="#reflection-4-reputation-over-source-inspection">Reflection 4: Reputation over Source Inspection</a></li>
-  <li><a href="#reflection-5-overcoming-overhead-anxiety" id="toc-reflection-5-overcoming-overhead-anxiety" class="nav-link" data-scroll-target="#reflection-5-overcoming-overhead-anxiety">Reflection 5: Overcoming Overhead Anxiety</a></li>
+  <li><a href="#reflection-1" id="toc-reflection-1" class="nav-link" data-scroll-target="#reflection-1">Reflection 1</a></li>
+  <li><a href="#reflection-2" id="toc-reflection-2" class="nav-link" data-scroll-target="#reflection-2">Reflection 2</a></li>
+  <li><a href="#reflection-3" id="toc-reflection-3" class="nav-link" data-scroll-target="#reflection-3">Reflection 3</a></li>
   </ul></li>
   <li><a href="#rubric" id="toc-rubric" class="nav-link" data-scroll-target="#rubric">Rubric</a></li>
   </ul>
@@ -338,50 +348,32 @@ bCourses Submission
 <p>Accepted formats: PDF, HTML, MS Word (<code>.docx</code>), or Google Doc</p>
 </div>
 </div>
-<section id="reflection-1-tracking-silent-code-offsets" class="level3">
-<h3 class="anchored" data-anchor-id="reflection-1-tracking-silent-code-offsets">Reflection 1: Tracking Silent Code Offsets</h3>
-<p>The Duke team’s software expected one input with a header row and another without. Supplying headers with both silently shifted the entire gene list down by exactly one line, meaning the genes reported as critical markers were completely irrelevant to the cancer.</p>
-<ul>
-<li>Think about how you connect different scripts or datasets together.</li>
-<li>Have you ever fed an un-formatted output file into a downstream function and just <em>assumed</em> the rows matched perfectly?</li>
-<li>How do you structurally verify that your pipeline inputs line up, rather than just trusting that the code ran without throwing an error message?</li>
-</ul>
-</section>
-<section id="reflection-2-auditing-sensitive-vs.-resistant-swaps" class="level3">
-<h3 class="anchored" data-anchor-id="reflection-2-auditing-sensitive-vs.-resistant-swaps">Reflection 2: Auditing Sensitive vs.&nbsp;Resistant Swaps</h3>
+<section id="reflection-1" class="level3">
+<h3 class="anchored" data-anchor-id="reflection-1">Reflection 1</h3>
 <p>Baggerly discovered simple data layout swaps where “sensitive” and “resistant” cell labels were completely reversed—meaning the code predicted a patient would thrive on a drug that their tumor was actually resistant to.</p>
 <ul>
-<li>Evaluate how you double-check your data mapping logic.</li>
-<li>When you write code to recode or binarize strings (e.g., <code>0</code> vs <code>1</code>, <code>True</code> vs <code>False</code>), how do you systematically prove your labels didn’t get flipped upside down?</li>
-<li>What script-based test would catch a reversed logic label in your workspace today before it reaches a final chart?</li>
+<li><p>Evaluate how you double-check your data mapping logic.</p></li>
+<li><p>When you write code to recode or binarize strings (e.g., <code>0</code> vs <code>1</code>, <code>True</code> vs <code>False</code>), how do you systematically prove your labels didn’t get flipped upside down?</p></li>
+<li><p>What script-based test would catch a reversed logic label in your workspace today before it reaches a final chart?</p></li>
 </ul>
 </section>
-<section id="reflection-3-confronting-the-black-box-defense" class="level3">
-<h3 class="anchored" data-anchor-id="reflection-3-confronting-the-black-box-defense">Reflection 3: Confronting the “Black Box” Defense</h3>
+<section id="reflection-2" class="level3">
+<h3 class="anchored" data-anchor-id="reflection-2">Reflection 2</h3>
 <p>In 2010, Duke cleared the suspended trials to restart after an internal review. However, the university actively refused to publicly release the data or the report justifying why the trials were safe.</p>
 <p>Because the review was hidden, Duke failed to catch that data samples were heavily scrambled and mislabeled while the probe was underway.</p>
 <ul>
-<li>Think about your own project collaborations.</li>
-<li>Have you ever fixed a broken analysis script in secret, pushed a patch without documenting what broke, and told your team “it’s working now”?</li>
-<li>Why is hiding a pipeline’s correction process a direct threat to long-term computational trust?</li>
+<li><p>Think about your own project collaborations.</p></li>
+<li><p>Have you ever fixed a broken analysis script in secret, without documenting what broke, and told your team “it’s working now”?</p></li>
+<li><p>Why is hiding a pipeline’s correction process a direct threat to long-term computational trust?</p></li>
 </ul>
 </section>
-<section id="reflection-4-reputation-over-source-inspection" class="level3">
-<h3 class="anchored" data-anchor-id="reflection-4-reputation-over-source-inspection">Reflection 4: Reputation over Source Inspection</h3>
-<p>For four years, independent biostatisticians proved the Duke data was corrupted, but the trials kept running. What finally broke the case open wasn’t checking the math—it was a journalist exposing that the lead scientist faked his CV credentials.</p>
-<ul>
-<li>Reflect on your own scientific information literacy.</li>
-<li>Why do academic journals, institutional reviewers, and the public routinely value professional credentials and prestige over a fully open, auditable repository trail?</li>
-<li>How can you design your future research outputs so that they are judged on the objective execution of your code, not your reputation?</li>
-</ul>
-</section>
-<section id="reflection-5-overcoming-overhead-anxiety" class="level3">
-<h3 class="anchored" data-anchor-id="reflection-5-overcoming-overhead-anxiety">Reflection 5: Overcoming Overhead Anxiety</h3>
+<section id="reflection-3" class="level3">
+<h3 class="anchored" data-anchor-id="reflection-3">Reflection 3</h3>
 <p>Keith Baggerly demands five mandatory things for all future computational papers: <em>Data, Provenance, Code, Descriptions of nonscriptable steps, and Planned designs</em>. He freely admits: “This would add extra overhead… but I don’t see any other way.”</p>
 <ul>
-<li>Look at your own tight project constraints.</li>
-<li>Which of Baggerly’s five requirements sounds like the most painful or exhausting “extra overhead” for your current workflow?</li>
-<li>How can you use automation tools (like Git or automation engines) to reduce that friction so you don’t skip it when a deadline hits?</li>
+<li><p>Look at your own tight project constraints.</p></li>
+<li><p>Which of Baggerly’s five requirements sounds like the most painful or exhausting “extra overhead” for your current workflow?</p></li>
+<li><p>How can you use automation tools (like Git or automation engines) to reduce that friction so you don’t skip it when a deadline hits?</p></li>
 </ul>
 </section>
 </section>
@@ -405,6 +397,39 @@ Important
 <li><p><strong>Partial Credit (1-2 Points)</strong>: Response is correct but uses vague or generic examples (e.g., “I lost a file once” instead of naming the script). Sounds like a generic summary an AI could have written.</p></li>
 <li><p><strong>No Credit (0 Points)</strong>: Response relies entirely on abstract definitions, fails to provide personal context, or uses copy-pasted text from a webpage or AI tool.</p></li>
 </ul>
+<!--
+
+### Reflection 4: Tracking Silent Code Offsets
+
+The Duke team's software expected one input with a header row and another without. 
+Supplying headers with both silently shifted the entire gene list down by exactly 
+one line, meaning the genes reported as critical markers were completely irrelevant 
+to the cancer.
+
+- Think about how you connect different scripts or datasets together.
+
+- Have you ever fed an un-formatted output file into a downstream function 
+and just *assumed* the rows matched perfectly?
+
+- How do you structurally verify that your pipeline inputs line up, 
+rather than just trusting that the code ran without throwing an error message?
+
+
+### Reflection 5: Reputation over Source Inspection
+
+For four years, independent biostatisticians proved the Duke data was corrupted, 
+but the trials kept running. What finally broke the case open wasn't checking 
+the math---it was a journalist exposing that the lead scientist faked his CV credentials.
+
+- Reflect on your own scientific information literacy.
+
+- Why do academic journals, institutional reviewers, and the public routinely 
+value professional credentials and prestige over a fully open, auditable repository trail?
+
+- How can you design your future research outputs so that they are judged on 
+the objective execution of your code, not your reputation?
+
+-->
 
 
 </section>

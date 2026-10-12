@@ -212,12 +212,39 @@
 
 </section>
 <section>
-<section id="introduction" class="title-slide slide level1 center">
-<h1>Introduction</h1>
+<section id="forking-and-cloning" class="title-slide slide level1 center">
+<h1>Forking and Cloning</h1>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="vocabulary" class="slide level2">
+<h2>Vocabulary</h2>
+<p><br>
+</p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><span class="bold-hilit">Fork</span></p>
+<p>Copying a repository from someone else’s GitHub account to your own GitHub account in the cloud. (A fork is essentially GitHub-to-GitHub).</p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column fragment" style="width:45%;">
+<p><span class="bold-hilit">Clone</span> (<code>git clone</code>)</p>
+<p>Downloading a repository from the cloud (GitHub) to your local computer.</p>
+</div></div>
+</div>
+</section>
+<section id="two-main-workflows" class="slide level2">
+<h2>Two main workflows</h2>
+<p><br>
+</p>
+<div class="columns">
+<div class="column">
+<p><span class="mdlit">The Fork-and-Pull Model</span></p>
+<p>Best for: Open-source projects, contributing to software you don’t own, or class assignments where students shouldn’t have write access to a master template repository.</p>
+</div><div class="column">
+<p><span class="hilit">The Shared Repository Model</span></p>
+<p>Best for: Close-knit project teams, software development teams, or small group assignments where all members have collaborator (write) access to the same repository.</p>
+</div></div>
 </section></section>
 <section>
 <section id="github-forking" class="title-slide slide level1 center">
@@ -242,35 +269,14 @@
 <li class="fragment"><p>That’s exactly what forking does with code repositories.</p></li>
 </ul>
 </section>
-<section id="fork-vs-clone-whats-the-difference" class="slide level2">
-<h2>Fork vs Clone: What’s the Difference</h2>
-<div class="fragment">
-<div class="columns">
-<div class="column">
-<p>Fork</p>
-<p>A fork creates a copy of a repository on your GitHub account (remote).</p>
-</div><div class="column fragment">
-<p>Clone</p>
-<p>A clone downloads a repository to your local computer.</p>
-</div></div>
-</div>
-<div class="fragment">
-<p><br>
-</p>
-<ul>
-<li class="fragment"><p>You typically fork first on GitHub, then clone your fork to your local machine to work on it.</p></li>
-<li class="fragment"><p>The fork maintains a connection to the original repository, which becomes important later when you want to contribute back.</p></li>
-</ul>
-</div>
-</section>
-<section id="simple-flow" class="slide level2">
-<h2>Simple Flow</h2>
+<section id="the-fork-and-pull-model" class="slide level2">
+<h2>The Fork-and-Pull Model</h2>
 <p>Here’s a simple flow:</p>
 <ol type="1">
-<li class="fragment">Fork on GitHub</li>
-<li class="fragment">Clone to your computer</li>
-<li class="fragment">Make changes</li>
-<li class="fragment">Push to your fork</li>
+<li class="fragment">You typically fork first on GitHub</li>
+<li class="fragment">Then clone your fork to your local machine</li>
+<li class="fragment">You make changes in your local repo</li>
+<li class="fragment">Push changes to your fork</li>
 <li class="fragment">Optionally submit changes back to the original</li>
 </ol>
 </section>
@@ -327,16 +333,16 @@
 </div>
 </div>
 </section>
-<section id="section-1" class="slide level2" data-background-image="images/cloning-a-fork-1.svg" data-background-size="contain">
+<section id="section" class="slide level2" data-background-image="images/cloning-a-fork-1.svg" data-background-size="contain">
 <h2></h2>
 </section>
-<section id="section-2" class="slide level2" data-background-image="images/cloning-a-fork-2.svg" data-background-size="contain">
+<section id="section-1" class="slide level2" data-background-image="images/cloning-a-fork-2.svg" data-background-size="contain">
 <h2></h2>
 </section>
-<section id="section-3" class="slide level2" data-background-image="images/cloning-a-fork-3.svg" data-background-size="contain">
+<section id="section-2" class="slide level2" data-background-image="images/cloning-a-fork-3.svg" data-background-size="contain">
 <h2></h2>
 </section>
-<section id="section-4" class="slide level2" data-background-image="images/cloning-a-fork-4.svg" data-background-size="contain">
+<section id="section-3" class="slide level2" data-background-image="images/cloning-a-fork-4.svg" data-background-size="contain">
 <h2></h2>
 </section>
 <section id="understanding-the-fork-connection" class="slide level2">
@@ -365,7 +371,7 @@
 <h3 id="contributing-back-to-the-original">Contributing Back to the Original</h3>
 <ul>
 <li class="fragment">The ultimate purpose of many forks is to contribute improvements back to the original project.</li>
-<li class="fragment">This happens through <strong><em>pull requests</em></strong>, which we’ll cover in the next lesson.</li>
+<li class="fragment">This happens through <strong><em>pull requests</em></strong>, which we’ll cover in lab.</li>
 <li class="fragment">However, not every fork leads to a pull request, and that’s fine.</li>
 </ul>
 </div>
@@ -431,7 +437,7 @@
 </ul>
 </div>
 <div class="fragment">
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> fix-division-by-zero</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch <span class="at">-c</span> fix-division-by-zero</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="scenario-contributing-a-bug-fix-1" class="slide level2">
@@ -449,7 +455,7 @@
 <span id="cb5-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add division by zero error handling"</span></span>
 <span id="cb5-3"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin fix-division-by-zero</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li class="fragment">Now your fork on GitHub has a branch with your bug fix. The original project still doesn’t have your changes—that’s where pull requests come in, which we’ll cover in the next lesson.</li>
+<li class="fragment">Now your fork on GitHub has a branch with your bug fix. The original project still doesn’t have your changes—that’s where pull requests come in, which we’ll cover in lab.</li>
 </ul>
 </div>
 </section></section>
@@ -474,7 +480,7 @@
 <li class="fragment"><p>However, you should only fork repositories you actually plan to work with.</p></li>
 <li class="fragment"><p>Don’t fork every interesting repository you find.</p></li>
 <li class="fragment"><p>Forking is meant for repositories you plan to work with actively, not for bookmarking or showing support.</p></li>
-<li class="fragment"><p>Use GitHub’s Star feature to bookmark repositories you find interesting.</p></li>
+<li class="fragment"><p>Use GitHub’s ⭐️ Star feature to bookmark repositories you find interesting.</p></li>
 <li class="fragment"><p>Too many inactive forks clutter your profile and make it harder to manage your actual work.</p></li>
 </ul>
 </section>
@@ -507,6 +513,37 @@
 </ul>
 </section></section>
 <section>
+<section id="the-shared-repository-model" class="title-slide slide level1 center">
+<h1>The Shared Repository Model</h1>
+
+</section>
+<section id="shared-repository-workflow" class="slide level2">
+<h2>Shared Repository Workflow</h2>
+<p><span class="bold-hilit">1) Clone (Once):</span> Every team member clones the same central repository directly:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/organization/shared-repo.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br>
+</p>
+<div class="fragment">
+<p><span class="bold-hilit">2) Branch (Every time you code):</span> Always create a new branch for your specific task. Never code directly on <code>main</code>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch <span class="at">-c</span> fix-typos</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br>
+</p>
+</div>
+<div class="fragment">
+<p><span class="bold-hilit">3) Push to Central Remote:</span> Push your branch up to the shared repository:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin fix-typos</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="shared-repository-workflow-contd" class="slide level2">
+<h2>Shared Repository Workflow (cont’d)</h2>
+<p><span class="bold-hilit">4) Open a Pull Request (PR):</span> Go to the shared GitHub repository. Open a Pull Request from <code>fix-typos</code> into <code>main</code>.</p>
+<div class="fragment">
+<p><br>
+</p>
+<p><span class="bold-hilit">5) Code Review &amp; Merge:</span> Teammates review the PR, discuss changes, and click <code>Merge</code> once approved. Other team members then pull the updated <code>main</code> branch locally (<code>git pull origin main</code>).</p>
+</div>
+</section></section>
+<section>
 <section id="pull-requests" class="title-slide slide level1 center">
 <h1>Pull Requests</h1>
 
@@ -524,22 +561,22 @@
 </div>
 </div>
 </section>
-<section id="section-5" class="slide level2" data-background-image="images/pull-request-flow-1.svg" data-background-size="contain">
+<section id="section-4" class="slide level2" data-background-image="images/pull-request-flow-1.svg" data-background-size="contain">
 <h2></h2>
 </section>
-<section id="section-6" class="slide level2" data-background-image="images/pull-request-flow-2.svg" data-background-size="contain">
+<section id="section-5" class="slide level2" data-background-image="images/pull-request-flow-2.svg" data-background-size="contain">
 <h2></h2>
 </section>
-<section id="section-7" class="slide level2" data-background-image="images/pull-request-flow-3.svg" data-background-size="contain">
+<section id="section-6" class="slide level2" data-background-image="images/pull-request-flow-3.svg" data-background-size="contain">
 <h2></h2>
 </section>
-<section id="section-8" class="slide level2" data-background-image="images/pull-request-flow-4.svg" data-background-size="contain">
+<section id="section-7" class="slide level2" data-background-image="images/pull-request-flow-4.svg" data-background-size="contain">
 <h2></h2>
 </section>
-<section id="section-9" class="slide level2" data-background-image="images/pull-request-flow-5.svg" data-background-size="contain">
+<section id="section-8" class="slide level2" data-background-image="images/pull-request-flow-5.svg" data-background-size="contain">
 <h2></h2>
 </section>
-<section id="section-10" class="slide level2" data-background-image="images/pull-request-flow-6.svg" data-background-size="contain">
+<section id="section-9" class="slide level2" data-background-image="images/pull-request-flow-6.svg" data-background-size="contain">
 <h2></h2>
 </section>
 <section id="why-use-pull-requests" class="slide level2">
@@ -621,73 +658,73 @@
 <section id="scenario" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Scenario</h2>
 <div class="small">
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb6-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Start from main branch</span></span>
-<span id="cb6-2" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb6-3" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb9-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Start from main branch</span></span>
+<span id="cb9-2" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch main</span>
+<span id="cb9-3" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="scenario-1" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Scenario</h2>
 <div class="small">
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb7-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Start from main branch</span></span>
-<span id="cb7-2" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb7-3" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span>
-<span id="cb7-4" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create feature branch</span></span>
-<span id="cb7-6" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> add-contact-page</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb10-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Start from main branch</span></span>
+<span id="cb10-2" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch main</span>
+<span id="cb10-3" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span>
+<span id="cb10-4" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create feature branch</span></span>
+<span id="cb10-6" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch <span class="at">-c</span> add-contact-page</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="scenario-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Scenario</h2>
 <div class="small">
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb8-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Start from main branch</span></span>
-<span id="cb8-2" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb8-3" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span>
-<span id="cb8-4" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create feature branch</span></span>
-<span id="cb8-6" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> add-contact-page</span>
-<span id="cb8-7" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-8" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create the contact page file</span></span>
-<span id="cb8-9" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"&lt;h1&gt;Contact Us&lt;/h1&gt;"</span> <span class="op">&gt;</span> contact.html</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb11-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Start from main branch</span></span>
+<span id="cb11-2" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch main</span>
+<span id="cb11-3" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span>
+<span id="cb11-4" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create feature branch</span></span>
+<span id="cb11-6" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch <span class="at">-c</span> add-contact-page</span>
+<span id="cb11-7" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create the contact page file</span></span>
+<span id="cb11-9" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"&lt;h1&gt;Contact Us&lt;/h1&gt;"</span> <span class="op">&gt;</span> contact.html</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="scenario-3" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Scenario</h2>
 <div class="small">
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb9-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Start from main branch</span></span>
-<span id="cb9-2" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb9-3" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span>
-<span id="cb9-4" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-5" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create feature branch</span></span>
-<span id="cb9-6" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> add-contact-page</span>
-<span id="cb9-7" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-8" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create the contact page file</span></span>
-<span id="cb9-9" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"&lt;h1&gt;Contact Us&lt;/h1&gt;"</span> <span class="op">&gt;</span> contact.html</span>
-<span id="cb9-10" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-11" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Stage and commit</span></span>
-<span id="cb9-12" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add contact.html</span>
-<span id="cb9-13" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add contact page with basic heading"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb12-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Start from main branch</span></span>
+<span id="cb12-2" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch main</span>
+<span id="cb12-3" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span>
+<span id="cb12-4" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create feature branch</span></span>
+<span id="cb12-6" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch <span class="at">-c</span> add-contact-page</span>
+<span id="cb12-7" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create the contact page file</span></span>
+<span id="cb12-9" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"&lt;h1&gt;Contact Us&lt;/h1&gt;"</span> <span class="op">&gt;</span> contact.html</span>
+<span id="cb12-10" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Stage and commit</span></span>
+<span id="cb12-12" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add contact.html</span>
+<span id="cb12-13" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add contact page with basic heading"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="scenario-4" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Scenario</h2>
 <div class="small">
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb10-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Start from main branch</span></span>
-<span id="cb10-2" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb10-3" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span>
-<span id="cb10-4" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-5" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create feature branch</span></span>
-<span id="cb10-6" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> add-contact-page</span>
-<span id="cb10-7" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-8" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create the contact page file</span></span>
-<span id="cb10-9" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"&lt;h1&gt;Contact Us&lt;/h1&gt;"</span> <span class="op">&gt;</span> contact.html</span>
-<span id="cb10-10" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-11" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Stage and commit</span></span>
-<span id="cb10-12" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add contact.html</span>
-<span id="cb10-13" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add contact page with basic heading"</span></span>
-<span id="cb10-14" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-15" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Push to GitHub</span></span>
-<span id="cb10-16" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin add-contact-page</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb13-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Start from main branch</span></span>
+<span id="cb13-2" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch main</span>
+<span id="cb13-3" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span>
+<span id="cb13-4" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create feature branch</span></span>
+<span id="cb13-6" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch <span class="at">-c</span> add-contact-page</span>
+<span id="cb13-7" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create the contact page file</span></span>
+<span id="cb13-9" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"&lt;h1&gt;Contact Us&lt;/h1&gt;"</span> <span class="op">&gt;</span> contact.html</span>
+<span id="cb13-10" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Stage and commit</span></span>
+<span id="cb13-12" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add contact.html</span>
+<span id="cb13-13" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add contact page with basic heading"</span></span>
+<span id="cb13-14" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-15" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Push to GitHub</span></span>
+<span id="cb13-16" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin add-contact-page</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <div class="small">
@@ -717,13 +754,13 @@
 </p>
 <p>You make the change locally:</p>
 <div class="small">
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Still on add-contact-page branch</span></span>
-<span id="cb11-2"><a aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"&lt;p&gt;Send us an email at hello@example.com&lt;/p&gt;"</span> <span class="op">&gt;&gt;</span> contact.html</span>
-<span id="cb11-3"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add contact.html</span>
-<span id="cb11-5"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add contact email paragraph"</span></span>
-<span id="cb11-6"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-7"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin add-contact-page</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Still on add-contact-page branch</span></span>
+<span id="cb14-2"><a aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"&lt;p&gt;Send us an email at hello@example.com&lt;/p&gt;"</span> <span class="op">&gt;&gt;</span> contact.html</span>
+<span id="cb14-3"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add contact.html</span>
+<span id="cb14-5"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add contact email paragraph"</span></span>
+<span id="cb14-6"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin add-contact-page</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">

@@ -2328,7 +2328,7 @@
     "href": "lectures/20-git6/20-git-collab-slides.html#fork-vs-clone-whats-the-difference",
     "title": "Collaboration in GitHub",
     "section": "Fork vs Clone: What’s the Difference",
-    "text": "Fork vs Clone: What’s the Difference\n\n\n\nFork\nA fork creates a copy of a repository on your GitHub account (remote).\n\nClone\nA clone downloads a repository to your local computer.\n\n\n\n\n\n\nYou typically fork first on GitHub, then clone your fork to your local machine to work on it.\nThe fork maintains a connection to the original repository, which becomes important later when you want to contribute back."
+    "text": "Fork vs Clone: What’s the Difference\n\n\n\nFork\nA fork creates a copy of a repository on your GitHub account (remote).\n\nClone\nA clone downloads a repository to your local computer."
   },
   {
     "objectID": "lectures/20-git6/20-git-collab-slides.html#simple-flow",
@@ -2370,7 +2370,7 @@
     "href": "lectures/20-git6/20-git-collab-slides.html#what-happens-after-you-forked",
     "title": "Collaboration in GitHub",
     "section": "What Happens After You Forked",
-    "text": "What Happens After You Forked\nYour Fork Is Independent\n\nOnce forked, your repository is yours.\nChanges you make don’t affect the original.\nChanges made to the original don’t automatically appear in your fork.\nYou can delete your fork, make it private, or do whatever you want with it.\n\n\nContributing Back to the Original\n\nThe ultimate purpose of many forks is to contribute improvements back to the original project.\nThis happens through pull requests, which we’ll cover in the next lesson.\nHowever, not every fork leads to a pull request, and that’s fine."
+    "text": "What Happens After You Forked\nYour Fork Is Independent\n\nOnce forked, your repository is yours.\nChanges you make don’t affect the original.\nChanges made to the original don’t automatically appear in your fork.\nYou can delete your fork, make it private, or do whatever you want with it.\n\n\nContributing Back to the Original\n\nThe ultimate purpose of many forks is to contribute improvements back to the original project.\nThis happens through pull requests, which we’ll cover in lab.\nHowever, not every fork leads to a pull request, and that’s fine."
   },
   {
     "objectID": "lectures/20-git6/20-git-collab-slides.html#working-with-your-forked-repository-1",
@@ -2391,14 +2391,14 @@
     "href": "lectures/20-git6/20-git-collab-slides.html#scenario-contributing-a-bug-fix",
     "title": "Collaboration in GitHub",
     "section": "Scenario: Contributing a Bug Fix",
-    "text": "Scenario: Contributing a Bug Fix\n\nYou discover the project at github.com/hansolo/simple-calculator.\nYou notice the division function doesn’t handle division by zero properly.\nStep 1) Fork the repository on GitHub (i.e. get your own copy)\nStep 2) Clone your fork locally\n\n\ngit clone https://github.com/YourUsername/simple-calculator.git\ncd simple-calculator\n\nStep 3) Create a branch for your fix\n\n\n\ngit checkout -b fix-division-by-zero"
+    "text": "Scenario: Contributing a Bug Fix\n\nYou discover the project at github.com/hansolo/simple-calculator.\nYou notice the division function doesn’t handle division by zero properly.\nStep 1) Fork the repository on GitHub (i.e. get your own copy)\nStep 2) Clone your fork locally\n\n\ngit clone https://github.com/YourUsername/simple-calculator.git\ncd simple-calculator\n\nStep 3) Create a branch for your fix\n\n\n\ngit switch -c fix-division-by-zero"
   },
   {
     "objectID": "lectures/20-git6/20-git-collab-slides.html#scenario-contributing-a-bug-fix-1",
     "href": "lectures/20-git6/20-git-collab-slides.html#scenario-contributing-a-bug-fix-1",
     "title": "Collaboration in GitHub",
     "section": "Scenario: Contributing a Bug Fix",
-    "text": "Scenario: Contributing a Bug Fix\n\nStep 4) Make your changes\n\nEdit calculator.py to add zero-check\nTest the changes locally\n\nStep 5) Commit and push\n\n\ngit add calculator.py\ngit commit -m \"Add division by zero error handling\"\ngit push origin fix-division-by-zero\n\nNow your fork on GitHub has a branch with your bug fix. The original project still doesn’t have your changes—that’s where pull requests come in, which we’ll cover in the next lesson."
+    "text": "Scenario: Contributing a Bug Fix\n\nStep 4) Make your changes\n\nEdit calculator.py to add zero-check\nTest the changes locally\n\nStep 5) Commit and push\n\n\ngit add calculator.py\ngit commit -m \"Add division by zero error handling\"\ngit push origin fix-division-by-zero\n\nNow your fork on GitHub has a branch with your bug fix. The original project still doesn’t have your changes—that’s where pull requests come in, which we’ll cover in lab."
   },
   {
     "objectID": "lectures/20-git6/20-git-collab-slides.html#keep-your-fork-updated",
@@ -2412,7 +2412,7 @@
     "href": "lectures/20-git6/20-git-collab-slides.html#fork-only-when-needed",
     "title": "Collaboration in GitHub",
     "section": "Fork Only When Needed",
-    "text": "Fork Only When Needed\n\nThere’s no limit to how many repositories you can fork on GitHub.\nHowever, you should only fork repositories you actually plan to work with.\nDon’t fork every interesting repository you find.\nForking is meant for repositories you plan to work with actively, not for bookmarking or showing support.\nUse GitHub’s Star feature to bookmark repositories you find interesting.\nToo many inactive forks clutter your profile and make it harder to manage your actual work."
+    "text": "Fork Only When Needed\n\nThere’s no limit to how many repositories you can fork on GitHub.\nHowever, you should only fork repositories you actually plan to work with.\nDon’t fork every interesting repository you find.\nForking is meant for repositories you plan to work with actively, not for bookmarking or showing support.\nUse GitHub’s ⭐️ Star feature to bookmark repositories you find interesting.\nToo many inactive forks clutter your profile and make it harder to manage your actual work."
   },
   {
     "objectID": "lectures/20-git6/20-git-collab-slides.html#respect-the-license",
@@ -2489,35 +2489,35 @@
     "href": "lectures/20-git6/20-git-collab-slides.html#scenario",
     "title": "Collaboration in GitHub",
     "section": "Scenario",
-    "text": "Scenario\n\n# Start from main branch\ngit checkout main\ngit pull origin main"
+    "text": "Scenario\n\n# Start from main branch\ngit switch main\ngit pull origin main"
   },
   {
     "objectID": "lectures/20-git6/20-git-collab-slides.html#scenario-1",
     "href": "lectures/20-git6/20-git-collab-slides.html#scenario-1",
     "title": "Collaboration in GitHub",
     "section": "Scenario",
-    "text": "Scenario\n\n# Start from main branch\ngit checkout main\ngit pull origin main\n\n# Create feature branch\ngit checkout -b add-contact-page"
+    "text": "Scenario\n\n# Start from main branch\ngit switch main\ngit pull origin main\n\n# Create feature branch\ngit switch -c add-contact-page"
   },
   {
     "objectID": "lectures/20-git6/20-git-collab-slides.html#scenario-2",
     "href": "lectures/20-git6/20-git-collab-slides.html#scenario-2",
     "title": "Collaboration in GitHub",
     "section": "Scenario",
-    "text": "Scenario\n\n# Start from main branch\ngit checkout main\ngit pull origin main\n\n# Create feature branch\ngit checkout -b add-contact-page\n\n# Create the contact page file\necho \"&lt;h1&gt;Contact Us&lt;/h1&gt;\" &gt; contact.html"
+    "text": "Scenario\n\n# Start from main branch\ngit switch main\ngit pull origin main\n\n# Create feature branch\ngit switch -c add-contact-page\n\n# Create the contact page file\necho \"&lt;h1&gt;Contact Us&lt;/h1&gt;\" &gt; contact.html"
   },
   {
     "objectID": "lectures/20-git6/20-git-collab-slides.html#scenario-3",
     "href": "lectures/20-git6/20-git-collab-slides.html#scenario-3",
     "title": "Collaboration in GitHub",
     "section": "Scenario",
-    "text": "Scenario\n\n# Start from main branch\ngit checkout main\ngit pull origin main\n\n# Create feature branch\ngit checkout -b add-contact-page\n\n# Create the contact page file\necho \"&lt;h1&gt;Contact Us&lt;/h1&gt;\" &gt; contact.html\n\n# Stage and commit\ngit add contact.html\ngit commit -m \"Add contact page with basic heading\""
+    "text": "Scenario\n\n# Start from main branch\ngit switch main\ngit pull origin main\n\n# Create feature branch\ngit switch -c add-contact-page\n\n# Create the contact page file\necho \"&lt;h1&gt;Contact Us&lt;/h1&gt;\" &gt; contact.html\n\n# Stage and commit\ngit add contact.html\ngit commit -m \"Add contact page with basic heading\""
   },
   {
     "objectID": "lectures/20-git6/20-git-collab-slides.html#scenario-4",
     "href": "lectures/20-git6/20-git-collab-slides.html#scenario-4",
     "title": "Collaboration in GitHub",
     "section": "Scenario",
-    "text": "Scenario\n\n# Start from main branch\ngit checkout main\ngit pull origin main\n\n# Create feature branch\ngit checkout -b add-contact-page\n\n# Create the contact page file\necho \"&lt;h1&gt;Contact Us&lt;/h1&gt;\" &gt; contact.html\n\n# Stage and commit\ngit add contact.html\ngit commit -m \"Add contact page with basic heading\"\n\n# Push to GitHub\ngit push origin add-contact-page\n\n\n\nNow your branch is on GitHub, ready for a pull request."
+    "text": "Scenario\n\n# Start from main branch\ngit switch main\ngit pull origin main\n\n# Create feature branch\ngit switch -c add-contact-page\n\n# Create the contact page file\necho \"&lt;h1&gt;Contact Us&lt;/h1&gt;\" &gt; contact.html\n\n# Stage and commit\ngit add contact.html\ngit commit -m \"Add contact page with basic heading\"\n\n# Push to GitHub\ngit push origin add-contact-page\n\n\n\nNow your branch is on GitHub, ready for a pull request."
   },
   {
     "objectID": "lectures/20-git6/20-git-collab-slides.html#creating-the-pr-on-github",
@@ -3524,7 +3524,7 @@
     "href": "readings/06-reading-duke-trials.html#reflections",
     "title": "6) Irreproducibility Tales 2",
     "section": "Reflections",
-    "text": "Reflections\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following reflections—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc\n\n\n\nReflection 1: Tracking Silent Code Offsets\nThe Duke team’s software expected one input with a header row and another without. Supplying headers with both silently shifted the entire gene list down by exactly one line, meaning the genes reported as critical markers were completely irrelevant to the cancer.\n\nThink about how you connect different scripts or datasets together.\nHave you ever fed an un-formatted output file into a downstream function and just assumed the rows matched perfectly?\nHow do you structurally verify that your pipeline inputs line up, rather than just trusting that the code ran without throwing an error message?\n\n\n\nReflection 2: Auditing Sensitive vs. Resistant Swaps\nBaggerly discovered simple data layout swaps where “sensitive” and “resistant” cell labels were completely reversed—meaning the code predicted a patient would thrive on a drug that their tumor was actually resistant to.\n\nEvaluate how you double-check your data mapping logic.\nWhen you write code to recode or binarize strings (e.g., 0 vs 1, True vs False), how do you systematically prove your labels didn’t get flipped upside down?\nWhat script-based test would catch a reversed logic label in your workspace today before it reaches a final chart?\n\n\n\nReflection 3: Confronting the “Black Box” Defense\nIn 2010, Duke cleared the suspended trials to restart after an internal review. However, the university actively refused to publicly release the data or the report justifying why the trials were safe.\nBecause the review was hidden, Duke failed to catch that data samples were heavily scrambled and mislabeled while the probe was underway.\n\nThink about your own project collaborations.\nHave you ever fixed a broken analysis script in secret, pushed a patch without documenting what broke, and told your team “it’s working now”?\nWhy is hiding a pipeline’s correction process a direct threat to long-term computational trust?\n\n\n\nReflection 4: Reputation over Source Inspection\nFor four years, independent biostatisticians proved the Duke data was corrupted, but the trials kept running. What finally broke the case open wasn’t checking the math—it was a journalist exposing that the lead scientist faked his CV credentials.\n\nReflect on your own scientific information literacy.\nWhy do academic journals, institutional reviewers, and the public routinely value professional credentials and prestige over a fully open, auditable repository trail?\nHow can you design your future research outputs so that they are judged on the objective execution of your code, not your reputation?\n\n\n\nReflection 5: Overcoming Overhead Anxiety\nKeith Baggerly demands five mandatory things for all future computational papers: Data, Provenance, Code, Descriptions of nonscriptable steps, and Planned designs. He freely admits: “This would add extra overhead… but I don’t see any other way.”\n\nLook at your own tight project constraints.\nWhich of Baggerly’s five requirements sounds like the most painful or exhausting “extra overhead” for your current workflow?\nHow can you use automation tools (like Git or automation engines) to reduce that friction so you don’t skip it when a deadline hits?",
+    "text": "Reflections\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following reflections—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc\n\n\n\nReflection 1\nBaggerly discovered simple data layout swaps where “sensitive” and “resistant” cell labels were completely reversed—meaning the code predicted a patient would thrive on a drug that their tumor was actually resistant to.\n\nEvaluate how you double-check your data mapping logic.\nWhen you write code to recode or binarize strings (e.g., 0 vs 1, True vs False), how do you systematically prove your labels didn’t get flipped upside down?\nWhat script-based test would catch a reversed logic label in your workspace today before it reaches a final chart?\n\n\n\nReflection 2\nIn 2010, Duke cleared the suspended trials to restart after an internal review. However, the university actively refused to publicly release the data or the report justifying why the trials were safe.\nBecause the review was hidden, Duke failed to catch that data samples were heavily scrambled and mislabeled while the probe was underway.\n\nThink about your own project collaborations.\nHave you ever fixed a broken analysis script in secret, without documenting what broke, and told your team “it’s working now”?\nWhy is hiding a pipeline’s correction process a direct threat to long-term computational trust?\n\n\n\nReflection 3\nKeith Baggerly demands five mandatory things for all future computational papers: Data, Provenance, Code, Descriptions of nonscriptable steps, and Planned designs. He freely admits: “This would add extra overhead… but I don’t see any other way.”\n\nLook at your own tight project constraints.\nWhich of Baggerly’s five requirements sounds like the most painful or exhausting “extra overhead” for your current workflow?\nHow can you use automation tools (like Git or automation engines) to reduce that friction so you don’t skip it when a deadline hits?",
     "crumbs": [
       "Readings",
       "6) Irreproducibility Tales 2"
@@ -3589,7 +3589,7 @@
     "href": "index.html#schedule",
     "title": "STAT 159/259: Collaborative and Reproducible Statistical Data Science",
     "section": "Schedule 📅",
-    "text": "Schedule 📅\nTentative calendar subject to change.\n\nWeek 1\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 26\n             \n             \n               Lecture  Welcome to Stat 159\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 28\n             \n             \n               Lecture  Naming Files\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 2\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 31\n             \n             \n               Lecture  File Paths & Unix Terminal\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 01\n             \n             \n               Lab  Shell Commands\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 02\n             \n             \n               Lecture  Project Organization\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Ten Simple Rules for RCR (due 9/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 04\n             \n             \n               Lecture  Intro to Git (part I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW1 Reproducibility Checkup (due 9/18)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 3\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 07\n             \n             \n               No-Class  Academic Holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 08\n             \n             \n               Lab  Getting Started with Git\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 09\n             \n             \n               Lecture  Intro to Git (part II)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Guide for Reproducible Research (due 9/16)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 11\n             \n             \n               Lecture  Discussion Reading 1\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 4\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 14\n             \n             \n               Lecture  Git Branching\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 15\n             \n             \n               Lab  Getting started with Git branches\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 16\n             \n             \n               Lecture  Case Study: Global Temperature\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  7 Easy Steps to Open Science (due 9/23)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 18\n             \n             \n               Lecture  Discussion Reading 2\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj1 Replicating temperature Graphics (due 10/2)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 5\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 21\n             \n             \n               Lecture  Git Remotes\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 22\n             \n             \n               Lab  Github and remote repos\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 23\n             \n             \n               Lecture  Undoing changes in Git\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Data Science at the Singularity (due 9/30)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 25\n             \n             \n               Lecture  Discussion Reading 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 6\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 28\n             \n             \n               Lecture  Intro to Make (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 29\n             \n             \n               Lab  Getting started with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 30\n             \n             \n               Lecture  Intro to Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Reinhart-Rogoff Fiasco (due 10/07)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 02\n             \n             \n               Lecture  Discussion Reading 4\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW2 TBA (due 10/16)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 7\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 05\n             \n             \n               Lecture  Variables in Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 06\n             \n             \n               Lab  More automation with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 07\n             \n             \n               Lecture  More Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Duke Trials Retraction (due 10/14)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 09\n             \n             \n               Lecture  Discussion Reading 5\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 8\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 12\n             \n             \n               Lecture  Git Collaborative workflows\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 13\n             \n             \n               Lab  Working in groups in Github\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 14\n             \n             \n               Lecture  Handling and Sharing Data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 16\n             \n             \n               Lecture  Discussion Reading 6\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 2 TBA (due 10/30)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 9\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 19\n             \n             \n               Lecture  Writing Clear Code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 20\n             \n             \n               Lab  Hands on sharing and managing data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 21\n             \n             \n               Lecture  Packaging Code (I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Share Your Code (due 10/28)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 23\n             \n             \n               Lecture  Packaging Code (II)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 10\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 26\n             \n             \n               Lecture  Packaging Code (III)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 27\n             \n             \n               Lab  Documenting your code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 28\n             \n             \n               Lecture  Environment Mgmt\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  RR Legal Framework (due 11/04)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 30\n             \n             \n               Lecture  Discussion Reading 7\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW-3 TBA (due 11/13)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 11\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 02\n             \n             \n               Lecture  Environment Management (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 03\n             \n             \n               Lab  Managing environments\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 04\n             \n             \n               Lecture  Licenses\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Rules for Better Figures (due 11/11)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 06\n             \n             \n               Lecture  Discussion Reading 8\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 12\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 09\n             \n             \n               Lecture  Images, Figures and Graphics\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 10\n             \n             \n               Lab  Handling images and figures\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 11\n             \n             \n               No-Class  Academic holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Research Compendium (due 11/18)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 13\n             \n             \n               Lecture  Discussion Reading 9\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 3 TBA (due 12/07)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 13\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 16\n             \n             \n               Lecture  Research Compendium\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 17\n             \n             \n               Lab  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 18\n             \n             \n               Lecture  Discussion Reading 10\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 20\n             \n             \n               Lecture  Publishing & Communication I\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 14\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 23\n             \n             \n               Lecture  Publishing & Communication II\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 24\n             \n             \n               Lab  Final project status\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 25\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 27\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 15\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 30\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 01\n             \n             \n               Lab  Wrap-Up Final Project\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 02\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 04\n             \n             \n               Lecture  Closing Talk\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 16\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 07\n             \n             \n               Overview  RRR Week\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 17\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 14\n             \n             \n               Final  Project 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \nNo matching items",
+    "text": "Schedule 📅\nTentative calendar subject to change.\n\nWeek 1\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 26\n             \n             \n               Lecture  Welcome to Stat 159\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 28\n             \n             \n               Lecture  Naming Files\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 2\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 31\n             \n             \n               Lecture  File Paths & Unix Terminal\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 01\n             \n             \n               Lab  Shell Commands\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 02\n             \n             \n               Lecture  Project Organization\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Ten Simple Rules for RCR (due 9/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 04\n             \n             \n               Lecture  Intro to Git (part I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW1 Reproducibility Checkup (due 9/18)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 3\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 07\n             \n             \n               No-Class  Academic Holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 08\n             \n             \n               Lab  Getting Started with Git\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 09\n             \n             \n               Lecture  Intro to Git (part II)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Guide for Reproducible Research (due 9/16)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 11\n             \n             \n               Lecture  Discussion Reading 1\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 4\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 14\n             \n             \n               Lecture  Git Branching\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 15\n             \n             \n               Lab  Getting started with Git branches\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 16\n             \n             \n               Lecture  Case Study: Global Temperature\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  7 Easy Steps to Open Science (due 9/23)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 18\n             \n             \n               Lecture  Discussion Reading 2\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj1 Replicating temperature Graphics (due 10/2)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 5\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 21\n             \n             \n               Lecture  Git Remotes\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 22\n             \n             \n               Lab  Github and remote repos\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 23\n             \n             \n               Lecture  Undoing changes in Git\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Data Science at the Singularity (due 9/30)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 25\n             \n             \n               Lecture  Discussion Reading 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 6\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 28\n             \n             \n               Lecture  Intro to Make (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 29\n             \n             \n               Lab  Getting started with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 30\n             \n             \n               Lecture  Intro to Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Reinhart-Rogoff Fiasco (due 10/07)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 02\n             \n             \n               Lecture  Discussion Reading 4\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW2 TBA (due 10/16)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 7\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 05\n             \n             \n               Lecture  Variables in Make\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj1 Peer Review (due 10/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 06\n             \n             \n               Lab  More automation with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 07\n             \n             \n               Lecture  More Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Duke Trials Retraction (due 10/14)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 09\n             \n             \n               Lecture  Discussion Reading 5\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 8\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 12\n             \n             \n               Lecture  Git Collaborative workflows\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 13\n             \n             \n               Lab  Working in groups in Github\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 14\n             \n             \n               Lecture  Handling and Sharing Data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 16\n             \n             \n               Lecture  Discussion Reading 6\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 2 TBA (due 10/30)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 9\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 19\n             \n             \n               Lecture  Writing Clear Code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 20\n             \n             \n               Lab  Hands on sharing and managing data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 21\n             \n             \n               Lecture  Packaging Code (I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Share Your Code (due 10/28)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 23\n             \n             \n               Lecture  Packaging Code (II)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 10\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 26\n             \n             \n               Lecture  Packaging Code (III)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 27\n             \n             \n               Lab  Documenting your code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 28\n             \n             \n               Lecture  Environment Mgmt\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  RR Legal Framework (due 11/04)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 30\n             \n             \n               Lecture  Discussion Reading 7\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW-3 TBA (due 11/13)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 11\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 02\n             \n             \n               Lecture  Environment Management (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 03\n             \n             \n               Lab  Managing environments\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 04\n             \n             \n               Lecture  Licenses\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Rules for Better Figures (due 11/11)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 06\n             \n             \n               Lecture  Discussion Reading 8\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 12\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 09\n             \n             \n               Lecture  Images, Figures and Graphics\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 10\n             \n             \n               Lab  Handling images and figures\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 11\n             \n             \n               No-Class  Academic holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Research Compendium (due 11/18)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 13\n             \n             \n               Lecture  Discussion Reading 9\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 3 TBA (due 12/07)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 13\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 16\n             \n             \n               Lecture  Research Compendium\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 17\n             \n             \n               Lab  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 18\n             \n             \n               Lecture  Discussion Reading 10\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 20\n             \n             \n               Lecture  Publishing & Communication I\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 14\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 23\n             \n             \n               Lecture  Publishing & Communication II\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 24\n             \n             \n               Lab  Final project status\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 25\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 27\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 15\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 30\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 01\n             \n             \n               Lab  Wrap-Up Final Project\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 02\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 04\n             \n             \n               Lecture  Closing Talk\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 16\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 07\n             \n             \n               Overview  RRR Week\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 17\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 14\n             \n             \n               Final  Project 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \nNo matching items",
     "crumbs": [
       "Home / Schedule"
     ]
@@ -6809,7 +6809,7 @@
     "href": "lectures/15-make2/15-make-intro2-slides.html#section-20",
     "title": "Intro to GNU Make (part 2)",
     "section": "",
-    "text": "Makefile rule\n\n\n\nclean:\n  cd data && rm -f data.csv model.RData\n  cd image && rm -f plot.png\n  cd report && rm -f report.html\n\n✅ correct target\n✅ correct dependencies\n✅ correct command"
+    "text": "Makefile rule\n\n\n\nclean:\n  cd data && rm -f data.csv model.RData\n  cd images && rm -f plot.png\n  cd doc && rm -f report.html\n\n✅ correct target\n✅ correct dependencies\n✅ correct command"
   },
   {
     "objectID": "lectures/15-make2/15-make-intro2-slides.html#demo-repo",
@@ -6867,7 +6867,7 @@
     "href": "hws/hw02/hw02.html#serena-williamss-career-matches",
     "title": "HW2) Reproducing Serena Williams’s Plot",
     "section": "Serena Williams’s Career Matches",
-    "text": "Serena Williams’s Career Matches\nhttps://www.tennisabstract.com/cgi-bin/wplayer-classic.cgi?p=SerenaWilliams&f=ACareerqq\n\n\n\n\n\n\nImportant\n\n\n\nNotice the date of birth of Serena Williams: 26-Sep-1981\n\n\n\nMain Data File\nIf you inspect the source code of the above webpage, you can find the following javascript file that has all the necessary information about Serena Williams’s matches:\nhttps://www.tennisabstract.com/jsmatches/SerenaWilliamsCareer.js\n\nExample: First Match\n\nLet’s consider the first recorded match that took place in October 30th 1995. This match is displayed in the HTML table (i.e. webpage) as follows:\n\n\n30‑Oct‑1995 | Canadian Open | Carpet | Q1 | |   149 | (7)Anne Miller [USA] d. (WC)Williams | 6-1 6-1\nThe data of this match is the first element in the array of the javascript file SerenaWilliamsCareer.js which contains, among other fields, the following values:\n\nDate of match: \"19951030\"\nTournament: \"Canadian Open\"\nSurface: \"Carpet\"\nWhether Serena loses or wins: \"W\", \"L\" (lose) or \"W\", \"W\" (win)\nName of opponent: \"Anne Miller\"\nOpponent’s date of birth: \"19770119\"",
+    "text": "Serena Williams’s Career Matches\nAs we saw in HW1, the webpage containing the career matches of Serena Williams is given below:\nhttps://www.tennisabstract.com/cgi-bin/wplayer-classic.cgi?p=SerenaWilliams&f=ACareerqq\n\n\n\n\n\n\nImportant\n\n\n\nNotice the date of birth of Serena Williams: 26-Sep-1981\n\n\n\nMain Data File\nIf you inspect the source code of the above webpage, you can find the following javascript file that has all the data (i.e. the necessary information) about Serena Williams’s matches:\nhttps://www.tennisabstract.com/jsmatches/SerenaWilliamsCareer.js\n\nExample: First Match\n\nLet’s consider the first recorded match that took place in October 30th 1995.\n\n\n\nThis match is displayed in the HTML table (i.e. webpage) as follows:\n30‑Oct‑1995 | Canadian Open | Carpet | Q1 | |   149 | (7)Anne Miller [USA] d. (WC)Williams | 6-1 6-1\nThe data of this match is the first element in the array of the javascript file SerenaWilliamsCareer.js which contains, among other fields, the following values:\n\nDate of match: \"19951030\"\nTournament: \"Canadian Open\"\nSurface: \"Carpet\"\nWhether Serena loses or wins: \"W\", \"L\" (lose) or \"W\", \"W\" (win)\nName of opponent: \"Anne Miller\"\nOpponent’s date of birth: \"19770119\"",
     "crumbs": [
       "HW",
       "HW2) Reproducing Serena Williams's Plot"
@@ -6878,10 +6878,353 @@
     "href": "hws/hw02/hw02.html#deliverables",
     "title": "HW2) Reproducing Serena Williams’s Plot",
     "section": "Deliverables",
-    "text": "Deliverables\nFor this assignment, you will have a single GitHub repository (individual submission). Your repository should contain the following:\n\nOne script file with code to download the raw data (javascript) file\nOne script file (.py or .R) to clean/process the raw data in order to produce the clean data set.\nOne script file (.py or .R) in which you import the clean data and produce the plot, saved into an appropraite folder, e.g. images/, or outputs/, or figures/.\nOne markdown file (doc.md or report.md) in which you insert the image file, and a brief narrative description for this assignment.\nAn optional ai_documentation.txt file where you will put any prompts and output from AI companions that you use to complete the project.\nA Makefile that includes:\n\n.PHONY targets all and clean\nrule to generate clean data\nrule to generate the plot in PNG\nrule to produce the report in HTML format\nrule to produce the report in PDF format\nall rule to get clean data, plot, and HTML/PDF reports\nclean rule to remove clean data, plot, and HTML/PDF reports\n\nAdd a Conda environment.yml\nA README.md file (at the top-level) with detailed contents about your HW assignment.",
+    "text": "Deliverables\nFor this assignment, you will have a single GitHub repository (individual submission). Your repository should contain the following:\n\nOne script file with code to download the raw data (javascript) file\nOne script file (.py or .R) to clean/process the raw data in order to produce the clean data set.\nOne script file (.py or .R) in which you import the clean data and produce the plot, saved into an appropriate folder, e.g. images/, or outputs/, or figures/.\nOne notebook (.ipynb or .qmd) or markdown file (doc.md or report.md) in which you insert the image (plot) file, and a brief narrative description for this assignment.\nAn optional ai_documentation.txt file where you will put any prompts and output from AI companions that you use to complete the project.\nA Makefile that includes:\n\n.PHONY targets all and clean\nrule to generate clean data\nrule to generate the plot in PNG format\nrule to produce the report in HTML format\nrule to produce the report in PDF format\nall rule to get the clean data, the plot, and the HTML/PDF reports\nclean rule to remove clean data, plot, and HTML/PDF reports\n\nAdd a Conda environment.yml\nA README.md file (at the top-level) with detailed contents about your HW assignment.",
     "crumbs": [
       "HW",
       "HW2) Reproducing Serena Williams's Plot"
     ]
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example",
+    "title": "Other Functions in Make",
+    "section": "Example",
+    "text": "Example\nSuppose we have the following project with various scripts; each script produces an output file.\n\n\n\nFile structure (before running make)\nproject/\n  Makefile\n  plot1.R\n  plot2.R\n  plot3.R\n\nFile structure (after running make)\nproject/\n  Makefile\n  plot1.R\n  plot2.R\n  plot3.R\n  plot1.png\n  plot2.png\n  plot3.png\n\n\n\nNotice that the script files and the PNG files share the same name."
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#reading",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#reading",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Reading",
+    "text": "Reading\n\nTitle: The Reinhart-Rogoff Error - or how not to Excel at economics\nAuthors: Jonathan Borwein and David H. Bailey\nJournal: The Conversation\nYear: 2013\nhttps://theconversation.com/the-reinhart-rogoff-error-or-how-not-to-excel-at-economics-13646"
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#supporting-materials",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#supporting-materials",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Supporting Materials",
+    "text": "Supporting Materials\nGrowth in a Time of Debt (C. Reinhart, K. Rogoff, 2010)\nhttps://www.nber.org/papers/w15639\n\n\nDoes high public debt consistently stifle economic growth? A critique of Reinhart and Rogoff (T. Herndon, M. Ash, R. Pollin, 2014)\nhttps://peri.umass.edu/wp-content/uploads/joomla/images/WP322.pdf\ndoi: https://doi.org/10.1093/cje/bet075"
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#overview",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#overview",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\n\nIn 2010, Harvard economists Carmen Reinhart and Kenneth Rogoff (R&R) published an influential paper claiming that countries with public debt over 90% of GDP experience negative economic growth."
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#overview-1",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#overview-1",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\nThis study was widely cited by politicians to justify harsh post-recession austerity cuts."
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#replication-attempt",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#replication-attempt",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Replication Attempt",
+    "text": "Replication Attempt\nYears later, graduate student Thomas Herndon tried to replicate the study of Reinhart & Rogoff for a class project and failed.\n\nHe found various problems:\n\nSelective exclusion of available data\nCoding errors\nInappropriate weighting of summary statistics\n\n\n\n\n\nHis conclusion: Over 1946–2009, countries with public debt/GDP ratios above 90% averaged 2.2% real annual GDP growth, not −0.1% as published"
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#one-of-the-issues",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#one-of-the-issues",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "One of the issues",
+    "text": "One of the issues\nThomas Herndon discovered that R&R had accidentally missed five major countries when dragging down their AVERAGE() formula row.\nCorrecting this basic clerical error completely reversed their main conclusion."
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#prompt",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#prompt",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Prompt",
+    "text": "Prompt\n\nImagine you are Thomas Herndon.\nYou have downloaded the spreadsheet.\nYour averages don’t match the famous paper.\nYour peers tell you that you must have made a mistake because two famous Harvard professors wrote the original code.\n\n\n\nHow do you approach your advisor with your findings?\n\n\n\n\n−+\n02:00"
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#activity",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#activity",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Activity",
+    "text": "Activity\nWe’re going to divide the classroom into groups\n\n\n\n\nGroup A (left-hand side)\n\n“The Pragmatists”\nExcel is intuitive.\nBanning it slows down scientific output.\n\n\nGroup B (right-hand side)\n\n“The Purists”\nExcel is fundamentally unscientific.\nIts use should be avoided/minimized."
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#brainstorm",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#brainstorm",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Brainstorm",
+    "text": "Brainstorm\nHuddle with your immediate neighbors to write down your three strongest arguments based on the Reinhart-Rogoff reading.\n\n\nGroup A (left-hand side)\nFind 3 concrete reasons why forcing every field biologist, medical doctor, or social scientist to write Python/R scripts before looking at data actually harms scientific progress.\n\nGroup B (right-hand side)\nFind 3 specific limitations of Excel that make it completely incompatible with reproducibility.\n\n\n\n\n−+\n05:00\n\n\n\n\n\n\nTime’s up: Please share your thoughts."
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#debate-group-a",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#debate-group-a",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Debate: Group A",
+    "text": "Debate: Group A\nExcel is used by almost every major business, government agency, and field biologist on Earth. If we completely ban it in favor of demanding everyone learn command-line Git and Python/R/etc script automation are we just being technical elitists?\n\nWon’t this drastically slow down scientific discovery?\n\n\n\n\n−+\n02:00"
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#debate-group-b",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#debate-group-b",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Debate: Group B",
+    "text": "Debate: Group B\nReinhart and Rogoff were Harvard economists, not amateurs, and they missed an entire block of countries because they dragged a visual box slightly too short.\n\nHow can we call an invisible, un-trackable mouse click ‘science’?\n\n\n\n\n−+\n02:00"
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#debate-role-reversal",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#debate-role-reversal",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Debate: Role Reversal",
+    "text": "Debate: Role Reversal\n\nGroup A, you are now the Purists.\nGroup B, you are now the Pragmatists.\nYou must now instantly pivot and attack the very argument you were defending thirty seconds ago.\nGo!\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#some-notes",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#some-notes",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Some Notes",
+    "text": "Some Notes\nDefending Excell:\n\nAccessibility: Not every researcher has a computer science background. Excel allows people to discover trends quickly without fighting syntax errors.\nVisual Intuition: It lets you physically see the raw matrix of numbers, which helps catch gross data anomalies faster than scanning lines of code.\nCollaboration: Almost every person on Earth can open an Excel sheet; passing a script requires setting up specialized software environments."
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#some-notes-1",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#some-notes-1",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Some Notes",
+    "text": "Some Notes\nAttacking Excell:\n\nSilent Reformatting: Excel silently converts from one data type to another, which corrupts content in spreadsheets.\nHidden Logic: The actual mathematical code is buried beneath individual cells. You have to click every box to see if the formula is correct.\nNo Audit Trail: You cannot use git diff on an Excel spreadsheet to see exactly which cell a collaborator changed between Tuesday and Thursday."
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#question",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#question",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Question",
+    "text": "Question\nExcel is an unparalleled tool for Exploratory Data Analysis (EDA): when you just need to scratchpad ideas, sketch a quick chart, and understand your data.\nHowever, Excel is completely unacceptable for the Production Pipeline: the final, published scientific analysis.\nThe lesson of the Reinhart-Rogoff failure isn’t that spreadsheets are inherently evil; it’s that interactive GUI manipulation lacks a provenance trail.\n\n\n\n\nHow can a team use flexible exploratory tools while still guaranteeing absolute script-based reproducibility before publication?\n\n\n\n\n−+\n02:00"
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#question-1",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#question-1",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Question",
+    "text": "Question\nPretend your small group is the newly appointed Data Integrity Board for a university research lab:\n\nYour lab includes older scientists who hate coding and\nYounger students who are in a rush.\n\n\nYou need to write exactly two non-negotiable rules for how data must be processed before a paper can be submitted to a journal.\n\nWhat are your two rules, and how do you convince the stubborn team members to follow them?\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#wrap-up",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#wrap-up",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Wrap Up",
+    "text": "Wrap Up\nWith the tools, ideas and concepts that we’ve covered so far, please debate how would you use them to address the issues with the Excell horror story.\n\nUse this moment to introduce how a reproducible pipeline bridges this gap.\nShow them that they can accept an Excel sheet from a collaborator, but their very first step must be an automated, recorded script (e.g., using Python’s pandas.read_excel() or R’s readxl::read_excel())."
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#google-form",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#google-form",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Google Form",
+    "text": "Google Form\n\n\nINSERT QR code!!!\n\n\nINSERT  link to google form!!!"
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#quiz",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#quiz",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Quiz",
+    "text": "Quiz\nThe core issue that invalidated the famous 2010 Harvard economic paper on national debt limits was rooted in a basic spreadsheet error. What exactly went wrong?\n\nA hacker maliciously altered the underlying CSV data file after it was uploaded to a public repository.\nThe authors used an outdated version of Microsoft Excel that had a known floating-point calculation bug.\nA user interface error where dragging down an AVERAGE formula box accidentally skipped 5 major countries in the calculation.\nThe data was correct, but the authors forgot to commit their changes to Git before submitting the paper."
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#poll",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#poll",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Poll",
+    "text": "Poll\nBe completely honest: What is your primary, personal tool for handling raw data right now in your research or coursework?\n\nPure Microsoft Excel / Google Sheets (No coding involved).\nA hybrid approach (I look/clean in Excel, then move to Python/R for plots).\nScripting only (I load raw text/CSVs straight into RStudio, Jupyter, or VS Code).\n“Sneakernet” manual tracking (Folders full of copies like data_v2_final.csv)."
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#poll-1",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#poll-1",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Poll",
+    "text": "Poll\nRate your level of agreement with this statement:\n“Banning spreadsheets completely from academic research would destroy scientific productivity.”\n\nStrongly Disagree (Code or nothing)\nDisagree\nNeutral\nAgree\nStrongly Agree (Spreadsheets are essential)"
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#poll-2",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#poll-2",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Poll",
+    "text": "Poll\nIn exactly one word, what is the single biggest threat to data integrity when a researcher relies purely on Excel for their final published paper?"
+  },
+  {
+    "objectID": "lectures/19-discuss5/19-discussion-draft.html#takeaways",
+    "href": "lectures/19-discuss5/19-discussion-draft.html#takeaways",
+    "title": "Irreproducibility Tales (part I)",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nSpreadsheets reduce complex pipelines to invisible clicks that are entirely forgotten once executed.\nWorkflows should be explicitly coded (via Python, R, or Makefiles) rather than clicked, so every mathematical transformation is fully readable and logged."
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-1",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-1",
+    "title": "Other Functions in Make",
+    "section": "Example 1",
+    "text": "Example 1\nSuppose we have the following project with various scripts; each script produces an output file.\n\n\n\nFile structure (before running make)\nproject/\n  Makefile\n  plot1.R\n  plot2.R\n  plot3.R\n\nFile structure (after running make)\nproject/\n  Makefile\n  plot1.R\n  plot2.R\n  plot3.R\n  plot1.png\n  plot2.png\n  plot3.png\n\n\n\nNotice that the script files and the PNG files share the same name."
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-1-1",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-1-1",
+    "title": "Other Functions in Make",
+    "section": "Example 1",
+    "text": "Example 1\nSuppose we have the following project with various scripts; each script produces an output file.\n\n\n\nFile structure (before running make)\nproject/\n  Makefile\n  plot1.R\n  plot2.R\n  plot3.R\n\nFile structure (after running make)\nproject/\n  Makefile\n  plot1.R\n  plot2.R\n  plot3.R\n  plot1.png\n  plot2.png\n  plot3.png\n\n\n\nNotice that the script files and the PNG files share the same name."
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-1-makefile",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-1-makefile",
+    "title": "Other Functions in Make",
+    "section": "Example 1: Makefile",
+    "text": "Example 1: Makefile\n\n\n\n\n\nMakefile\n\n.PHONY: all\n\nall: plot1.png plot2.png plot3.png\n\n# rule 1\nplot1.png: plot1.R\n  Rscript $&lt;\n\n# rule 2\nplot2.png: plot2.R\n  Rscript $&lt;\n\n# rule 3\nplot3.png: plot3.R\n  Rscript $&lt;\n\n\n\nAll rules have the same pattern\nA PNG target\nAn R dependency\nSame command\nWe can use the percent symbol % to define a pattern rule"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-1-makefile-1",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-1-makefile-1",
+    "title": "Other Functions in Make",
+    "section": "Example 1: Makefile",
+    "text": "Example 1: Makefile\n\n\n\n\n\nMakefile\n\n.PHONY: all\n\nall: plot1.png plot2.png plot3.png\n\n# pattern rule\n%.png: %.R\n  Rscript $&lt;\n\n\n\nWe only need one pattern rule\nThe common pattern in this case is the name of the file\n% is a placeholder for plot1, plot2, and plot3"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-1-makefile-2",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-1-makefile-2",
+    "title": "Other Functions in Make",
+    "section": "Example 1: Makefile",
+    "text": "Example 1: Makefile\nA more complete Makefile with .PHONY targets all and clean\n\n\nMakefile\n\n.PHONY: all clean\n\nall: plot1.png plot2.png plot3.png\n\n# pattern rule\n%.png: %.R\n  Rscript $&lt;\n\nclean: \n  rm -f *.png\n\n\n\n\nWe still have some repetition in the names of the targets\nImagine if you had 10, or 50, or a larger number of targets"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-2-1",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-2-1",
+    "title": "Other Functions in Make",
+    "section": "Example 2",
+    "text": "Example 2\nLet’s consider a simple project with a more realistic file structure\n\n\nFile structure (before running make)\nproject/\n  Makefile\n  code/\n    plot1.R\n  images/\n\nFile structure (after running make)\nproject/\n  Makefile\n  code/\n    plot1.R\n  images/\n    plot1.png"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-2-makefile",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-2-makefile",
+    "title": "Other Functions in Make",
+    "section": "Example 2: Makefile",
+    "text": "Example 2: Makefile\n\n\n\nRule with no Make variables\n\n\nMakefile\n\n# rule\nimages/plot1.png: code/plot1.R\n  cd code && Rscript plot1.R\n\n\nFailed attempt with Make variable 👎\n\n\nMakefile\n\n# rule\nimages/plot1.png: code/plot1.R\n  cd code && Rscript $&lt;\n\n\n\n\n\nRecall that $&lt; is the first dependency\nIn this case $&lt; has the value of code/plot1.R\ni.e. Rscript $&lt; corresponds to Rscript code/plot1.R 👎\n$(&lt;D) and $(&lt;F) to the rescue ✅"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-3-1",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-3-1",
+    "title": "Other Functions in Make",
+    "section": "Example 3",
+    "text": "Example 3\nSuppose we have the same files of Example 1 but with a more realistic file structure\n\n\n\nFile structure (before running make)\nproject/\n  Makefile\n  code/\n    plot1.R\n    plot2.R\n    plot3.R\n  images/\n\nFile structure (after running make)\nproject/\n  Makefile\n  code/\n    plot1.R\n    plot2.R\n    plot3.R\n  images/\n    plot1.png\n    plot2.png\n    plot3.png"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-3-makefile",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-3-makefile",
+    "title": "Other Functions in Make",
+    "section": "Example 3: Makefile",
+    "text": "Example 3: Makefile\n\n\n\nMakefile\n\n.PHONY: all\n\nall: images/plot1.png images/plot2.png images/plot3.png\n\n# rule 1\nimages/plot1.png: code/plot1.R\n  cd code && Rscript plot1.R\n\n# rule 2\nimages/plot2.png: code/plot2.R\n  cd code && Rscript plot2.R\n\n# rule 3\nimages/plot3.png: code/plot3.R\n  cd code && Rscript plot3.R"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-2-make-d-and-f",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-2-make-d-and-f",
+    "title": "Other Functions in Make",
+    "section": "Example 2: Make $(<D) and $(<F)",
+    "text": "Example 2: Make $(&lt;D) and $(&lt;F)\n\n$(&lt;D) is the Directory of the first dependency\n$(&lt;F) is the File name of the first dependency\n\n\nWe can use them to rewrite the rule as follows:\n\n\nMakefile\n\n# rule\nimages/plot1.png: code/plot1.R\n  cd $(&lt;D) && Rscript $(&lt;F)"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-3-makefile-1",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-3-makefile-1",
+    "title": "Other Functions in Make",
+    "section": "Example 3: Makefile",
+    "text": "Example 3: Makefile\nUsing a pattern rule gives us a simpler Makefile\n\n\nMakefile\n\n.PHONY: all clean\n\nall: images/plot1.png images/plot2.png images/plot3.png\n\n# pattern rule\nimages/%.png: code/%.R\n  cd $(&lt;D) && Rscript $(&lt;F)\n\nclean:\n  cd images && rm -f *.png"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-4-1",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-4-1",
+    "title": "Other Functions in Make",
+    "section": "Example 4",
+    "text": "Example 4\nFrom Example 3, we have the following Makefile\n\n\nMakefile\n\n.PHONY: all clean\n\nall: images/plot1.png images/plot2.png images/plot3.png\n\n# pattern rule\nimages/%.png: code/%.R\n  cd $(&lt;D) && Rscript $(&lt;F)\n\nclean:\n  cd images && rm -f *.png\n\nWe still have some repetition listing the names of the targets"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-4-2",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-4-2",
+    "title": "Other Functions in Make",
+    "section": "Example 4",
+    "text": "Example 4\nIt would be nice to create a variable PNGS for the targets, something like:\n\n\n\nMakefile\n\nPNGS = $(wildcard images/*.png)\n\n.PHONY: all clean\n\nall: $(PNGS)\n\n# pattern rule\nimages/%.png: code/%.R\n  cd $(&lt;D) && Rscript $(&lt;F)\n\nclean:\n  cd images && rm -f *.png\n\n⚠️ The above Makefile has an issue ⚠️"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-4-3",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-4-3",
+    "title": "Other Functions in Make",
+    "section": "Example 4",
+    "text": "Example 4\n\nIt would be nice to create a variable PNGS for the targets.\nThe issue is that if the directory images/ is empty, then Makefile won’t be able to create the appropriate varibale PNGS\nThe solution involves creating a variable for the dependency files, and then use this variable to create a varible for the targets.\nThe Make tool to accomplish this is a so-called pattern substitution"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-4-4",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-4-4",
+    "title": "Other Functions in Make",
+    "section": "Example 4",
+    "text": "Example 4\n\n\nMakefile\n\n# depndency files\nRS = $(wildcard code/*.R)\n\n# target files (using pattern substitution)\nPNGS = $(patsubst code/%.R,images/%.png,$(RS))\n\n.PHONY: all clean\n\nall: $(PNGS)\n\n# pattern rule\nimages/%.png: code/%.R\n  cd $(&lt;D) && Rscript $(&lt;F)\n\nclean:\n  rm -f $(PNGS)"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#pattern-substitution",
+    "href": "lectures/18-make4/18-make-functions-slides.html#pattern-substitution",
+    "title": "Other Functions in Make",
+    "section": "Pattern substitution",
+    "text": "Pattern substitution\nThere are two ways to create a variable with pattern substitution\n\n\n\nMakefile\n\n# pattern substitution (option 1)\nVAR1 = $(patsubst PATTERN,REPLACEMENT,$(VARIABLE))\n\n\n\n\n\n\n\nMakefile\n\n# pattern substitution (option 2)\nVAR2 = $(VARIABLE:PATTERN=REPLACEMENT)"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-4-pattern-substitution-opt-1",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-4-pattern-substitution-opt-1",
+    "title": "Other Functions in Make",
+    "section": "Example 4: pattern substitution (opt 1)",
+    "text": "Example 4: pattern substitution (opt 1)\n\n\nMakefile\n\n# dependency files\nRS = $(wildcard code/*.R)\n\n# target files (using pattern substitution)\nPNGS = $(patsubst code/%.R,images/%.png,$(RS))\n\n.PHONY: all clean\n\nall: $(PNGS)\n\n# pattern rule\nimages/%.png: code/%.R\n  cd $(&lt;D) && Rscript $(&lt;F)\n\nclean:\n  rm -f $(PNGS)"
+  },
+  {
+    "objectID": "lectures/18-make4/18-make-functions-slides.html#example-4-pattern-substitution-opt-2",
+    "href": "lectures/18-make4/18-make-functions-slides.html#example-4-pattern-substitution-opt-2",
+    "title": "Other Functions in Make",
+    "section": "Example 4: pattern substitution (opt 2)",
+    "text": "Example 4: pattern substitution (opt 2)\n\n\nMakefile\n\n# dependency files\nRS = $(wildcard code/*.R)\n\n# target files (using pattern substitution)\nPNGS = $(RS:code/%.R=images/%.png)\n\n.PHONY: all clean\n\nall: $(PNGS)\n\n# pattern rule\nimages/%.png: code/%.R\n  cd $(&lt;D) && Rscript $(&lt;F)\n\nclean:\n  rm -f $(PNGS)"
+  },
+  {
+    "objectID": "lectures/20-git6/20-git-collab-slides.html#vocabulary",
+    "href": "lectures/20-git6/20-git-collab-slides.html#vocabulary",
+    "title": "Collaboration in GitHub",
+    "section": "Vocabulary",
+    "text": "Vocabulary\n\n\n\n\n\nFork\nCopying a repository from someone else’s GitHub account to your own GitHub account in the cloud. (A fork is essentially GitHub-to-GitHub).\n\n\n\nClone (git clone)\nDownloading a repository from the cloud (GitHub) to your local computer."
+  },
+  {
+    "objectID": "lectures/20-git6/20-git-collab-slides.html#two-main-workflows",
+    "href": "lectures/20-git6/20-git-collab-slides.html#two-main-workflows",
+    "title": "Collaboration in GitHub",
+    "section": "Two main workflows",
+    "text": "Two main workflows\n\n\n\n\nThe Fork-and-Pull Model\nBest for: Open-source projects, contributing to software you don’t own, or class assignments where students shouldn’t have write access to a master template repository.\n\nThe Shared Repository Model\nBest for: Close-knit project teams, software development teams, or small group assignments where all members have collaborator (write) access to the same repository."
+  },
+  {
+    "objectID": "lectures/20-git6/20-git-collab-slides.html#fork-vs-clone-whats-the-difference-1",
+    "href": "lectures/20-git6/20-git-collab-slides.html#fork-vs-clone-whats-the-difference-1",
+    "title": "Collaboration in GitHub",
+    "section": "Fork vs Clone: What’s the Difference",
+    "text": "Fork vs Clone: What’s the Difference\n\n\n\nFork\nA fork creates a copy of a repository on your GitHub account (remote).\n\nClone\nA clone downloads a repository to your local computer.\n\n\n\n\n\n\nYou typically fork first on GitHub, then clone your fork to your local machine to work on it.\nThe fork maintains a connection to the original repository, which becomes important later when you want to contribute back."
+  },
+  {
+    "objectID": "lectures/20-git6/20-git-collab-slides.html#the-fork-and-pull-model",
+    "href": "lectures/20-git6/20-git-collab-slides.html#the-fork-and-pull-model",
+    "title": "Collaboration in GitHub",
+    "section": "The Fork-and-Pull Model",
+    "text": "The Fork-and-Pull Model\nHere’s a simple flow:\n\nYou typically fork first on GitHub\nThen clone your fork to your local machine\nYou make changes in your local repo\nPush changes to your fork\nOptionally submit changes back to the original"
+  },
+  {
+    "objectID": "lectures/20-git6/20-git-collab-slides.html#workflow",
+    "href": "lectures/20-git6/20-git-collab-slides.html#workflow",
+    "title": "Collaboration in GitHub",
+    "section": "Workflow",
+    "text": "Workflow\n1) Clone (Once): Every team member clones the same central repository directly:\ngit clone https://github.com/organization/shared-repo.git\n\n2) Branch (Every time you code): Always create a new branch for your specific task. Never code directly on main:\ngit switch -c fix-typos\n\n\n3) Push to Central Remote: Push your branch up to the shared repository:\ngit push origin fix-typos\n\n\n4) Open a Pull Request (PR): Go to the shared GitHub repository. Open a Pull Request from fix-typos into main.\n\n\n5) Code Review & Merge: Teammates review the PR, discuss changes, and click Merge once approved. Other team members then pull the updated main branch locally (git pull origin main)."
+  },
+  {
+    "objectID": "lectures/20-git6/20-git-collab-slides.html#shared-repository-workflow",
+    "href": "lectures/20-git6/20-git-collab-slides.html#shared-repository-workflow",
+    "title": "Collaboration in GitHub",
+    "section": "Shared Repository Workflow",
+    "text": "Shared Repository Workflow\n1) Clone (Once): Every team member clones the same central repository directly:\ngit clone https://github.com/organization/shared-repo.git\n\n\n\n2) Branch (Every time you code): Always create a new branch for your specific task. Never code directly on main:\ngit switch -c fix-typos\n\n\n\n\n3) Push to Central Remote: Push your branch up to the shared repository:\ngit push origin fix-typos"
+  },
+  {
+    "objectID": "lectures/20-git6/20-git-collab-slides.html#shared-repository-workflow-contd",
+    "href": "lectures/20-git6/20-git-collab-slides.html#shared-repository-workflow-contd",
+    "title": "Collaboration in GitHub",
+    "section": "Shared Repository Workflow (cont’d)",
+    "text": "Shared Repository Workflow (cont’d)\n4) Open a Pull Request (PR): Go to the shared GitHub repository. Open a Pull Request from fix-typos into main.\n\n\n\n5) Code Review & Merge: Teammates review the PR, discuss changes, and click Merge once approved. Other team members then pull the updated main branch locally (git pull origin main)."
   }
 ]

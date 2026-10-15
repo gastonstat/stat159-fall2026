@@ -196,7 +196,7 @@
         - type: "Lecture"
           id: ""
           name: "More Make (part 2)"
-          href: ""
+          href: "lectures/18-make4/18-make-functions-slides.html"
         - type: "Reading"
           id: ""
           name: "The Duke Trials Retraction (due 10/14)"
@@ -235,8 +235,8 @@
           href: "lectures/22-discuss6/22-discussion-slides.html"
         - type: "Homework"
           id: ""
-          name: "Project 2 TBA (due 10/30)"
-          href: ""
+          name: "Proj2 2024 BPD Annual Report (due 10/30)"
+          href: "hws/proj02/proj02.html"
 - week: 9
   days:
     - date: "Oct 19"

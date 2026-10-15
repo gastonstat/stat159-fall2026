@@ -1383,7 +1383,7 @@
     "href": "lectures/21-data/21-data-slides.html#cherish-your-data",
     "title": "Handling and Sharing Data",
     "section": "Cherish Your Data",
-    "text": "Cherish Your Data\nWithout data, there is no data science\n\nI like to differentiate our roles into 2 categories\n\n\nConsuming data\nYou as the consumer of data created by others\n\nCreating Data\nYou as the creator/curator of data"
+    "text": "Cherish Your Data\n\n\nWithout data, there is no data science\n\n\n\nI like to differentiate our roles into 2 categories\n\n\nConsuming data\nYou as the consumer of data created by others\n\nCreating Data\nYou as the creator/curator of data"
   },
   {
     "objectID": "lectures/21-data/21-data-slides.html#what-to-share",
@@ -1404,35 +1404,35 @@
     "href": "lectures/21-data/21-data-slides.html#metadata-1",
     "title": "Handling and Sharing Data",
     "section": "Metadata",
-    "text": "Metadata\n\nData about the data\nAKA: Code Book\nAKA: Data Dictionary (not to be confused with a python dictionary)"
+    "text": "Metadata\n\nPreferably in a text file\nInclude details\n\nsource, organization\nbackground\ncitation*\n\nNames of variables (features, atttributes)\n\nAs they appear in the file (usually abbreviations)\nBut also, their full name\n\nSometimes you may need to include a full description of each variable"
   },
   {
     "objectID": "lectures/21-data/21-data-slides.html#metadata-2",
     "href": "lectures/21-data/21-data-slides.html#metadata-2",
     "title": "Handling and Sharing Data",
     "section": "Metadata",
-    "text": "Metadata\n\nUse a text file\nInclude details\nNames of variables (features, atttributes)\n\nAs they appear in the file (usually abbreviations)\nBut also, their full name\n\nSometimes you may need to include a full description of each variable\nRecommended data types\nFor categorical or ordinal variables, describe their categories\nMissing values: how are they encoded\nProvenance\n\nHow was data collected?\nWho collected it, how was it collected it?\n\nIf necessary, include further details, comments, notes, for how to make sense of data, or how to treat certain values."
+    "text": "Metadata\n\nPreferably in a text file\nInclude details\n\nsource, organization\nbackground\ncitation*\n\nNames of variables (features, atttributes)\n\nAs they appear in the file (usually abbreviations)\nBut also, their full name\n\nSometimes you may need to include a full description of each variable"
   },
   {
     "objectID": "lectures/21-data/21-data-slides.html#metadata-example",
     "href": "lectures/21-data/21-data-slides.html#metadata-example",
     "title": "Handling and Sharing Data",
     "section": "Metadata Example",
-    "text": "Metadata Example\n \nINCLUDE AN EXAMPLE OF A DATASET AND ITS METADATA!!!\n\nData dictionary of SWITRS data\nData dictionary of IBTrACS"
+    "text": "Metadata Example\nData dictionary of SWITRS data\nhttps://tims.berkeley.edu/help/crashdata/switrs-codebook.php#top\n\n\n\nData dictionary of IBTrACS\n\nhttps://www.ncei.noaa.gov/products/international-best-track-archive\nhttps://www.ncei.noaa.gov/sites/default/files/2025-09/IBTrACS_v04r01_column_documentation.pdf"
   },
   {
     "objectID": "lectures/21-data/21-data-slides.html#data-in-spreadsheets-1",
     "href": "lectures/21-data/21-data-slides.html#data-in-spreadsheets-1",
     "title": "Handling and Sharing Data",
     "section": "Data in Spreadsheets",
-    "text": "Data in Spreadsheets\nSee Karl Broman’s tutorial"
+    "text": "Data in Spreadsheets\n\n\nSee Karl Broman’s tutorial: organizing data in spreadsheets\nhttps://kbroman.org/dataorg/"
   },
   {
     "objectID": "lectures/21-data/21-data-slides.html#data-tables",
     "href": "lectures/21-data/21-data-slides.html#data-tables",
     "title": "Handling and Sharing Data",
     "section": "Data Tables",
-    "text": "Data Tables\nTidy data"
+    "text": "Data Tables\nTidy Data by Hadley Wickham\nhttps://vita.had.co.nz/papers/tidy-data.pdf\nThree Core Rules\n\nEach variable is a column (a column contains all values that measure the same attribute).\nEach observation is a row (a row contains all values measured on a single unit).\nEach value is a cell (a cell contains a single measurement of an attribute)."
   },
   {
     "objectID": "lectures/21-data/21-data-slides.html#fair",
@@ -1467,7 +1467,7 @@
     "href": "lectures/21-data/21-data-slides.html#what-about-sharing-data-in-github",
     "title": "Handling and Sharing Data",
     "section": "What about sharing data in GitHub?",
-    "text": "What about sharing data in GitHub?\n\nDon’t use github for big data\nGitHub has a limit on file size: cannot exceed 100Mb\nMany data sets can easily exceed 100Mb\nAlso, be careful with binary data (Git tracks text files, not binary files)"
+    "text": "What about sharing data in GitHub?\n\nDon’t use github for big data\nGitHub has a limit on file size: cannot exceed 100MB\nMany data sets can easily exceed 100MB\nAlso, be careful with binary data (Git tracks text files, not binary files)"
   },
   {
     "objectID": "lectures/21-data/21-data-slides.html#what-about-sharing-data-through-an-r-package",
@@ -1530,7 +1530,7 @@
     "href": "lectures/21-data/21-data-slides.html#last-words",
     "title": "Handling and Sharing Data",
     "section": "Last Words",
-    "text": "Last Words\n\nLove your data, and help other love it, too\nPublish your data\nEncourage others to cherish, document, and publish their data\nReward colleagues who share data\nPraise those following best practices\nGive credit to those whose data you use"
+    "text": "Last Words\n\nLove your data, and help others love it, too\nPublish your data\nEncourage others to cherish, document, and publish their data\nReward colleagues who share data\nPraise those following best practices\nGive credit to those whose data you use"
   },
   {
     "objectID": "lectures/13-discuss3/13-discussion-slides.html#well-begin-past-10",
@@ -3502,7 +3502,7 @@
     "href": "readings/06-reading-duke-trials.html",
     "title": "6) Irreproducibility Tales 2",
     "section": "",
-    "text": "Title: Forensic Bioinformatics: Investigating Reproducibility of Results\nAuthor(s): Teresa Melcher\nYear: 2011\nJournal: Science Editor\nhttps://www.csescienceeditor.org/article/forensic-bioinformatics-investigating-reproducibility-of-results/\n\n\n\n\nTitle: Duke Clinical Trials - 60 Minutes\nAuthors: 60 Minutes\nYear: 2012\nType: YouTube video\nhttps://www.youtube.com/watch?v=W5sZTNPMQRM&ab_channel=HensonFuerst\n\n\n\n\nTitle: The Importance of Reproducible Research in High-Throughput Biology\nAuthors: Keith Baggerly\nYear: 2024\nType: IGCT Workshops. 5.\nhttps://openworks.mdanderson.org/igct_workshops/5/",
+    "text": "📖 Article\n\nTitle: The Duke University scandal — what can be done?\nAuthor(s): Darrel Ince\nYear: 2011\nJournal: Significance, 8: 113-115\nhttps://doi.org/10.1111/j.1740-9713.2011.00505.x\n\n📺 Video\n\nTitle: Duke Clinical Trials - 60 Minutes\nAuthors: 60 Minutes\nYear: 2012\nType: YouTube video\nhttps://www.youtube.com/watch?v=W5sZTNPMQRM&ab_channel=HensonFuerst\n\n\n\n\nTitle: The Importance of Reproducible Research in High-Throughput Biology\nAuthors: Keith Baggerly\nYear: 2024\nType: IGCT Workshops. 5.\nhttps://openworks.mdanderson.org/igct_workshops/5/",
     "crumbs": [
       "Readings",
       "6) Irreproducibility Tales 2"
@@ -3513,7 +3513,7 @@
     "href": "readings/06-reading-duke-trials.html#assigned-reading",
     "title": "6) Irreproducibility Tales 2",
     "section": "",
-    "text": "Title: Forensic Bioinformatics: Investigating Reproducibility of Results\nAuthor(s): Teresa Melcher\nYear: 2011\nJournal: Science Editor\nhttps://www.csescienceeditor.org/article/forensic-bioinformatics-investigating-reproducibility-of-results/\n\n\n\n\nTitle: Duke Clinical Trials - 60 Minutes\nAuthors: 60 Minutes\nYear: 2012\nType: YouTube video\nhttps://www.youtube.com/watch?v=W5sZTNPMQRM&ab_channel=HensonFuerst\n\n\n\n\nTitle: The Importance of Reproducible Research in High-Throughput Biology\nAuthors: Keith Baggerly\nYear: 2024\nType: IGCT Workshops. 5.\nhttps://openworks.mdanderson.org/igct_workshops/5/",
+    "text": "📖 Article\n\nTitle: The Duke University scandal — what can be done?\nAuthor(s): Darrel Ince\nYear: 2011\nJournal: Significance, 8: 113-115\nhttps://doi.org/10.1111/j.1740-9713.2011.00505.x\n\n📺 Video\n\nTitle: Duke Clinical Trials - 60 Minutes\nAuthors: 60 Minutes\nYear: 2012\nType: YouTube video\nhttps://www.youtube.com/watch?v=W5sZTNPMQRM&ab_channel=HensonFuerst\n\n\n\n\nTitle: The Importance of Reproducible Research in High-Throughput Biology\nAuthors: Keith Baggerly\nYear: 2024\nType: IGCT Workshops. 5.\nhttps://openworks.mdanderson.org/igct_workshops/5/",
     "crumbs": [
       "Readings",
       "6) Irreproducibility Tales 2"
@@ -7226,5 +7226,63 @@
     "title": "Collaboration in GitHub",
     "section": "Shared Repository Workflow (cont’d)",
     "text": "Shared Repository Workflow (cont’d)\n4) Open a Pull Request (PR): Go to the shared GitHub repository. Open a Pull Request from fix-typos into main.\n\n\n\n5) Code Review & Merge: Teammates review the PR, discuss changes, and click Merge once approved. Other team members then pull the updated main branch locally (git pull origin main)."
+  },
+  {
+    "objectID": "lectures/21-data/21-data-slides.html#metadata-contd",
+    "href": "lectures/21-data/21-data-slides.html#metadata-contd",
+    "title": "Handling and Sharing Data",
+    "section": "Metadata (cont’d)",
+    "text": "Metadata (cont’d)\n\nRecommended data types for each variable\n\nboolean, integer, float, character, other\n\nFor categorical or ordinal variables, describe their categories\nMissing values: how are they encoded\nProvenance\n\nHow was data collected?\nWho collected it, how was it collected it?\n\nIf necessary, include further details, comments, notes, for how to make sense of data, or how to treat certain values."
+  },
+  {
+    "objectID": "lectures/21-data/21-data-slides.html#about-metadata",
+    "href": "lectures/21-data/21-data-slides.html#about-metadata",
+    "title": "Handling and Sharing Data",
+    "section": "About Metadata",
+    "text": "About Metadata\n\nData about the data\nAKA: Codebook\nAKA: Data Dictionary (not to be confused with a python dictionary) . . .\n\n\nIt is a comprehensive reference document that defines, structures, and explains the contents, layout, and variables of a dataset."
+  },
+  {
+    "objectID": "hws/proj02/proj02.html",
+    "href": "hws/proj02/proj02.html",
+    "title": "Project 2) Replicating Claims from 2024 BPD Annual Report",
+    "section": "",
+    "text": "For this assignment, we will ask you to work in pairs to conduct a replication analysis of various claims made by the Berkeley Police Department in their 2024 Annual Report.",
+    "crumbs": [
+      "HW",
+      "Project 2) Replicating Claims from 2024 BPD Annual Report"
+    ]
+  },
+  {
+    "objectID": "hws/proj02/proj02.html#bpd-annual-report",
+    "href": "hws/proj02/proj02.html#bpd-annual-report",
+    "title": "Project 2) Replicating Claims from 2024 BPD Annual Report",
+    "section": "2024 BPD Annual Report",
+    "text": "2024 BPD Annual Report\nEvery year, the Berkeley Police Department (BPD) publishes an Annual Report to document their measurable progress, and to communicate their activities and achievements around five major topics:\n\nStaffing & Workload\nCrime & Investigations\nRoad Safety & Collisions\nStop Data\nUse of Force\n\nYou can find the 2024 Berkeley Police Department Annual Report in the following link:\nhttps://berkeleyca.gov/sites/default/files/documents/BPD%202024%20Annual%20Report.pdf\n\nData Sets for Project 2\nSome of the data collected by BPD is shared to the public through their so-called Transparency Hub: https://bpd-transparency-initiative-berkeleypd.hub.arcgis.com/. This is an online public data portal maintained by BPD to share near-real-time policing metrics, crime trends, and operational records.\nFor this assignment, we want you to focus on some of the claims reported in the sections “Road Safety & Collisions” and “Stop Data”. You can find the associated CSV data sets in the Data Portal tab of the Transparency Hub: https://bpd-transparency-initiative-berkeleypd.hub.arcgis.com/search\n\nCollision Data (2011 to Current)\nBerkeley PD Stop Data (2024 - Current)\n\n\n\nReplication Targets\nHere are the claims (e.g. numeric summaries, tables, graphics) from the 2024 BPD Annual Report that you will attempt to reproduce:\n\nTable of “Collision Totals” (page 18)\nTable of “Top collision locations” (page 19)\nBar chart of “Primary Collision Factors, 2024” (page 19)\nBar chart of “Most frequent vehicle violations, 2024” (page 21)\nNumeric summaries in the first two paragraphs of the “Stop Data Report” section (page 22)\nBar chart of “Discretionary Stop Demographics during Inter-twilight Period, 2024” (page 24)\n\nNote that parts a)-c) involve Collision Data, whereas parts d)-f) involve Stop Data.",
+    "crumbs": [
+      "HW",
+      "Project 2) Replicating Claims from 2024 BPD Annual Report"
+    ]
+  },
+  {
+    "objectID": "hws/proj02/proj02.html#deliverables",
+    "href": "hws/proj02/proj02.html#deliverables",
+    "title": "Project 2) Replicating Claims from 2024 BPD Annual Report",
+    "section": "Deliverables",
+    "text": "Deliverables\nFor this assignment, you will have a single GitHub repository for your group. Here’s a suggested file structure, but feel free to adjust the structure if you consider it necessary.\n├── .gitignore\n├── README.md\n├── Makefile\n├── environment.yml\n├── data/           # raw data files, and data dictionaries\n├── code/           # R/Python scripts or notebooks\n├── outputs/        # images, tables, numeric summaries\n└── report/         # main report (PDF) with embedded outputs\nYour repository should contain the following:\n\ndata/ folder with raw CSV files, and also with their corresponding data dictionaries (aka codebooks). BTW: You will have to create the codebooks.\n\nOptional: you can also include derived “clean” versions of the data sets, but we’ll leave this decision up to your discretion.\n\n\n\n\n\n\n\nNote\n\n\n\nWe are asking you to store the raw data files since each of them has a fairly small size of around 4.0MB. However, keep mind that this will not always be possible with larger files.\n\n\ncode/ folder with R/Python scripts and/or qmd/ipynb notebooks. The number of files, the kind of files, as well as their purpose is up to you. Make sure to follow consistent naming conventions, and good habits for organizing their content.\noutputs/ folder with the main reproduced images, tables, and numeric summaries. These are to be used in your report.\nA report/ folder with a corresponding report document (in PDF format, 10 pages max) containing your replicated outputs (e.g. numeric summaries, tables, graphics). Indicate which elements you were able to successfully reproduce, and if applicable, which elements you failed to reproduce or struggled to fully reproduce, and the reason(s) for such a failure.\nA Makefile that includes at least:\n\n.PHONY targets all and clean\nall rule to produce report in PDF format, and other targets of your consideration\nclean rule to remove PDF report, and other targets of your consideration\n\nA README.md describing the aims of the project, the source of the 2024 BPD Annual Report, the sources of raw data files, important details/descriptions about the project’s structure. Also, include a section of personal reflections about the things you learn while working on this assignment.\nAdd a Conda environment.yml\nAn ai_documentation.txt file where your group will put the name of the AI tool, its model version [e.g. , ChatGPT-4, OpenAI], the prompts, and the obtained output.",
+    "crumbs": [
+      "HW",
+      "Project 2) Replicating Claims from 2024 BPD Annual Report"
+    ]
+  },
+  {
+    "objectID": "hws/proj02/proj02.html#other-considerations",
+    "href": "hws/proj02/proj02.html#other-considerations",
+    "title": "Project 2) Replicating Claims from 2024 BPD Annual Report",
+    "section": "Other Considerations",
+    "text": "Other Considerations\nWe will grade commit mechanics (how changes are packaged and documented) alongside workflow integrity (how git was used as a tool for reproducible research, rather than a single bulk upload at 11:59 PM).\n\nNeedless to say that you should avoid “dumping” the entire project in 1 or 2 massive commits at the deadline.\nEach commit should represent a coherent, single step (e.g., \"Add download data script\" or \"Fix plot axis labels in figure 2\") rather than bundling unrelated files (data, scripts, and report) into one giant commit.\nCommits should show steady development over the project window.\nConcise, descriptive first lines (50–72 characters) stating what changed and why (e.g., Add unit test for missing values in survey data).\nDo not use vague messages like update, fixed code, changes, or final submission.\nUse of branches to collaborate.",
+    "crumbs": [
+      "HW",
+      "Project 2) Replicating Claims from 2024 BPD Annual Report"
+    ]
   }
 ]

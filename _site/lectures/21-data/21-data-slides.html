@@ -152,15 +152,19 @@
 </section>
 <section id="cherish-your-data" class="slide level2">
 <h2>Cherish Your Data</h2>
+<p><br>
+</p>
 <p>Without data, there is no data science</p>
 <div class="fragment">
+<p><br>
+</p>
 <p>I like to differentiate our roles into 2 categories</p>
 <div class="columns">
 <div class="column fragment">
-<p>Consuming data</p>
+<p><span class="mdlit">Consuming data</span></p>
 <p>You as the consumer of data created by others</p>
 </div><div class="column fragment">
-<p>Creating Data</p>
+<p><span class="hilit">Creating Data</span></p>
 <p>You as the creator/curator of data</p>
 </div></div>
 </div>
@@ -188,26 +192,42 @@
 <h1>Metadata</h1>
 
 </section>
+<section id="about-metadata" class="slide level2">
+<h2>About Metadata</h2>
+<ul>
+<li class="fragment">Data about the data</li>
+<li class="fragment">AKA: Codebook</li>
+<li class="fragment">AKA: Data Dictionary (not to be confused with a python dictionary) . . .</li>
+</ul>
+<div class="poll fragment">
+<p>It is a comprehensive reference document that defines, structures, and explains the contents, layout, and variables of a dataset.</p>
+</div>
+</section>
 <section id="metadata-1" class="slide level2">
 <h2>Metadata</h2>
 <ul>
-<li class="fragment">Data about the data</li>
-<li class="fragment">AKA: Code Book</li>
-<li class="fragment">AKA: Data Dictionary (not to be confused with a python dictionary)</li>
-</ul>
-</section>
-<section id="metadata-2" class="slide level2">
-<h2>Metadata</h2>
+<li class="fragment">Preferably in a text file</li>
+<li class="fragment">Include details
 <ul>
-<li class="fragment">Use a text file</li>
-<li class="fragment">Include details</li>
+<li class="fragment">source, organization</li>
+<li class="fragment">background</li>
+<li class="fragment">citation*</li>
+</ul></li>
 <li class="fragment">Names of variables (features, atttributes)
 <ul>
 <li class="fragment">As they appear in the file (usually abbreviations)</li>
 <li class="fragment">But also, their full name</li>
 </ul></li>
 <li class="fragment">Sometimes you may need to include a full description of each variable</li>
-<li class="fragment">Recommended data types</li>
+</ul>
+</section>
+<section id="metadata-contd" class="slide level2">
+<h2>Metadata (cont’d)</h2>
+<ul>
+<li class="fragment">Recommended data types for each variable
+<ul>
+<li class="fragment">boolean, integer, float, character, other</li>
+</ul></li>
 <li class="fragment">For categorical or ordinal variables, describe their categories</li>
 <li class="fragment">Missing values: how are they encoded</li>
 <li class="fragment">Provenance
@@ -220,12 +240,17 @@
 </section>
 <section id="metadata-example" class="slide level2">
 <h2>Metadata Example</h2>
-<p>&nbsp;</p>
-<p><span class="hilit">INCLUDE AN EXAMPLE OF A DATASET AND ITS METADATA!!!</span></p>
+<p>Data dictionary of SWITRS data</p>
+<p><a href="https://tims.berkeley.edu/help/crashdata/switrs-codebook.php#top" class="uri">https://tims.berkeley.edu/help/crashdata/switrs-codebook.php#top</a></p>
+<p><br>
+</p>
+<div class="fragment">
+<p>Data dictionary of IBTrACS</p>
 <ul>
-<li class="fragment">Data dictionary of SWITRS data</li>
-<li class="fragment">Data dictionary of IBTrACS</li>
+<li class="fragment"><a href="https://www.ncei.noaa.gov/products/international-best-track-archive" class="uri">https://www.ncei.noaa.gov/products/international-best-track-archive</a></li>
+<li class="fragment"><a href="https://www.ncei.noaa.gov/sites/default/files/2025-09/IBTrACS_v04r01_column_documentation.pdf" class="uri">https://www.ncei.noaa.gov/sites/default/files/2025-09/IBTrACS_v04r01_column_documentation.pdf</a></li>
 </ul>
+</div>
 </section></section>
 <section>
 <section id="data-in-spreadsheets" class="title-slide slide level1 center">
@@ -234,7 +259,10 @@
 </section>
 <section id="data-in-spreadsheets-1" class="slide level2">
 <h2>Data in Spreadsheets</h2>
-<p><span class="hilit">See Karl Broman’s tutorial</span></p>
+<p><br>
+</p>
+<p>See Karl Broman’s tutorial: <span class="bold-hilit">organizing data in spreadsheets</span></p>
+<p><a href="https://kbroman.org/dataorg/" class="uri">https://kbroman.org/dataorg/</a></p>
 </section></section>
 <section>
 <section id="tabular-data" class="title-slide slide level1 center">
@@ -243,7 +271,14 @@
 </section>
 <section id="data-tables" class="slide level2">
 <h2>Data Tables</h2>
-<p>Tidy data</p>
+<p>Tidy Data by Hadley Wickham</p>
+<p><a href="https://vita.had.co.nz/papers/tidy-data.pdf" class="uri">https://vita.had.co.nz/papers/tidy-data.pdf</a></p>
+<p>Three Core Rules</p>
+<ol type="1">
+<li class="fragment"><span class="bold-hilit">Each variable is a column</span> (a column contains all values that measure the same attribute).</li>
+<li class="fragment"><span class="bold-hilit">Each observation is a row</span> (a row contains all values measured on a single unit).</li>
+<li class="fragment"><span class="bold-hilit">Each value is a cell</span> (a cell contains a single measurement of an attribute).</li>
+</ol>
 </section></section>
 <section>
 <section id="fair-principles" class="title-slide slide level1 center">
@@ -291,8 +326,8 @@
 <h2>What about sharing data in GitHub?</h2>
 <ul>
 <li class="fragment">Don’t use github for big data</li>
-<li class="fragment">GitHub has a limit on file size: cannot exceed 100Mb</li>
-<li class="fragment">Many data sets can easily exceed 100Mb</li>
+<li class="fragment">GitHub has a limit on file size: cannot exceed 100MB</li>
+<li class="fragment">Many data sets can easily exceed 100MB</li>
 <li class="fragment">Also, be careful with binary data (Git tracks text files, not binary files)</li>
 </ul>
 </section>
@@ -476,7 +511,7 @@
 <section id="last-words" class="slide level2">
 <h2>Last Words</h2>
 <ul>
-<li class="fragment">Love your data, and help other love it, too</li>
+<li class="fragment">Love your data, and help others love it, too</li>
 <li class="fragment">Publish your data</li>
 <li class="fragment">Encourage others to cherish, document, and publish their data</li>
 <li class="fragment">Reward colleagues who share data</li>

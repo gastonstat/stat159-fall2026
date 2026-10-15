@@ -9,21 +9,25 @@ chalkboard: true
 
 ## Cherish Your Data
 
+\
+
 Without data, there is no data science
 
 . . .
+
+\
 
 I like to differentiate our roles into 2 categories
 
 :::: {.columns}
 ::: {.column .fragment}
-Consuming data
+[Consuming data]{.mdlit}
 
 You as the consumer of data created by others
 :::
 
 ::: {.column .fragment}
-Creating Data
+[Creating Data]{.hilit}
 
 You as the creator/curator of data 
 :::
@@ -48,22 +52,35 @@ You as the creator/curator of data
 
 # Metadata
 
-## Metadata
+## About Metadata
 
 - Data about the data
-- AKA: Code Book
+- AKA: Codebook
 - AKA: Data Dictionary (not to be confused with a python dictionary)
+. . .
+
+::: {.poll .fragment}
+It is a comprehensive reference document that defines, structures, and explains 
+the contents, layout, and variables of a dataset.
+:::
 
 
 ## Metadata
 
-- Use a text file
+- Preferably in a text file
 - Include details
+    + source, organization
+    + background
+    + citation*
 - Names of variables (features, atttributes)
     + As they appear in the file (usually abbreviations)
     + But also, their full name
 - Sometimes you may need to include a full description of each variable
-- Recommended data types
+
+## Metadata (cont'd)
+
+- Recommended data types for each variable
+    + boolean, integer, float, character, other
 - For categorical or ordinal variables, describe their categories
 - Missing values: how are they encoded
 - Provenance
@@ -75,26 +92,44 @@ make sense of data, or how to treat certain values.
 
 ## Metadata Example
 
-\ 
+Data dictionary of SWITRS data
 
-[INCLUDE AN EXAMPLE OF A DATASET AND ITS METADATA!!!]{.hilit}
+<https://tims.berkeley.edu/help/crashdata/switrs-codebook.php#top>
 
-- Data dictionary of SWITRS data
-- Data dictionary of IBTrACS
+\
+
+. . .
+
+Data dictionary of IBTrACS
+
+- <https://www.ncei.noaa.gov/products/international-best-track-archive>
+- <https://www.ncei.noaa.gov/sites/default/files/2025-09/IBTrACS_v04r01_column_documentation.pdf>
 
 
 # Data in Spreadsheets
 
 ## Data in Spreadsheets
 
-[See Karl Broman's tutorial]{.hilit}
+\
 
+See Karl Broman's tutorial: [organizing data in spreadsheets]{.bold-hilit}
+
+<https://kbroman.org/dataorg/>
 
 # Tabular Data
 
 ## Data Tables
 
-Tidy data
+Tidy Data by Hadley Wickham
+
+<https://vita.had.co.nz/papers/tidy-data.pdf>
+
+
+Three Core Rules
+
+1. [Each variable is a column]{.bold-hilit} (a column contains all values that measure the same attribute).
+2. [Each observation is a row]{.bold-hilit} (a row contains all values measured on a single unit).
+3. [Each value is a cell]{.bold-hilit} (a cell contains a single measurement of an attribute).
 
 
 # FAIR Principles
@@ -157,8 +192,8 @@ publishers or institutional websites.
 ## What about sharing data in GitHub?
 
 - Don't use github for big data
-- GitHub has a limit on file size: cannot exceed 100Mb
-- Many data sets can easily exceed 100Mb
+- GitHub has a limit on file size: cannot exceed 100MB
+- Many data sets can easily exceed 100MB
 - Also, be careful with binary data 
 (Git tracks text files, not binary files)
 
@@ -327,7 +362,7 @@ As long as you:
 
 ## Last Words
 
-- Love your data, and help other love it, too
+- Love your data, and help others love it, too
 - Publish your data
 - Encourage others to cherish, document, and publish their data
 - Reward colleagues who share data

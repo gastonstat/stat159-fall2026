@@ -900,7 +900,7 @@
     "href": "lectures/25-packages/25-packages-slides.html#building-an-r-package",
     "title": "R Packaging",
     "section": "Building An R Package",
-    "text": "Building An R Package\nNow that we have most of the common elements of an R package, let’s talk about how the package-building process.\nI will show the way I like to create my packages.\nThis means that you may find other useRs following different building strategies."
+    "text": "Building An R Package\nNow that we have most of the common elements of an R package, let’s talk about the package-building process.\nI will show the way I like to create my packages.\nThis means that you may find other useRs following different building strategies."
   },
   {
     "objectID": "lectures/25-packages/25-packages-slides.html#package-states-1",
@@ -942,7 +942,7 @@
     "href": "lectures/25-packages/25-packages-slides.html#installed-package",
     "title": "R Packaging",
     "section": "Installed Package",
-    "text": "Installed Package\n\n\n\n\n\n\nAn installed package is a decompressed binary file that has been unwarpped into an actual package library.\nTypically, it will located in the directory where other package libraries are stored."
+    "text": "Installed Package\n\n\n\n\n\n\nAn installed package is a decompressed binary file that has been unwrapped into an actual package library.\nTypically, it will be located in the directory where other package libraries are stored."
   },
   {
     "objectID": "lectures/25-packages/25-packages-slides.html#in-memory-package",
@@ -984,7 +984,7 @@
     "href": "lectures/25-packages/25-packages-slides.html#check-documentation",
     "title": "R Packaging",
     "section": "Check Documentation",
-    "text": "Check Documentation\nAn optional, but strongly recommended, step after new documentation has been generated, is to check that it is correct.\n\n\nThis step becomes mandatory if you plan to share your package via CRAN.\n\n\nTo check that the .Rd files are okay, use the function\ndevtools::check_man() which inspects that the content and syntax of the .Rd files are correct."
+    "text": "Check Documentation\nAn optional—but strongly recommended—step after new documentation has been generated, is to check that it is correct.\n\n\nThis step becomes mandatory if you plan to share your package via CRAN.\n\n\nTo check that the .Rd files are okay, use the function\ndevtools::check_man() which inspects that the content and syntax of the .Rd files are correct."
   },
   {
     "objectID": "lectures/25-packages/25-packages-slides.html#run-tests",
@@ -2818,7 +2818,7 @@
     "href": "lectures/23-code/23-clear-code-slides.html#basic-principles",
     "title": "Writing Clear Code",
     "section": "Basic Principles",
-    "text": "Basic Principles\n\nCode that works\n\nNo bugs; efficiency is secondary (or tertiary)\n\nReadable\n\nFixable; extendible\n\nReusable\n\nModular; reasonably general\n\nReproducible\n\nRe-runnable\n\nThink before you code\n\nMore thought \\(\\longrightarrow\\) fewer bugs/re-writes\n\nLearn from others’ code\n\nR itself; key R packages"
+    "text": "Basic Principles\n\nCode that works\n\nNo bugs; efficiency is secondary (or tertiary)\n\nReadable\n\nFixable; extendible\n\nReusable\n\nModular; reasonably general\n\nReproducible\n\nRe-runnable\n\nThink before you code\n\nMore thought \\(\\longrightarrow\\) fewer bugs/re-writes"
   },
   {
     "objectID": "lectures/23-code/23-clear-code-slides.html#section",
@@ -2832,14 +2832,14 @@
     "href": "lectures/23-code/23-clear-code-slides.html#break-code-into-small-functions",
     "title": "Writing Clear Code",
     "section": "Break Code into small functions",
-    "text": "Break Code into small functions\n\naverage &lt;- function(x) {\n  sum(x) / length(x)\n}\n\n\n\n\naverage &lt;- function(x, na.rm = FALSE) {\n  if (na.rm) {\n    x &lt;- x[!is.na(x)]\n  }\n  sum(x) / length(x)\n}"
+    "text": "Break Code into small functions\n\naverage &lt;- function(x) {\n  sum(x) / length(x)\n}\n\n\n\n\n\naverage &lt;- function(x, na.rm = FALSE) {\n  if (na.rm) {\n    x &lt;- x[!is.na(x)]\n  }\n  sum(x) / length(x)\n}"
   },
   {
     "objectID": "lectures/23-code/23-clear-code-slides.html#clarity-over-efficiency",
     "href": "lectures/23-code/23-clear-code-slides.html#clarity-over-efficiency",
     "title": "Writing Clear Code",
     "section": "Clarity over Efficiency",
-    "text": "Clarity over Efficiency\n\nfv &lt;- function(p, r, n) {\n  p * (1 + r)^n\n}\n\n\nfuture_value &lt;- function(prin, rate, years) {\n  prin * (1 + rate)^years\n}"
+    "text": "Clarity over Efficiency\n\nfv &lt;- function(p, r, n) {\n  p * (1 + r)^n\n}\n\n\n\n\n\nfuture_value &lt;- function(principal, rate, years) {\n  principal * (1 + rate)^years\n}"
   },
   {
     "objectID": "lectures/23-code/23-clear-code-slides.html#writing-functions",
@@ -3589,7 +3589,7 @@
     "href": "index.html#schedule",
     "title": "STAT 159/259: Collaborative and Reproducible Statistical Data Science",
     "section": "Schedule 📅",
-    "text": "Schedule 📅\nTentative calendar subject to change.\n\nWeek 1\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 26\n             \n             \n               Lecture  Welcome to Stat 159\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 28\n             \n             \n               Lecture  Naming Files\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 2\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 31\n             \n             \n               Lecture  File Paths & Unix Terminal\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 01\n             \n             \n               Lab  Shell Commands\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 02\n             \n             \n               Lecture  Project Organization\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Ten Simple Rules for RCR (due 9/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 04\n             \n             \n               Lecture  Intro to Git (part I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW1 Reproducibility Checkup (due 9/18)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 3\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 07\n             \n             \n               No-Class  Academic Holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 08\n             \n             \n               Lab  Getting Started with Git\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 09\n             \n             \n               Lecture  Intro to Git (part II)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Guide for Reproducible Research (due 9/16)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 11\n             \n             \n               Lecture  Discussion Reading 1\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 4\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 14\n             \n             \n               Lecture  Git Branching\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 15\n             \n             \n               Lab  Getting started with Git branches\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 16\n             \n             \n               Lecture  Case Study: Global Temperature\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  7 Easy Steps to Open Science (due 9/23)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 18\n             \n             \n               Lecture  Discussion Reading 2\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj1 Replicating temperature Graphics (due 10/2)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 5\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 21\n             \n             \n               Lecture  Git Remotes\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 22\n             \n             \n               Lab  Github and remote repos\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 23\n             \n             \n               Lecture  Undoing changes in Git\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Data Science at the Singularity (due 9/30)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 25\n             \n             \n               Lecture  Discussion Reading 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 6\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 28\n             \n             \n               Lecture  Intro to Make (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 29\n             \n             \n               Lab  Getting started with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 30\n             \n             \n               Lecture  Intro to Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Reinhart-Rogoff Fiasco (due 10/07)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 02\n             \n             \n               Lecture  Discussion Reading 4\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW2 TBA (due 10/16)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 7\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 05\n             \n             \n               Lecture  Variables in Make\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj1 Peer Review (due 10/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 06\n             \n             \n               Lab  More automation with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 07\n             \n             \n               Lecture  More Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Duke Trials Retraction (due 10/14)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 09\n             \n             \n               Lecture  Discussion Reading 5\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 8\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 12\n             \n             \n               Lecture  Git Collaborative workflows\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 13\n             \n             \n               Lab  Working in groups in Github\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 14\n             \n             \n               Lecture  Handling and Sharing Data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 16\n             \n             \n               Lecture  Discussion Reading 6\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 2 TBA (due 10/30)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 9\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 19\n             \n             \n               Lecture  Writing Clear Code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 20\n             \n             \n               Lab  Hands on sharing and managing data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 21\n             \n             \n               Lecture  Packaging Code (I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Share Your Code (due 10/28)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 23\n             \n             \n               Lecture  Packaging Code (II)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 10\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 26\n             \n             \n               Lecture  Packaging Code (III)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 27\n             \n             \n               Lab  Documenting your code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 28\n             \n             \n               Lecture  Environment Mgmt\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  RR Legal Framework (due 11/04)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 30\n             \n             \n               Lecture  Discussion Reading 7\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW-3 TBA (due 11/13)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 11\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 02\n             \n             \n               Lecture  Environment Management (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 03\n             \n             \n               Lab  Managing environments\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 04\n             \n             \n               Lecture  Licenses\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Rules for Better Figures (due 11/11)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 06\n             \n             \n               Lecture  Discussion Reading 8\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 12\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 09\n             \n             \n               Lecture  Images, Figures and Graphics\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 10\n             \n             \n               Lab  Handling images and figures\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 11\n             \n             \n               No-Class  Academic holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Research Compendium (due 11/18)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 13\n             \n             \n               Lecture  Discussion Reading 9\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 3 TBA (due 12/07)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 13\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 16\n             \n             \n               Lecture  Research Compendium\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 17\n             \n             \n               Lab  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 18\n             \n             \n               Lecture  Discussion Reading 10\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 20\n             \n             \n               Lecture  Publishing & Communication I\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 14\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 23\n             \n             \n               Lecture  Publishing & Communication II\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 24\n             \n             \n               Lab  Final project status\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 25\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 27\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 15\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 30\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 01\n             \n             \n               Lab  Wrap-Up Final Project\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 02\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 04\n             \n             \n               Lecture  Closing Talk\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 16\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 07\n             \n             \n               Overview  RRR Week\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 17\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 14\n             \n             \n               Final  Project 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \nNo matching items",
+    "text": "Schedule 📅\nTentative calendar subject to change.\n\nWeek 1\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 26\n             \n             \n               Lecture  Welcome to Stat 159\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 28\n             \n             \n               Lecture  Naming Files\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 2\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 31\n             \n             \n               Lecture  File Paths & Unix Terminal\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 01\n             \n             \n               Lab  Shell Commands\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 02\n             \n             \n               Lecture  Project Organization\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Ten Simple Rules for RCR (due 9/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 04\n             \n             \n               Lecture  Intro to Git (part I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW1 Reproducibility Checkup (due 9/18)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 3\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 07\n             \n             \n               No-Class  Academic Holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 08\n             \n             \n               Lab  Getting Started with Git\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 09\n             \n             \n               Lecture  Intro to Git (part II)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Guide for Reproducible Research (due 9/16)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 11\n             \n             \n               Lecture  Discussion Reading 1\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 4\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 14\n             \n             \n               Lecture  Git Branching\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 15\n             \n             \n               Lab  Getting started with Git branches\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 16\n             \n             \n               Lecture  Case Study: Global Temperature\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  7 Easy Steps to Open Science (due 9/23)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 18\n             \n             \n               Lecture  Discussion Reading 2\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj1 Replicating temperature Graphics (due 10/2)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 5\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 21\n             \n             \n               Lecture  Git Remotes\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 22\n             \n             \n               Lab  Github and remote repos\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 23\n             \n             \n               Lecture  Undoing changes in Git\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Data Science at the Singularity (due 9/30)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 25\n             \n             \n               Lecture  Discussion Reading 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 6\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 28\n             \n             \n               Lecture  Intro to Make (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 29\n             \n             \n               Lab  Getting started with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 30\n             \n             \n               Lecture  Intro to Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Reinhart-Rogoff Fiasco (due 10/07)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 02\n             \n             \n               Lecture  Discussion Reading 4\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW2 TBA (due 10/16)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 7\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 05\n             \n             \n               Lecture  Variables in Make\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj1 Peer Review (due 10/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 06\n             \n             \n               Lab  More automation with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 07\n             \n             \n               Lecture  More Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Duke Trials Retraction (due 10/14)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 09\n             \n             \n               Lecture  Discussion Reading 5\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 8\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 12\n             \n             \n               Lecture  Git Collaborative workflows\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 13\n             \n             \n               Lab  Working in groups in Github\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 14\n             \n             \n               Lecture  Handling and Sharing Data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 16\n             \n             \n               Lecture  Discussion Reading 6\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj2 2024 BPD Annual Report (due 10/30)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 9\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 19\n             \n             \n               Lecture  Writing Clear Code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 20\n             \n             \n               Lab  Hands on sharing and managing data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 21\n             \n             \n               Lecture  Packaging Code: R packages (I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Share Your Code (due 10/28)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 23\n             \n             \n               Lecture  Packaging Code: R packages (II)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 10\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 26\n             \n             \n               Lecture  Packaging Code: Python packages\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 27\n             \n             \n               Lab  Documenting your code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 28\n             \n             \n               Lecture  Environment Mgmt\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  RR Legal Framework (due 11/04)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 30\n             \n             \n               Lecture  Discussion Reading 7\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW-3 TBA (due 11/13)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 11\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 02\n             \n             \n               Lecture  Environment Management (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 03\n             \n             \n               Lab  Managing environments\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 04\n             \n             \n               Lecture  Licenses\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Rules for Better Figures (due 11/11)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 06\n             \n             \n               Lecture  Discussion Reading 8\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 12\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 09\n             \n             \n               Lecture  Images, Figures and Graphics\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 10\n             \n             \n               Lab  Handling images and figures\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 11\n             \n             \n               No-Class  Academic holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Research Compendium (due 11/18)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 13\n             \n             \n               Lecture  Discussion Reading 9\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 3 TBA (due 12/07)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 13\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 16\n             \n             \n               Lecture  Research Compendium\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 17\n             \n             \n               Lab  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 18\n             \n             \n               Lecture  Discussion Reading 10\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 20\n             \n             \n               Lecture  Publishing & Communication I\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 14\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 23\n             \n             \n               Lecture  Publishing & Communication II\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 24\n             \n             \n               Lab  Final project status\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 25\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 27\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 15\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 30\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 01\n             \n             \n               Lab  Wrap-Up Final Project\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 02\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 04\n             \n             \n               Lecture  Closing Talk\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 16\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 07\n             \n             \n               Overview  RRR Week\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 17\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 14\n             \n             \n               Final  Project 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \nNo matching items",
     "crumbs": [
       "Home / Schedule"
     ]
@@ -7283,6 +7283,509 @@
     "crumbs": [
       "HW",
       "Project 2) Replicating Claims from 2024 BPD Annual Report"
+    ]
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#about",
+    "href": "lectures/24-packages1/24-packages1-slides.html#about",
+    "title": "R Packaging",
+    "section": "About",
+    "text": "About\nIn this slides I show you how to create a fairly simple R package with common contents such as:\n\n\n\n\n\nfunctions,\ndocumentation,\ntests,\ndata\n\n\n\nvignettes,\nlicense,\nREADME\nETC\n\n\n\nI will also describe the anatomy of an R package, its mandatory ingredients, some optional components, and my opinionated recipe to build packages."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#example",
+    "href": "lectures/24-packages1/24-packages1-slides.html#example",
+    "title": "R Packaging",
+    "section": "Example",
+    "text": "Example\n\nOur package consists of one function: average()\naverage() computes the average (i.e. mean) of a numeric vector\n\n\n\naverage(1:5)\n\n\n\n[1] 3\n\n\n\n\n\naverage(c(1, 2, NA, 4, 5))\n\n\n\n[1] NA\n\n\n\n\n\naverage(c(1, 2, NA, 4, 5), na.rm = TRUE)\n\n\n\n[1] 3"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#function-average",
+    "href": "lectures/24-packages1/24-packages1-slides.html#function-average",
+    "title": "R Packaging",
+    "section": "Function average()",
+    "text": "Function average()\n\naverage &lt;- function(x, na.rm = FALSE) {\n  # decide whether to remove missing values\n  if (na.rm) {\n    x &lt;- x[!is.na(x)]\n  }\n  # compute average\n  avg &lt;- sum(x) / length(x)\n  return(avg)\n}"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#section",
+    "href": "lectures/24-packages1/24-packages1-slides.html#section",
+    "title": "R Packaging",
+    "section": "",
+    "text": "We’ll go through the creation of the package \"average\" so that you can:\n\n1) (Install and) load it:\nlibrary(average)\n\n\n2) Use its function:\naverage(1:10)\n\n\n3) See its documentation\n?average\n\n\n4) Share it with others"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#section-1",
+    "href": "lectures/24-packages1/24-packages1-slides.html#section-1",
+    "title": "R Packaging",
+    "section": "",
+    "text": "Every R package must have at least the following components\n\n\n\n\n\n\nWithout any of these, you won’t be able to create a valid package."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#section-2",
+    "href": "lectures/24-packages1/24-packages1-slides.html#section-2",
+    "title": "R Packaging",
+    "section": "",
+    "text": "DESCRIPTION (text file)  Package metadata.\nNAMESPACE (text file)  Which functions are available to users.\nR/ directory with R script files.  Files with functions.\nman/ directory with Rd files.  Files with documentation of functions."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#description-file",
+    "href": "lectures/24-packages1/24-packages1-slides.html#description-file",
+    "title": "R Packaging",
+    "section": "DESCRIPTION file",
+    "text": "DESCRIPTION file\nPackage: average\nType: Package\nTitle: Computes average of numeric vector\nVersion: 0.1.0\nAuthor: Gaston Sanchez\nMaintainer: Gaston Sanchez &lt;gaston@email.com&gt;\nDescription: Toy package used for demo purposes.\nLicense: MIT\nEncoding: UTF-8\nLazyData: true\n\n\nDESCRIPTION is a text file—with no file extension—that follows a special type of format known as Debian Control File.1\nhttps://www.debian.org/doc/debian-policy/ch-controlfields.html"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#description-file-1",
+    "href": "lectures/24-packages1/24-packages1-slides.html#description-file-1",
+    "title": "R Packaging",
+    "section": "DESCRIPTION file",
+    "text": "DESCRIPTION file\nYou need to specify seven mandatory fields:\n\nPackage\nTitle\nDescription\nAuthor\nMaintainer\nVersion\nLicense\n\n\nhttps://cran.r-project.org/doc/manuals/r-release/R-exts.html#The-DESCRIPTION-file"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#namespace-file",
+    "href": "lectures/24-packages1/24-packages1-slides.html#namespace-file",
+    "title": "R Packaging",
+    "section": "NAMESPACE file",
+    "text": "NAMESPACE file\nIn addition to DESCRIPTION, an R package also requires another mandatory text file called NAMESPACE.\n\nIt controls how your package interacts with the rest of the R ecosystem\nExports: It explicitly declares which functions, datasets, methods, and classes are public.\nImports: It specifies which functions or full packages your code relies on internally\nLet devtools::document() take care of NAMESPACE (i.e. don’t edit by hand)"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r",
+    "href": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r",
+    "title": "R Packaging",
+    "section": "R file average.R",
+    "text": "R file average.R\n\n\n\naverage.R\n\naverage &lt;- function(x, na.rm = FALSE) {\n  # decide whether to remove missing values\n  if (na.rm) {\n    x &lt;- x[!is.na(x)]\n  }\n  # compute average\n  avg &lt;- sum(x) / length(x)\n  return(avg)\n}"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments",
+    "href": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments",
+    "title": "R Packaging",
+    "section": "R file average.R with Roxygen comments",
+    "text": "R file average.R with Roxygen comments\n\n\n\naverage.R\n\n#' @title Average\naverage &lt;- function(x, na.rm = FALSE) {\n  # decide whether to remove missing values\n  if (na.rm) {\n    x &lt;- x[!is.na(x)]\n  }\n  # compute average\n  avg &lt;- sum(x) / length(x)\n  return(avg)\n}"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments-1",
+    "href": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments-1",
+    "title": "R Packaging",
+    "section": "R file average.R with Roxygen comments",
+    "text": "R file average.R with Roxygen comments\n\n\n\naverage.R\n\n#' @title Average\n#' @description Computes the average (i.e. mean)\naverage &lt;- function(x, na.rm = FALSE) {\n  # decide whether to remove missing values\n  if (na.rm) {\n    x &lt;- x[!is.na(x)]\n  }\n  # compute average\n  avg &lt;- sum(x) / length(x)\n  return(avg)\n}"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments-2",
+    "href": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments-2",
+    "title": "R Packaging",
+    "section": "R file average.R with Roxygen comments",
+    "text": "R file average.R with Roxygen comments\n\n\n\naverage.R\n\n#' @title Average\n#' @description Computes the average (i.e. mean)\n#' @param x input vector\n#' @param na.rm whether to remove missing values\naverage &lt;- function(x, na.rm = FALSE) {\n  # decide whether to remove missing values\n  if (na.rm) {\n    x &lt;- x[!is.na(x)]\n  }\n  # compute average\n  avg &lt;- sum(x) / length(x)\n  return(avg)\n}"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments-3",
+    "href": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments-3",
+    "title": "R Packaging",
+    "section": "R file average.R with Roxygen comments",
+    "text": "R file average.R with Roxygen comments\n\n\n\naverage.R\n\n#' @title Average\n#' @description Computes the average (i.e. mean)\n#' @param x input vector\n#' @param na.rm whether to remove missing values\n#' @return computed mean\naverage &lt;- function(x, na.rm = FALSE) {\n  # decide whether to remove missing values\n  if (na.rm) {\n    x &lt;- x[!is.na(x)]\n  }\n  # compute average\n  avg &lt;- sum(x) / length(x)\n  return(avg)\n}"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments-4",
+    "href": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments-4",
+    "title": "R Packaging",
+    "section": "R file average.R with Roxygen comments",
+    "text": "R file average.R with Roxygen comments\n\n\n\naverage.R\n\n#' @title Average\n#' @description Computes the average (i.e. mean)\n#' @param x input vector\n#' @param na.rm whether to remove missing values\n#' @return computed mean\n#' @export\naverage &lt;- function(x, na.rm = FALSE) {\n  # decide whether to remove missing values\n  if (na.rm) {\n    x &lt;- x[!is.na(x)]\n  }\n  # compute average\n  avg &lt;- sum(x) / length(x)\n  return(avg)\n}"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments-5",
+    "href": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments-5",
+    "title": "R Packaging",
+    "section": "R file average.R with Roxygen comments",
+    "text": "R file average.R with Roxygen comments\n\n\n\naverage.R\n\n#' @title Average\n#' @description Computes the average (i.e. mean)\n#' @param x input vector\n#' @param na.rm whether to remove missing values\n#' @return computed mean\n#' @export\n#' @examples\n#' vec &lt;- 1:5\n#' average(vec)\n#'\n#' vec_na &lt;- c(1, 2, NA, 4, 5)\n#' average(vec_na)\n#' average(vec_na, na.rm = TRUE)\naverage &lt;- function(x, na.rm = FALSE) {\n  . . .\n}\n\n\n\nNote: code of function average() hidden for clarity purposes"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments-6",
+    "href": "lectures/24-packages1/24-packages1-slides.html#r-file-average.r-with-roxygen-comments-6",
+    "title": "R Packaging",
+    "section": "R file average.R with Roxygen comments",
+    "text": "R file average.R with Roxygen comments\n\n\n\naverage.R\n\n#' @title Average\n#' @description Computes the average (i.e. mean)\n#' @param x input vector\n#' @param na.rm whether to remove missing values\n#' @return computed mean\n#' @export\n#' @examples\n#' vec &lt;- 1:5\n#' average(vec)\n#'\n#' vec_na &lt;- c(1, 2, NA, 4, 5)\n#' average(vec_na)\n#' average(vec_na, na.rm = TRUE)\n\n\n\nThe roxygen comments will be used to create the Rd (R Documentation) files of the man/ directory.\nLet devtools::document() take care of Rd files."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#minimal-file-structure",
+    "href": "lectures/24-packages1/24-packages1-slides.html#minimal-file-structure",
+    "title": "R Packaging",
+    "section": "Minimal file structure",
+    "text": "Minimal file structure\nYou can create the minimal file structure of an R package by hand, e.g.\n\n\nTerminal\n\nmkdir average\ncd average\ntouch DESCRIPTION NAMESPACE\nmkdir R man\n\n\nHowever, we recommend that you use functions from packages \"devtools\" and \"usethis\" to create and take care of the files and directories in an R package."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#about-1",
+    "href": "lectures/24-packages1/24-packages1-slides.html#about-1",
+    "title": "R Packaging",
+    "section": "About",
+    "text": "About\nI will describe one way to create some of the common elements of an R package, and also a development workflow to iterate through the packaging process.\nKeep in mind that there are various ways to create an R package, and that you are not required to use \"devtools\" and friends.\nBut as you’ll see, these supporting packages are extremely helpful, and will take care of many of the important details, and “pain points” of packaging your code."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#step-1-create_package",
+    "href": "lectures/24-packages1/24-packages1-slides.html#step-1-create_package",
+    "title": "R Packaging",
+    "section": "Step 1) create_package()",
+    "text": "Step 1) create_package()\n\nInstead of creating the file structure of an R package by hand, we’ll use create_package()\nYou have to invoke this function on R’s console, by passing the file path (location and name) of the package you want to create\n\n\n# use a valid file path to your package\nusethis::create_package(\"path/to/average\")\n\nBTW: You only run this function once!"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#step-1-create_package-1",
+    "href": "lectures/24-packages1/24-packages1-slides.html#step-1-create_package-1",
+    "title": "R Packaging",
+    "section": "Step 1) create_package()",
+    "text": "Step 1) create_package()\n\n\n\n\n\n.gitignore (text file)  List which files Git needs to ignore.\n.Rbuildignore (text file)  List which files R needs to ignore.\naverage.Rproj (text file)  RStudio project file.\nDESCRIPTION (text file)  Package metadata.\nNAMESPACE (text file)  Which functions are available to users.\nR/ directory for R script files."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#description-file-2",
+    "href": "lectures/24-packages1/24-packages1-slides.html#description-file-2",
+    "title": "R Packaging",
+    "section": "DESCRIPTION file",
+    "text": "DESCRIPTION file\nWhen running create_package(), this is what DESCRIPTION will look like:\n\nPackage: average\nTitle: What the Package Does (One Line, Title Case)\nVersion: 0.0.0.9000\nAuthors@R: \n    person(\"First\", \"Last\", , \"first.last@example.com\", role = c(\"aut\", \"cre\"))\nDescription: What the package does (one paragraph).\nLicense: `use_mit_license()`, `use_gpl3_license()` or friends to pick a\n    license\nEncoding: UTF-8\nRoxygen: list(markdown = TRUE)\nRoxygenNote: 7.3.2\nYou will need to edit the fields:\n\nTitle\nAuthors@R\nDescription\nLicense (optionally you can run use_xyz_license())"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#step-1.1-add-r-file-average.r",
+    "href": "lectures/24-packages1/24-packages1-slides.html#step-1.1-add-r-file-average.r",
+    "title": "R Packaging",
+    "section": "Step 1.1) Add R file average.R",
+    "text": "Step 1.1) Add R file average.R\n\n\n\n\n\n\nInside R/, we’ll store the R file average.R contaning the Roxygen comments and the code of our function average()\n\n\n\nNotice that there is no man/ directory yet. We’ll let devtools::document() to take care of it and its contents."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#step-1.2-using-functions-from-other-packages",
+    "href": "lectures/24-packages1/24-packages1-slides.html#step-1.2-using-functions-from-other-packages",
+    "title": "R Packaging",
+    "section": "Step 1.2) Using functions from other packages",
+    "text": "Step 1.2) Using functions from other packages\nSometimes you may need to use functions from other packages in your own package.\nThis requires declaring the other packages we need (i.e. our dependencies).\nFor example, if your package depends on functions from \"dplyr\" (or any other package) you need to run the following in R’s console: usethis::use_package(\"dplyr\")\n\n\nYou will see some output like this\nusethis::use_package(\"dplyr\")\n✔ Adding dplyr to Imports field in DESCRIPTION.\n☐ Refer to functions with `dplyr::fun()`"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#step-2-devtoolsdocument",
+    "href": "lectures/24-packages1/24-packages1-slides.html#step-2-devtoolsdocument",
+    "title": "R Packaging",
+    "section": "Step 2) devtools::document()",
+    "text": "Step 2) devtools::document()\n\nThe next step involves generating the Rd (R Documentation) files.\nThese are the files that go inside the directory man/.\nThis can be done by calling devtools::document() in the R console.\n\n\n\n\nYou will see some output like this\ndevtools::document()\nℹ Updating average documentation\nℹ Loading average\nWriting NAMESPACE\nWriting average.Rd"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#step-2-devtoolsdocument-1",
+    "href": "lectures/24-packages1/24-packages1-slides.html#step-2-devtoolsdocument-1",
+    "title": "R Packaging",
+    "section": "Step 2) devtools::document()",
+    "text": "Step 2) devtools::document()\n\n\n\n\n\n\nCalling devtools::document()—in the R console—does the following:\n\n\n\nThis will create the man/ directory.\nIt will create the file average.Rd  (from the Roxygen comments).\nIt will also update NAMESPACE"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#step-2.1-run-usethisuse_mit_license",
+    "href": "lectures/24-packages1/24-packages1-slides.html#step-2.1-run-usethisuse_mit_license",
+    "title": "R Packaging",
+    "section": "Step 2.1) Run usethis::use_mit_license()",
+    "text": "Step 2.1) Run usethis::use_mit_license()\nEvery R package needs a license.\n\n\nIt’s recommended to choose a license by running—on R’s console—one of the \"usethis\" functions such as use_mit_license() or friends.\n\n\nThese functions not only update the content of DESCRIPTION but they also add a LICENSE file with the actual content of the chosen license.\n\n\nLikewise, these functions put a copy of the full license in LICENSE.md (mainly for GitHub purposes) and add this file to .Rbuildignore"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#step-2.2-run-usethisuse_git",
+    "href": "lectures/24-packages1/24-packages1-slides.html#step-2.2-run-usethisuse_git",
+    "title": "R Packaging",
+    "section": "Step 2.2) Run usethis::use_git()",
+    "text": "Step 2.2) Run usethis::use_git()\nTo make the average/ directory a Git repository, you can run the function usethis::use_git().\nYou will see some output like this\nuse_git()\n✔ Initialising Git repo.\n✔ Adding \".Rhistory\", \".RData\", \".httr-oauth\", \".DS_Store\", and\n  \".quarto\" to '.gitignore'."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#step-3-add-tests-with-use_testthat",
+    "href": "lectures/24-packages1/24-packages1-slides.html#step-3-add-tests-with-use_testthat",
+    "title": "R Packaging",
+    "section": "Step 3) Add tests/ with use_testthat()",
+    "text": "Step 3) Add tests/ with use_testthat()\n\nIt’s best practice to include tests for your functions.\nIn R, tests can be written with functions from the package \"testthat\"\nThe starting point involves adding a tests/ directory by running usethis::use_testthat()\n\n\nYou will see some output like this\n\nusethis::use_testthat()\n✔ Setting active project to\n  \"/Users/gaston/average\".\n✔ Adding testthat to Suggests field in DESCRIPTION.\n✔ Adding \"3\" to Config/testthat/edition.\n✔ Creating tests/testthat/.\n✔ Writing tests/testthat.R.\n☐ Call usethis::use_test() to initialize a basic test file and open it for editing.\n\n\n\nThen follow the suggestion and run usethis::use_test(\"average\")"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#step-3.1-unit-tests",
+    "href": "lectures/24-packages1/24-packages1-slides.html#step-3.1-unit-tests",
+    "title": "R Packaging",
+    "section": "Step 3.1) Unit Tests",
+    "text": "Step 3.1) Unit Tests\nAfter running usethis::use_test(\"average\"), you need to edit the corresponding file test-average.R stored inside tests/testthat/.\n\n\ntest-average.R\n\ntest_that(\"average works as expected\", {\n  vec &lt;- c(1, 2, 3, 4, 5)\n  vec_na &lt;- c(1, 2, NA, 4, 5)\n  expect_equal(average(vec), 3)\n  expect_equal(average(vec_na), NA_real_)\n})\n\n\ntest_that(\"average removes missing values\", {\n  vec_na &lt;- c(1, 2, NA, 4, 5)\n  expect_equal(average(vec_na, na.rm = TRUE), 3)\n})\n\n\ntest_that(\"average fails with character vector\", {\n  expect_error(average(letters[1:4]))\n})"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#file-structure-so-far",
+    "href": "lectures/24-packages1/24-packages1-slides.html#file-structure-so-far",
+    "title": "R Packaging",
+    "section": "File structure so far",
+    "text": "File structure so far"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#data",
+    "href": "lectures/24-packages1/24-packages1-slides.html#data",
+    "title": "R Packaging",
+    "section": "Data",
+    "text": "Data\n\nSometimes you may want to include data in a package.\nExamples:\n\nmpg data in package \"ggplot2\"\nstorms data in package \"dplyr\"\npenguins data in package \"stat20data\"\n\nBTW: some packages exist solely for the purpose of distributing data\n\ne.g. \"babynames\", \"stat20data\"\n\nIf you want to store R objects and make them available to the user, put them in a directory data/\nMore info about data at: https://r-pkgs.org/data.html"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#storing-r-objects-in-data",
+    "href": "lectures/24-packages1/24-packages1-slides.html#storing-r-objects-in-data",
+    "title": "R Packaging",
+    "section": "Storing R objects in data/",
+    "text": "Storing R objects in data/\n\nThe most common location for package data is data/.\nWe recommend that each file in this directory be an .rda file created by save() containing a single R object, with the same name as the file.\nThe easiest way to achieve this is with usethis::use_data().\n\n\nset.seed(159)\nsample_vector &lt;- sample(100)\nusethis::use_data(sample_vector)\n\n\n\n\nsample_table &lt;- data.frame(\n  x = seq(-5, 5, length.out = 20), \n  y = 20:1)\nusethis::use_data(sample_table)"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#storing-r-objects-in-data-1",
+    "href": "lectures/24-packages1/24-packages1-slides.html#storing-r-objects-in-data-1",
+    "title": "R Packaging",
+    "section": "Storing R objects in data/",
+    "text": "Storing R objects in data/\nset.seed(159)\nsample_vector &lt;- sample(100)\nusethis::use_data(sample_vector)\n\nThe snippet above creates data/sample_vector.rda\nIt adds LazyData: true in your DESCRIPTION file.\nThis means that they won’t occupy any memory until you use them.\nThis makes the object sample_vector available to users1 as:\n\naverage::sample_vector\nsample_vector after loading package library(average)\n\n\nAssuming the package “average” has been created."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#documenting-datasets",
+    "href": "lectures/24-packages1/24-packages1-slides.html#documenting-datasets",
+    "title": "R Packaging",
+    "section": "Documenting datasets",
+    "text": "Documenting datasets\n\nObjects in data/ must be documented.\nDocumenting data is like documenting a function with a few minor differences.\nYou document the name of the dataset and save it in R/, e.g.\n\n\n\n\n\nsample_table.R\n\n#' Sample Table\n#'\n#' A simple data frame with simulated random values\n#'\n#' @format ## `sample_table`\n#' A data frame with 20 rows and 2 columns:\n#' \\describe{\n#'   \\item{x}{First column}\n#'   \\item{y}{Second column}\n#' }\n#' @source &lt;https://source-url-if-applicable&gt;\n\"sample_table\""
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#documenting-datasets-roxygen-comments",
+    "href": "lectures/24-packages1/24-packages1-slides.html#documenting-datasets-roxygen-comments",
+    "title": "R Packaging",
+    "section": "Documenting datasets: roxygen comments",
+    "text": "Documenting datasets: roxygen comments\nThere are two roxygen tags that are especially important for documenting datasets:\n\n@format gives an overview of the dataset.\n\nFor data frames, you should include a definition list that describes each variable.\nIt’s usually a good idea to describe variables’ units here.\n\n@source provides details of where you got the data, often a URL.\nNever @export a data set."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#storing-raw-data",
+    "href": "lectures/24-packages1/24-packages1-slides.html#storing-raw-data",
+    "title": "R Packaging",
+    "section": "Storing Raw Data",
+    "text": "Storing Raw Data\nIn addition to storing “clean” data in data/, you may want to store the script containing the code that generated the data.\nIn our example, it would be nice to store the code that generates sample_table and sample_vector\n\nsample_table &lt;- data.frame(\n  x = seq(-5, 5, length.out = 20), \n  y = 20:1)\nusethis::use_data(sample_table)\n\nset.seed(159)\nsample_vector &lt;- sample(100)\nusethis::use_data(sample_vector)\n\nThis is possible via usethis::use_data_raw()"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#storing-raw-data-1",
+    "href": "lectures/24-packages1/24-packages1-slides.html#storing-raw-data-1",
+    "title": "R Packaging",
+    "section": "Storing Raw Data",
+    "text": "Storing Raw Data\n\nusethis::use_data_raw() creates a directory data-raw/\nThis directory should be listed in .Rbuildignore\nThe good news is that usethis::use_data_raw() does this for you.\nRunning this command will give you an output like this:\n\n\n\nusethis::use_data_raw(\"samples\")\n✔ Creating data-raw/.\n✔ Adding \"^data-raw$\" to .Rbuildignore.\n✔ Writing data-raw/samples.R.\n☐ Modify data-raw/samples.R.\n☐ Finish writing the data preparation script in data-raw/samples.R.\n☐ Use `usethis::use_data()` to add prepared data to package.\n\n\nThis will create a samples.R file inside data-raw/.\nHere, we can store the commands that generate the sample objects."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#storing-raw-data-in-csv-files",
+    "href": "lectures/24-packages1/24-packages1-slides.html#storing-raw-data-in-csv-files",
+    "title": "R Packaging",
+    "section": "Storing Raw Data in CSV files",
+    "text": "Storing Raw Data in CSV files\n\nAnother common situation for storing data is when you have a dataset, (e.g. data in a CSV file), that you want to include in your package.\nFor instance, say we have some data about basketball players in a CSV file basketball.csv.\nWe need to store basketball.csv inside data-raw/, and then update the code of the R file samples.R"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#storing-raw-data-in-csv-files-1",
+    "href": "lectures/24-packages1/24-packages1-slides.html#storing-raw-data-in-csv-files-1",
+    "title": "R Packaging",
+    "section": "Storing Raw Data in CSV files",
+    "text": "Storing Raw Data in CSV files\nAssuming basketball.csv is stored in data-raw/, we edit samples.R as follows:\n\n\n\n\nsamples.R\n\nsample_table &lt;- data.frame(\n  x = seq(-5, 5, length.out = 20), \n  y = 20:1)\nusethis::use_data(sample_table)\n\nset.seed(159)\nsample_vector &lt;- sample(100)\nusethis::use_data(sample_vector)\n\nbasketball &lt;- read.csv(\"basketball.csv\")\nusethis::use_data(basketball)\n\n\nusethis::use_data(basketball) will create basketball.rda inside data/, and also the corresponding basketball.R inside R/ that needs to be edited (to include its documentation with Roxygen comments)."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#file-structure-so-far-1",
+    "href": "lectures/24-packages1/24-packages1-slides.html#file-structure-so-far-1",
+    "title": "R Packaging",
+    "section": "File structure so far",
+    "text": "File structure so far"
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#adding-a-readme-file",
+    "href": "lectures/24-packages1/24-packages1-slides.html#adding-a-readme-file",
+    "title": "R Packaging",
+    "section": "Adding a README file",
+    "text": "Adding a README file\n\nSince we are interested in sharing our package with others, we usually do this with GitHub.\nAs you know, a common practice is to include a README file.\nWhile this can be done by-hand, we recommend that you use usethis::use_readme_rmd()\nuse_readme_rmd() initializes a basic, executable README.Rmd ready for you to edit:\n\n\n\nusethis::use_readme_rmd()\n#&gt; ✔ Writing 'README.Rmd'.\n#&gt; ✔ Adding \"^README\\\\.Rmd$\" to '.Rbuildignore'.\n#&gt; ☐ Update 'README.Rmd' to include installation instructions.\n#&gt; ✔ Writing '.git/hooks/pre-commit'."
+  },
+  {
+    "objectID": "lectures/24-packages1/24-packages1-slides.html#adding-a-readme-file-1",
+    "href": "lectures/24-packages1/24-packages1-slides.html#adding-a-readme-file-1",
+    "title": "R Packaging",
+    "section": "Adding a README file",
+    "text": "Adding a README file\n\nuse_readme_rmd() initializes a basic, executable README.Rmd ready for you to edit:\nIt also adds some lines to .Rbuildignore,\nREADME.Rmd already has sections that prompt you to:\n\nDescribe the purpose of the package.\nProvide installation instructions.\nIf a GitHub remote is detected when use_readme_rmd() is called, this section is pre-filled with instructions on how to install from GitHub.\nShow a bit of usage.\n\nMore info at: https://r-pkgs.org/whole-game.html#use_readme_rmd"
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#about",
+    "href": "lectures/25-packages2/25-packages2-slides.html#about",
+    "title": "R Packaging",
+    "section": "About",
+    "text": "About\nIn this slides I show you my opinionated recipe to build packages."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#example",
+    "href": "lectures/25-packages2/25-packages2-slides.html#example",
+    "title": "R Packaging",
+    "section": "Example",
+    "text": "Example\n\nOur package consists of one function: average()\naverage() computes the average (i.e. mean) of a numeric vector\n\n\n\naverage(1:5)\n\n\n\n[1] 3\n\n\n\n\n\naverage(c(1, 2, NA, 4, 5))\n\n\n\n[1] NA\n\n\n\n\n\naverage(c(1, 2, NA, 4, 5), na.rm = TRUE)\n\n\n\n[1] 3"
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#building-an-r-package",
+    "href": "lectures/25-packages2/25-packages2-slides.html#building-an-r-package",
+    "title": "R Packaging",
+    "section": "Building An R Package",
+    "text": "Building An R Package\nNow that we have most of the common elements of an R package, let’s talk about the package-building process.\nI will show the way I like to create my packages.\nThis means that you may find other useRs following different building strategies."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#package-states-1",
+    "href": "lectures/25-packages2/25-packages2-slides.html#package-states-1",
+    "title": "R Packaging",
+    "section": "Package States",
+    "text": "Package States\nThe creation process of an R package can be done in several ways. Depending on the modus operandi that you choose to follow, it is possible for a package to exist in five different states:\n\nSource\nBundled\nBinary\nInstalled\nIn-memory"
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#package-states-2",
+    "href": "lectures/25-packages2/25-packages2-slides.html#package-states-2",
+    "title": "R Packaging",
+    "section": "Package States",
+    "text": "Package States"
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#source-package",
+    "href": "lectures/25-packages2/25-packages2-slides.html#source-package",
+    "title": "R Packaging",
+    "section": "Source Package",
+    "text": "Source Package\n\n\n\n\n\n\nThe starting point is always a source package.\nThis is basically the directory containing the subdirectories and files that form your package.\nI like to think of this state as a package in a raw stage.\nFrom a source package, you can transition to other states."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#source-package-1",
+    "href": "lectures/25-packages2/25-packages2-slides.html#source-package-1",
+    "title": "R Packaging",
+    "section": "Source Package",
+    "text": "Source Package\n\n\n\n\n\n\nThe next immediate state (although not mandatory) is a bundled package.\nThis involves wrapping the source package into a single compressed file.\nThe compressed file has the extension .tar.gz\n\nA .tar, short for Tape ARchive or tarball, is a standard format in the Unix/Linux environment.\nA .gz file is simply the type of compression."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#binary-package",
+    "href": "lectures/25-packages2/25-packages2-slides.html#binary-package",
+    "title": "R Packaging",
+    "section": "Binary Package",
+    "text": "Binary Package\n\n\n\n\n\n\nA package in binary form is another type of state for a package.\nThis is another type of compressed file that is platform specific.\nThis depends on the operating system you are working with:\n\nMac/Linux\nWindows"
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#installed-package",
+    "href": "lectures/25-packages2/25-packages2-slides.html#installed-package",
+    "title": "R Packaging",
+    "section": "Installed Package",
+    "text": "Installed Package\n\n\n\n\n\n\nAn installed package is a decompressed binary file that has been unwrapped into an actual package library.\nTypically, it will be located in the directory where other package libraries are stored."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#in-memory-package",
+    "href": "lectures/25-packages2/25-packages2-slides.html#in-memory-package",
+    "title": "R Packaging",
+    "section": "In-memory Package",
+    "text": "In-memory Package\n\n\n\n\n\n\nLastly, in order to use an installed package you need to load it into memory.\nThis is done with the library() function."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#section",
+    "href": "lectures/25-packages2/25-packages2-slides.html#section",
+    "title": "R Packaging",
+    "section": "",
+    "text": "During the development of a package, you always start at the source level, and eventually make your way to an installed version.\n\n\n\n\n\nIn theory, the building process would consist of the following flow:\nsource -&gt; bundle -&gt; binary -&gt; installed —&gt; in-memory\nIn practice, however, you can take some detours and shortcuts from source to installed."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#packaging-flow-1",
+    "href": "lectures/25-packages2/25-packages2-slides.html#packaging-flow-1",
+    "title": "R Packaging",
+    "section": "Packaging Flow",
+    "text": "Packaging Flow\nA typical packaging workflow involves the following steps:\n\nCreate Documentation\nCheck Documentation\nRun Tests\nBuild Bundle\nInstall Package\nCheck Package"
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#packaging-flow-2",
+    "href": "lectures/25-packages2/25-packages2-slides.html#packaging-flow-2",
+    "title": "R Packaging",
+    "section": "Packaging Flow",
+    "text": "Packaging Flow\nA typical packaging workflow involves the following steps:\n\nCreate Documentation:    devtools::document()\nCheck Documentation:    devtools::check_man()\nRun Tests:    devtools::test()\nBuild Bundle:    devtools::build()\nInstall Package:    devtools::install()\nCheck Package:    devtools::check()"
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#create-documentation",
+    "href": "lectures/25-packages2/25-packages2-slides.html#create-documentation",
+    "title": "R Packaging",
+    "section": "Create Documentation",
+    "text": "Create Documentation\nWhen you change the roxygen comments of your functions, you will need to (re)generate the corresponding manual documentation.\n\n\nThis can be done with the function devtools::document() which generates the so-called .Rd (R documentation) files, located in the man/ directory."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#check-documentation",
+    "href": "lectures/25-packages2/25-packages2-slides.html#check-documentation",
+    "title": "R Packaging",
+    "section": "Check Documentation",
+    "text": "Check Documentation\nAn optional—but strongly recommended—step after new documentation has been generated, is to check that it is correct.\n\n\nThis step becomes mandatory if you plan to share your package via CRAN.\n\n\nTo check that the .Rd files are okay, use the function\ndevtools::check_man() which inspects that the content and syntax of the .Rd files are correct."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#run-tests",
+    "href": "lectures/25-packages2/25-packages2-slides.html#run-tests",
+    "title": "R Packaging",
+    "section": "Run Tests",
+    "text": "Run Tests\nIf your package contains unit-tests (strongly suggested), included in the directory tests/, you can use the function devtools::test() to run such tests."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#build-bundle",
+    "href": "lectures/25-packages2/25-packages2-slides.html#build-bundle",
+    "title": "R Packaging",
+    "section": "Build Bundle",
+    "text": "Build Bundle\nIf you just simply want to convert a package source into a single bundled file, you use the function devtools::build()\n\n\nThis function will create, by default, the .tar.gz file that in turn can be installed on any platform.\n\n\nbuild() does not generate or check any documentation. It also does not run any tests."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#install",
+    "href": "lectures/25-packages2/25-packages2-slides.html#install",
+    "title": "R Packaging",
+    "section": "Install",
+    "text": "Install\nTo install the package you can use devtools::install()\n\n\nThis function can install a source, bundle or a binary package.\n\n\nAfter the installation is done, you should be able to load the package with library() in order to use its functions, and inspect its manual documentation."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#check",
+    "href": "lectures/25-packages2/25-packages2-slides.html#check",
+    "title": "R Packaging",
+    "section": "Check",
+    "text": "Check\nOptionally, you can carry out an integral check of the package with the function devtools::check()\n\n\nThis checking process is a comprehensive one, and it will verify pretty much every single detail.\n\n\nThis step also becomes mandatory if you plan to share your package via CRAN."
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#optional-devtools-file",
+    "href": "lectures/25-packages2/25-packages2-slides.html#optional-devtools-file",
+    "title": "R Packaging",
+    "section": "Optional devtools file",
+    "text": "Optional devtools file\nUnless you are constantly creating packages, you will very likely forget what functions to use for a specific purpose. One small hack that I tend to use is to include an auxiliary .R file in the source package, which I typically name as devtools-flow.R (or something like that) with the following content:\n\n\ndevtools-flow.R\n\n# Devtools workflow\ndevtools::load_all()   # load code\ndevtools::document()   # generate documentation\ndevtools::check_man()  # check documentation\ndevtools::test()       # run tests (if any)\ndevtools::build()      # build bundle\ndevtools::install()    # install package\ndevtools::check()      # comprehensive check (optional)"
+  },
+  {
+    "objectID": "lectures/25-packages2/25-packages2-slides.html#optional-devtools-file-1",
+    "href": "lectures/25-packages2/25-packages2-slides.html#optional-devtools-file-1",
+    "title": "R Packaging",
+    "section": "Optional devtools file",
+    "text": "Optional devtools file\n\nYou can think of devtools-flow.R as a cheat-sheet.\nThis file should be included in .Rbuildignore.\nAdd a new line with the name of the file to .Rbuildignore, and remember to anchor it with ^ and $.\nHere’s what your .Rbuildignore file may look like:\n\n\n\n\n.Rbuildignore\n\n^average\\.Rproj$\n^\\.Rproj\\.user$\n^\\.positai$\n^\\.claude$\n^data-raw$\n^devtools-flow.R$"
+  },
+  {
+    "objectID": "hws/hw03/hw03.html",
+    "href": "hws/hw03/hw03.html",
+    "title": "HW3) R/Python Package",
+    "section": "",
+    "text": "This assignment is the continuation of HW1 and HW2. This time you will take the next step by creating a package (R or Python) to retrieve the career matches of a given player (e.g. Serena Williams, Rafael Nadal) from tennisabstract.com, and make a plot like the data visualization of HW2.",
+    "crumbs": [
+      "HW",
+      "HW3) R/Python Package"
+    ]
+  },
+  {
+    "objectID": "hws/hw03/hw03.html#about",
+    "href": "hws/hw03/hw03.html#about",
+    "title": "HW3) R/Python Package",
+    "section": "",
+    "text": "This assignment is the continuation of HW1 and HW2. This time you will take the next step by creating a package (R or Python) to retrieve the career matches of a given player (e.g. Serena Williams, Rafael Nadal) from tennisabstract.com, and make a plot like the data visualization of HW2.",
+    "crumbs": [
+      "HW",
+      "HW3) R/Python Package"
+    ]
+  },
+  {
+    "objectID": "hws/hw03/hw03.html#main-functions",
+    "href": "hws/hw03/hw03.html#main-functions",
+    "title": "HW3) R/Python Package",
+    "section": "Main Functions",
+    "text": "Main Functions\nYour package should have two primary functions:\n\nfunction to get the career’s data of a given player\n\nInput: name of player, e.g. \"serena williams\"\nOutput: data frame to be used for graphing purposes (like the serena data frame of HW2)\n\nfunction to make the scatter plot—like the plot you graphed in HW2 (without annotations)\n\nFor example, suppose the functions of my package are data_function() and plot_function(). BTW: give better names to your functions. Under this assumption, a user should be able to call my functions like so:\n# Serena Williams data and plot\nserena = data_function(\"serena williams\")\nplot_function(serena)\n\n# Rafael Nadal data and plot\nrafa = data_function(\"Rafael Nadal\")\nplot_function(rafa)",
+    "crumbs": [
+      "HW",
+      "HW3) R/Python Package"
+    ]
+  },
+  {
+    "objectID": "hws/hw03/hw03.html#package-specifications",
+    "href": "hws/hw03/hw03.html#package-specifications",
+    "title": "HW3) R/Python Package",
+    "section": "Package Specifications",
+    "text": "Package Specifications\n\nPublic Functions\nAs mentioned above, your package should have two main (public) functions:\n\none function to get data from tennis abstract, and process it to return a clean data frame\none function that takes the cleaned-processed data frame to produce a scatter plot\n\n\n\nPrivate Functions\nIn addition to the public functions, you can use any number of auxiliary private functions.\n\n\nFunction Length\nNo function should be longer than 20 lines of code (excluding comments and empty lines)\n\ntry to limit the length of private functions to no more than 10 lines\n\n\n\nNaming Functions\nFollow good practices for naming functions:\n\nchoose a consistent style: snake_case(), camelCase(), MixedCaps()\nname of functions should be intuitive, clear\nname of arguments should also be clear\n\n\n\nTests\nBecause the raw data comes from a website (tennisabstract.com), we will follow the gold standard of avoid hitting live servers entirely during automated tests.\nWe will focus on writing tests for functions that handle the cleaning/processing of the JS files, e.g. SerenaWilliamsCareer.JS\n\n\n\n\n\n\nFemale vs Male players\n\n\n\nNotice that Career JS files of female players are different from those of male players.\n\nhttps://www.tennisabstract.com/jsmatches/SerenaWilliamsCareer.js\nhttps://www.tennisabstract.com/jsmatches/RafaelNadalCareer.js\n\nFiles of female players contain the date-of-birth of the opponents, from which their age has to be derived. In contrast, files of male players already contain the age of the opponent.\n\n\nTo write your tests, we recommend that you use the following mockup JS content.\n\n\nFemalePlayerCareer.JS\n\n# A few entries from a female player career's JS file\nvar morematchmx = [[\"19951030\", \"Canadian Open\", \"Carpet\", \"W\", \"L\", \"\", \"\", \"WC\", \"Q1\", \"6-1 6-1\", \"3\", \"Anne Miller\", \"149\", \"7\", \"\", \"R\", \"19770119\", \"\", \"USA\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"1995-W-WT-CAN-02A-1995-013\"],\n  [\"19970307\", \"Indian Wells\", \"Hard\", \"W\", \"L\", \"\", \"\", \"WC\", \"Q1\", \"6-4 6-0\", \"3\", \"Alexia Dechaume Balleret\", \"87\", \"\", \"\", \"R\", \"19700503\", \"\", \"FRA\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"1997-W-WT-USA-02A-1997-006\"],\n  [\"19970804\", \"Manhattan Beach\", \"Hard\", \"W\", \"L\", \"\", \"\", \"WC\", \"Q3\", \"7-6 4-6 6-3\", \"3\", \"Magui Serna\", \"54\", \"6\", \"\", \"L\", \"19790301\", \"167\", \"ESP\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"1997-W-WT-USA-07A-1997-026\"]]\n\n\n\nMalePlayerCareer.JS\n\n# A few entries from a male player career's JS file\nvar morematchmx = [[\"20010910\", \"Spain F10\", \"Hard\", \"S\", \"L\", \"\", \"\", \"WC\", \"R32\", \"2-6 7-5 6-2\", \"3\", \"Guillermo Platel\", \"731\", \"\", \"\", \"R\", \"22.264202601\", \"\", \"ESP\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"2001-M-FU-ESP-10A-2001-002\", \"\", \"1\", \"1\"],\n  [\"20010917\", \"Seville CH\", \"Clay\", \"C\", \"L\", \"\", \"\", \"WC\", \"R16\", \"3-6 6-1 6-3\", \"3\", \"Stefano Galvani\", \"161\", \"2\", \"\", \"R\", \"24.2902121834\", \"178\", \"ITA\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"2\", \"\", \"\", \"\", \"2001-784-024\", \"\", \"2\", \"2\"],\n  [\"20010917\", \"Seville CH\", \"Clay\", \"C\", \"W\", \"\", \"\", \"WC\", \"R32\", \"6-4 6-4\", \"3\", \"Israel Matos Gil\", \"751\", \"\", \"Q\", \"U\", \"18.7597535934\", \"\", \"ESP\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"2001-784-015\", \"\", \"1\", \"1\"]]",
+    "crumbs": [
+      "HW",
+      "HW3) R/Python Package"
+    ]
+  },
+  {
+    "objectID": "hws/hw03/hw03.html#other-considerations",
+    "href": "hws/hw03/hw03.html#other-considerations",
+    "title": "HW3) R/Python Package",
+    "section": "Other Considerations",
+    "text": "Other Considerations\nAs usual, we will grade commit mechanics (how changes are packaged and documented) alongside workflow integrity (how git was used as a tool for reproducible research, rather than a single bulk upload at 11:59 PM).\n\nEach commit should represent a coherent, single step; i.e. no massive commits.\nEach commits should should have a concise, descriptive message; i.e. no vague messages.\n\n\nHow we will use/test your package\nThe litmus test of your hw3 submission will involve a direct installation from your github repository, and then using your 2 public functions to obtain and plot the data of a handful of players.\nR package\nWe’ll run the \"devtools\" function install_github()\n# R package\ninstall_github(\"username/yourpackage\")\nPython package\nTo install a Python package directly from a GitHub repository, we’ll use the pip install command prefixed with git+ followed by your repository’s URL.\n# Python package\npip install git+https://github.com/username/yourpackage.git",
+    "crumbs": [
+      "HW",
+      "HW3) R/Python Package"
     ]
   }
 ]

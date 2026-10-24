@@ -248,15 +248,13 @@
 <ul>
 <li class="fragment">More thought <span class="math inline">\(\longrightarrow\)</span> fewer bugs/re-writes</li>
 </ul></li>
-<li class="fragment">Learn from others’ code
-<ul>
-<li class="fragment">R itself; key R packages</li>
-</ul></li>
 </ul>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
-<p>Write programs for people, not computers</p>
+<p><br>
+</p>
+<p><span class="bold-hilit">Write programs for people, not computers</span></p>
 <p><br>
 </p>
 <p>Wilson et al.&nbsp;(2014) PLoS Biol 12:e1001745</p>
@@ -286,6 +284,7 @@
 </div>
 <p><br>
 </p>
+<div class="fragment">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>average <span class="ot">&lt;-</span> <span class="cf">function</span>(x, <span class="at">na.rm =</span> <span class="cn">FALSE</span>) {</span>
 <span id="cb2-2"><a></a>  <span class="cf">if</span> (na.rm) {</span>
@@ -293,6 +292,7 @@
 <span id="cb2-4"><a></a>  }</span>
 <span id="cb2-5"><a></a>  <span class="fu">sum</span>(x) <span class="sc">/</span> <span class="fu">length</span>(x)</span>
 <span id="cb2-6"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </section>
 <section id="clarity-over-efficiency" class="slide level2">
@@ -302,10 +302,14 @@
 <span id="cb3-2"><a></a>  p <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">+</span> r)<span class="sc">^</span>n</span>
 <span id="cb3-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="fragment">
+<p><br>
+</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>future_value <span class="ot">&lt;-</span> <span class="cf">function</span>(prin, rate, years) {</span>
-<span id="cb4-2"><a></a>  prin <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">+</span> rate)<span class="sc">^</span>years</span>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>future_value <span class="ot">&lt;-</span> <span class="cf">function</span>(principal, rate, years) {</span>
+<span id="cb4-2"><a></a>  principal <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">+</span> rate)<span class="sc">^</span>years</span>
 <span id="cb4-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </section>
 <section id="writing-functions" class="slide level2">

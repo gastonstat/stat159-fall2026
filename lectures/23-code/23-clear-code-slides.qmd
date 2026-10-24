@@ -27,13 +27,13 @@ chalkboard: true
     + Re-runnable
 - Think before you code
     + More thought $\longrightarrow$ fewer bugs/re-writes
-- Learn from others' code
-    + R itself; key R packages
 
 
 ## 
 
-Write programs for people, not computers
+\
+
+[Write programs for people, not computers]{.bold-hilit}
 
 \
 
@@ -60,6 +60,8 @@ average <- function(x) {
 
 \
 
+. . .
+
 ```{r}
 #| echo: true
 average <- function(x, na.rm = FALSE) {
@@ -80,11 +82,14 @@ fv <- function(p, r, n) {
 }
 ```
 
+. . .
+
+\
 
 ```{r}
 #| echo: true
-future_value <- function(prin, rate, years) {
-  prin * (1 + rate)^years
+future_value <- function(principal, rate, years) {
+  principal * (1 + rate)^years
 }
 ```
 

@@ -171,7 +171,7 @@
           href: "lectures/16-discuss4/16-discussion-slides.html"
         - type: "Homework"
           id: ""
-          name: "HW2 TBA (due 10/16)"
+          name: "HW2 Serena Williams (due 10/16)"
           href: "hws/hw02/hw02.html"
 - week: 7
   days:
@@ -250,13 +250,13 @@
         - type: "Lab"
           id: ""
           name: "Hands on sharing and managing data"
-          href: ""
+          href: "labs/lab08.pdf"
     - date: "Oct 21"
       items:
         - type: "Lecture"
           id: ""
-          name: "Packaging Code (I)"
-          href: ""
+          name: "Packaging Code: R packages (I)"
+          href: "lectures/24-packages1/24-packages1-slides.html"
         - type: "Reading"
           id: ""
           name: "Share Your Code (due 10/28)"
@@ -265,15 +265,15 @@
       items:
         - type: "Lecture"
           id: ""
-          name: "Packaging Code (II)"
-          href: ""
+          name: "Packaging Code: R packages (II)"
+          href: "lectures/25-packages2/25-packages2-slides.html"
 - week: 10
   days:
     - date: "Oct 26"
       items:
         - type: "Lecture"
           id: ""
-          name: "Packaging Code (III)"
+          name: "Packaging Code: Python packages"
           href: ""
     - date: "Oct 27"
       items:
@@ -299,8 +299,8 @@
           href: "lectures/28-discuss7/28-discussion-slides.html"
         - type: "Homework"
           id: ""
-          name: "HW-3 TBA (due 11/13)"
-          href: ""
+          name: "HW-3 Package (due 11/13)"
+          href: "hw03/hw03.html"
 - week: 11
   days:
     - date: "Nov 02"

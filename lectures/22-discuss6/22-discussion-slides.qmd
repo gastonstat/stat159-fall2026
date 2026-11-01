@@ -143,7 +143,7 @@ accidentally swapped the "sensitive" and "resistant" data labels.
 
 ## Timeline
 
-::: {.small}
+::: {.small .nonincremental}
 - Nov-Dec 2006: 
     + First questions of Baggerly & Coombes to Potti & Nevins
     + Baggerly & Coombes' first report describing errors.
@@ -169,183 +169,45 @@ lead scientist lied on his CV about being a Rhodes Scholar.
 ![](images/rhodes-scholar-lie.png){fig-align="center" width="50%"}
 
 
+## Some Comments
+
+The Duke Cancer Scandal represents the ultimate breakdown of computational 
+transparency. 
+
+The issue wasn't that the scientists made a mistake---everyone makes mistakes. 
+
+The disaster happened because their workflow was an unrecorded, manual black box 
+that could not be audited until it was too late. 
+
+This is why platforms like GitHub are not optional luxuries for your career. 
+
+By forcing yourself to push raw, unedited script pipelines upstream, you allow 
+code forensics to catch bugs at your workstation---long before they become 
+a scandal or a tragedy.
+
+
+## Key Takeaways
+
+- Forensic Data Management: Data labels must be explicitly linked and automated; 
+minor copy-paste adjustments can become a matter of life and death.
+
+- Unbroken Provenance: Transparency requires providing full, raw code and original 
+configuration parameters alongside your final paper.
+
+
 # Discussion Time
 
-## Index Cards Activity
-
-- This activity is designed for students in 10-12? rows
-- Each row will receive a set of 4 blank index cards
-- In addition, the first student in a row will receive an index card with the raw data
-- To be clear: only the first student will see the raw data
-- You will have to perform some processing steps (by-hand) to be
-recorded on the blank index cards
-- There will a time-limit for each processing step
-
-<!--
-Raw Data for index card:
-
-==============================================
-Patient | Score | Date       | Treatment
--------------------------------------------
-PT-042  | 0.89  | 12-05-2024 | Cisplatin
-PT-118  | 0.12  | 08-11-2024 | Paclitaxel
-PT-091  | 0.64  | 01-02-2025 | Doxorubicin
-PT-003  | 0.45  | 15-04-2025 | Erlotinib
-==============================================
-
-
-Expected Output:
-
-============================================================
-[ REPRODUCIBLE OUTPUT - AUTOMATED SCRIPT VIEW ]
-============================================================
-PT-042, 0.9, 05/12/2024, cisplatin
-PT-118, 0.1, 11/08/2024, paclitaxel
-PT-091, 0.6, 02/01/2025, doxorubicin
-PT-003, 0.5, 04/15/2025, erlotinib
-============================================================
--->
-
-
-## Index Cards Activity
-
-Instructions for blank index card #1:
+## Screens Off, Minds On
 
 \
 
-In your index card-1 write down the raw data applying the following:
+::: {.nonincremental}
+- [Devices Away:]{.bold-hilit} Laptops & tablets closed, phones away.
 
-1. THE DATE CONVERSION: Convert the dates from `DD-MM-YYYY` to 
-the American standard `MM/DD/YYYY` format.
+- [No One Alone:]{.bold-hilit} Pair or team up (no solo seats).
 
-```{r}
-#| echo: false
-countdown::countdown(1.5, bottom = 0)
-```
-
-## Index Cards Activity
-
-Instructions for blank index card #2:
-
-\
-
-In your index card-2 write down the data of card-1 by applying the following:
-
-2. THE HEADER SHIFT: Drop the top row (`"Patient", "Score", ...`) completely 
-and shift all data cells up by one row to fill the void.
-
-```{r}
-#| echo: false
-countdown::countdown(1.5, bottom = 0)
-```
-
-## Index Cards Activity
-
-Instructions for blank index card #3:
-
-\
-
-In your index card-3 write down the data of card-2 by applying the following:
-
-3. THE ROUNDING DECIMALS: Round all decimal values in 2nd column
-to exactly one decimal place.
-
-```{r}
-#| echo: false
-countdown::countdown(1.5, bottom = 0)
-```
-
-## Index Cards Activity
-
-Instructions for blank index card #4:
-
-\
-
-In your index card-4 write down the data of card-3 by applying the following:
-
-4. LOWER-CASE: Convert the values in the last column to lower-case.
-
-```{r}
-#| echo: false
-countdown::countdown(1.5, bottom = 0)
-```
-
-## Index Cards Activity
-
-\
-
-Let's examine the cards!
-
-
-## Activity B
-
-We're going to divide the classroom into groups
-
-. . .
-
-:::: {.columns}
-::: {.column}
-[Team A: Clinical Trials Directorate]{.mdlit}
-
-- You have a promising cancer model. 
-- Patient lives are on the line, and funding is tight. 
-- You trust your internal scientists.
-- You do not want "outsiders" slowing down your cure with bureaucratic audits.
+- [Engage Fully:]{.bold-hilit} Be ready to speak, debate, and share ideas.
 :::
-
-::: {.column .fragment}
-[Team B: The Forensic Biostatisticians]{.hilit}
-
-- You tried to recreate their charts from the published text and failed. 
-- You suspect catastrophic data scrambling.
-- You are asking the authors to share their raw scripts and data.
-:::
-::::
-
-
-## Brainstorm
-
-\
-
-Huddle with your immediate neighbors to:
-
-:::: {.columns}
-::: {.column}
-[Team A]{.mdlit}
-
-Find 3 arguments to justify keeping your code proprietary or private. 
-:::
-
-::: {.column}
-[Team B]{.hilit}
-
-Formulate 3 arguments on why public peer-review is empty without code 
-verification.
-:::
-::::
-
-```{r}
-#| echo: false
-countdown::countdown(5, bottom = 0)
-```
-
-. . .
-
-\
-
-Time's up: Please share your thoughts.
-
-<!--
-Group A:
-- intellectual property, 
-- protecting patient privacy laws, 
-- peer-reviewed status of the original paper, 
-- preventing academic rivals from "scooping" your data.
-
-Group B:
-What are the specific scientific and ethical dangers of 
-treating data processing pipelines as a "black box"?
--->
 
 
 ## Debate
@@ -393,8 +255,10 @@ Which two would you mandate?
 countdown::countdown(3, bottom = 0)
 ```
 
+# Participation Handout
 
-# Quiz-Poll Time
+
+<!--
 
 ## Google Form
 
@@ -460,32 +324,4 @@ C) Stay silent to protect my graduation timeline.
 In one word, what is the most critical asset a researcher protects when 
 they use automated version control instead of manual tracking?
 
-
-# Final Words
-
-##
-
-The Duke Cancer Scandal represents the ultimate breakdown of computational 
-transparency. 
-
-The issue wasn't that the scientists made a mistake---everyone makes mistakes. 
-
-The disaster happened because their workflow was an unrecorded, manual black box 
-that could not be audited until it was too late. 
-
-This is why platforms like GitHub are not optional luxuries for your career. 
-
-By forcing yourself to push raw, unedited script pipelines upstream, you allow 
-code forensics to catch bugs at your workstation---long before they become 
-a scandal or a tragedy.
-
-
-## Key Takeaways
-
-- Forensic Data Management: Data labels must be explicitly linked and automated; 
-minor copy-paste adjustments can become a matter of life and death.
-
-- Unbroken Provenance: Transparency requires providing full, raw code and original 
-configuration parameters alongside your final paper.
-
-
+-->

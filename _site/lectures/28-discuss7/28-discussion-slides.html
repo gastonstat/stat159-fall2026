@@ -28,72 +28,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-      }
-    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-    div.sourceCode
-      { color: #24292e;  }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #24292e; } /* Normal */
-    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
-    code span.an { color: #6a737d; } /* Annotation */
-    code span.at { color: #d73a49; } /* Attribute */
-    code span.bn { color: #005cc5; } /* BaseN */
-    code span.bu { color: #d73a49; } /* BuiltIn */
-    code span.cf { color: #d73a49; } /* ControlFlow */
-    code span.ch { color: #032f62; } /* Char */
-    code span.cn { color: #005cc5; } /* Constant */
-    code span.co { color: #6a737d; } /* Comment */
-    code span.cv { color: #6a737d; } /* CommentVar */
-    code span.do { color: #6a737d; } /* Documentation */
-    code span.dt { color: #d73a49; } /* DataType */
-    code span.dv { color: #005cc5; } /* DecVal */
-    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
-    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
-    code span.fl { color: #005cc5; } /* Float */
-    code span.fu { color: #6f42c1; } /* Function */
-    code span.im { color: #032f62; } /* Import */
-    code span.in { color: #6a737d; } /* Information */
-    code span.kw { color: #d73a49; } /* Keyword */
-    code span.op { color: #24292e; } /* Operator */
-    code span.ot { color: #6f42c1; } /* Other */
-    code span.pp { color: #d73a49; } /* Preprocessor */
-    code span.re { color: #6a737d; } /* RegionMarker */
-    code span.sc { color: #005cc5; } /* SpecialChar */
-    code span.ss { color: #032f62; } /* SpecialString */
-    code span.st { color: #032f62; } /* String */
-    code span.va { color: #e36209; } /* Variable */
-    code span.vs { color: #032f62; } /* VerbatimString */
-    code span.wa { color: #ff5555; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-27b1524c90fa041f3653125f15fb25c4.css">
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CES9J82GLL"></script>
@@ -224,7 +158,7 @@
 <li>Title: <strong>Top ten reasons to not share your code (and why you should anyway)</strong></li>
 <li>Authors: Randall J. LeVeque.</li>
 <li>Journal: Software Sustainability Institute</li>
-<li>Year: 2013</li>
+<li>Year: 2012</li>
 <li><a href="https://www.software.ac.uk/blog/top-ten-reasons-not-share-your-code-and-why-you-should-anyway" class="uri">https://www.software.ac.uk/blog/top-ten-reasons-not-share-your-code-and-why-you-should-anyway</a></li>
 </ul>
 </section>
@@ -236,135 +170,7 @@
 <li>Journal: Nature 467 (7317): 753</li>
 <li>Year: Oct 2010</li>
 <li>doi: 10.1038/467753a</li>
-<li><a href="https://www.software.ac.uk/blog/top-ten-reasons-not-share-your-code-and-why-you-should-anyway" class="uri">https://www.software.ac.uk/blog/top-ten-reasons-not-share-your-code-and-why-you-should-anyway</a></li>
-</ul>
-</section></section>
-<section>
-<section id="introduction" class="title-slide slide level1 center">
-<h1>Introduction</h1>
-
-</section>
-<section id="why-are-we-here" class="slide level2">
-<h2>Why Are We Here?</h2>
-<ul>
-<li class="fragment"><span class="bold-hilit">The Reality:</span> Most computational research papers publish beautifully polished figures but hide the underlying source scripts.</li>
-</ul>
-<p><br>
-</p>
-<ul>
-<li class="fragment"><span class="bold-hilit">The Excuses:</span> <em>“My code is too messy,”</em> <em>“Competitors will steal it,”</em> or <em>“I don’t have time to clean it up.”</em></li>
-</ul>
-<p><br>
-</p>
-<ul>
-<li class="fragment"><span class="bold-hilit">Today’s Goal:</span> We are going to stress-test these justifications using the arguments of Nick Barnes (2010) and Randall LeVeque (2013).</li>
-</ul>
-</section></section>
-<section>
-<section id="overview-barnes-paper" class="title-slide slide level1 center">
-<h1>Overview: Barnes’ Paper</h1>
-
-</section>
-<section id="most-software-isnt-very-good" class="slide level2">
-<h2>Most Software Isn’t Very Good</h2>
-<ul>
-<li class="fragment"><p><span class="bold-hilit">A Professional Perspective:</span> Nick Barnes, a professional software engineer, shares a trade secret: most professional software inside consumer electronics is badly documented, inconsistent, and poorly tested.</p></li>
-<li class="fragment"><p><span class="bold-hilit">The Scientist’s Assumption:</span> Scientists generally withhold their code because they believe it is poor—lacking good comments, sensible variable names, or proper indentation.</p></li>
-<li class="fragment"><p><span class="bold-hilit">The Reality Check:</span> These formatting flaws <strong>do not matter</strong> to the core scientific record. Software across all trades is simply written to be <em>good enough for the job intended</em>.</p></li>
-</ul>
-</section>
-<section id="what-happens-to-science-software" class="slide level2">
-<h2>What Happens to Science Software?</h2>
-<ul>
-<li class="fragment"><p><span class="bold-hilit">The Computational Reality:</span> Turning raw laboratory data into published research papers inevitably requires programming and data manipulation.</p></li>
-<li class="fragment"><p><span class="bold-hilit">The Patchwork Pipeline:</span> Science code is often an awkward mix of small scripts to draw charts, larger filtering routines, and telemetry software glued together with piecemeal scripts.</p></li>
-<li class="fragment"><p><span class="bold-hilit">The Disappearing History:</span> While papers include a brief mathematical description of an algorithm, the actual software code usually languishes in an obscure folder or is simply deleted after publication.</p></li>
-</ul>
-</section>
-<section id="clean-enough-vs.-good-enough" class="slide level2">
-<h2>Clean Enough vs.&nbsp;“Good Enough”</h2>
-<div class="small">
-<div class="sourceCode" id="cb1" data-code-line-numbers-highlight="3-4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="co"># The Real-World Research Script</span></span>
-<span id="cb1-2"><a></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-3"><a></a>df <span class="op">=</span> pd.read_csv(<span class="st">"temp_data_FIXED_FINAL_v2.csv"</span>) <span class="co"># Ugly hardcoded name!</span></span>
-<span id="cb1-4"><a></a>res <span class="op">=</span> [x <span class="op">*</span> <span class="fl">4.219</span> <span class="cf">for</span> x <span class="kw">in</span> df[<span class="st">'score'</span>] <span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">0</span>] <span class="co"># Messy magic number hack!</span></span>
-<span id="cb1-5"><a></a><span class="bu">print</span>(<span class="st">"It works, leave it alone."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li class="fragment"><p><span class="bold-hilit">The Psychological Barrier:</span> Scientists frequently withhold code because they are embarrassed by non-standard syntax, messy comments, or unoptimized loops.</p></li>
-<li class="fragment"><p><span class="bold-hilit">Ugly code is good enough:</span> A dirty, functional script that exposes your actual workflow is infinitely superior to a hidden, “pristine” secret.</p></li>
-<li class="fragment"><p><span class="bold-hilit">Not Commercial Software:</span> Your code is an archive of an experiment, not an enterprise app. Readers do not expect commercial engineering standards—they expect scientific truth.</p></li>
-</ul>
-</section>
-<section id="openness-improves-the-science" class="slide level2">
-<h2>Openness Improves the Science</h2>
-<ul>
-<li class="fragment"><p><span class="bold-hilit">Case Study: NASA &amp; Climate Code</span> In 2007, NASA released its global temperature reporting software online. The code was messy and difficult for critics to run locally.</p></li>
-<li class="fragment"><p><span class="bold-hilit">The Volunteer Audit:</span> Volunteers rewrote the messy software to make it easier for non-experts to run. Through this open inspection, they discovered minor bugs.</p></li>
-<li class="fragment"><p><span class="bold-hilit">The Ultimate Outcome:</span> The bugs had zero bearing on the final scientific results, but NASA fixed them and ultimately chose to replace their original code with the volunteer version.</p></li>
-<li class="fragment"><p><span class="bold-hilit">The Lesson:</span> Science source code that is hidden from public scrutiny cannot benefit from peer review and rapid community improvements.</p></li>
-</ul>
-</section>
-<section id="no-more-excuses-for-secrecy" class="slide level2">
-<h2>“No More Excuses” for Secrecy</h2>
-<ul>
-<li class="fragment"><p><span class="bold-hilit">“It is not common practice.”</span> <br> This is a cultural lag that must change across all fields.</p></li>
-<li class="fragment"><p><span class="bold-hilit">“People will pick holes and demand support.”</span> <br> Not publishing code draws allegations of fraud, which is far worse. Furthermore, nobody is entitled to technical support for freely provided code; you can simply ignore unhelpful feedback.</p></li>
-<li class="fragment"><p><span class="bold-hilit">“The code is valuable Intellectual Property.”</span> <br> Frankly, a little Python/R/Matlab routine is rarely worth money. Without ongoing backing by skilled experts, unshared institutional code just becomes un-useable “abandonware”.</p></li>
-</ul>
-</section>
-<section id="overcoming-computational-perfectionism" class="slide level2">
-<h2>Overcoming Computational Perfectionism</h2>
-<ul>
-<li class="fragment"><p>To scientists, the word “publication” signifies perfectionism.</p></li>
-<li class="fragment"><p>This psychological wall stops researchers from releasing functional code because they feel it isn’t “polished” enough.</p></li>
-<li class="fragment"><p>When publishing a paper, the original, raw script can simply be published as supplementary online information.</p></li>
-<li class="fragment"><p>Ask yourself: <em>Does your code perform the algorithm you describe in your paper?</em> If it does, your audience will accept it “as is”. If it does not, you need to fix it anyway.</p></li>
-</ul>
-</section></section>
-<section>
-<section id="overview-leveques-paper" class="title-slide slide level1 center">
-<h1>Overview: LeVeque’s Paper</h1>
-
-</section>
-<section id="the-alternative-universe-analogy" class="slide level2">
-<h2>The “Alternative Universe” Analogy</h2>
-<p>LeVeque asks us to imagine a world where mathematicians publish brilliant theorems but keep their proofs completely secret, expecting readers to simply “trust their reputation.”</p>
-<p>In modern science, publishing a theorem without a proof is considered a joke.</p>
-<p>Yet, publishing a computational figure without its source script is standard operating procedure.</p>
-</section>
-<section id="the-hidden-value-of-imperfect-scripts" class="slide level2">
-<h2>The Hidden Value of Imperfect Scripts</h2>
-<ul>
-<li class="fragment"><p><span class="bold-hilit">Research Code vs.&nbsp;Enterprise Software</span> <br> Unlike commercial software, research code is not expected to be perfectly polished, but it is an essential part of the scientific record.</p></li>
-<li class="fragment"><p>Code contains crucial details not present in the paper, serving as necessary documentation for the study.</p></li>
-<li class="fragment"><p>Cleaning up code for public release is an effective way for researchers to uncover bugs in their own work.</p></li>
-</ul>
-</section>
-<section id="what-if-you-cannot-share" class="slide level2">
-<h2>What If You Cannot Share?</h2>
-<ul>
-<li class="fragment"><p>Partial Sharing: Even with proprietary restrictions, researchers can often share the specific, novel routines they developed for the paper.</p></li>
-<li class="fragment"><p>Inspection Over Execution: Simply being able to read and inspect code is often more valuable to reviewers than running a compiled, black-box executable.</p></li>
-<li class="fragment"><p>Alternative Mediums: If code cannot be shared digitally, publishing it as a static PDF appendix is a viable alternative.</p></li>
-</ul>
-</section>
-<section id="the-self-correction-effect" class="slide level2">
-<h2>The Self-Correction Effect</h2>
-<p>Almost every researcher who forces themselves to clean up and document their code for a public release uncovers hidden bugs, memory leaks, or flawed assumptions before publication.</p>
-<ul>
-<li class="fragment"><p><span class="bold-hilit">The Blind Review Blindspot:</span> Peer reviewers cannot catch internal logic flaws or scrambled data rows simply by staring at a static PDF chart or a final table of p-values.</p></li>
-<li class="fragment"><p><span class="bold-hilit">Open Inspection over Execution:</span> For many peer reviewers, simply being able to <strong>read</strong> the logic of the source text is vastly more informative than trying to run a compiled file.</p></li>
-<li class="fragment"><p><span class="bold-hilit">The Crowdsourced Audit:</span> Making your script open to the world allows outside domain experts to spot anomalies early, preventing high-profile retractions later on.</p></li>
-</ul>
-</section>
-<section id="transparency-maximizes-professional-impact" class="slide level2">
-<h2>Transparency Maximizes Professional Impact</h2>
-<ul>
-<li class="fragment"><p><span class="bold-hilit">The Academic Currency:</span> Code sharing is a major engine for professional discovery. Other scientists can only cite your work if they can easily adapt and extend your workflow.</p></li>
-<li class="fragment"><p><span class="bold-hilit">Establishing Provenance:</span> Publicly archiving your scripts on a hosted remote with a permanent DOI establishes clear, timestamped ownership over your unique algorithms.</p></li>
-<li class="fragment"><p><span class="bold-hilit">Stopping Code Theft:</span> If code sharing becomes standard operating procedure, it is significantly harder for competitors to secretly use your ideas without giving explicit citation credit.</p></li>
-<li class="fragment"><p><span class="bold-hilit">Future Proof Competency:</span> As the scientific community rapidly evolves, researchers who provide fully auditable pipelines are heavily favored by modern funding agencies and hiring committees.</p></li>
+<li><a href="https://doi.org/10.1038/467753a" class="uri">https://doi.org/10.1038/467753a</a></li>
 </ul>
 </section></section>
 <section>
@@ -372,36 +178,101 @@
 <h1>Discussion Time</h1>
 
 </section>
-<section id="activity" class="slide level2">
-<h2>Activity</h2>
-<p>We’re going to divide the classroom into groups</p>
+<section id="screens-off-minds-on" class="slide level2">
+<h2>Screens Off, Minds On</h2>
+<p><br>
+</p>
+<ul>
+<li><p><span class="bold-hilit">Devices Away:</span> Laptops &amp; tablets closed, phones away.</p></li>
+<li><p><span class="bold-hilit">No One Alone:</span> Pair or team up (no solo seats).</p></li>
+<li><p><span class="bold-hilit">Engage Fully:</span> Be ready to speak, debate, and share ideas.</p></li>
+</ul>
+</section>
+<section id="poll" class="slide level2">
+<h2>Poll</h2>
+<p><br>
+</p>
+<div class="poll">
+<p>Have you ever read a paper, wanted the code and/or the data, emailed the authors asking for it “upon request,” and received nothing back?</p>
+</div>
 <div class="fragment">
 <p><br>
 </p>
-<div class="columns">
-<div class="column">
-<p><span class="mdlit">Team A: The Proprietary Tech Firm</span></p>
-<p>You have built a simulation code that calculates the structural stress limits for public bridges or medical equipment. You claim it’s a corporate secret and refuse to share the code lines.</p>
-</div><div class="column fragment">
-<p><span class="hilit">Team B: The Public Safety Board</span></p>
-<p>You refuse to approve the engineering projects because you cannot verify the black-box simulation.</p>
-</div></div>
+<p>Write your answer on the scrath paper handed out to you.</p>
 </div>
 </section>
-<section id="activity-contd" class="slide level2">
-<h2>Activity (cont’d)</h2>
+<section id="the-demand-support-excuse" class="slide level2">
+<h2>The “Demand Support” Excuse</h2>
+<p>Common excuse to not share code: <br> <span class="bold-hilit">“People will pick holes and demand support.”</span></p>
+<p><br>
+</p>
+<ul>
+<li class="fragment">Suppose you’ve written an R/Python package that you want to share via GitHub.</li>
+<li class="fragment">You are worried that users will demand technical support.</li>
+</ul>
+<div class="fragment">
+<div class="poll">
+<p>Silently think (and write) about two boundaries that you would set to limit how much support you are willing to give.</p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_3b338148" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="drafting-a-support.md-file" class="slide level2">
+<h2>Drafting a <code>SUPPORT.md</code> file</h2>
+<p>Common excuse to not share code: <br> <span class="bold-hilit">“People will pick holes and demand support.”</span></p>
+<p><br>
+</p>
+<div class="fragment">
+<div class="poll">
+<ul>
+<li><p>In trios, draft a <code>SUPPORT.md</code> disclaimer for a GitHub repo.</p></li>
+<li><p>State your commitment to open science while setting firm boundaries against personal tech support requests.</p></li>
+</ul>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_f0340179" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="discussion-part-1" class="slide level2">
+<h2>Discussion (part 1)</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="hilit">Team A: The Proprietary Tech Firm</span></p>
+<ul>
+<li class="fragment">Your team has built a simulation code that calculates the structural stress limits for public bridges.</li>
+<li class="fragment">Your team refuses to share the code claiming it’s a corporate secret.</li>
+</ul>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column fragment" style="width:45%;">
+<p><span class="bold-hilit">Issues</span></p>
 <ul>
 <li class="fragment">A bridge design built using the firm’s secret code has just shown minor structural cracks.</li>
 <li class="fragment">The firm claims it’s an isolated steel issue, not a software issue.</li>
-<li class="fragment">They refuse to release their code lines, calling it a multi-million dollar corporate secret.</li>
 </ul>
+</div></div>
 <div class="fragment">
-<p>Huddle with your immediate neighbors to formulate 3 compelling arguments to defend your position.</p>
+<div class="poll">
+<p>Huddle with your immediate neighbors to formulate 3 compelling arguments to defend Team A position.</p>
+</div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_2354ed32" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_c70a90bc" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 </div>
 </div>
@@ -418,8 +289,39 @@ being copied by global corporate rivals]?
 team from being hijacked by strangers demanding free tech support]?
 - The Liability Shield: If you open-source the code and someone modifies a parameter, 
 causing a crash, who legally owns that failure?
+-->
+</div>
+</section>
+<section id="discussion-part-2" class="slide level2">
+<h2>Discussion (part 2)</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><span class="bold-hilit">Issues</span></p>
+<ul>
+<li>A bridge design built using the firm’s secret code has just shown minor structural cracks.</li>
+<li>The firm claims it’s an isolated steel issue, not a software issue.</li>
+</ul>
+</div><div class="column" style="width:5%;">
 
-
+</div><div class="column fragment" style="width:50%;">
+<p><span class="mdlit">Team B: The Public Safety Board</span></p>
+<ul>
+<li class="fragment">You refuse to approve Team A’s projects because you cannot verify their black-box simulation.</li>
+</ul>
+</div></div>
+<div class="fragment">
+<div class="poll">
+<p>Huddle with your immediate neighbors to formulate 3 compelling arguments to defend Team B position.</p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_d4b68e5a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
+</div>
+</div>
+</div>
+<!--
 The Public Safety Board:
 
 1. **[Argument 1: Public Accountability]**
@@ -435,226 +337,39 @@ completely empty without line-by-line inspection?
 -->
 </div>
 </section>
-<section id="debate" class="slide level2">
-<h2>Debate</h2>
-<ul>
-<li class="fragment">Imagine you are a junior researcher.</li>
-<li class="fragment">Your script is unoptimized, un-commented, and full of messy hacks.</li>
-<li class="fragment">But it works: it successfully generates your paper’s plots.</li>
-</ul>
-<div class="fragment">
-<p>If you publish this “dirty” code:</p>
-<div class="columns">
-<div class="column" style="width:45%;">
-<div class="poll">
-<p>Do you elevate scientific transparency?</p>
-</div>
-</div><div class="column" style="width:10%;">
+<section id="discussion-part-3" class="slide level2">
+<h2>Discussion (part 3)</h2>
+<p>The tech firm (<span class="hilit">Team A</span>) refuses to open-source its proprietary stress-testing code due to commercial secrets.</p>
+<p>But the public safety board (<span class="mdlit">Team B</span>) refuses to trust a black box.</p>
 <p><br>
 </p>
-<p>&nbsp;&nbsp; OR</p>
-</div><div class="column" style="width:45%;">
-<div class="poll">
-<p>Do you pollute the scientific record with amateur software engineering?</p>
-</div>
-</div></div>
-<div class="cell">
-<div class="cell-output-display">
-<div class="countdown" id="timer_e1fcd7d3" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
-</div>
-</div>
-<aside class="notes">
-<p>If someone emails you for your code 3 years from now, why is that infinitely more painful than just dropping your dirty script onto GitHub today?”</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</div>
-</section>
-<section id="debate-1" class="slide level2">
-<h2>Debate</h2>
-<div class="fragment">
-<p>Going back to LeVeque’s “Theorems Without Proofs” analogy, publication of theorems without proofs is not acceptable. Yet, we accept computational outputs without the code that produce them.</p>
-</div>
 <div class="fragment">
 <div class="poll">
-<p>Why does the scientific community tolerate this double standard?</p>
+<p>How can Team A prove its code works without leaking its competitive edge to global rivals?</p>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_09e26c55" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_29c51b52" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 </div>
 </div>
-<aside class="notes">
-<p>Is a computer script fundamentally different from a mathematical proof, or are we just living in a scientifically immature era of computing?</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </div>
 </section>
-<section id="debate-2" class="slide level2">
-<h2>Debate</h2>
-<!-- Protect Your Output vs. Public Provenance -->
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="the-pragmatist-view">🛡️ The Pragmatist View</h3>
-<p>It took me three years to write this algorithmic base. If I open-source it now, my competitors will use my code to publish five papers before I can even finish my next draft.</p>
-</div><div class="column" style="width:50%;">
-<h3 id="the-open-view">🌐 The Open View</h3>
-<p>Publicly archiving your code with a timestamped DOI is the absolute best way to claim ownership, establish provenance, and legally force competitors to cite you.</p>
-</div></div>
-<div class="fragment">
+<section id="discussion-part-4" class="slide level2">
+<h2>Discussion (part 4)</h2>
 <div class="poll">
-<p>If you are a funding agency, how do you balance a scientist’s valid right to profit from their multi-year software labor against the public’s right to verify the data pipeline immediately?</p>
+<p>Where should the legal and ethical line be drawn between a private company’s right to protect its proprietary code/algorithms and the public’s right to independent verification—especially when lives, or public policy depend on those computational claims?</p>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_0c9c68b5" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_aca42754" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 </div>
 </div>
-</div>
-</section>
-<section id="debate-3" class="slide level2">
-<h2>Debate</h2>
-<!-- The Fear of Maintenance -->
-<p>Many researchers hide their scripts because they are terrified that once the code is public, their inbox will be flooded with emails from strangers asking for technical troubleshooting, custom modifications, or software installation help.</p>
-<div class="fragment">
-<div class="poll">
-<p>How do you draw a boundary between providing necessary scientific transparency and protecting your personal time from being hijacked by outside users demanding free tech support?</p>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div class="countdown" id="timer_218733b5" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
-</div>
-</div>
-<aside class="notes">
-<p>Barnes and LeVeque emphasize that research code is a static archive of a publication, not a commercial product that comes with customer support.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</div>
-</section></section>
-<section>
-<section id="quiz-poll-time" class="title-slide slide level1 center">
-<h1>Quiz-Poll Time</h1>
-
-</section>
-<section id="google-form" class="slide level2">
-<h2>Google Form</h2>
-<p><br>
-</p>
-<p><strong>INSERT QR code!!!</strong></p>
-<p><br>
-</p>
-<p><strong>INSERT <url> link to google form!!!</url></strong></p>
-</section>
-<section id="poll" class="slide level2">
-<h2>Poll</h2>
-<!--The "Ugly Code" Reality Check -->
-<p>You are about to submit a paper. Your code works but is messy, uncommented, and unoptimized. What is your honest action?</p>
-<ol type="A">
-<li><p><span class="bold-hilit">Publish it immediately:</span> The dirty code is an essential part of the scientific record; transparency wins over aesthetics.</p></li>
-<li><p><span class="bold-hilit">Hide it entirely:</span> I am too self-conscious about my coding skills; I would rather hide the script than face professional judgment.</p></li>
-<li><p><span class="bold-hilit">Delay the paper:</span> Spend three weeks rewriting it neatly, even if it delays my graduation or submission timeline.</p></li>
-<li><p><span class="bold-hilit">The “Upon Request” Lie:</span> State that the code is “available upon request” and hope no one ever actually emails me.</p></li>
-</ol>
-</section>
-<section id="poll-1" class="slide level2">
-<h2>Poll</h2>
-<!-- The Computational Double Standard -->
-<p>Why does the scientific community tolerate papers that publish computational figures but hide the source code scripts?</p>
-<ol type="A">
-<li><p><span class="bold-hilit">Cultural Lag:</span> Computing is relatively new to academia; we are simply living in a scientifically immature era of data science.</p></li>
-<li><p><span class="bold-hilit">Complexity:</span> A computer script is infinitely more complex than a static math proof, making routine auditing impractical.</p></li>
-<li><p><span class="bold-hilit">Status Bias:</span> We evaluate science based on the prestige and reputation of the author’s university rather than their code.</p></li>
-<li><p><span class="bold-hilit">Journal Laziness:</span> Editors and peer reviewers simply refuse to force authors to change their habits because it adds extra work.</p></li>
-</ol>
-</section>
-<section id="poll-2" class="slide level2">
-<h2>Poll</h2>
-<!-- The "Scooping" Threat Matrix -->
-<p>Rate your level of agreement with this statement:</p>
-<p>“A researcher has a right to keep their novel code hidden for up to two years after publication to ensure competitors don’t scoop their future research ideas.”</p>
-<ol type="1">
-<li>Strongly Disagree (Public tax dollars funded it; code belongs to the world immediately)</li>
-<li>Disagree</li>
-<li>Neutral / Undecided</li>
-<li>Agree</li>
-<li>Strongly Agree (Career survival metrics must outweigh open-science ideals)</li>
-</ol>
-</section>
-<section id="poll-3" class="slide level2">
-<h2>Poll</h2>
-<p>What is your biggest psychological fear regarding open-sourcing your personal computational research project?</p>
-<p><br>
-</p>
-<p>In exactly <strong>one word</strong>, submit your primary worry or mental roadblock regarding making your code visible to the public.</p>
-</section></section>
-<section>
-<section id="final-words" class="title-slide slide level1 center">
-<h1>Final Words</h1>
-
-</section>
-<section id="key-takeaways" class="slide level2">
-<h2>Key Takeaways</h2>
-<ul>
-<li class="fragment"><p>Open science isn’t just an academic debate—it has high-stakes civic consequences.</p></li>
-<li class="fragment"><p>Hidden code can carry direct life-or-death consequences in engineering and public policy.</p></li>
-<li class="fragment"><p>Perfectionism and Absolute Secrecy both break scientific progress.</p></li>
-</ul>
-</section>
-<section id="key-takeaways-1" class="slide level2">
-<h2>Key Takeaways</h2>
-<p>In the real world, engineering projects navigate this standoff through compromised structures:</p>
-<ul>
-<li class="fragment"><p><strong>The Production Sandbox:</strong> Tech firms can deposit source code into a <em>Software Escrow</em>—allowing a trusted, independent third-party academic panel to run line-by-line audits without exposing trade secrets to public competitors.</p></li>
-<li class="fragment"><p><strong>The Barnes Reality Check:</strong> Code does not need to be a beautifully polished product to be verified; it just needs to expose the raw mathematical parameters governing the bridge’s stress metrics.</p></li>
-<li class="fragment"><p><strong>The Baseline Rule:</strong> Un-auditable code is un-verifiable science.</p></li>
-</ul>
-</section>
-<section id="the-selfish-benefits-of-open-code" class="slide level2">
-<h2>The Selfish Benefits of Open Code</h2>
-<ul>
-<li class="fragment"><p><span class="bold-hilit">Your Most Important Collaborator:</span> Your “past self” is your most frequent collaborator, and they notoriously forget what their own code did after 6 months.</p></li>
-<li class="fragment"><p><span class="bold-hilit">The “Push-Button” Advantage:</span> Forcing yourself to build a script that replicates your whole project with the push of a button pays off massively down the road.</p></li>
-<li class="fragment"><p><span class="bold-hilit">Frictionless Revisions:</span> When a journal reviewer inevitably demands you replot your data or shift an axis, an automated script saves you weeks of manual reconstruction labor.</p></li>
-<li class="fragment"><p><span class="bold-hilit">The Institutional Shield:</span> If your results are ever publicly questioned or audited by outsiders, a public, timestamped git repository provides immediate, undeniable proof of your data’s provenance.</p></li>
-</ul>
 
 
 </section></section>

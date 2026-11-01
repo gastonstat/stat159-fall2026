@@ -227,31 +227,31 @@
 <section id="what-does-all-rights-reserved-actually-mean" class="slide level2">
 <h2>What Does “All Rights Reserved” Actually Mean?</h2>
 <p>By default, automatic copyright grants the creator a strict monopoly.</p>
-<p>“All Rights Reserved” means a stranger cannot legally do any of the following without explicit, written permission from the owner:</p>
+<p><span class="bold">“All Rights Reserved”</span> means a stranger cannot legally do any of the following without explicit, written permission from the owner:</p>
 <ul>
-<li class="fragment"><p>Reproduce: They cannot download, copy, or duplicate the file onto their local machine.</p></li>
-<li class="fragment"><p>Distribute: They cannot host the file on their own server or share it with others.</p></li>
-<li class="fragment"><p>Modify: They cannot change a single line of the code to fix a bug or tweak an algorithm.</p></li>
-<li class="fragment"><p>Derive: They cannot build a new software package that imports or relies on that copyrighted code.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Reproduce:</span> They cannot download, copy, or duplicate the file onto their local machine.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Distribute:</span> They cannot host the file on their own server or share it with others.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Modify:</span> They cannot change a single line of the code to fix a bug or tweak an algorithm.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Derive:</span> They cannot build a new software package that imports or relies on that copyrighted code.</p></li>
 </ul>
 </section>
 <section id="the-paradox-of-public-repositories" class="slide level2">
 <h2>The Paradox of Public Repositories</h2>
 <p>This creates a massive legal trap on platforms like GitHub.</p>
 <ul>
-<li class="fragment"><p>Public to View vs.&nbsp;Public to Use: Making a repository “Public” on GitHub means people have a license to view and fork the code on GitHub’s infrastructure (per GitHub’s Terms of Service).</p></li>
-<li class="fragment"><p>It does not grant viewers the right to download it to their local laptop, run it on their university cluster, or use it in their research paper.</p></li>
-<li class="fragment"><p>Without a license file, a public repository is looking glass science. Strangers can look at it, but if they touch it, they are technically committing copyright infringement.</p></li>
-<li class="fragment"><p>The Reproducibility Failure: If a peer cannot legally run your code, your computational science is not reproducible.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Public to View -vs- Public to Use:</span> Making a repository “Public” on GitHub means people have a license to view and fork the code on GitHub’s infrastructure (per GitHub’s Terms of Service).</p></li>
+<li class="fragment"><p><span class="bold-hilit">Invisible Wall:</span> It does not grant viewers the right to download it, run it on their university cluster, or use it in their research paper.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Without a license file, a public repository is looking glass science.</span> Strangers can look at it, but if they touch it, they are technically committing copyright infringement.</p></li>
+<li class="fragment"><p><span class="bold-hilit">The Reproducibility Failure:</span> If a peer cannot legally run your code, your computational science is not reproducible.</p></li>
 </ul>
 </section>
 <section id="code-vs.-data-under-copyright-law" class="slide level2">
 <h2>Code vs.&nbsp;Data under Copyright Law</h2>
 <p>This is a critical nuance for computational reproducibility, as science requires both code and data. Copyright treats them completely differently:</p>
 <ul>
-<li class="fragment"><p>Code is protected: Copyright treats software code exactly like literary work (like a novel or a poem). The specific way the logic is written is protected.</p></li>
-<li class="fragment"><p>Facts and Data are NOT protected: Copyright does not protect facts, ideas, mathematical formulas, or raw data. For example, a table listing the boiling points of elements cannot be copyrighted because those are objective facts.</p></li>
-<li class="fragment"><p>Creativity in Data: Only the creative arrangement or original selection of a dataset can be copyrighted (e.g., a carefully curated and cleaned database structure).</p></li>
+<li class="fragment"><p><span class="bold-hilit">Code is protected:</span> Copyright treats software code exactly like literary work (like a novel or a poem). The specific way the logic is written is protected.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Facts and Data are NOT protected:</span> Copyright does not protect facts, ideas, mathematical formulas, or raw data. For example, a table listing the boiling points of elements cannot be copyrighted because those are objective facts.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Creativity in Data:</span> Only the creative arrangement or original selection of a dataset can be copyrighted (e.g., a carefully curated and cleaned database structure).</p></li>
 </ul>
 </section></section>
 <section>
@@ -262,56 +262,198 @@
 <section id="software-licensing-decoded" class="slide level2">
 <h2>Software Licensing Decoded</h2>
 <ul>
-<li class="fragment"><p>Permissive Licenses (The “Do Whatever” Category)</p></li>
-<li class="fragment"><p>Copyleft / Viral Licenses (The “Keep It Free” Category)</p></li>
-<li class="fragment"><p>Every repository needs a root-level LICENSE file.</p></li>
+<li class="fragment"><em>Public Domain</em></li>
 </ul>
+<p><br>
+</p>
+<ul>
+<li class="fragment">Permissive Licenses (The “Do Whatever” Category)</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li class="fragment">Copyleft / Viral Licenses (The “Keep It Free” Category)</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li class="fragment">Every repository needs a root-level <code>LICENSE</code> file.</li>
+</ul>
+</section>
+<section id="public-domain" class="slide level2">
+<h2>Public Domain</h2>
+<p>There is no official “public domain license” because a work in the public domain belongs to everyone rather than being owned or restricted by a license.</p>
+<p><br>
+</p>
+<p>However, tools and public-domain-equivalent instruments exist to legally dedicate or waive copyright, e.g.</p>
+<p><span class="bold-hilit">0BSD (Zero-Clause BSD):</span> A license that grants unconditional permission to use, copy, modify, and distribute a work without any attribution requirement.</p>
 </section>
 <section id="permissive-licenses" class="slide level2">
 <h2>Permissive Licenses</h2>
-<p>The “Do Whatever” Category</p>
+<p>The <span class="mdlit">“Do Whatever”</span> Category</p>
 <ul>
-<li class="fragment"><p>MIT License: Short, simple, allows commercial use, requires keeping the copyright notice.</p></li>
-<li class="fragment"><p>Apache 2.0: Similar to MIT but includes explicit patent rights protection from contributors.</p></li>
-<li class="fragment"><p>Best For: Maximizing adoption, industry collaboration, and academic software packages.</p></li>
+<li class="fragment"><p><span class="bold-hilit">MIT License:</span> Short, simple, allows commercial use, requires keeping the copyright notice.</p></li>
+<li class="fragment"><p><span class="bold-hilit">BSD License:</span> Like MIT but with multiple variants depending on the number of clauses.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Apache 2.0:</span> Similar to MIT but includes explicit patent rights protection from contributors.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Best For:</span> Maximizing adoption, industry collaboration, and academic software packages.</p></li>
 </ul>
+</section>
+<section id="permissive-licenses-contd" class="slide level2">
+<h2>Permissive Licenses (cont’d)</h2>
+<p>They allow you to freely use, modify, and distribute software for commercial or private use without requiring you to open-source your derivative code.</p>
+<ul>
+<li class="fragment"><p><span class="bold-hilit">Permissive Freedom:</span> Allow free use, copying, modification, and integration into proprietary (closed-source) software.</p></li>
+<li class="fragment"><p><span class="bold-hilit">No Copyleft:</span> They are not <span class="hilit">“viral”</span> like the GPL; you are not forced to release your modified source code under the same license.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Attribution &amp; Disclaimers:</span> They require you to keep the original copyright notice, license text, and liability disclaimers intact.</p></li>
+</ul>
+</section>
+<section id="permissive-licenses-contd-1" class="slide level2 smaller">
+<h2>Permissive Licenses (cont’d)</h2>
+<p><br>
+</p>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 41%">
+<col style="width: 6%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>MIT</th>
+<th>BSD (2-Clause)</th>
+<th>BSD (3-Clause)</th>
+<th>Apache</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Document Length</td>
+<td>Short</td>
+<td>Short</td>
+<td>Short</td>
+<td>Long</td>
+</tr>
+<tr class="even">
+<td>Commercial Use Allowed</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Modification &amp; Distribution</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>Requires Copyright Attribution</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Non-Endorsement Clause</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>Explicit Patent Grant</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Explicit Trademark Protection</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>Requires Stating Changes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="copyleft-viral-licenses" class="slide level2">
 <h2>Copyleft / Viral Licenses</h2>
-<p>The “Keep It Free” Category</p>
+<p><br>
+</p>
+<p>The <span class="hilit">“Keep It Free”</span> Category</p>
 <ul>
-<li class="fragment"><p>GNU GPL v3: Anyone who modifies and redistributes the code must also open-source their changes under GPL.</p></li>
-<li class="fragment"><p>The Academic Friction: Can deter commercial partners or integration into proprietary institutional tools.</p></li>
+<li class="fragment"><span class="bold-hilit">GNU GPL v3:</span> Anyone who modifies and redistributes the code must also open-source their changes under GPL.</li>
 </ul>
+<div class="fragment">
+<p>Keep in mind that this type of licenses can deter commercial partners or integration into proprietary institutional tools.</p>
+</div>
 </section>
 <section id="limitation-of-software-licenses" class="slide level2">
 <h2>Limitation of Software Licenses</h2>
-<p>Software licenses (like MIT) do not fit text, figures, trained weights, or tabular data.</p>
+<p>Software licenses do not fit:</p>
+<ul>
+<li class="fragment">text</li>
+<li class="fragment">figures</li>
+<li class="fragment">trained weights</li>
+<li class="fragment">tabular data</li>
+<li class="fragment">(media in general)</li>
+</ul>
+<div class="fragment">
 <p>Instead of software licenses you need to use Creative Commons (CC) Framework</p>
+</div>
 </section>
 <section id="functional-vs.-static-expression" class="slide level2">
 <h2>Functional vs.&nbsp;Static Expression</h2>
+<div class="columns">
+<div class="column">
+<p><span class="bold-hilit">Software Licenses</span></p>
+<p>These assume the work will be compiled, executed, linked, or imported into other programs.</p>
+<p>They regulate things like running the code, modifying the source logic, or embedding the code into a larger application.</p>
+</div><div class="column fragment">
+<p><span class="bold-hilit">Media Licenses</span></p>
+<p>These assume the work will be read, viewed, listened to, or displayed.</p>
+<p>They regulate things like printing a text, showing an image in a presentation, or remixing an audio track into a video.</p>
+</div></div>
+</section>
+<section id="limitation-of-software-licenses-1" class="slide level2">
+<h2>Limitation of Software Licenses</h2>
 <ul>
-<li class="fragment"><p>Software Licenses (MIT, Apache, GPL): These assume the work will be compiled, executed, linked, or imported into other programs. They regulate things like running the code, modifying the source logic, or embedding the code into a larger application.</p></li>
-<li class="fragment"><p>Media Licenses (Creative Commons): Creative Commons (CC) licenses assume the work will be read, viewed, listened to, or displayed. They regulate things like printing a text, showing an image in a presentation, or remixing an audio track into a video.</p></li>
-<li class="fragment"><p>The Conflict: If you apply an MIT license to a research paper or an image, it is legally muddy. Concepts like “compiling” or “linking” do not map onto a JPEG or a PDF essay.</p></li>
+<li class="fragment"><p>If you apply a software license to a research paper or an image, it is legally muddy.</p></li>
+<li class="fragment"><p>Concepts like “compiling” or “linking” do not map onto a JPEG or a PDF or MP3 or MP4 files.</p></li>
+<li class="fragment"><p>Software licenses generally assume the asset is a functional tool, not an artistic expression.</p></li>
 </ul>
 </section>
 <section id="the-threat-of-non-commercial-nc-clauses-in-science" class="slide level2">
 <h2>The Threat of “Non-Commercial” (NC) Clauses in Science</h2>
-<p>Students often instinctively gravitate toward Creative Commons Non-Commercial (CC BY-NC) for their research papers, figures, and slide decks because they want to protect their work from being sold by corporations.</p>
-<p>NC clauses are dangerous for open science. Why?</p>
+<p>Students often instinctively gravitate toward <span class="bold-hilit">Creative Commons Non-Commercial (CC BY-NC)</span> for their research papers, figures, and slide decks because they want to protect their work from being sold by corporations.</p>
+<p>However, NC clauses are dangerous for open science.</p>
+</section>
+<section id="nc-clauses-contd" class="slide level2">
+<h2>NC clauses (cont’d)</h2>
+<p>NC clauses are dangerous for open science, because:</p>
 <ul>
-<li class="fragment">“Commercial use” is poorly defined in court.</li>
-<li class="fragment">Academic Trap: If a researcher at a private university (like Harvard or Stanford) or a commercial medical center downloads a dataset under a CC BY-NC license to reproduce a study, they might be violating the license because their institution charges tuition or holds patents.</li>
-<li class="fragment">Funding Compliance: Many public grants (like NIH or Horizon Europe) strictly mandate that research outputs be published under CC BY (Attribution Only) or CC0 (Public Domain) to maximize public good. An NC clause will often violate funding terms.</li>
+<li class="fragment"><p>“Commercial use” is poorly defined in court.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Academic Trap:</span> If a researcher at a private university or a commercial medical center downloads a dataset under a CC BY-NC license to reproduce a study, they might be violating the license because their institution charges tuition or holds patents.</p></li>
+<li class="fragment"><p><span class="bold-hilit">Funding Compliance:</span> Many public grants (like NIH or Horizon Europe) strictly mandate that research outputs be published under CC BY (Attribution Only) or CC0 (Public Domain) to maximize public good. An NC clause will often violate funding terms.</p></li>
 </ul>
 </section>
 <section id="best-practices-checklist-for-a-project-repository" class="slide level2">
 <h2>Best Practices Checklist for a Project Repository</h2>
 <p>Split your repository assets using the correct legal tool for each job:</p>
 <ul>
-<li class="fragment"><p>💻 The Code (Python scripts, R files, Jupyter Notebook cells): Use MIT, Apache 2.0, or GPL v3.</p></li>
+<li class="fragment"><p>💻 The Code (Python/R script files, Notebooks): Use MIT, BSD, Apache 2.0, or GPL v3.</p></li>
 <li class="fragment"><p>📊 The Data (CSV files, SQL databases, JSON logs): Use CC0 (Public Domain Dedication) to avoid legal bottlenecks when combining datasets.</p></li>
 <li class="fragment"><p>📝 The Narrative (Research papers, README text, documentation pages): Use CC BY 4.0.</p></li>
 <li class="fragment"><p>🎨 The Visuals (Plots, diagrams, summary charts, introductory videos): Use CC BY 4.0.</p></li>
@@ -393,12 +535,38 @@
 </section>
 <section id="about-citation" class="slide level2">
 <h2>About Citation</h2>
-<p>In addition to a top-level README file, as well as license files (for code and non-code) it’s a good idea to have a CITATION file.</p>
+<p>In addition to a top-level README file, as well as LICENSE files (for code and non-code) it’s a good idea to have a CITATION file.</p>
 <ul>
-<li class="fragment">Citation File Format (CITATION.cff)</li>
-<li class="fragment">This YAML file lets platforms like GitHub automatically generate APA/BibTeX citations for repositories.</li>
-<li class="fragment">Also, you can mint a Digital Object Identifier (DOI) by linking a GitHub release to Zenodo.</li>
+<li class="fragment"><p>Citation File Format (CITATION.cff)</p></li>
+<li class="fragment"><p>This YAML file lets platforms like GitHub automatically generate APA/BibTeX citations for repositories.</p></li>
+<li class="fragment"><p>Also, you can mint a Digital Object Identifier (DOI) by linking a GitHub release to Zenodo.</p></li>
 </ul>
+</section>
+<section id="citation-example" class="slide level2 smaller">
+<h2>Citation example</h2>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>CITATION.cff</strong></pre>
+</div>
+<div class="sourceCode" id="cb4" data-filename="CITATION.cff"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a><span class="an">cff-version:</span><span class="co"> 1.2.0</span></span>
+<span id="cb4-2"><a aria-hidden="true" tabindex="-1"></a><span class="an">message:</span><span class="co"> "If you use this software, please cite it as below."</span></span>
+<span id="cb4-3"><a aria-hidden="true" tabindex="-1"></a><span class="an">authors:</span></span>
+<span id="cb4-4"><a aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>family-names: "Smith"</span>
+<span id="cb4-5"><a aria-hidden="true" tabindex="-1"></a>    given-names: "Jane"</span>
+<span id="cb4-6"><a aria-hidden="true" tabindex="-1"></a>    orcid: "https://orcid.org"</span>
+<span id="cb4-7"><a aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>family-names: "Doe"</span>
+<span id="cb4-8"><a aria-hidden="true" tabindex="-1"></a>    given-names: "John"</span>
+<span id="cb4-9"><a aria-hidden="true" tabindex="-1"></a>title: "My Awesome Data Science Tool"</span>
+<span id="cb4-10"><a aria-hidden="true" tabindex="-1"></a>version: "1.4.2"</span>
+<span id="cb4-11"><a aria-hidden="true" tabindex="-1"></a>doi: "10.5281/zenodo.1234567"</span>
+<span id="cb4-12"><a aria-hidden="true" tabindex="-1"></a>date-released: "2026-10-15"</span>
+<span id="cb4-13"><a aria-hidden="true" tabindex="-1"></a>url: "https://project-webpage.com"</span>
+<span id="cb4-14"><a aria-hidden="true" tabindex="-1"></a>repository-code: "https://github.com/project-repo"</span>
+<span id="cb4-15"><a aria-hidden="true" tabindex="-1"></a>keywords:</span>
+<span id="cb4-16"><a aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>"data-science"</span>
+<span id="cb4-17"><a aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>"programming"</span>
+<span id="cb4-18"><a aria-hidden="true" tabindex="-1"></a>license: "MIT"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
 </section></section>

@@ -2965,14 +2965,14 @@
     "href": "lectures/28-discuss7/28-discussion-slides.html#reading-1",
     "title": "Dare to Share",
     "section": "Reading 1",
-    "text": "Reading 1\n\nTitle: Top ten reasons to not share your code (and why you should anyway)\nAuthors: Randall J. LeVeque.\nJournal: Software Sustainability Institute\nYear: 2013\nhttps://www.software.ac.uk/blog/top-ten-reasons-not-share-your-code-and-why-you-should-anyway"
+    "text": "Reading 1\n\nTitle: Top ten reasons to not share your code (and why you should anyway)\nAuthors: Randall J. LeVeque.\nJournal: Software Sustainability Institute\nYear: 2012\nhttps://www.software.ac.uk/blog/top-ten-reasons-not-share-your-code-and-why-you-should-anyway"
   },
   {
     "objectID": "lectures/28-discuss7/28-discussion-slides.html#reading-2",
     "href": "lectures/28-discuss7/28-discussion-slides.html#reading-2",
     "title": "Dare to Share",
     "section": "Reading 2",
-    "text": "Reading 2\n\nTitle: Publish your computer code: it is good enough\nAuthors: Nick Barnes.\nJournal: Nature 467 (7317): 753\nYear: Oct 2010\ndoi: 10.1038/467753a\nhttps://www.software.ac.uk/blog/top-ten-reasons-not-share-your-code-and-why-you-should-anyway"
+    "text": "Reading 2\n\nTitle: Publish your computer code: it is good enough\nAuthors: Nick Barnes.\nJournal: Nature 467 (7317): 753\nYear: Oct 2010\ndoi: 10.1038/467753a\nhttps://doi.org/10.1038/467753a"
   },
   {
     "objectID": "lectures/28-discuss7/28-discussion-slides.html#why-are-we-here",
@@ -3112,7 +3112,7 @@
     "href": "lectures/28-discuss7/28-discussion-slides.html#poll",
     "title": "Dare to Share",
     "section": "Poll",
-    "text": "Poll\n\nYou are about to submit a paper. Your code works but is messy, uncommented, and unoptimized. What is your honest action?\n\nPublish it immediately: The dirty code is an essential part of the scientific record; transparency wins over aesthetics.\nHide it entirely: I am too self-conscious about my coding skills; I would rather hide the script than face professional judgment.\nDelay the paper: Spend three weeks rewriting it neatly, even if it delays my graduation or submission timeline.\nThe “Upon Request” Lie: State that the code is “available upon request” and hope no one ever actually emails me."
+    "text": "Poll\n\n\n\nHave you ever read a paper, wanted the code and/or the data, emailed the authors asking for it “upon request,” and received nothing back?\n\n\n\n\nWrite your answer on the scrath paper handed out to you."
   },
   {
     "objectID": "lectures/28-discuss7/28-discussion-slides.html#poll-1",
@@ -3589,7 +3589,7 @@
     "href": "index.html#schedule",
     "title": "STAT 159/259: Collaborative and Reproducible Statistical Data Science",
     "section": "Schedule 📅",
-    "text": "Schedule 📅\nTentative calendar subject to change.\n\nWeek 1\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 26\n             \n             \n               Lecture  Welcome to Stat 159\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 28\n             \n             \n               Lecture  Naming Files\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 2\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 31\n             \n             \n               Lecture  File Paths & Unix Terminal\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 01\n             \n             \n               Lab  Shell Commands\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 02\n             \n             \n               Lecture  Project Organization\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Ten Simple Rules for RCR (due 9/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 04\n             \n             \n               Lecture  Intro to Git (part I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW1 Reproducibility Checkup (due 9/18)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 3\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 07\n             \n             \n               No-Class  Academic Holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 08\n             \n             \n               Lab  Getting Started with Git\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 09\n             \n             \n               Lecture  Intro to Git (part II)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Guide for Reproducible Research (due 9/16)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 11\n             \n             \n               Lecture  Discussion Reading 1\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 4\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 14\n             \n             \n               Lecture  Git Branching\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 15\n             \n             \n               Lab  Getting started with Git branches\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 16\n             \n             \n               Lecture  Case Study: Global Temperature\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  7 Easy Steps to Open Science (due 9/23)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 18\n             \n             \n               Lecture  Discussion Reading 2\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj1 Replicating temperature Graphics (due 10/2)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 5\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 21\n             \n             \n               Lecture  Git Remotes\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 22\n             \n             \n               Lab  Github and remote repos\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 23\n             \n             \n               Lecture  Undoing changes in Git\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Data Science at the Singularity (due 9/30)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 25\n             \n             \n               Lecture  Discussion Reading 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 6\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 28\n             \n             \n               Lecture  Intro to Make (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 29\n             \n             \n               Lab  Getting started with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 30\n             \n             \n               Lecture  Intro to Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Reinhart-Rogoff Fiasco (due 10/07)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 02\n             \n             \n               Lecture  Discussion Reading 4\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW2 TBA (due 10/16)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 7\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 05\n             \n             \n               Lecture  Variables in Make\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj1 Peer Review (due 10/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 06\n             \n             \n               Lab  More automation with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 07\n             \n             \n               Lecture  More Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Duke Trials Retraction (due 10/14)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 09\n             \n             \n               Lecture  Discussion Reading 5\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 8\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 12\n             \n             \n               Lecture  Git Collaborative workflows\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 13\n             \n             \n               Lab  Working in groups in Github\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 14\n             \n             \n               Lecture  Handling and Sharing Data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 16\n             \n             \n               Lecture  Discussion Reading 6\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj2 2024 BPD Annual Report (due 10/30)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 9\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 19\n             \n             \n               Lecture  Writing Clear Code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 20\n             \n             \n               Lab  Hands on sharing and managing data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 21\n             \n             \n               Lecture  Packaging Code: R packages (I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Share Your Code (due 10/28)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 23\n             \n             \n               Lecture  Packaging Code: R packages (II)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 10\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 26\n             \n             \n               Lecture  Packaging Code: Python packages\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 27\n             \n             \n               Lab  Documenting your code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 28\n             \n             \n               Lecture  Environment Mgmt\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  RR Legal Framework (due 11/04)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 30\n             \n             \n               Lecture  Discussion Reading 7\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW-3 TBA (due 11/13)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 11\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 02\n             \n             \n               Lecture  Environment Management (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 03\n             \n             \n               Lab  Managing environments\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 04\n             \n             \n               Lecture  Licenses\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Rules for Better Figures (due 11/11)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 06\n             \n             \n               Lecture  Discussion Reading 8\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 12\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 09\n             \n             \n               Lecture  Images, Figures and Graphics\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 10\n             \n             \n               Lab  Handling images and figures\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 11\n             \n             \n               No-Class  Academic holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Research Compendium (due 11/18)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 13\n             \n             \n               Lecture  Discussion Reading 9\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 3 TBA (due 12/07)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 13\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 16\n             \n             \n               Lecture  Research Compendium\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 17\n             \n             \n               Lab  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 18\n             \n             \n               Lecture  Discussion Reading 10\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 20\n             \n             \n               Lecture  Publishing & Communication I\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 14\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 23\n             \n             \n               Lecture  Publishing & Communication II\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 24\n             \n             \n               Lab  Final project status\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 25\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 27\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 15\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 30\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 01\n             \n             \n               Lab  Wrap-Up Final Project\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 02\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 04\n             \n             \n               Lecture  Closing Talk\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 16\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 07\n             \n             \n               Overview  RRR Week\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 17\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 14\n             \n             \n               Final  Project 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \nNo matching items",
+    "text": "Schedule 📅\nTentative calendar subject to change.\n\nWeek 1\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 26\n             \n             \n               Lecture  Welcome to Stat 159\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 28\n             \n             \n               Lecture  Naming Files\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 2\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Aug 31\n             \n             \n               Lecture  File Paths & Unix Terminal\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 01\n             \n             \n               Lab  Shell Commands\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 02\n             \n             \n               Lecture  Project Organization\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Ten Simple Rules for RCR (due 9/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 04\n             \n             \n               Lecture  Intro to Git (part I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW1 Reproducibility Checkup (due 9/18)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 3\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 07\n             \n             \n               No-Class  Academic Holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 08\n             \n             \n               Lab  Getting Started with Git\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 09\n             \n             \n               Lecture  Intro to Git (part II)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Guide for Reproducible Research (due 9/16)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 11\n             \n             \n               Lecture  Discussion Reading 1\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 4\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 14\n             \n             \n               Lecture  Git Branching\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 15\n             \n             \n               Lab  Getting started with Git branches\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 16\n             \n             \n               Lecture  Case Study: Global Temperature\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  7 Easy Steps to Open Science (due 9/23)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 18\n             \n             \n               Lecture  Discussion Reading 2\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj1 Replicating temperature Graphics (due 10/2)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 5\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 21\n             \n             \n               Lecture  Git Remotes\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 22\n             \n             \n               Lab  Github and remote repos\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 23\n             \n             \n               Lecture  Undoing changes in Git\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Data Science at the Singularity (due 9/30)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 25\n             \n             \n               Lecture  Discussion Reading 3\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 6\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 28\n             \n             \n               Lecture  Intro to Make (part 1)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 29\n             \n             \n               Lab  Getting started with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Sep 30\n             \n             \n               Lecture  Intro to Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Reinhart-Rogoff Fiasco (due 10/07)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 02\n             \n             \n               Lecture  Discussion Reading 4\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW2 Serena Williams (due 10/16)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 7\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 05\n             \n             \n               Lecture  Variables in Make\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj1 Peer Review (due 10/09)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 06\n             \n             \n               Lab  More automation with Make\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 07\n             \n             \n               Lecture  More Make (part 2)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  The Duke Trials Retraction (due 10/14)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 09\n             \n             \n               Lecture  Discussion Reading 5\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 8\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 12\n             \n             \n               Lecture  Git Collaborative workflows\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 13\n             \n             \n               Lab  Working in groups in Github\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 14\n             \n             \n               Lecture  Handling and Sharing Data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 16\n             \n             \n               Lecture  Discussion Reading 6\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Proj2 2024 BPD Annual Report (due 10/30)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 9\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 19\n             \n             \n               Lecture  Writing Clear Code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 20\n             \n             \n               Lab  Hands on sharing and managing data\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 21\n             \n             \n               Lecture  Packaging Code: R packages (I)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Share Your Code (due 10/28)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 23\n             \n             \n               Lecture  Packaging Code: R packages (II)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 10\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 26\n             \n             \n               Lecture  Demo: Python package\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 27\n             \n             \n               Lab  Packaging your code\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 28\n             \n             \n               Lecture  Quarto Websites 1\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  RR Lessons from Theranos (due 11/04)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Oct 30\n             \n             \n               Lecture  Discussion Reading 7\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  HW-3 Package (due 11/13)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 11\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 02\n             \n             \n               Lecture  Quarto Websites 2\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 03\n             \n             \n               Lab  Websites 1\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 04\n             \n             \n               Lecture  Licenses\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  RR Legal Framework (due 11/11)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 06\n             \n             \n               Lecture  Discussion Reading 8\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 12\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 09\n             \n             \n               Lecture  Revealjs Slides\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 10\n             \n             \n               Lab  Revealjs Slides\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 11\n             \n             \n               No-Class  Academic holiday (no class)\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Research Compendium (due 11/18)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 13\n             \n             \n               Lecture  Discussion Reading 9\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Homework  Project 3 TBA (due 12/11)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 13\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 16\n             \n             \n               Lecture  Data Serializatino\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 17\n             \n             \n               Lab  Data Misc\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 18\n             \n             \n               Lecture  Discussion Reading 10\n             \n             \n                \n             \n                \n             \n          \n  \n  \n  \n             \n             \n             \n               Reading  Rules for Better Figures (due 12/01)\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 20\n             \n             \n               Lecture  Discussion Reading 10\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 14\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 23\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 24\n             \n             \n               No-Lab  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 25\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 27\n             \n             \n               No-Class  Thanksgiving break\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 15\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Nov 30\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 01\n             \n             \n               Lab  Wrap-Up Final Project\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 02\n             \n             \n               Lecture  TBA\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 04\n             \n             \n               Lecture  Closing Talk\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 16\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 07\n             \n             \n               Overview  RRR Week\n             \n             \n                \n             \n                \n             \n          \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 11\n             \n             \n               Final  Final Project due (12/11)\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \n  \n\n   Week 17\n\n   \n   \n   \n   \n   \n     \n  \n          \n  \n  \n  \n             \n             \n             Dec 14\n             \n             \n               Blank  Enjoy your Winter break!\n             \n             \n                \n             \n                \n             \n          \n     \n     \n  \n   \nNo matching items",
     "crumbs": [
       "Home / Schedule"
     ]
@@ -6200,7 +6200,7 @@
     "href": "lectures/30-licenses/30-licenses-slides.html#the-paradox-of-public-repositories",
     "title": "Licensing",
     "section": "The Paradox of Public Repositories",
-    "text": "The Paradox of Public Repositories\nThis creates a massive legal trap on platforms like GitHub.\n\nPublic to View vs. Public to Use: Making a repository “Public” on GitHub means people have a license to view and fork the code on GitHub’s infrastructure (per GitHub’s Terms of Service).\nIt does not grant viewers the right to download it to their local laptop, run it on their university cluster, or use it in their research paper.\nWithout a license file, a public repository is looking glass science. Strangers can look at it, but if they touch it, they are technically committing copyright infringement.\nThe Reproducibility Failure: If a peer cannot legally run your code, your computational science is not reproducible."
+    "text": "The Paradox of Public Repositories\nThis creates a massive legal trap on platforms like GitHub.\n\nPublic to View -vs- Public to Use: Making a repository “Public” on GitHub means people have a license to view and fork the code on GitHub’s infrastructure (per GitHub’s Terms of Service).\nInvisible Wall: It does not grant viewers the right to download it, run it on their university cluster, or use it in their research paper.\nWithout a license file, a public repository is looking glass science. Strangers can look at it, but if they touch it, they are technically committing copyright infringement.\nThe Reproducibility Failure: If a peer cannot legally run your code, your computational science is not reproducible."
   },
   {
     "objectID": "lectures/30-licenses/30-licenses-slides.html#code-vs.-data-under-copyright-law",
@@ -6214,49 +6214,49 @@
     "href": "lectures/30-licenses/30-licenses-slides.html#software-licensing-decoded",
     "title": "Licensing",
     "section": "Software Licensing Decoded",
-    "text": "Software Licensing Decoded\n\nPermissive Licenses (The “Do Whatever” Category)\nCopyleft / Viral Licenses (The “Keep It Free” Category)\nEvery repository needs a root-level LICENSE file."
+    "text": "Software Licensing Decoded\n\nPublic Domain\n\n\n\n\nPermissive Licenses (The “Do Whatever” Category)\n\n\n\n\nCopyleft / Viral Licenses (The “Keep It Free” Category)\n\n\n\n\nEvery repository needs a root-level LICENSE file."
   },
   {
     "objectID": "lectures/30-licenses/30-licenses-slides.html#permissive-licenses",
     "href": "lectures/30-licenses/30-licenses-slides.html#permissive-licenses",
     "title": "Licensing",
     "section": "Permissive Licenses",
-    "text": "Permissive Licenses\nThe “Do Whatever” Category\n\nMIT License: Short, simple, allows commercial use, requires keeping the copyright notice.\nApache 2.0: Similar to MIT but includes explicit patent rights protection from contributors.\nBest For: Maximizing adoption, industry collaboration, and academic software packages."
+    "text": "Permissive Licenses\nThe “Do Whatever” Category\n\nMIT License: Short, simple, allows commercial use, requires keeping the copyright notice.\nBSD License: Like MIT but with multiple variants depending on the number of clauses.\nApache 2.0: Similar to MIT but includes explicit patent rights protection from contributors.\nBest For: Maximizing adoption, industry collaboration, and academic software packages."
   },
   {
     "objectID": "lectures/30-licenses/30-licenses-slides.html#copyleft-viral-licenses",
     "href": "lectures/30-licenses/30-licenses-slides.html#copyleft-viral-licenses",
     "title": "Licensing",
     "section": "Copyleft / Viral Licenses",
-    "text": "Copyleft / Viral Licenses\nThe “Keep It Free” Category\n\nGNU GPL v3: Anyone who modifies and redistributes the code must also open-source their changes under GPL.\nThe Academic Friction: Can deter commercial partners or integration into proprietary institutional tools."
+    "text": "Copyleft / Viral Licenses\n\n\nThe “Keep It Free” Category\n\nGNU GPL v3: Anyone who modifies and redistributes the code must also open-source their changes under GPL.\n\n\nKeep in mind that this type of licenses can deter commercial partners or integration into proprietary institutional tools."
   },
   {
     "objectID": "lectures/30-licenses/30-licenses-slides.html#limitation-of-software-licenses",
     "href": "lectures/30-licenses/30-licenses-slides.html#limitation-of-software-licenses",
     "title": "Licensing",
     "section": "Limitation of Software Licenses",
-    "text": "Limitation of Software Licenses\nSoftware licenses (like MIT) do not fit text, figures, trained weights, or tabular data.\nInstead of software licenses you need to use Creative Commons (CC) Framework"
+    "text": "Limitation of Software Licenses\nSoftware licenses do not fit:\n\ntext\nfigures\ntrained weights\ntabular data\n(media in general)\n\n\nInstead of software licenses you need to use Creative Commons (CC) Framework"
   },
   {
     "objectID": "lectures/30-licenses/30-licenses-slides.html#functional-vs.-static-expression",
     "href": "lectures/30-licenses/30-licenses-slides.html#functional-vs.-static-expression",
     "title": "Licensing",
     "section": "Functional vs. Static Expression",
-    "text": "Functional vs. Static Expression\n\nSoftware Licenses (MIT, Apache, GPL): These assume the work will be compiled, executed, linked, or imported into other programs. They regulate things like running the code, modifying the source logic, or embedding the code into a larger application.\nMedia Licenses (Creative Commons): Creative Commons (CC) licenses assume the work will be read, viewed, listened to, or displayed. They regulate things like printing a text, showing an image in a presentation, or remixing an audio track into a video.\nThe Conflict: If you apply an MIT license to a research paper or an image, it is legally muddy. Concepts like “compiling” or “linking” do not map onto a JPEG or a PDF essay."
+    "text": "Functional vs. Static Expression\n\n\nSoftware Licenses\nThese assume the work will be compiled, executed, linked, or imported into other programs.\nThey regulate things like running the code, modifying the source logic, or embedding the code into a larger application.\n\nMedia Licenses\nThese assume the work will be read, viewed, listened to, or displayed.\nThey regulate things like printing a text, showing an image in a presentation, or remixing an audio track into a video."
   },
   {
     "objectID": "lectures/30-licenses/30-licenses-slides.html#the-threat-of-non-commercial-nc-clauses-in-science",
     "href": "lectures/30-licenses/30-licenses-slides.html#the-threat-of-non-commercial-nc-clauses-in-science",
     "title": "Licensing",
     "section": "The Threat of “Non-Commercial” (NC) Clauses in Science",
-    "text": "The Threat of “Non-Commercial” (NC) Clauses in Science\nStudents often instinctively gravitate toward Creative Commons Non-Commercial (CC BY-NC) for their research papers, figures, and slide decks because they want to protect their work from being sold by corporations.\nNC clauses are dangerous for open science. Why?\n\n“Commercial use” is poorly defined in court.\nAcademic Trap: If a researcher at a private university (like Harvard or Stanford) or a commercial medical center downloads a dataset under a CC BY-NC license to reproduce a study, they might be violating the license because their institution charges tuition or holds patents.\nFunding Compliance: Many public grants (like NIH or Horizon Europe) strictly mandate that research outputs be published under CC BY (Attribution Only) or CC0 (Public Domain) to maximize public good. An NC clause will often violate funding terms."
+    "text": "The Threat of “Non-Commercial” (NC) Clauses in Science\nStudents often instinctively gravitate toward Creative Commons Non-Commercial (CC BY-NC) for their research papers, figures, and slide decks because they want to protect their work from being sold by corporations.\nHowever, NC clauses are dangerous for open science."
   },
   {
     "objectID": "lectures/30-licenses/30-licenses-slides.html#best-practices-checklist-for-a-project-repository",
     "href": "lectures/30-licenses/30-licenses-slides.html#best-practices-checklist-for-a-project-repository",
     "title": "Licensing",
     "section": "Best Practices Checklist for a Project Repository",
-    "text": "Best Practices Checklist for a Project Repository\nSplit your repository assets using the correct legal tool for each job:\n\n💻 The Code (Python scripts, R files, Jupyter Notebook cells): Use MIT, Apache 2.0, or GPL v3.\n📊 The Data (CSV files, SQL databases, JSON logs): Use CC0 (Public Domain Dedication) to avoid legal bottlenecks when combining datasets.\n📝 The Narrative (Research papers, README text, documentation pages): Use CC BY 4.0.\n🎨 The Visuals (Plots, diagrams, summary charts, introductory videos): Use CC BY 4.0."
+    "text": "Best Practices Checklist for a Project Repository\nSplit your repository assets using the correct legal tool for each job:\n\n💻 The Code (Python/R script files, Notebooks): Use MIT, BSD, Apache 2.0, or GPL v3.\n📊 The Data (CSV files, SQL databases, JSON logs): Use CC0 (Public Domain Dedication) to avoid legal bottlenecks when combining datasets.\n📝 The Narrative (Research papers, README text, documentation pages): Use CC BY 4.0.\n🎨 The Visuals (Plots, diagrams, summary charts, introductory videos): Use CC BY 4.0."
   },
   {
     "objectID": "lectures/30-licenses/30-licenses-slides.html#option-1-the-multi-license-readme-file",
@@ -6291,7 +6291,7 @@
     "href": "lectures/30-licenses/30-licenses-slides.html#about-citation",
     "title": "Licensing",
     "section": "About Citation",
-    "text": "About Citation\nIn addition to a top-level README file, as well as license files (for code and non-code) it’s a good idea to have a CITATION file.\n\nCitation File Format (CITATION.cff)\nThis YAML file lets platforms like GitHub automatically generate APA/BibTeX citations for repositories.\nAlso, you can mint a Digital Object Identifier (DOI) by linking a GitHub release to Zenodo."
+    "text": "About Citation\nIn addition to a top-level README file, as well as LICENSE files (for code and non-code) it’s a good idea to have a CITATION file.\n\nCitation File Format (CITATION.cff)\nThis YAML file lets platforms like GitHub automatically generate APA/BibTeX citations for repositories.\nAlso, you can mint a Digital Object Identifier (DOI) by linking a GitHub release to Zenodo."
   },
   {
     "objectID": "lectures/17-make3/17-make-variables-slides.html#future-value-minimal-example",
@@ -7738,7 +7738,7 @@
     "href": "hws/hw03/hw03.html",
     "title": "HW3) R/Python Package",
     "section": "",
-    "text": "This assignment is the continuation of HW1 and HW2. This time you will take the next step by creating a package (R or Python) to retrieve the career matches of a given player (e.g. Serena Williams, Rafael Nadal) from tennisabstract.com, and make a plot like the data visualization of HW2.",
+    "text": "This assignment is the continuation of HW1 and HW2. This time you will take the next step by creating a package (R or Python) to retrieve the career matches of a given player (e.g. Serena Williams, Rafael Nadal) from tennisabstract.com, and make a plot like the NYT’s data visualization of HW2 (ignoring annotations).",
     "crumbs": [
       "HW",
       "HW3) R/Python Package"
@@ -7749,7 +7749,7 @@
     "href": "hws/hw03/hw03.html#about",
     "title": "HW3) R/Python Package",
     "section": "",
-    "text": "This assignment is the continuation of HW1 and HW2. This time you will take the next step by creating a package (R or Python) to retrieve the career matches of a given player (e.g. Serena Williams, Rafael Nadal) from tennisabstract.com, and make a plot like the data visualization of HW2.",
+    "text": "This assignment is the continuation of HW1 and HW2. This time you will take the next step by creating a package (R or Python) to retrieve the career matches of a given player (e.g. Serena Williams, Rafael Nadal) from tennisabstract.com, and make a plot like the NYT’s data visualization of HW2 (ignoring annotations).",
     "crumbs": [
       "HW",
       "HW3) R/Python Package"
@@ -7760,7 +7760,7 @@
     "href": "hws/hw03/hw03.html#main-functions",
     "title": "HW3) R/Python Package",
     "section": "Main Functions",
-    "text": "Main Functions\nYour package should have two primary functions:\n\nfunction to get the career’s data of a given player\n\nInput: name of player, e.g. \"serena williams\"\nOutput: data frame to be used for graphing purposes (like the serena data frame of HW2)\n\nfunction to make the scatter plot—like the plot you graphed in HW2 (without annotations)\n\nFor example, suppose the functions of my package are data_function() and plot_function(). BTW: give better names to your functions. Under this assumption, a user should be able to call my functions like so:\n# Serena Williams data and plot\nserena = data_function(\"serena williams\")\nplot_function(serena)\n\n# Rafael Nadal data and plot\nrafa = data_function(\"Rafael Nadal\")\nplot_function(rafa)",
+    "text": "Main Functions\nYour package should have two primary functions:\n\nFunction to get the career’s data of a given player\n\nInput: name of player, e.g. \"serena williams\", or \"Serena Williams\" or \"SerenaWilliams\"\nOutput: data frame to be used for graphing purposes (like the serena data frame of HW2)\nIf the user provides an invalid name of a player (\"Gaston Sanchez\"), then it should return a meaningful error message.\n\nFunction to make the scatter plot—like the plot you graphed in HW2 (without annotations)\n\nFor example, suppose the functions of my package are data_function() and plot_function(). BTW: give better names to your functions. Under this assumption, a user should be able to call my functions like so:\n# Serena Williams data and plot\nserena = data_function(\"serena williams\")\nplot_function(serena)\n\n# Rafael Nadal data and plot\nrafa = data_function(\"Rafael Nadal\")\nplot_function(rafa)\n\n# returns a meaningful error message\nunknown_player = data_function(\"GastonSanchez\")",
     "crumbs": [
       "HW",
       "HW3) R/Python Package"
@@ -7771,7 +7771,7 @@
     "href": "hws/hw03/hw03.html#package-specifications",
     "title": "HW3) R/Python Package",
     "section": "Package Specifications",
-    "text": "Package Specifications\n\nPublic Functions\nAs mentioned above, your package should have two main (public) functions:\n\none function to get data from tennis abstract, and process it to return a clean data frame\none function that takes the cleaned-processed data frame to produce a scatter plot\n\n\n\nPrivate Functions\nIn addition to the public functions, you can use any number of auxiliary private functions.\n\n\nFunction Length\nNo function should be longer than 20 lines of code (excluding comments and empty lines)\n\ntry to limit the length of private functions to no more than 10 lines\n\n\n\nNaming Functions\nFollow good practices for naming functions:\n\nchoose a consistent style: snake_case(), camelCase(), MixedCaps()\nname of functions should be intuitive, clear\nname of arguments should also be clear\n\n\n\nTests\nBecause the raw data comes from a website (tennisabstract.com), we will follow the gold standard of avoid hitting live servers entirely during automated tests.\nWe will focus on writing tests for functions that handle the cleaning/processing of the JS files, e.g. SerenaWilliamsCareer.JS\n\n\n\n\n\n\nFemale vs Male players\n\n\n\nNotice that Career JS files of female players are different from those of male players.\n\nhttps://www.tennisabstract.com/jsmatches/SerenaWilliamsCareer.js\nhttps://www.tennisabstract.com/jsmatches/RafaelNadalCareer.js\n\nFiles of female players contain the date-of-birth of the opponents, from which their age has to be derived. In contrast, files of male players already contain the age of the opponent.\n\n\nTo write your tests, we recommend that you use the following mockup JS content.\n\n\nFemalePlayerCareer.JS\n\n# A few entries from a female player career's JS file\nvar morematchmx = [[\"19951030\", \"Canadian Open\", \"Carpet\", \"W\", \"L\", \"\", \"\", \"WC\", \"Q1\", \"6-1 6-1\", \"3\", \"Anne Miller\", \"149\", \"7\", \"\", \"R\", \"19770119\", \"\", \"USA\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"1995-W-WT-CAN-02A-1995-013\"],\n  [\"19970307\", \"Indian Wells\", \"Hard\", \"W\", \"L\", \"\", \"\", \"WC\", \"Q1\", \"6-4 6-0\", \"3\", \"Alexia Dechaume Balleret\", \"87\", \"\", \"\", \"R\", \"19700503\", \"\", \"FRA\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"1997-W-WT-USA-02A-1997-006\"],\n  [\"19970804\", \"Manhattan Beach\", \"Hard\", \"W\", \"L\", \"\", \"\", \"WC\", \"Q3\", \"7-6 4-6 6-3\", \"3\", \"Magui Serna\", \"54\", \"6\", \"\", \"L\", \"19790301\", \"167\", \"ESP\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"1997-W-WT-USA-07A-1997-026\"]]\n\n\n\nMalePlayerCareer.JS\n\n# A few entries from a male player career's JS file\nvar morematchmx = [[\"20010910\", \"Spain F10\", \"Hard\", \"S\", \"L\", \"\", \"\", \"WC\", \"R32\", \"2-6 7-5 6-2\", \"3\", \"Guillermo Platel\", \"731\", \"\", \"\", \"R\", \"22.264202601\", \"\", \"ESP\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"2001-M-FU-ESP-10A-2001-002\", \"\", \"1\", \"1\"],\n  [\"20010917\", \"Seville CH\", \"Clay\", \"C\", \"L\", \"\", \"\", \"WC\", \"R16\", \"3-6 6-1 6-3\", \"3\", \"Stefano Galvani\", \"161\", \"2\", \"\", \"R\", \"24.2902121834\", \"178\", \"ITA\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"2\", \"\", \"\", \"\", \"2001-784-024\", \"\", \"2\", \"2\"],\n  [\"20010917\", \"Seville CH\", \"Clay\", \"C\", \"W\", \"\", \"\", \"WC\", \"R32\", \"6-4 6-4\", \"3\", \"Israel Matos Gil\", \"751\", \"\", \"Q\", \"U\", \"18.7597535934\", \"\", \"ESP\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"2001-784-015\", \"\", \"1\", \"1\"]]",
+    "text": "Package Specifications\n\nPublic Functions\nAs mentioned above, your package should have two main (public) functions:\n\nOne function to get data from tennis abstract, and process it to return a clean data frame.\nOne function that takes the cleaned-processed data frame to produce a scatter plot\n\n\n\nPrivate Functions\nIn addition to the public functions, you can use any number of auxiliary private functions.\n\n\nFunction Length\nNo function should be longer than 20 lines of code (excluding comments and empty lines)\n\ntry to limit the length of private functions to no more than 10 lines\n\n\n\nNaming Functions\nFollow good practices for naming functions:\n\nchoose a consistent style: snake_case(), camelCase(), MixedCaps()\nname of functions should be intuitive, clear\nname of arguments should also be clear\n\n\n\nTests\nBecause the raw data comes from a website (tennisabstract.com), we will follow the gold standard of avoid hitting live servers entirely during automated tests.\nWe will focus on writing tests for functions that handle the cleaning/processing of the JS files, e.g. SerenaWilliamsCareer.JS\n\n\n\n\n\n\nFemale vs Male players\n\n\n\nNotice that Career JS files of female players are different from those of male players.\n\nhttps://www.tennisabstract.com/jsmatches/SerenaWilliamsCareer.js\nhttps://www.tennisabstract.com/jsmatches/RafaelNadalCareer.js\n\nFiles of female players contain the date-of-birth of the opponents, from which their age has to be derived. In contrast, files of male players already contain the age of the opponent.\n\n\nTo write your tests, we recommend that you use the following mockup JS content.\n\n\nFemalePlayerCareer.JS\n\n# A few entries from a female player career's JS file\nvar morematchmx = [[\"19951030\", \"Canadian Open\", \"Carpet\", \"W\", \"L\", \"\", \"\", \"WC\", \"Q1\", \"6-1 6-1\", \"3\", \"Anne Miller\", \"149\", \"7\", \"\", \"R\", \"19770119\", \"\", \"USA\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"1995-W-WT-CAN-02A-1995-013\"],\n  [\"19970307\", \"Indian Wells\", \"Hard\", \"W\", \"L\", \"\", \"\", \"WC\", \"Q1\", \"6-4 6-0\", \"3\", \"Alexia Dechaume Balleret\", \"87\", \"\", \"\", \"R\", \"19700503\", \"\", \"FRA\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"1997-W-WT-USA-02A-1997-006\"],\n  [\"19970804\", \"Manhattan Beach\", \"Hard\", \"W\", \"L\", \"\", \"\", \"WC\", \"Q3\", \"7-6 4-6 6-3\", \"3\", \"Magui Serna\", \"54\", \"6\", \"\", \"L\", \"19790301\", \"167\", \"ESP\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"1997-W-WT-USA-07A-1997-026\"]]\n\n\n\nMalePlayerCareer.JS\n\n# A few entries from a male player career's JS file\nvar morematchmx = [[\"20010910\", \"Spain F10\", \"Hard\", \"S\", \"L\", \"\", \"\", \"WC\", \"R32\", \"2-6 7-5 6-2\", \"3\", \"Guillermo Platel\", \"731\", \"\", \"\", \"R\", \"22.264202601\", \"\", \"ESP\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"2001-M-FU-ESP-10A-2001-002\", \"\", \"1\", \"1\"],\n  [\"20010917\", \"Seville CH\", \"Clay\", \"C\", \"L\", \"\", \"\", \"WC\", \"R16\", \"3-6 6-1 6-3\", \"3\", \"Stefano Galvani\", \"161\", \"2\", \"\", \"R\", \"24.2902121834\", \"178\", \"ITA\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"2\", \"\", \"\", \"\", \"2001-784-024\", \"\", \"2\", \"2\"],\n  [\"20010917\", \"Seville CH\", \"Clay\", \"C\", \"W\", \"\", \"\", \"WC\", \"R32\", \"6-4 6-4\", \"3\", \"Israel Matos Gil\", \"751\", \"\", \"Q\", \"U\", \"18.7597535934\", \"\", \"ESP\", \"0\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"2001-784-015\", \"\", \"1\", \"1\"]]",
     "crumbs": [
       "HW",
       "HW3) R/Python Package"
@@ -7782,10 +7782,676 @@
     "href": "hws/hw03/hw03.html#other-considerations",
     "title": "HW3) R/Python Package",
     "section": "Other Considerations",
-    "text": "Other Considerations\nAs usual, we will grade commit mechanics (how changes are packaged and documented) alongside workflow integrity (how git was used as a tool for reproducible research, rather than a single bulk upload at 11:59 PM).\n\nEach commit should represent a coherent, single step; i.e. no massive commits.\nEach commits should should have a concise, descriptive message; i.e. no vague messages.\n\n\nHow we will use/test your package\nThe litmus test of your hw3 submission will involve a direct installation from your github repository, and then using your 2 public functions to obtain and plot the data of a handful of players.\nR package\nWe’ll run the \"devtools\" function install_github()\n# R package\ninstall_github(\"username/yourpackage\")\nPython package\nTo install a Python package directly from a GitHub repository, we’ll use the pip install command prefixed with git+ followed by your repository’s URL.\n# Python package\npip install git+https://github.com/username/yourpackage.git",
+    "text": "Other Considerations\n\nHow we will use/test your package\nThe litmus test of your hw3 submission will involve a direct installation from your github repository, and then using your 2 public functions to obtain and plot the data of a handful of players.\nIf you create an R package\nWe’ll run either the \"devtools\" function install_github() or the \"pak\" function pack()\n# R package\ndevtools::install_github(\"username/yourpackage\")\n\n# equivalent\npak::pak(\"username/yourpackage\")\nIf you create a Python package\nTo install a Python package directly from a GitHub repository, we’ll use the pip install command prefixed with git+ followed by your repository’s URL.\n# Python package\npip install git+https://github.com/username/yourpackage.git\n\n\nCommits\nAs usual, we will grade commit mechanics (how changes are packaged and documented) alongside workflow integrity (how git was used as a tool for reproducible research, rather than a few bulk upload commits).\n\nEach commit should represent a coherent, single step; i.e. no massive commits.\nEach commits should have a concise, descriptive message; i.e. no vague messages.\n\n\n\nMakefile and Environment\nBecause this HW involves developing and submitting a package, there is no need to include Makefile and environment.yml files.",
     "crumbs": [
       "HW",
       "HW3) R/Python Package"
     ]
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#outline",
+    "href": "lectures/27-quarto-websites1/27-review.html#outline",
+    "title": "Review",
+    "section": "Outline",
+    "text": "Outline\n\nDistinguish between atomic commits and bulk dumps.\nStructure a professional README.md that enables one-line project execution.\nReviewing environment.yml files."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#main-idea",
+    "href": "lectures/27-quarto-websites1/27-review.html#main-idea",
+    "title": "Review",
+    "section": "Main Idea",
+    "text": "Main Idea\n\n\n\nIf a collaborator (or grader) clones your repository today, can they reproduce your entire analysis?"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#examples",
+    "href": "lectures/27-quarto-websites1/27-review.html#examples",
+    "title": "Review",
+    "section": "Examples",
+    "text": "Examples\n👎\n\n\nPoor Commits\n\nMerge classroom repository\nAdd Serena Williams plot reproduction\nInitial Commit\n\n\n\n\n👍\n\n\nGood Commits\n\nDocument project purpose, setup, data definitions, and report workflow\nIgnore Python caches and local system files\nAdd standalone HTML report with embedded career plot\nAdd the supplied PDF report\nAdd report narrative matching the supplied PDF\nAdd reproduced Serena Williams career scatterplot\nAdd cleaned Serena match data with ages and outcomes\nPreserve Tennis Abstract raw career data snapshot\nAdd Make targets to build and clean data, plot, and reports\nDefine Conda environment for data processing and report generation\n... # etc"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#the-bulk-submit-button-commit",
+    "href": "lectures/27-quarto-websites1/27-review.html#the-bulk-submit-button-commit",
+    "title": "Review",
+    "section": "The Bulk “Submit Button” Commit",
+    "text": "The Bulk “Submit Button” Commit\n\nNo Rollback Capability: If an analysis script breaks at hour 10, a bulk commit forces you to discard everything rather than rewinding to a functional state.\nOpaque Collaboration: In group settings, bulk commits create massive merge conflicts and hide individual provenance.\nData Dumping: Bulk commits often accidentally check in binary outputs, credentials, or multi-gigabyte raw files."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#atomic-commits",
+    "href": "lectures/27-quarto-websites1/27-review.html#atomic-commits",
+    "title": "Review",
+    "section": "Atomic Commits",
+    "text": "Atomic Commits\nAn atomic commit encapsulates one logical unit of work e.g.,\n\n\"adding a data preprocessing function\"\n\"fixing a plotting script bug\"\n\"updating the environment.yml\""
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#advantages-of-atomic-commits",
+    "href": "lectures/27-quarto-websites1/27-review.html#advantages-of-atomic-commits",
+    "title": "Review",
+    "section": "Advantages of Atomic Commits",
+    "text": "Advantages of Atomic Commits\nIf you commit:\n\na bug fix,\nan environment change,\nand a data-cleaning script\n\nin three separate commits, you can easily revert just the broken data-cleaning script (git revert &lt;commit-hash&gt;) while keeping your bug fix intact."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#bulk-commits-dont",
+    "href": "lectures/27-quarto-websites1/27-review.html#bulk-commits-dont",
+    "title": "Review",
+    "section": "Bulk Commits (Don’t ❗️)",
+    "text": "Bulk Commits (Don’t ❗️)\n\n\nWhile taking a “snapshot” of several (e.g. 10) modified files at the end of a long work session feels convenient, it breaks the core benefits of version control.\n\nWhy?\nIf all 10 changes live in a single massive commit, reverting the bug means throwing away hours of unrelated, functional work—or manually sifting through hundreds of lines of code to fix it by hand."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#bulk-commits-dont-1",
+    "href": "lectures/27-quarto-websites1/27-review.html#bulk-commits-dont-1",
+    "title": "Review",
+    "section": "Bulk Commits (Don’t ❗️)",
+    "text": "Bulk Commits (Don’t ❗️)\n\n\nWith bulk commits a reviewer cannot meaningfully audit a single pull request or commit that reads:\n+12,450 lines / -3,200 lines across 40 files.\n\n\n\nSmaller, logical commits tell a readable story. A reviewer can follow your thought process step-by-step rather than drowning in a massive wall of code differences (git diff)"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#bulk-commits-dont-2",
+    "href": "lectures/27-quarto-websites1/27-review.html#bulk-commits-dont-2",
+    "title": "Review",
+    "section": "Bulk Commits (Don’t ❗️)",
+    "text": "Bulk Commits (Don’t ❗️)\nWhen working on collaborative projects or multi-branch workflows:\nSmaller, frequent commits touch fewer lines of code at a time, making automatic merges smooth.\nWhen you finally push a bulk commit, it frequently conflicts with your collaborators’ work, creating complex merge conflicts that require hours of manual reconstruction."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#risk-of-accidental-file-leaks-repository-bloat",
+    "href": "lectures/27-quarto-websites1/27-review.html#risk-of-accidental-file-leaks-repository-bloat",
+    "title": "Review",
+    "section": "Risk of Accidental File Leaks & Repository Bloat",
+    "text": "Risk of Accidental File Leaks & Repository Bloat\nWhen developers run git add . and commit everything in bulk without inspecting their staging area, they frequently check in files that should never enter version control:\n\nLarge Datasets / Binaries: Large CSVs, SQLite databases, or model weights that permanently bloat the .git folder history.\nSystem junk: .DS_Store files, build artifacts, or temporary editor files.\nSensitive Information: API keys, passwords, or local file system path configurations."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#rule-of-thumb",
+    "href": "lectures/27-quarto-websites1/27-review.html#rule-of-thumb",
+    "title": "Review",
+    "section": "Rule of Thumb",
+    "text": "Rule of Thumb\n\n\nAs a rule of thumb, one commit should represent one logical unit of work.\n\n\nA Good Test: If your commit message needs the word “AND” to describe what you did (e.g., \"Cleaned data matrix AND added plotting script AND updated environment specs\"), it should be split into three separate commits."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#the-readme-as-an-api-principle",
+    "href": "lectures/27-quarto-websites1/27-review.html#the-readme-as-an-api-principle",
+    "title": "Review",
+    "section": "The “README as an API” Principle",
+    "text": "The “README as an API” Principle\n\n\nA README.md is not just a summary cover sheet; it is the instruction manual for your computational pipeline."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#mandatory-sections-in-readme",
+    "href": "lectures/27-quarto-websites1/27-review.html#mandatory-sections-in-readme",
+    "title": "Review",
+    "section": "5+1 mandatory sections in README",
+    "text": "5+1 mandatory sections in README\n\nTitle\nOverview (about)\nRepository structure (file structure)\nEnvironment setup\nReproduction instructions\nLicense*"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#filestructure-in-readme",
+    "href": "lectures/27-quarto-websites1/27-review.html#filestructure-in-readme",
+    "title": "Review",
+    "section": "Filestructure in README",
+    "text": "Filestructure in README\nBenefits:\n\nEstablishes Instant Spatial Orientation (Mental Model)\nClarifies Data Provenance & File Roles\nDiscovers Relative Paths & Eliminates Path Confusion\nServes as Self-Documenting Infrastructure\nExposes Messy Repository Hygiene (The “Messy Room” Test)"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#establishes-instant-spatial-orientation-mental-model",
+    "href": "lectures/27-quarto-websites1/27-review.html#establishes-instant-spatial-orientation-mental-model",
+    "title": "Review",
+    "section": "Establishes Instant Spatial Orientation (Mental Model)",
+    "text": "Establishes Instant Spatial Orientation (Mental Model)\nWhen a collaborator, reviewer, or grader clones your repository, they are looking at a blank slate.\n\nWithout a tree, they have to manually click through nested subfolders to figure out where scripts, datasets, and configurations reside.\nA directory tree provides a 3-second visual map of the entire codebase. It immediately communicates the project’s layout without requiring the reader to explore the file system manually."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#clarifies-data-provenance-file-roles",
+    "href": "lectures/27-quarto-websites1/27-review.html#clarifies-data-provenance-file-roles",
+    "title": "Review",
+    "section": "Clarifies Data Provenance & File Roles",
+    "text": "Clarifies Data Provenance & File Roles\nFilename extensions (like .csv, .py, .ipynb, or .rds) don’t tell the full story of why a file exists or how it should be treated.\n\nSeparating Raw vs. Processed Data: A directory tree visually enforces the golden rule of reproducible research: raw data must be immutable. Annotating data/raw/ in your tree explicitly warns users never to overwrite original files.\nDistinguishing Source Code from Notebooks: It clarifies which files are modular, reusable scripts (e.g., scripts/clean_data.py) versus interactive exploratory narratives (e.g., notebooks/exploratory.ipynb)."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-review.html#closing-thoughts",
+    "href": "lectures/27-quarto-websites1/27-review.html#closing-thoughts",
+    "title": "Review",
+    "section": "Closing Thoughts",
+    "text": "Closing Thoughts\n\nWriting clean code is only half the battle in modern data science.\n\n\n\n\nIf your work cannot be re-built automatically by an independent researcher using your version-control record and environment specs, the results are incomplete.\n\n\n\n\nTreat your repository as a publication in itself."
+  },
+  {
+    "objectID": "lectures/28-discuss7/28-discussion-slides.html#screens-off-minds-on",
+    "href": "lectures/28-discuss7/28-discussion-slides.html#screens-off-minds-on",
+    "title": "Dare to Share",
+    "section": "Screens Off, Minds On",
+    "text": "Screens Off, Minds On\n\n\n\nDevices Away: Laptops & tablets closed, phones away.\nNo One Alone: Pair or team up (no solo seats).\nEngage Fully: Be ready to speak, debate, and share ideas."
+  },
+  {
+    "objectID": "lectures/28-discuss7/28-discussion-slides.html#the-demand-support-excuse",
+    "href": "lectures/28-discuss7/28-discussion-slides.html#the-demand-support-excuse",
+    "title": "Dare to Share",
+    "section": "The “Demand Support” Excuse",
+    "text": "The “Demand Support” Excuse\nCommon excuse to not share code:  “People will pick holes and demand support.”\n\n\n\nSuppose you’ve written an R/Python package that you want to share via GitHub.\nYou are worried that users will demand technical support.\n\n\n\nSilently think (and write) about two boundaries that you would set to limit how much support you are willing to give.\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "lectures/28-discuss7/28-discussion-slides.html#drafting-a-support.md-file",
+    "href": "lectures/28-discuss7/28-discussion-slides.html#drafting-a-support.md-file",
+    "title": "Dare to Share",
+    "section": "Drafting a SUPPORT.md file",
+    "text": "Drafting a SUPPORT.md file\nCommon excuse to not share code:  “People will pick holes and demand support.”\n\n\n\n\n\nIn trios, draft a SUPPORT.md disclaimer for a GitHub repo.\nState your commitment to open science while setting firm boundaries against personal tech support requests.\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "lectures/28-discuss7/28-discussion-slides.html#discussion-part-1",
+    "href": "lectures/28-discuss7/28-discussion-slides.html#discussion-part-1",
+    "title": "Dare to Share",
+    "section": "Discussion (part 1)",
+    "text": "Discussion (part 1)\n\n\nTeam A: The Proprietary Tech Firm\n\nYour team has built a simulation code that calculates the structural stress limits for public bridges.\nYour team refuses to share the code claiming it’s a corporate secret.\n\n\n\n\nIssues\n\nA bridge design built using the firm’s secret code has just shown minor structural cracks.\nThe firm claims it’s an isolated steel issue, not a software issue.\n\n\n\n\nHuddle with your immediate neighbors to formulate 3 compelling arguments to defend Team A position.\n\n\n\n\n−+\n04:30"
+  },
+  {
+    "objectID": "lectures/28-discuss7/28-discussion-slides.html#discussion-part-2",
+    "href": "lectures/28-discuss7/28-discussion-slides.html#discussion-part-2",
+    "title": "Dare to Share",
+    "section": "Discussion (part 2)",
+    "text": "Discussion (part 2)\n\n\nIssues\n\nA bridge design built using the firm’s secret code has just shown minor structural cracks.\nThe firm claims it’s an isolated steel issue, not a software issue.\n\n\n\n\nTeam B: The Public Safety Board\n\nYou refuse to approve Team A’s projects because you cannot verify their black-box simulation.\n\n\n\n\nHuddle with your immediate neighbors to formulate 3 compelling arguments to defend Team B position.\n\n\n\n\n−+\n04:30"
+  },
+  {
+    "objectID": "lectures/28-discuss7/28-discussion-slides.html#discussion-part-3",
+    "href": "lectures/28-discuss7/28-discussion-slides.html#discussion-part-3",
+    "title": "Dare to Share",
+    "section": "Discussion (part 3)",
+    "text": "Discussion (part 3)\nThe tech firm (Team A) refuses to open-source its proprietary stress-testing code due to commercial secrets.\nBut the public safety board (Team B) refuses to trust a black box.\n\n\n\n\nHow can Team A prove its code works without leaking its competitive edge to global rivals?\n\n\n\n\n−+\n04:30"
+  },
+  {
+    "objectID": "lectures/28-discuss7/28-discussion-slides.html#discussion-part-4",
+    "href": "lectures/28-discuss7/28-discussion-slides.html#discussion-part-4",
+    "title": "Dare to Share",
+    "section": "Discussion (part 4)",
+    "text": "Discussion (part 4)\n\nWhere should the legal and ethical line be drawn between a private company’s right to protect its proprietary code/algorithms and the public’s right to independent verification—especially when lives, or public policy depend on those computational claims?\n\n\n\n\n−+\n03:30"
+  },
+  {
+    "objectID": "readings/11-reading-better-figures.html",
+    "href": "readings/11-reading-better-figures.html",
+    "title": "9) Better Figures",
+    "section": "",
+    "text": "Title: Ten Simple Rules for Better Figures\nAuthor(s): Rougier N., Droettboom M., Bourne P.\nYear: 2014\nJournal: PLOS Computational Biology\nhttps://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833\ndoi:10.1371/journal.pcbi.1003833",
+    "crumbs": [
+      "Readings",
+      "9) Better Figures"
+    ]
+  },
+  {
+    "objectID": "readings/11-reading-better-figures.html#assigned-readings",
+    "href": "readings/11-reading-better-figures.html#assigned-readings",
+    "title": "9) Better Figures",
+    "section": "",
+    "text": "Title: Ten Simple Rules for Better Figures\nAuthor(s): Rougier N., Droettboom M., Bourne P.\nYear: 2014\nJournal: PLOS Computational Biology\nhttps://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833\ndoi:10.1371/journal.pcbi.1003833",
+    "crumbs": [
+      "Readings",
+      "9) Better Figures"
+    ]
+  },
+  {
+    "objectID": "readings/11-reading-better-figures.html#reflections",
+    "href": "readings/11-reading-better-figures.html#reflections",
+    "title": "9) Better Figures",
+    "section": "Reflections",
+    "text": "Reflections\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following questions—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc",
+    "crumbs": [
+      "Readings",
+      "9) Better Figures"
+    ]
+  },
+  {
+    "objectID": "readings/11-reading-better-figures.html#reflection-1-breaking-free-from-the-plotting-library",
+    "href": "readings/11-reading-better-figures.html#reflection-1-breaking-free-from-the-plotting-library",
+    "title": "9) Better Figures",
+    "section": "Reflection 1: Breaking Free from the Plotting Library",
+    "text": "Reflection 1: Breaking Free from the Plotting Library\n\nOpen a script or file containing a chart you generated recently for a project or assignment.\nDid you critically think about the color palette, line weights, and spacing, or did you simply hit plt.show() or accept whatever visual theme the software generated by default?",
+    "crumbs": [
+      "Readings",
+      "9) Better Figures"
+    ]
+  },
+  {
+    "objectID": "readings/11-reading-better-figures.html#reflection-2-evaluating-your-caption-autonomy",
+    "href": "readings/11-reading-better-figures.html#reflection-2-evaluating-your-caption-autonomy",
+    "title": "9) Better Figures",
+    "section": "Reflection 2: Evaluating Your Caption Autonomy",
+    "text": "Reflection 2: Evaluating Your Caption Autonomy\n\nImagine a peer reviewer crops a single chart out of your last lab report or essay, completely removing it from the surrounding paragraphs.\nIf they stare only at that image and its attached caption box, can they fully understand your conclusion, or would they descend into confusion trying to guess what your visual markers mean?\nWhy do we habitually write captions as short, lazy titles instead of rich explanations?",
+    "crumbs": [
+      "Readings",
+      "9) Better Figures"
+    ]
+  },
+  {
+    "objectID": "readings/11-reading-better-figures.html#reflection-3-stripping-the-chartjunk",
+    "href": "readings/11-reading-better-figures.html#reflection-3-stripping-the-chartjunk",
+    "title": "9) Better Figures",
+    "section": "Reflection 3: Stripping the “Chartjunk”",
+    "text": "Reflection 3: Stripping the “Chartjunk”\n\nReflect on a time you were building a slide presentation or document and spent hours playing with color wheels, fonts, or drop-shadow effects.\nWas that aesthetic labor genuinely aimed at making your data patterns easier to read, or were you subconsciously using visual flashiness to distract from weak sample sizes or sloppy data variance?\nWhere does helpful design end and “data cloaking” begin?",
+    "crumbs": [
+      "Readings",
+      "9) Better Figures"
+    ]
+  },
+  {
+    "objectID": "readings/11-reading-better-figures.html#reflection-4-the-screen-vs.-the-sheet-reality-check",
+    "href": "readings/11-reading-better-figures.html#reflection-4-the-screen-vs.-the-sheet-reality-check",
+    "title": "9) Better Figures",
+    "section": "Reflection 4: The Screen vs. The Sheet Reality Check",
+    "text": "Reflection 4: The Screen vs. The Sheet Reality Check\n\nThink about how your instructor or target audience will physically consume your next report.\nDo you actively test your color selections under grayscale or different viewing modes before exporting, or do you blindly assume that what looks pretty on your laptop screen will translate globally?",
+    "crumbs": [
+      "Readings",
+      "9) Better Figures"
+    ]
+  },
+  {
+    "objectID": "readings/11-reading-better-figures.html#reflection-5-deciding-the-message-before-the-code",
+    "href": "readings/11-reading-better-figures.html#reflection-5-deciding-the-message-before-the-code",
+    "title": "9) Better Figures",
+    "section": "Reflection 5: Deciding the Message Before the Code",
+    "text": "Reflection 5: Deciding the Message Before the Code\n\nThink about your typical programming workflow.\nDo you blindly type plotting commands hoping a meaningful pattern accidentally emerges on the screen?\nHow can sketching a mockup chart on scrap paper before writing code protect you from chasing random data noise?",
+    "crumbs": [
+      "Readings",
+      "9) Better Figures"
+    ]
+  },
+  {
+    "objectID": "readings/11-reading-better-figures.html#rubric",
+    "href": "readings/11-reading-better-figures.html#rubric",
+    "title": "9) Better Figures",
+    "section": "Rubric",
+    "text": "Rubric\n\n\n\n\n\n\nImportant\n\n\n\nGeneric responses that do not mention a specific past assignment name or unique piece of code from your own experience will receive a score of zero.\n\n\n\nFull Credit (3 Points): Response is highly specific, names unique personal or localized constraints, and explicitly connects the personal experience back to the prompt in each question. Clearly written by a human.\nPartial Credit (1-2 Points): Response is correct but uses vague or generic examples (e.g., “I lost a file once” instead of naming the script). Sounds like a generic summary an AI could have written.\nNo Credit (0 Points): Response relies entirely on abstract definitions, fails to provide personal context, or uses copy-pasted text from a webpage or AI tool.",
+    "crumbs": [
+      "Readings",
+      "9) Better Figures"
+    ]
+  },
+  {
+    "objectID": "readings/10-reading-research-compendium.html",
+    "href": "readings/10-reading-research-compendium.html",
+    "title": "10) Research Compendium",
+    "section": "",
+    "text": "Coming Soon",
+    "crumbs": [
+      "Readings",
+      "10) Research Compendium"
+    ]
+  },
+  {
+    "objectID": "readings/08-reading-theranos.html",
+    "href": "readings/08-reading-theranos.html",
+    "title": "8) Lessons from Theranos",
+    "section": "",
+    "text": "📖 Article\n\nTitle: Startup Ethics: Ethically Responsible Conduct of Scientists and Engineers at Theranos\nAuthor(s): Robert E. McGinn\nYear: 2022\nJournal: Science and Engineering Ethics 28, 39 (2022)\nhttps://pmc.ncbi.nlm.nih.gov/articles/PMC9425795/\nhttps://doi.org/10.1007/s11948-022-00393-2",
+    "crumbs": [
+      "Readings",
+      "8) Lessons from Theranos"
+    ]
+  },
+  {
+    "objectID": "readings/08-reading-theranos.html#assigned-reading",
+    "href": "readings/08-reading-theranos.html#assigned-reading",
+    "title": "8) Lessons from Theranos",
+    "section": "",
+    "text": "📖 Article\n\nTitle: Startup Ethics: Ethically Responsible Conduct of Scientists and Engineers at Theranos\nAuthor(s): Robert E. McGinn\nYear: 2022\nJournal: Science and Engineering Ethics 28, 39 (2022)\nhttps://pmc.ncbi.nlm.nih.gov/articles/PMC9425795/\nhttps://doi.org/10.1007/s11948-022-00393-2",
+    "crumbs": [
+      "Readings",
+      "8) Lessons from Theranos"
+    ]
+  },
+  {
+    "objectID": "readings/08-reading-theranos.html#reflections",
+    "href": "readings/08-reading-theranos.html#reflections",
+    "title": "8) Lessons from Theranos",
+    "section": "Reflections",
+    "text": "Reflections\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following reflections—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc\n\n\n\nReflection 1\nIn data science and academic research, an analyst might encounter a messy script, a broken model, or a failed experimental run right before a submission deadline, and quietly swap in pre-cleaned data or a tweaked output to make things work.\nSuppose you discover a fundamental data alignment error or a hidden “quick patch” in a collaborator’s code right before submitting a paper or pushing to production.\n\nWhere is the boundary between a legitimate “data cleaning decision” (e.g., dropping an uncalibrated baseline) and a “quick patch” that hides an underlying pipeline failure?\nWhat internal version-control evidence would you rely on to demonstrate the issue objectively?\nWhat ethical obligations do you have as a data analyst?\n\n\n\nReflection 2\nImagine you are handed a dataset where the upstream processing steps were executed by a different team behind closed doors.\n\nWhy is a lack of end-to-end data provenance (knowing exactly how data was transformed at every step) a direct threat to data integrity?\nWhat are some of the tools & concepts—you’ve learned in STAT 159—that can be used as an antidote to institutional siloing?\nHow would an open-science architecture make it structurally impossible for a lab director to secretly silo workers or hide a broken data pipeline?\n\n\n\nReflection 3\nTheranos guarded the inner workings of the “Edison” blood-testing device, citing the absolute necessity of protecting corporate trade secrets from medical rivals.\nBy locking down their hardware and software behind strict non-disclosure agreements, they created a black box that neither internal scientists, external regulators, nor independent peers could audit.\n\nWhere should the legal and ethical line be drawn between a private company’s right to protect its proprietary code/algorithms and the public’s right to independent verification—especially when lives, health, or public policy depend on those computational claims?",
+    "crumbs": [
+      "Readings",
+      "8) Lessons from Theranos"
+    ]
+  },
+  {
+    "objectID": "readings/08-reading-theranos.html#rubric",
+    "href": "readings/08-reading-theranos.html#rubric",
+    "title": "8) Lessons from Theranos",
+    "section": "Rubric",
+    "text": "Rubric\n\n\n\n\n\n\nImportant\n\n\n\nGeneric responses that do not mention a specific past assignment name or unique piece of code from your own experience will receive a score of zero.\n\n\n\nFull Credit (5 Points): Response is highly specific, names unique personal or localized constraints, and explicitly connects the personal experience back to the prompt in each question. Clearly written by a human.\nPartial Credit (2-3 Points): Response is correct but uses vague or generic examples (e.g., “I lost a file once” instead of naming the script). Sounds like a generic summary an AI could have written.\nNo Credit (0 Points): Response relies entirely on abstract definitions, fails to provide personal context, or uses copy-pasted text from a webpage or AI tool.",
+    "crumbs": [
+      "Readings",
+      "8) Lessons from Theranos"
+    ]
+  },
+  {
+    "objectID": "readings/09-reading-legal-framework.html",
+    "href": "readings/09-reading-legal-framework.html",
+    "title": "8) RR Legal Framework",
+    "section": "",
+    "text": "Title: The Legal Framework for Reproducible Scientific Research (Licensing and Copyright)\nAuthor(s): Victoria Stodden\nYear: 2009\nJournal: Computing in Science & Engineering\ndoi:10.1038/467753a",
+    "crumbs": [
+      "Readings",
+      "8) RR Legal Framework"
+    ]
+  },
+  {
+    "objectID": "readings/09-reading-legal-framework.html#assigned-readings",
+    "href": "readings/09-reading-legal-framework.html#assigned-readings",
+    "title": "8) RR Legal Framework",
+    "section": "",
+    "text": "Title: The Legal Framework for Reproducible Scientific Research (Licensing and Copyright)\nAuthor(s): Victoria Stodden\nYear: 2009\nJournal: Computing in Science & Engineering\ndoi:10.1038/467753a",
+    "crumbs": [
+      "Readings",
+      "8) RR Legal Framework"
+    ]
+  },
+  {
+    "objectID": "readings/09-reading-legal-framework.html#reflections",
+    "href": "readings/09-reading-legal-framework.html#reflections",
+    "title": "8) RR Legal Framework",
+    "section": "Reflections",
+    "text": "Reflections\n\n\n\n\n\n\nbCourses Submission\n\n\n\nSubmit your answers—to the following questions—to the corresponding assignment in bCourses.\nAccepted formats: PDF, HTML, MS Word (.docx), or Google Doc",
+    "crumbs": [
+      "Readings",
+      "8) RR Legal Framework"
+    ]
+  },
+  {
+    "objectID": "readings/09-reading-legal-framework.html#reflection-1-automatic-copyright",
+    "href": "readings/09-reading-legal-framework.html#reflection-1-automatic-copyright",
+    "title": "8) RR Legal Framework",
+    "section": "Reflection 1: Automatic Copyright",
+    "text": "Reflection 1: Automatic Copyright\n\nLook back at your past school projects that haven been publicly shared or open repositories.\nDid you realize that by doing nothing, you were using default copyright law to block your classmates or peers from legally copying and verifying your math?\nWhat is stopping you from dropping a basic, open LICENSE file into your workspace today?",
+    "crumbs": [
+      "Readings",
+      "8) RR Legal Framework"
+    ]
+  },
+  {
+    "objectID": "readings/09-reading-legal-framework.html#reflection-2-shifting-your-creative-focus",
+    "href": "readings/09-reading-legal-framework.html#reflection-2-shifting-your-creative-focus",
+    "title": "8) RR Legal Framework",
+    "section": "Reflection 2: Shifting Your Creative Focus",
+    "text": "Reflection 2: Shifting Your Creative Focus\n\nThink about your own assignment and reporting habits.\nWhen working on a project, do you treat the final written summary paragraph or PDF report as the “main product” of your hard work?\nWhat would change in your daily workflow if you viewed your written report as mere advertising, and shifted 90% of your energy to perfecting a clean, automated code setup instead?",
+    "crumbs": [
+      "Readings",
+      "8) RR Legal Framework"
+    ]
+  },
+  {
+    "objectID": "readings/09-reading-legal-framework.html#reflection-3-to-force-openness-or-maximize-reuse",
+    "href": "readings/09-reading-legal-framework.html#reflection-3-to-force-openness-or-maximize-reuse",
+    "title": "8) RR Legal Framework",
+    "section": "Reflection 3: To Force Openness or Maximize Reuse?",
+    "text": "Reflection 3: To Force Openness or Maximize Reuse?\n\nImagine you wrote a brilliant data-cleaning script that could help many analysts and users in your field.\nWould you use a “Share Alike” (copyleft) license to legally force others to be open, or would you use a permissive attribution license (like modified BSD) to maximize reuse, even if a corporate user keeps their upgrades secret?",
+    "crumbs": [
+      "Readings",
+      "8) RR Legal Framework"
+    ]
+  },
+  {
+    "objectID": "readings/09-reading-legal-framework.html#reflection-4-who-owns-your-data-cleaning-labor",
+    "href": "readings/09-reading-legal-framework.html#reflection-4-who-owns-your-data-cleaning-labor",
+    "title": "8) RR Legal Framework",
+    "section": "Reflection 4: Who Owns Your Data Cleaning Labor?",
+    "text": "Reflection 4: Who Owns Your Data Cleaning Labor?\n\nReflect on the most exhausting, messy dataset you have ever had to manually sort, clean, or format for an analysis.\nKnowing that anyone can legally copy your final raw numbers without your permission, but they cannot steal your data-cleaning pipeline code without giving you credit, how does this shape your motivation?\nDoes it make you want to share your script logic openly to claim your authorship footprint?",
+    "crumbs": [
+      "Readings",
+      "8) RR Legal Framework"
+    ]
+  },
+  {
+    "objectID": "readings/09-reading-legal-framework.html#reflection-5-copy-paste-dilemma",
+    "href": "readings/09-reading-legal-framework.html#reflection-5-copy-paste-dilemma",
+    "title": "8) RR Legal Framework",
+    "section": "Reflection 5: Copy-Paste Dilemma",
+    "text": "Reflection 5: Copy-Paste Dilemma\n\nThink about a time you were stuck on a coding assignment or class project, found a working solution in a public repository written by a stranger, and copy-pasted a few lines to fix your script.\nDid you check to see if that repository carried a modified BSD, MIT, or open license before taking their code?\nIf computational research fields operate on blind trust instead of explicit licensing, are we building our academic workflows on a legally radioactive foundation?",
+    "crumbs": [
+      "Readings",
+      "8) RR Legal Framework"
+    ]
+  },
+  {
+    "objectID": "readings/09-reading-legal-framework.html#rubric",
+    "href": "readings/09-reading-legal-framework.html#rubric",
+    "title": "8) RR Legal Framework",
+    "section": "Rubric",
+    "text": "Rubric\n\n\n\n\n\n\nImportant\n\n\n\nGeneric responses that do not mention a specific past assignment name or unique piece of code from your own experience will receive a score of zero.\n\n\n\nFull Credit (3 Points): Response is highly specific, names unique personal or localized constraints, and explicitly connects the personal experience back to the prompt in each question. Clearly written by a human.\nPartial Credit (1-2 Points): Response is correct but uses vague or generic examples (e.g., “I lost a file once” instead of naming the script). Sounds like a generic summary an AI could have written.\nNo Credit (0 Points): Response relies entirely on abstract definitions, fails to provide personal context, or uses copy-pasted text from a webpage or AI tool.",
+    "crumbs": [
+      "Readings",
+      "8) RR Legal Framework"
+    ]
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto",
+    "title": "Quarto Websites (part 1)",
+    "section": "Quarto",
+    "text": "Quarto\nOpen-source scientific and technical publishing system\nhttps://quarto.org/"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto-publications",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto-publications",
+    "title": "Quarto Websites (part 1)",
+    "section": "Quarto Publications",
+    "text": "Quarto Publications\n\nArticles\nPresentations\nDashboards\nWebsites\nBlogs\nBooks\nKnowledge Repos"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#about-quarto",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#about-quarto",
+    "title": "Quarto Websites (part 1)",
+    "section": "About Quarto",
+    "text": "About Quarto\n\nQuarto is developed by Posit, PBC (Public Benefit Corporation)\nIt was launched in 2022.\nPosit’s team rebuilt the concept of R Markdown from the ground up as a language-agnostic, standalone Command Line Interface (CLI) tool.\nIt is named after a classic publishing term referring to a book or pamphlet produced from full sheets of paper folded twice to form four leaves (eight pages)."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#about-quarto-1",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#about-quarto-1",
+    "title": "Quarto Websites (part 1)",
+    "section": "About Quarto",
+    "text": "About Quarto\n\n\nDesigned to work seamlessly anywhere:\n\nVisual Studio Code\nJupyterLab\nPositron\nRStudio\nNeovim\nStandard command terminals\n\n\nWrite content once in plain text Markdown (.qmd, .ipynb, .Rmd) and publish it into any target format:\n\nHTML pages\nPDF documents\nMicrosoft Word files\nPowerPoint presentations\nReveal.js slides\nInteractive books\nEntire websites"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto-core-idea",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto-core-idea",
+    "title": "Quarto Websites (part 1)",
+    "section": "Quarto core idea",
+    "text": "Quarto core idea\n\n\nAuthor using Markdown (.qmd, .Rmd) files or Jupyter notebooks.\nCreate dynamic content with Python, R, Julia, Observable JS, and more.\nWrite using Pandoc markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto-websites-1",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto-websites-1",
+    "title": "Quarto Websites (part 1)",
+    "section": "Quarto Websites",
+    "text": "Quarto Websites\nhttps://quarto.org/docs/websites/\n\nYou can create a Website using:\n\nthe Terminal\nRStudio\nVS Code\nPositron\nJupyterLab"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#create-a-quarto-website-via-the-terminal",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#create-a-quarto-website-via-the-terminal",
+    "title": "Quarto Websites (part 1)",
+    "section": "Create a Quarto Website (via the Terminal)",
+    "text": "Create a Quarto Website (via the Terminal)\nThe quarto command to create a website is:\n\nquarto create project website &lt;website-name&gt;\n\n\n\n\n# example\nquarto create project website demo-website\n\n\nThis command will create a demo-website/ folder with the following files:\ndemo-website/\n├── _quarto.yml    # The \"brain\" and main config file of the site\n├── index.qmd      # The homepage (rendered to index.html)\n├── about.qmd      # An about page (rendered to about.html)\n├── styles.css     # Optional custom CSS overrides"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto.yml-config-file",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto.yml-config-file",
+    "title": "Quarto Websites (part 1)",
+    "section": "_quarto.yml config file",
+    "text": "_quarto.yml config file\n\n\n\n\n\n\n_config.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My Awesome Site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: about.qmd\n        text: About\n\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n\n\n\n\n\n_quarto.yml is the most important configuration file.\nIt dictates the project type (type: website),\nnavigation bars,\nsite title, footer,\nglobal themes,\nand shared YAML options for all pages."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#things-to-keep-in-mind",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#things-to-keep-in-mind",
+    "title": "Quarto Websites (part 1)",
+    "section": "Things to keep in mind",
+    "text": "Things to keep in mind\n\nA website should only have one _quarto.yml file (root level)\nDo not change the name of index.qmd (otherwise you risk breaking your deployment.)"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#previewing-a-website",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#previewing-a-website",
+    "title": "Quarto Websites (part 1)",
+    "section": "Previewing a website",
+    "text": "Previewing a website\nThe quarto command to preview a website is:\n\nquarto preview\n\n\n\nquarto preview spins up a live-reload local development server\nthe _site/ folder is generated (don’t edit its contents)\nwhile previewing a website, every time you save a .qmd file, it re-renders the page in real time"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#rendering-a-website",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#rendering-a-website",
+    "title": "Quarto Websites (part 1)",
+    "section": "Rendering a website",
+    "text": "Rendering a website\nThe quarto command to render a website is:\n\nquarto render\n\nquarto render compiles your source files into final outputs\n\nit loops through all connected files,\nbuilds the navigation,\noutputs the complete website in _site/"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#rendering-a-website-contd",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#rendering-a-website-contd",
+    "title": "Quarto Websites (part 1)",
+    "section": "Rendering a website (cont’d)",
+    "text": "Rendering a website (cont’d)\nIf you delete a .qmd file or rename it, the old HTML file inside _site/ might stick around until you perform a clean render or manually clear the output directory.\n\nYou can run:\n# force a full clean re-render (ignoring cached results)\nquarto render --no-cache"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto-website-via-rstudio-1",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto-website-via-rstudio-1",
+    "title": "Quarto Websites (part 1)",
+    "section": "Quarto Website (via RStudio)",
+    "text": "Quarto Website (via RStudio)\nAnother way to create a Quarto website is using RStudio.\n\n\nBecause RStudio is part of this semester’s STAT 159 datahub we want to show you how to create a Quarto website with this tool."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#create-a-quarto-website-via-rstudio",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#create-a-quarto-website-via-rstudio",
+    "title": "Quarto Websites (part 1)",
+    "section": "Create a Quarto Website (via RStudio)",
+    "text": "Create a Quarto Website (via RStudio)\n\nGo to the File tab in the top menu bar\nClick on New Project\nWhen prompted with the Create Project choose New Directory\nWhen prompted with the Project Type choose Quarto Website\nThen select a directory and a name for your project\nClick on Create Project"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#create-a-quarto-website-via-rstudio-1",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#create-a-quarto-website-via-rstudio-1",
+    "title": "Quarto Websites (part 1)",
+    "section": "Create a Quarto Website (via RStudio)",
+    "text": "Create a Quarto Website (via RStudio)\nThe default file structure of the quarto website is:\ndemo-web/\n├── _quarto.yml      # The \"brain\" and main config file of the site\n├── index.qmd        # The homepage (rendered to index.html)\n├── about.qmd        # An about page (rendered to about.html)\n├── styles.css       # Optional custom CSS overrides\n├── demo-web.Rproj   # RStudio project\n\n\nThe main difference between creating a website via RStudio -vs- the Terminal is that in RStudio you have the additional .Rproj file"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto-website-via-rstudio-2",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto-website-via-rstudio-2",
+    "title": "Quarto Websites (part 1)",
+    "section": "Quarto Website (via RStudio)",
+    "text": "Quarto Website (via RStudio)\nTo render and preview the website, you click on the Render button"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#workflow",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#workflow",
+    "title": "Quarto Websites (part 1)",
+    "section": "Workflow",
+    "text": "Workflow\n\nAdd additional pages to your website (e.g., by adding .qmd files)\nEdit config file _quarto.yml to include added pages\nWebsite Preview: quarto preview\nWebsite Render: quarto render\n\nRenders website into the _site/ directory by default\n\nOr click render button in RStudio\nRinse and repeat"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#additional-elements",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#additional-elements",
+    "title": "Quarto Websites (part 1)",
+    "section": "Additional Elements",
+    "text": "Additional Elements\n\nWebsite Navigation  https://quarto.org/docs/websites/website-navigation.html\nWebsite Theme  https://quarto.org/docs/output-formats/html-themes.html\nWebsite Drafts  https://quarto.org/docs/websites/website-drafts.html\nHeaders and Footers  https://quarto.org/docs/websites/website-drafts.html"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#architecture-for-data-projects",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#architecture-for-data-projects",
+    "title": "Quarto Websites (part 1)",
+    "section": "Architecture for Data Projects",
+    "text": "Architecture for Data Projects\n\n\nWhen structuring a data project as a Quarto site, you typically choose between two main layouts:\n\n\nA) Modular Analysis Pipeline\nBreak a large analysis down into logical sequence steps. Each step becomes a separate page, accessible via the top navigation bar or a sidebar\n\nB) The Listing / Portfolio Site\nUse Quarto’s built-in Listing Pages (the engine used for blogs) to host multiple data projects or sub-analyses on one site\n\n\n\nBTW: We’ll cover approach A"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#example",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#example",
+    "title": "Quarto Websites (part 1)",
+    "section": "Example",
+    "text": "Example\nAssume your project has the following pipeline:\n\n\n\nData Preparation:\n\n01_data_prep.qmd\ndata_dictionary.qmd\n\n\n\n\n\nExploratory Analysis:\n\n02_exploration.qmd\n\n\n\n\nModeling:\n\n03_modeling.qmd\n\n\n\n\n\nConclusions:\n\n04_conclusions.qmd"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#deciding-website-navigation",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#deciding-website-navigation",
+    "title": "Quarto Websites (part 1)",
+    "section": "Deciding Website Navigation",
+    "text": "Deciding Website Navigation\n\n\nNavigation bar (i.e. menu bar, left-aligned tabs)\n\n\n_config.yml\n\n# left-aligned tabs in navbar\nwebsite:\n  title: \"My Project\"\n  navbar:\n    left:\n      - ...\n\n\nNavigation bar (i.e. menu bar, right-aligned tabs)\n\n\n_config.yml\n\n# right-aligned tabs in navbar\nwebsite:\n  title: \"My Project\"\n  navbar:\n    right:\n      - ...\n\n\n\nSidebar\n\n\n_config.yml\n\n# sidebar (on right-hand side)\nwebsite:\n  title: \"My Project\"\n  sidebar:\n    - ...\n\n\nHybrid: Navbar and Sidebar\n\n\n_config.yml\n\n# sidebar and navbar\nwebsite:\n  title: \"My Project\"\n  navbar:\n    left:\n      - ...\n  sidebar:\n    - ..."
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto.yml-navigation-bar",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto.yml-navigation-bar",
+    "title": "Quarto Websites (part 1)",
+    "section": "_quarto.yml Navigation bar",
+    "text": "_quarto.yml Navigation bar\n\n\n\n\n\n\n_config.yml\n\nproject:\n  type: website\n\nwebsite:\n  # content displayed on right-column ---&gt;\n  # for sake of clarity               ---&gt;\n\nexecute:\n  echo: true       # Show code by default\n  warning: false   # Hide warning messahes\n  freeze: auto     # freeze execution\n\nformat:\n  html:\n    theme: cosmo\n    toc: true\n    toc-depth: 3\n    css: styles.css\n\n\n\n\n\n\n_config.yml\n\nwebsite:\n  title: \"My Project\"\n  navbar:\n    search: true\n    contents:\n      - text: \"Overview\"\n        href: index.qmd\n      - section: \"Analysis\"\n        contents:\n          - href: 01_data_prep.qmd\n          - href: 02_exploration.qmd\n          - href: 03_modeling.qmd\n          - href: 04_conclusions.qmd\n      - text: \"Codebook\"\n        href: data_dictionary.qmd"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto.yml-sidebar-bar",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto.yml-sidebar-bar",
+    "title": "Quarto Websites (part 1)",
+    "section": "_quarto.yml Sidebar bar",
+    "text": "_quarto.yml Sidebar bar\n\n\n\n\n\n\n_config.yml\n\nproject:\n  type: website\n\nwebsite:\n  # content displayed on right-column ---&gt;\n  # for sake of clarity               ---&gt;\n\nexecute:\n  echo: true       # Show code by default\n  warning: false   # Hide warning messahes\n  freeze: auto     # freeze execution\n\nformat:\n  html:\n    theme: cosmo\n    toc: true\n    toc-depth: 3\n    css: styles.css\n\n\n\n\n\n\n_config.yml\n\nwebsite:\n  title: \"My Project\"\n  sidebar:\n    style: \"docked\"\n    search: true\n    contents:\n      - text: \"Overview\"\n        href: index.qmd\n      - section: \"Analysis\"\n        contents:\n          - href: 01_data_prep.qmd\n          - href: 02_exploration.qmd\n          - href: 03_modeling.qmd\n          - href: 04_conclusions.qmd\n      - text: \"Codebook\"\n        href: data_dictionary.qmd"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto.yml-hybrid-navbar-sidebar",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#quarto.yml-hybrid-navbar-sidebar",
+    "title": "Quarto Websites (part 1)",
+    "section": "_quarto.yml Hybrid (Navbar & Sidebar)",
+    "text": "_quarto.yml Hybrid (Navbar & Sidebar)\n\n\n\n\n\n\n_config.yml\n\nproject:\n  type: website\n\nwebsite:\n  # content displayed on right-column ---&gt;\n  # for sake of clarity               ---&gt;\n\nexecute:\n  echo: true       # Show code by default\n  warning: false   # Hide warning messahes\n  freeze: auto     # freeze execution\n\nformat:\n  html:\n    theme: cosmo\n    toc: true\n    toc-depth: 3\n    css: styles.css\n\n\n\n\n\n\n_config.yml\n\nwebsite:\n  title: \"My Project\"\n  navbar:\n    left: \n      - text: \"Overview\"\n        href: index.qmd\n      - text: \"Analysis\n        href: analysis.qmd\n      - text: \"Codebook\"\n        href: data_dictionary.qmd\n  sidebar:\n    - title: \"Analysis\"\n      style: \"docked\"\n      contents:\n        - href: 01_data_prep.qmd\n        - href: 02_exploration.qmd\n        - href: 03_modeling.qmd\n        - href: 04_conclusions.qmd"
+  },
+  {
+    "objectID": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#freeze-execution-execute-freeze-auto",
+    "href": "lectures/27-quarto-websites1/27-quarto-websites1-slides.html#freeze-execution-execute-freeze-auto",
+    "title": "Quarto Websites (part 1)",
+    "section": "Freeze execution (execute: freeze: auto)",
+    "text": "Freeze execution (execute: freeze: auto)\nExecuting complex models or massive data pipelines every single time you render a site will severely slow you down.\n\nSetting freeze: auto tells Quarto to save computational results in a _freeze/ folder.\nCode chunks will only re-run when the source .qmd file actually changes.\nCommit the _freeze/ folder to Git! This allows Continuous Integration platforms (like GitHub Actions) to publish your site without needing access to your raw databases or computing environment."
+  },
+  {
+    "objectID": "lectures/30-licenses/30-licenses-slides.html#mit-and-bsd-licenses",
+    "href": "lectures/30-licenses/30-licenses-slides.html#mit-and-bsd-licenses",
+    "title": "Licensing",
+    "section": "MIT and BSD Licenses",
+    "text": "MIT and BSD Licenses\n\n\n\n\n\n\n\n\n\n\n\nFeature\nMIT\nBSD (2-Clause)\nBSD (3-Clause)\n\n\n\n\nCommercial Use Allowed\nYes\nYes\nYes\n\n\nModification & Distribution\nYes\nYes\nYes\n\n\nRequires Copyright/License Notice\nYes\nYes\nYes\n\n\nNon-Endorsement Clause\nNo\nNo\nYes"
+  },
+  {
+    "objectID": "lectures/30-licenses/30-licenses-slides.html#public-domain",
+    "href": "lectures/30-licenses/30-licenses-slides.html#public-domain",
+    "title": "Licensing",
+    "section": "Public Domain",
+    "text": "Public Domain\nThere is no official “public domain license” because a work in the public domain belongs to everyone rather than being owned or restricted by a license.\n\n\nHowever, tools and public-domain-equivalent instruments exist to legally dedicate or waive copyright, e.g.\n0BSD (Zero-Clause BSD): A license that grants unconditional permission to use, copy, modify, and distribute a work without any attribution requirement."
+  },
+  {
+    "objectID": "lectures/30-licenses/30-licenses-slides.html#permissive-licenses-contd",
+    "href": "lectures/30-licenses/30-licenses-slides.html#permissive-licenses-contd",
+    "title": "Licensing",
+    "section": "Permissive Licenses (cont’d)",
+    "text": "Permissive Licenses (cont’d)\nThey allow you to freely use, modify, and distribute software for commercial or private use without requiring you to open-source your derivative code.\n\nPermissive Freedom: Allow free use, copying, modification, and integration into proprietary (closed-source) software.\nNo Copyleft: They are not “viral” like the GPL; you are not forced to release your modified source code under the same license.\nAttribution & Disclaimers: They require you to keep the original copyright notice, license text, and liability disclaimers intact."
+  },
+  {
+    "objectID": "lectures/30-licenses/30-licenses-slides.html#permissive-licenses-contd-1",
+    "href": "lectures/30-licenses/30-licenses-slides.html#permissive-licenses-contd-1",
+    "title": "Licensing",
+    "section": "Permissive Licenses (cont’d)",
+    "text": "Permissive Licenses (cont’d)\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nMIT\nBSD (2-Clause)\nBSD (3-Clause)\nApache\n\n\n\n\nDocument Length\nShort\nShort\nShort\nLong\n\n\nCommercial Use Allowed\nYes\nYes\nYes\nYes\n\n\nModification & Distribution\nYes\nYes\nYes\nYes\n\n\nRequires Copyright Attribution\nYes\nYes\nYes\nYes\n\n\nNon-Endorsement Clause\nNo\nNo\nYes\nYes\n\n\nExplicit Patent Grant\nNo\nNo\nNo\nYes\n\n\nExplicit Trademark Protection\nNo\nNo\nYes\nYes\n\n\nRequires Stating Changes\nNo\nNo\nNo\nYes"
+  },
+  {
+    "objectID": "lectures/30-licenses/30-licenses-slides.html#limitation-of-software-licenses-1",
+    "href": "lectures/30-licenses/30-licenses-slides.html#limitation-of-software-licenses-1",
+    "title": "Licensing",
+    "section": "Limitation of Software Licenses",
+    "text": "Limitation of Software Licenses\n\nIf you apply a software license to a research paper or an image, it is legally muddy.\nConcepts like “compiling” or “linking” do not map onto a JPEG or a PDF or MP3 or MP4 files.\nSoftware licenses generally assume the asset is a functional tool, not an artistic expression."
+  },
+  {
+    "objectID": "lectures/30-licenses/30-licenses-slides.html#nc-clauses-contd",
+    "href": "lectures/30-licenses/30-licenses-slides.html#nc-clauses-contd",
+    "title": "Licensing",
+    "section": "NC clauses (cont’d)",
+    "text": "NC clauses (cont’d)\nNC clauses are dangerous for open science, because:\n\n“Commercial use” is poorly defined in court.\nAcademic Trap: If a researcher at a private university or a commercial medical center downloads a dataset under a CC BY-NC license to reproduce a study, they might be violating the license because their institution charges tuition or holds patents.\nFunding Compliance: Many public grants (like NIH or Horizon Europe) strictly mandate that research outputs be published under CC BY (Attribution Only) or CC0 (Public Domain) to maximize public good. An NC clause will often violate funding terms."
+  },
+  {
+    "objectID": "lectures/30-licenses/30-licenses-slides.html#about-citation-1",
+    "href": "lectures/30-licenses/30-licenses-slides.html#about-citation-1",
+    "title": "Licensing",
+    "section": "About Citation",
+    "text": "About Citation\n\n\nCITATION.cff\n\ncff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\nauthors:\n  - family-names: \"Smith\"\n    given-names: \"Jane\"\n    orcid: \"https://orcid.org\"\n  - family-names: \"Doe\"\n    given-names: \"John\"\ntitle: \"My Awesome Data Science Tool\"\nversion: \"1.4.2\"\ndoi: \"10.5281/zenodo.1234567\"\ndate-released: \"2026-10-15\"\nurl: \"https://github.com\"\nrepository-code: \"https://github.com\"\nkeywords:\n  - \"data-science\"\n  - \"r-programming\"\n  - \"automation\"\nlicense: \"MIT\""
+  },
+  {
+    "objectID": "lectures/30-licenses/30-licenses-slides.html#citation-example",
+    "href": "lectures/30-licenses/30-licenses-slides.html#citation-example",
+    "title": "Licensing",
+    "section": "Citation example",
+    "text": "Citation example\n\n\nCITATION.cff\n\ncff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\nauthors:\n  - family-names: \"Smith\"\n    given-names: \"Jane\"\n    orcid: \"https://orcid.org\"\n  - family-names: \"Doe\"\n    given-names: \"John\"\ntitle: \"My Awesome Data Science Tool\"\nversion: \"1.4.2\"\ndoi: \"10.5281/zenodo.1234567\"\ndate-released: \"2026-10-15\"\nurl: \"https://project-webpage.com\"\nrepository-code: \"https://github.com/project-repo\"\nkeywords:\n  - \"data-science\"\n  - \"programming\"\nlicense: \"MIT\""
+  },
+  {
+    "objectID": "lectures/22-discuss6/22-discussion-slides.html#some-comments",
+    "href": "lectures/22-discuss6/22-discussion-slides.html#some-comments",
+    "title": "Irreproducibility Tales (part II)",
+    "section": "Some Comments",
+    "text": "Some Comments\nThe Duke Cancer Scandal represents the ultimate breakdown of computational transparency.\nThe issue wasn’t that the scientists made a mistake—everyone makes mistakes.\nThe disaster happened because their workflow was an unrecorded, manual black box that could not be audited until it was too late.\nThis is why platforms like GitHub are not optional luxuries for your career.\nBy forcing yourself to push raw, unedited script pipelines upstream, you allow code forensics to catch bugs at your workstation—long before they become a scandal or a tragedy."
+  },
+  {
+    "objectID": "lectures/22-discuss6/22-discussion-slides.html#screens-off-minds-on",
+    "href": "lectures/22-discuss6/22-discussion-slides.html#screens-off-minds-on",
+    "title": "Irreproducibility Tales (part II)",
+    "section": "Screens Off, Minds On",
+    "text": "Screens Off, Minds On\n\n\n\nDevices Away: Laptops & tablets closed, phones away.\nNo One Alone: Pair or team up (no solo seats).\nEngage Fully: Be ready to speak, debate, and share ideas."
   }
 ]

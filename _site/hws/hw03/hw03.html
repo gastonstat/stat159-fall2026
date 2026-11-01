@@ -228,13 +228,25 @@ gtag('config', 'G-CES9J82GLL', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../readings/08-reading-legal-framework.html" class="sidebar-item-text sidebar-link">
+  <a href="../../readings/08-reading-theranos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8) Lessons from Theranos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../readings/09-reading-legal-framework.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">8) RR Legal Framework</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../readings/09-reading-better-figures.html" class="sidebar-item-text sidebar-link">
+  <a href="../../readings/10-reading-research-compendium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10) Research Compendium</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../readings/11-reading-better-figures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">9) Better Figures</span></a>
   </div>
 </li>
@@ -327,6 +339,8 @@ gtag('config', 'G-CES9J82GLL', { 'anonymize_ip': true});
   <li><a href="#other-considerations" id="toc-other-considerations" class="nav-link" data-scroll-target="#other-considerations">Other Considerations</a>
   <ul class="collapse">
   <li><a href="#how-we-will-usetest-your-package" id="toc-how-we-will-usetest-your-package" class="nav-link" data-scroll-target="#how-we-will-usetest-your-package">How we will use/test your package</a></li>
+  <li><a href="#commits" id="toc-commits" class="nav-link" data-scroll-target="#commits">Commits</a></li>
+  <li><a href="#makefile-and-environment" id="toc-makefile-and-environment" class="nav-link" data-scroll-target="#makefile-and-environment">Makefile and Environment</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -355,18 +369,19 @@ gtag('config', 'G-CES9J82GLL', { 'anonymize_ip': true});
 
 <section id="about" class="level2">
 <h2 class="anchored" data-anchor-id="about">About</h2>
-<p>This assignment is the continuation of HW1 and HW2. This time you will take the next step by creating a package (R or Python) to retrieve the career matches of a given player (e.g.&nbsp;Serena Williams, Rafael Nadal) from tennisabstract.com, and make a plot like the data visualization of HW2.</p>
+<p>This assignment is the continuation of HW1 and HW2. This time you will take the next step by creating a package (R or Python) to retrieve the career matches of a given player (e.g.&nbsp;Serena Williams, Rafael Nadal) from tennisabstract.com, and make a plot like the NYT’s data visualization of HW2 (ignoring annotations).</p>
 </section>
 <section id="main-functions" class="level2">
 <h2 class="anchored" data-anchor-id="main-functions">Main Functions</h2>
 <p>Your package should have two primary functions:</p>
 <ol type="1">
-<li>function to get the career’s data of a given player
+<li><p>Function to get the career’s data of a given player</p>
 <ul>
-<li>Input: name of player, e.g.&nbsp;<code>"serena williams"</code></li>
-<li>Output: data frame to be used for graphing purposes (like the <code>serena</code> data frame of HW2)</li>
+<li><p>Input: name of player, e.g.&nbsp;<code>"serena williams"</code>, or <code>"Serena Williams"</code> or <code>"SerenaWilliams"</code></p></li>
+<li><p>Output: data frame to be used for graphing purposes (like the <code>serena</code> data frame of HW2)</p></li>
+<li><p>If the user provides an invalid name of a player (<code>"Gaston Sanchez"</code>), then it should return a meaningful error message.</p></li>
 </ul></li>
-<li>function to make the scatter plot—like the plot you graphed in HW2 (without annotations)</li>
+<li><p>Function to make the scatter plot—like the plot you graphed in HW2 (without annotations)</p></li>
 </ol>
 <p>For example, suppose the functions of my package are <code>data_function()</code> and <code>plot_function()</code>. BTW: give better names to your functions. Under this assumption, a user should be able to call my functions like so:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Serena Williams data and plot</span></span>
@@ -375,7 +390,10 @@ gtag('config', 'G-CES9J82GLL', { 'anonymize_ip': true});
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Rafael Nadal data and plot</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>rafa <span class="ot">=</span> <span class="fu">data_function</span>(<span class="st">"Rafael Nadal"</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_function</span>(rafa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_function</span>(rafa)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># returns a meaningful error message</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>unknown_player <span class="ot">=</span> <span class="fu">data_function</span>(<span class="st">"GastonSanchez"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="package-specifications" class="level2">
 <h2 class="anchored" data-anchor-id="package-specifications">Package Specifications</h2>
@@ -383,8 +401,8 @@ gtag('config', 'G-CES9J82GLL', { 'anonymize_ip': true});
 <h3 class="anchored" data-anchor-id="public-functions">Public Functions</h3>
 <p>As mentioned above, your package should have two main (public) functions:</p>
 <ul>
-<li><p>one function to get data from tennis abstract, and process it to return a clean data frame</p></li>
-<li><p>one function that takes the cleaned-processed data frame to produce a scatter plot</p></li>
+<li><p>One function to get data from tennis abstract, and process it to return a clean data frame.</p></li>
+<li><p>One function that takes the cleaned-processed data frame to produce a scatter plot</p></li>
 </ul>
 </section>
 <section id="private-functions" class="level3">
@@ -452,22 +470,32 @@ Female vs Male players
 </section>
 <section id="other-considerations" class="level2">
 <h2 class="anchored" data-anchor-id="other-considerations">Other Considerations</h2>
-<p>As usual, we will grade commit mechanics (how changes are packaged and documented) alongside workflow integrity (how git was used as a tool for reproducible research, rather than a single bulk upload at 11:59 PM).</p>
-<ul>
-<li><p>Each commit should represent a coherent, single step; i.e.&nbsp;no massive commits.</p></li>
-<li><p>Each commits should should have a concise, descriptive message; i.e.&nbsp;no vague messages.</p></li>
-</ul>
 <section id="how-we-will-usetest-your-package" class="level3">
 <h3 class="anchored" data-anchor-id="how-we-will-usetest-your-package">How we will use/test your package</h3>
 <p>The <em>litmus test</em> of your hw3 submission will involve a direct installation from your github repository, and then using your 2 public functions to obtain and plot the data of a handful of players.</p>
-<p><strong>R package</strong></p>
-<p>We’ll run the <code>"devtools"</code> function <code>install_github()</code></p>
+<p><strong>If you create an R package</strong></p>
+<p>We’ll run either the <code>"devtools"</code> function <code>install_github()</code> or the <code>"pak"</code> function <code>pack()</code></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># R package</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install_github</span>(<span class="st">"username/yourpackage"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Python package</strong></p>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"username/yourpackage"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># equivalent</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">"username/yourpackage"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>If you create a Python package</strong></p>
 <p>To install a Python package directly from a GitHub repository, we’ll use the <code>pip install</code> command prefixed with <code>git+</code> followed by your repository’s URL.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Python package</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install git+https://github.com/username/yourpackage.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="commits" class="level3">
+<h3 class="anchored" data-anchor-id="commits">Commits</h3>
+<p>As usual, we will grade commit mechanics (how changes are packaged and documented) alongside workflow integrity (how git was used as a tool for reproducible research, rather than a few bulk upload commits).</p>
+<ul>
+<li><p>Each commit should represent a coherent, single step; i.e.&nbsp;no massive commits.</p></li>
+<li><p>Each commits should have a concise, descriptive message; i.e.&nbsp;no vague messages.</p></li>
+</ul>
+</section>
+<section id="makefile-and-environment" class="level3">
+<h3 class="anchored" data-anchor-id="makefile-and-environment">Makefile and Environment</h3>
+<p>Because this HW involves developing and submitting a package, there is no need to include <code>Makefile</code> and <code>environment.yml</code> files.</p>
 
 
 </section>

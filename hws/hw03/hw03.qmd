@@ -8,19 +8,25 @@ title: HW3) R/Python Package
 This assignment is the continuation of HW1 and HW2. This time you will take the
 next step by creating a package (R or Python) to retrieve the career matches of 
 a given player (e.g. Serena Williams, Rafael Nadal) from tennisabstract.com,
-and make a plot like the data visualization of HW2.
+and make a plot like the NYT's data visualization of HW2 (ignoring annotations).
 
 
 ## Main Functions
 
 Your package should have two primary functions:
 
-1) function to get the career's data of a given player
-    + Input: name of player, e.g. `"serena williams"`
+1) Function to get the career's data of a given player
+
+    + Input: name of player, e.g. `"serena williams"`, or `"Serena Williams"`
+    or `"SerenaWilliams"`
+
     + Output: data frame to be used for graphing purposes 
     (like the `serena` data frame of HW2)
 
-2) function to make the scatter plot---like the plot you graphed in HW2
+    + If the user provides an invalid name of a player (`"Gaston Sanchez"`),
+    then it should return a meaningful error message.
+
+2) Function to make the scatter plot---like the plot you graphed in HW2
 (without annotations)
 
 For example, suppose the functions of my package are `data_function()` and 
@@ -35,6 +41,9 @@ plot_function(serena)
 # Rafael Nadal data and plot
 rafa = data_function("Rafael Nadal")
 plot_function(rafa)
+
+# returns a meaningful error message
+unknown_player = data_function("GastonSanchez")
 ```
 
 
@@ -45,10 +54,10 @@ plot_function(rafa)
 As mentioned above, your package should have two 
 main (public) functions:
 
-+ one function to get data from tennis abstract, and process it to 
-return a clean data frame
++ One function to get data from tennis abstract, and process it to 
+return a clean data frame. 
 
-+ one function that takes the cleaned-processed data frame to
++ One function that takes the cleaned-processed data frame to
 produce a scatter plot
 
 
@@ -117,32 +126,26 @@ var morematchmx = [["20010910", "Spain F10", "Hard", "S", "L", "", "", "WC", "R3
 
 ## Other Considerations
 
-As usual, we will grade commit mechanics (how changes are packaged and documented) 
-alongside workflow integrity (how git was used as a tool for reproducible research, 
-rather than a single bulk upload at 11:59 PM).
-
-- Each commit should represent a coherent, single step; i.e. no massive commits.
-
-- Each commits should should have a concise, descriptive message; i.e. no
-vague messages.
-
-
 ### How we will use/test your package
 
 The _litmus test_ of your hw3 submission will involve a direct installation
 from your github repository, and then using your 2 public functions 
 to obtain and plot the data of a handful of players.
 
-**R package**
+**If you create an R package**
 
-We'll run the `"devtools"` function `install_github()`
+We'll run either the `"devtools"` function `install_github()`
+or the `"pak"` function `pack()`
 
 ```r
 # R package
-install_github("username/yourpackage")
+devtools::install_github("username/yourpackage")
+
+# equivalent
+pak::pak("username/yourpackage")
 ```
 
-**Python package**
+**If you create a Python package**
 
 To install a Python package directly from a GitHub repository, we'll use the 
 `pip install` command prefixed with `git+` followed by your repository's URL.
@@ -151,3 +154,21 @@ To install a Python package directly from a GitHub repository, we'll use the
 # Python package
 pip install git+https://github.com/username/yourpackage.git
 ```
+
+
+### Commits
+
+As usual, we will grade commit mechanics (how changes are packaged and documented) 
+alongside workflow integrity (how git was used as a tool for reproducible research, 
+rather than a few bulk upload commits).
+
+- Each commit should represent a coherent, single step; i.e. no massive commits.
+
+- Each commits should have a concise, descriptive message; i.e. no
+vague messages.
+
+
+### Makefile and Environment
+
+Because this HW involves developing and submitting a package,
+there is no need to include `Makefile` and `environment.yml` files.
